@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>h-card parsing tests</title>
+
+    <link rel="stylesheet" href="stylesheets/testsuite.css">
+    <link rel="stylesheet" href="stylesheets/prettify.css">
+
+    <script src="javascript/prettify.js"></script>
+    <script src="javascript/testsuite.js"></script>
+   
+</head>
+<body>
+    
+
+
+    <h1>Overview of the microformats2 test-suite format</h1>
+    
+    <h2>Introduction</h2>
+    <p>
+    The test-suite is a description of a group software tests. These test are embedded into HTML 
+    using as POSH pattern based on microformats2. Each test-suite can contain a number of test-fixture, 
+    which are the individual test.
+    </p>
+    
+ 
+
+    <h2>Structure of a test-suite</h2>
+    <ul>
+        <li>class=&quot;<strong>h-x-test-suite</strong>&quot;&nbsp;<ul>
+            <li>class=&quot;p-name&quot;</li>
+            <li>class=&quot;p-description&quot;</li>
+            <li>class=&quot;<strong>p-test-fixture (h-x-test-fixture)</strong>&quot;&nbsp;<ul>
+                <li>class=&quot;p-name&quot;</li>
+                <li>class=&quot;p-x-format&quot;</li>
+                <li>class=&quot;e-x-microformat&quot;</li>
+                <li>class=&quot;p-x-output&quot;</li>
+                <li>class=&quot;<strong>p-x-assert (h-x-assert)</strong>&quot;<ul>
+                    <li>class=&quot;p-x-test&quot;</li>
+                    <li>class=&quot;p-x-result&quot;</li>
+                    <li>class=&quot;p-summary&quot;</li>
+                </ul>
+                </li>
+            </ul>
+            </li>            
+            <li>class=&quot;p-author&quot; (h-card)</li>
+            <li>class=&quot;p-history&quot; (h-entry)</li>
+        </ul>
+        </li>
+    </ul>
+
+
+
+    <h2>Properties of a test-suite</h2>
+    <dl>
+        <dt>p-name</dt>
+        <dd>The name of the test-suite</dd>
+        
+        <dt>p-description</dt>
+        <dd>An expanded description of the test-suite</dd>
+        
+        <dt>p-author</dt>
+        <dd>The authors of the test-suite, these are mark-up as h-cards</dd>
+        
+        <dt>p-x-history</dt>
+        <dd>The history of changes to test-suite, these are mark-up as h-entry</dd>
+    </dl>
+    
+
+
+    <h2>Properties of a test-fixture</h2>
+    <dl>
+        <dt>p-name</dt>
+        <dd>The title of the test-fixture</dd>
+        
+        <dt>p-x-format</dt>
+        <dd>The name of microformat to be tested</dd>
+
+        <dt>e-x-microformat</dt>
+        <dd>The HTML mark-up containing the microformat to test</dd>
+        
+        <dt>p-x-output</dt>
+        <dd>This is an example output which would be expected form the test</dd>
+        
+        <dt>p-x-assert</dt>
+        <dd>The assert is the component parts of a test</dd> 
+        
+    </dl>
+    
+
+    <h2>Properties of a assert</h2>
+    <dl>
+        <dt>p-x-test</dt>
+        <dd>Describes the property to be tested</dd>
+        
+        <dt>p-x-result</dt>
+        <dd>Describes expected result form the test</dd>
+
+        <dt>p-summary</dt>
+        <dd>This is an expanded piece of text about the test</dd>
+        
+    </dl>
+
+
+
+    <h2>Contributors :</h2>
+    <ul>
+        <li class="h-card">
+            <a class="u-url p-name" rel="author" href="http://tantek.com/">Tantek Çelik</a> 
+        </li>
+        <li class="h-card">
+            <a class="u-url p-name" rel="author" href="http://www.glennjones.net/">Glenn Jones</a> 
+        </li>
+    </ul>
+  
+        
+    <footer>
+        All content and code is released into the <a href="http://en.wikipedia.org/wiki/public_domain">public domain</a>
+    </footer>
+      
+</body>
+
+</html>
