@@ -24,6 +24,9 @@
             <li><a href="#justahyperlink">Just a hyperlink</a></li>
             <li><a href="#hyperlinkedphoto">Hyperlinked photo</a></li>
             <li><a href="#extendeddescription">Extended description</a></li>
+            <li><a href="#hcard">Organization marked-up with h-card</a></li>
+            <li><a href="#horghcard">Organization marked-up with h-card and h-org</a></li>
+            <li><a href="#nested">Additional nested microformats</a></li>
         </ul>
 
         <!-- a test -->
@@ -38,14 +41,14 @@
 
             <h3>The expected JSON output:</h3>
 <pre class="p-x-output prettyprint"><code class="language-json">
-[
-    {
+{
+    "items": [{
         "type": ["h-card"],
         "properties": {
             "name": ["Frances Berriman"]
         }
-    }
-]
+    }]
+}
 </code></pre>
 
             <h3>Assertions for integration tests:</h3>
@@ -83,15 +86,15 @@
 
             <h3>The expected JSON output:</h3>
 <pre class="p-x-output prettyprint"><code class="language-json">
-[
-    {
+{
+    "items": [{
         "type": ["h-card"],
         "properties": {
             "name": ["Ben Ward"],
             "url": ["http://benward.me/"]
         }
-    }
-]
+    }]
+}
 </code></pre>
 
             <h3>Assertions for integration tests:</h3>
@@ -137,16 +140,16 @@
 
             <h3>The expected JSON output:</h3>
 <pre class="p-x-output prettyprint"><code class="language-json">
-[
-    {
+{
+    "items": [{
         "type": ["h-card"],
         "properties": {
             "name": ["Rohit Khare"],
             "photo": ["https://twimg0-a.akamaihd.net/profile_images/53307499/180px-Rohit-sq.jpg"]
             "url": ["http://rohit.khare.org/"]
         }
-    }
-]
+    }]
+}
 </code></pre>
 
             <h3>Assertions for integration tests:</h3>
@@ -203,8 +206,8 @@
 
             <h3>The expected JSON output:</h3>
 <pre class="p-x-output prettyprint"><code class="language-json">
-[
-    {
+{
+    "items": [{
         "type": ["h-card"],
         "properties": {
             "category": ["Strategy", "Leadership"],
@@ -213,8 +216,9 @@
             "org": ["Mozilla Foundation"],
             "photo": ["http://blog.mozilla.org/press/files/2012/04/mitchell-baker.jpg"],
             "url": ["http://blog.lizardwrangler.com/", "https://twitter.com/MitchellBaker"]
-    }
-]
+        }
+    }]
+}
 </code></pre>
 
             <h3>Assertions for integration tests:</h3>
@@ -266,13 +270,174 @@
         </section>    
   
 
+        <!-- a test -->
+        <section class="p-x-test-fixture h-x-test-fixture">
+            <h1 class="p-name"><a name="hcard">Organization marked-up with h-card</a> (<span class="p-format">h-card</span> parsing test)</h1>
 
+<!-- microformats example we are going to test -->
+<div class="e-x-microformat">
+<div class="h-card">
+  <a class="p-name u-url"
+     href="http://blog.lizardwrangler.com/" 
+    >Mitchell Baker</a> 
+  (<a class="p-org h-card" 
+      href="http://mozilla.org/"
+     >Mozilla Foundation</a>)
+</div>
+</div>
+
+
+            <h3>The expected JSON output:</h3>
+<pre class="p-x-output prettyprint"><code class="language-json">
+[
+    {
+        "items": [{ 
+            "type": ["h-card"],
+            "properties": {
+                "name": ["Mitchell Baker"],
+                "url": ["http://blog.lizardwrangler.com/"],
+                "org": [{
+                    "value": "Mozilla Foundation",
+                    "type": ["h-card"],
+                    "properties": {
+                        "name": ["Mozilla Foundation"],
+                        "url": ["http://mozilla.org/"]
+                    }
+                }]
+            }
+        },{
+            "type": ["h-card"],
+            "properties": {
+                "name": ["Mozilla Foundation"],
+                "url": ["http://mozilla.org/"]
+            }
+        }]
+    }
+]
+</code></pre>
+
+
+        </section>   
+
+                <!-- a test -->
+        <section class="p-x-test-fixture h-x-test-fixture">
+            <h1 class="p-name"><a name="horghcard">Organization marked-up with h-card and h-org</a> (<span class="p-format">h-card</span> parsing test)</h1>
+
+<!-- microformats example we are going to test -->
+<div class="e-x-microformat">
+<div class="h-card">
+  <a class="p-name u-url"
+     href="http://blog.lizardwrangler.com/" 
+    >Mitchell Baker</a> 
+  (<a class="p-org h-card h-org" 
+      href="http://mozilla.org/"
+     >Mozilla Foundation</a>)
+</div>
+</div>
+
+
+            <h3>The expected JSON output:</h3>
+<pre class="p-x-output prettyprint"><code class="language-json">
+[
+    {
+        "items": [{ 
+            "type": ["h-card"],
+            "properties": {
+                "name": ["Mitchell Baker"],
+                "url": ["http://blog.lizardwrangler.com/"],
+                "org": [{
+                    "value": "Mozilla Foundation",
+                    "type": ["h-card", "h-org"],
+                    "properties": {
+                        "name": ["Mozilla Foundation"],
+                        "url": ["http://mozilla.org/"]
+                    }
+                }]
+            }
+        },{
+            "type": ["h-card"],
+            "properties": {
+                "name": ["Mozilla Foundation"],
+                "url": ["http://mozilla.org/"]
+            }
+        },{
+            "type": ["h-org"],
+            "properties": {
+                "name": ["Mozilla Foundation"]
+            }
+        }]
+    }
+]
+</code></pre>
+
+        </section>  
+
+
+
+                </section>   
+
+                <!-- a test -->
+        <section class="p-x-test-fixture h-x-test-fixture">
+            <h1 class="p-name"><a name="nested">Additional nested microformats</a> (<span class="p-format">h-card</span> parsing test)</h1>
+
+<!-- microformats example we are going to test -->
+<div class="e-x-microformat">
+<div class="h-card">
+  <a class="p-name u-url"
+     href="http://blog.lizardwrangler.com/" 
+    >Mitchell Baker</a> 
+  (<a class="h-org h-card" 
+      href="http://mozilla.org/"
+     >Mozilla Foundation</a>)
+</div>
+</div>
+
+
+            <h3>The expected JSON output:</h3>
+<pre class="p-x-output prettyprint"><code class="language-json">
+[
+    {
+        "items": [{ 
+            "type": ["h-card"],
+            "properties": {
+                "name": ["Mitchell Baker"],
+                "url": ["http://blog.lizardwrangler.com/"],
+                
+            },
+            "children": [{
+                "type": ["h-card", "h-org"],
+                "properties": {
+                    "name": ["Mozilla Foundation"],
+                    "url": ["http://mozilla.org/"]
+                }
+            }]
+        },{
+            "type": ["h-card"],
+            "properties": {
+                "name": ["Mozilla Foundation"],
+                "url": ["http://mozilla.org/"]
+            }
+        },{
+            "type": ["h-org"],
+            "properties": {
+                "name": ["Mozilla Foundation"]
+            }
+        }]
+    }
+]
+</code></pre>
+
+        </section>  
 
 
 
 
     <h2>Change log:</h2>
-    <ul>
+    <ul>        
+        <li class="p-x-history h-entry">
+            <span class="p-name">Corrected JSON</span>: <abbr class="dt-published" title="2012-12-18">18 December 2012</abbr> 
+            <span class="p-description">Corrected JSON by adding <code>items</code> wrapper and added another 3 tests &ndash; by Glenn Jones</span>
+        </li>
         <li class="p-x-history h-entry">
             <span class="p-name">Updated format</span>: <abbr class="dt-published" title="2012-11-22">22 November 2012</abbr> 
             <span class="p-description">Added new styling to breakup test fixtures visaully &ndash; by Glenn Jones</span>
