@@ -145,7 +145,7 @@
         "type": ["h-card"],
         "properties": {
             "name": ["Rohit Khare"],
-            "photo": ["https://twimg0-a.akamaihd.net/profile_images/53307499/180px-Rohit-sq.jpg"]
+            "photo": ["https://twimg0-a.akamaihd.net/profile_images/53307499/180px-Rohit-sq.jpg"],
             "url": ["http://rohit.khare.org/"]
         }
     }]
@@ -289,7 +289,6 @@
 
             <h3>The expected JSON output:</h3>
 <pre class="p-x-output prettyprint"><code class="language-json">
-[
     {
         "items": [{ 
             "type": ["h-card"],
@@ -313,7 +312,7 @@
             }
         }]
     }
-]
+
 </code></pre>
 
 
@@ -338,36 +337,34 @@
 
             <h3>The expected JSON output:</h3>
 <pre class="p-x-output prettyprint"><code class="language-json">
-[
-    {
-        "items": [{ 
-            "type": ["h-card"],
-            "properties": {
-                "name": ["Mitchell Baker"],
-                "url": ["http://blog.lizardwrangler.com/"],
-                "org": [{
-                    "value": "Mozilla Foundation",
-                    "type": ["h-card", "h-org"],
-                    "properties": {
-                        "name": ["Mozilla Foundation"],
-                        "url": ["http://mozilla.org/"]
-                    }
-                }]
-            }
-        },{
-            "type": ["h-card"],
-            "properties": {
-                "name": ["Mozilla Foundation"],
-                "url": ["http://mozilla.org/"]
-            }
-        },{
-            "type": ["h-org"],
-            "properties": {
-                "name": ["Mozilla Foundation"]
-            }
-        }]
-    }
-]
+{
+    "items": [{ 
+        "type": ["h-card"],
+        "properties": {
+            "name": ["Mitchell Baker"],
+            "url": ["http://blog.lizardwrangler.com/"],
+            "org": [{
+                "value": "Mozilla Foundation",
+                "type": ["h-card", "h-org"],
+                "properties": {
+                    "name": ["Mozilla Foundation"],
+                    "url": ["http://mozilla.org/"]
+                }
+            }]
+        }
+    },{
+        "type": ["h-card"],
+        "properties": {
+            "name": ["Mozilla Foundation"],
+            "url": ["http://mozilla.org/"]
+        }
+    },{
+        "type": ["h-org"],
+        "properties": {
+            "name": ["Mozilla Foundation"]
+        }
+    }]
+}
 </code></pre>
 
         </section>  
@@ -395,36 +392,33 @@
 
             <h3>The expected JSON output:</h3>
 <pre class="p-x-output prettyprint"><code class="language-json">
-[
-    {
-        "items": [{ 
-            "type": ["h-card"],
-            "properties": {
-                "name": ["Mitchell Baker"],
-                "url": ["http://blog.lizardwrangler.com/"],
-                
-            },
-            "children": [{
-                "type": ["h-card", "h-org"],
-                "properties": {
-                    "name": ["Mozilla Foundation"],
-                    "url": ["http://mozilla.org/"]
-                }
-            }]
-        },{
-            "type": ["h-card"],
+{
+    "items": [{ 
+        "type": ["h-card"],
+        "properties": {
+            "name": ["Mitchell Baker"],
+            "url": ["http://blog.lizardwrangler.com/"]
+        },
+        "children": [{
+            "type": ["h-card", "h-org"],
             "properties": {
                 "name": ["Mozilla Foundation"],
                 "url": ["http://mozilla.org/"]
             }
-        },{
-            "type": ["h-org"],
-            "properties": {
-                "name": ["Mozilla Foundation"]
-            }
         }]
-    }
-]
+    },{
+        "type": ["h-card"],
+        "properties": {
+            "name": ["Mozilla Foundation"],
+            "url": ["http://mozilla.org/"]
+        }
+    },{
+        "type": ["h-org"],
+        "properties": {
+            "name": ["Mozilla Foundation"]
+        }
+    }]
+}
 </code></pre>
 
         </section>  
