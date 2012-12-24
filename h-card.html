@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/css/testsuite.css">
     <link rel="stylesheet" href="/css/prettify.css">
 
-    <script src="javascript/prettify.js"></script>
-    <script src="javascript/testsuite.js"></script>
+    <script src="/javascript/prettify.js"></script>
+    <script src="/javascript/testsuite.js"></script>
    
 </head>
 <body class="h-x-test-suite">
@@ -51,23 +51,6 @@
 }
 </code></pre>
 
-            <h3>Assertions for integration tests:</h3>
-            <table cellpadding="0" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Test</th>
-                        <th>Result</th>
-                        <th>Comment</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">name[0]</td>
-                        <td class="p-x-result">IsEqualTo('Frances Berriman')</td>
-                        <td class="p-summary">The name of the h-card</td>
-                    </tr>
-                </tbody>
-            </table>
         </section> 
 
 
@@ -97,28 +80,6 @@
 }
 </code></pre>
 
-            <h3>Assertions for integration tests:</h3>
-            <table cellpadding="0" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Test</th>
-                        <th>Result</th>
-                        <th>Comment</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">name[0]</td>
-                        <td class="p-x-result">IsEqualTo('Ben Ward')</td>
-                        <td class="p-summary">The name of the h-card</td>
-                    </tr>
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">url[0]</td>
-                        <td class="p-x-result">IsEqualTo('http://benward.me/')</td>
-                        <td class="p-summary">The url of the h-card</td>
-                    </tr>
-                </tbody>
-            </table>
         </section> 
 
 
@@ -152,33 +113,6 @@
 }
 </code></pre>
 
-            <h3>Assertions for integration tests:</h3>
-            <table cellpadding="0" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Test</th>
-                        <th>Result</th>
-                        <th>Comment</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">name[0]</td>
-                        <td class="p-x-result">IsEqualTo('Rohit Khare')</td>
-                        <td class="p-summary">The name of the h-card</td>
-                    </tr>
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">photo[0]</td>
-                        <td class="p-x-result">IsEqualTo('https://twimg0-a.akamaihd.net/profile_images/53307499/180px-Rohit-sq.jpg')</td>
-                        <td class="p-summary">The photo of the h-card</td>
-                    </tr>
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">url[0]</td>
-                        <td class="p-x-result">IsEqualTo('http://rohit.khare.org/')</td>
-                        <td class="p-summary">The url of the h-card</td>
-                    </tr>
-                </tbody>
-            </table>
         </section> 
 
         
@@ -211,61 +145,15 @@
         "type": ["h-card"],
         "properties": {
             "photo": ["http://blog.mozilla.org/press/files/2012/04/mitchell-baker.jpg"],
-            "url": ["http://blog.lizardwrangler.com/", "https://twitter.com/MitchellBaker"]
+            "url": ["http://blog.lizardwrangler.com/", "https://twitter.com/MitchellBaker"],
             "name": ["Mitchell Baker"],
             "org": ["Mozilla Foundation"],
             "note": ["Mitchell is responsible for setting the direction and scope of the Mozilla Foundation and its activities."],
-            "category": ["Strategy", "Leadership"],
+            "category": ["Strategy", "Leadership"]
         }
     }]
 }
 </code></pre>
-
-            <h3>Assertions for integration tests:</h3>
-            <table cellpadding="0" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Test</th>
-                        <th>Result</th>
-                        <th>Comment</th>
-                    </tr>
-                </thead>
-                <tbody>                    
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">category[1]</td>
-                        <td class="p-x-result">IsEqualTo('Leadership')</td>
-                        <td class="p-summary">The secong category of the h-card</td>
-                    </tr>
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">name[0]</td>
-                        <td class="p-x-result">IsEqualTo('Mitchell Baker')</td>
-                        <td class="p-summary">The name of the h-card</td>
-                    </tr>   
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">note[0]</td>
-                        <td class="p-x-result">IsEqualTo('Mitchell is responsible for setting the direction and scope of the Mozilla Foundation and its activities.')</td>
-                        <td class="p-summary">The note of the h-card</td>
-                    </tr>                 
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">org[0]</td>
-                        <td class="p-x-result">IsEqualTo('Mozilla Foundation')</td>
-                        <td class="p-summary">The org of the h-card</td>
-                    </tr>
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">photo[0]</td>
-                        <td class="p-x-result">IsEqualTo('http://blog.mozilla.org/press/files/2012/04/mitchell-baker.jpg')</td>
-                        <td class="p-summary">The photo of the h-card</td>
-                    </tr>
-                    <tr class="p-x-assert h-x-assert">
-                        <td class="p-x-test">url[1]</td>
-                        <td class="p-x-result">IsEqualTo('https://twitter.com/MitchellBaker')</td>
-                        <td class="p-summary">The second url of the h-card</td>
-                    </tr>
-
-
-                </tbody>
-            </table>
-
 
         </section>    
   
