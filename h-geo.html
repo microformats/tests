@@ -22,9 +22,10 @@
         <ul>
             <li><a href="#simple">Simple Geo</a></li>
             <li><a href="#simpleproperties">Visualable Properties Geo</a></li>
-            <li><a href="#valueclass">Value Class Pattern</a></li>
-            <li><a href="#valuetitleclass">Value-title Class Pattern</a></li>
-            <li><a href="#abbrpattern">The Old &lt;abbr&gt; Tag Pattern</a></li>
+            <li><a href="#altitude">Geo With a Altitude Property</a></li>
+            <li><a href="#valuetitleclass">Value-Title Class Pattern</a></li>
+            <li><a href="#hidden">Hidden Value-Title Properties Geo</a></li>
+            <li><a href="#abbrpattern">The &lt;abbr&gt; Tag Pattern</a></li>
         </ul>
 
 
@@ -36,7 +37,7 @@
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
 <p>On my way to The Bricklayer's Arms
-  (Geo: <span class="h-geo">51.513458;-0.14812</span>)
+    (Geo: <span class="h-geo">51.513458;-0.14812</span>)
 </p>
 </div>
 
@@ -47,8 +48,7 @@
     "items": [{ 
         "type": ["h-geo"],
         "properties": {
-            "latitude": ["51.513458"],
-            "longitude": ["-0.14812"]
+            "name": ["51.513458;-0.14812"]
         }
     }]
 }
@@ -64,8 +64,10 @@
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<p class="h-geo">We are meeting at The Bricklayer's Arms
-  (Geo: <span class="p-latitude">51.513458</span>:<span class="p-longitude">-0.14812</span>)
+<p class="h-geo">We are meeting at 
+    <span class="p-name">The Bricklayer's Arms</span>
+    (Geo: <span class="p-latitude">51.513458</span>:
+    <span class="p-longitude">-0.14812</span>)
 </p>
 </div>
 
@@ -76,6 +78,7 @@
     "items": [{ 
         "type": ["h-geo"],
         "properties": {
+            "name": ["The Bricklayer's Arms"],
             "latitude": ["51.513458"],
             "longitude": ["-0.14812"]
         }
@@ -91,14 +94,16 @@
 
         <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="valueclass">Value Class Pattern</a> (<span class="p-format">h-geo</span> parsing test)</h1>
+            <h1 class="p-name"><a name="altitude">Geo With a Altitude Property</a> (<span class="p-format">h-geo</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<p>I'm loitering outside The Bricklayer's Arms
-  <span class="h-geo">
-    51° 30' 48.45", -0° 8' 53.23"
-    (<span class="value">51.513458;-0.14812</span>)
+<p>My favourite hill in the lakes is 
+    <span class="h-geo">
+        <span class="p-name">Pen-y-ghent</span> 
+        (Geo: <span class="p-latitude">54.155278</span>,
+        <span class="p-longitude">-2.249722</span>). It
+        raises to <span class="p-altitude">694</span>m.
   </span>
 </p>
 </div>
@@ -110,8 +115,10 @@
     "items": [{ 
         "type": ["h-geo"],
         "properties": {
-            "latitude": ["51.513458"],
-            "longitude": ["-0.14812"]
+            "name": ["Pen-y-ghent"],
+            "latitude": ["54.155278"],
+            "longitude": ["-2.249722"],
+            "altitude": ["694"]
         }
     }]
 }
@@ -124,20 +131,20 @@
 
        <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="valuetitleclass">Value-title Class Pattern</a> (<span class="p-format">h-geo</span> parsing test)</h1>
+            <h1 class="p-name"><a name="valuetitleclass">Value-Title Class Pattern</a> (<span class="p-format">h-geo</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<span class="h-geo">
-  We met at  
- <span class="p-latitude">
-  <span class="value-title" title="51.513458"> </span>
- </span>
- <span class="p-longitude">
-  <span class="value-title" title="-0.14812"> </span>
- </span>
- The Bricklayer's Arms
-</span>
+<p>
+    <span class="h-geo">
+        <span class="p-latitude">
+            <span class="value-title" title="51.513458">N 51° 51.345</span>, 
+        </span>
+        <span class="p-longitude">
+            <span class="value-title" title="-0.14812">W -0° 14.812</span>
+        </span>
+    </span>
+</p>
 </div>
 
 
@@ -148,7 +155,45 @@
         "type": ["h-geo"],
         "properties": {
             "latitude": ["51.513458"],
-            "longitude": ["-0.14812"]
+            "longitude": ["-0.14812"],
+            "name": ["N 51° 51.345, W -0° 14.812"]
+        }
+    }]
+}
+</code></pre>
+
+
+        </section>
+
+
+       <!-- a test -->
+        <section class="p-x-test-fixture h-x-test-fixture">
+            <h1 class="p-name"><a name="hidden">Hidden Value-Title Properties Geo</a> (<span class="p-format">h-geo</span> parsing test)</h1>
+
+<!-- microformats example we are going to test -->
+<div class="e-x-microformat">
+<p>
+    <span class="h-geo">The Bricklayer's Arms
+        <span class="p-latitude">
+            <span class="value-title" title="51.513458"> </span> 
+        </span>
+        <span class="p-longitude">
+            <span class="value-title" title="-0.14812"> </span>
+        </span>
+    </span>
+</p>
+</div>
+
+
+            <h3>The expected JSON output:</h3>
+<pre class="p-x-output prettyprint"><code class="language-json">
+{
+    "items": [{ 
+        "type": ["h-geo"],
+        "properties": {
+            "latitude": ["51.513458"],
+            "longitude": ["-0.14812"],
+            "name": ["The Bricklayer's Arms"]
         }
     }]
 }
@@ -160,14 +205,14 @@
 
                  <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="abbrpattern">The Old &lt;abbr&gt; Tag Pattern</a> (<span class="p-format">h-geo</span> parsing test)</h1>
+            <h1 class="p-name"><a name="abbrpattern">The &lt;abbr&gt; Tag Pattern</a> (<span class="p-format">h-geo</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<div class="geo">
- <abbr class="p-latitude" title="37.408183">N 37° 24.491</abbr> 
+<p class="h-geo">
+ <abbr class="p-latitude" title="37.408183">N 37° 24.491</abbr>,  
  <abbr class="p-longitude" title="-122.13855">W 122° 08.313</abbr>
-</div>
+</p>
 </div>
 
 
@@ -178,7 +223,8 @@
         "type": ["h-geo"],
         "properties": {
             "latitude": ["37.408183"],
-            "longitude": ["-122.13855"]
+            "longitude": ["-122.13855"],
+            "name": ["N 37° 24.491, W 122° 08.313"]
         }
     }]
 }
@@ -192,7 +238,10 @@
     
 
     <h2>Change log:</h2>
-    <ul>     
+    <ul>
+        <li class="p-x-history h-entry">
+            <span class="p-name">Change to follow implied name property rule</span>: <time class="dt-published" datetime="2012-12-27">27 December 2012</time> &ndash; <span class="p-summary">Changed all the test so that they followed the implied name property rule &ndash; </span> by <span class="p-author">Glenn Jones</span>
+        </li>      
         <li class="p-x-history h-entry">
             <span class="p-name">Created</span>: <time class="dt-published" datetime="2012-12-24">24 December 2012</time> 
             by <span class="p-author">Glenn Jones</span>
