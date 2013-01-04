@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Mocha</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" href="framework/mocha.css" />
+    <script src="framework/mocha.js"></script>
+    <script src="framework/chai.js"></script>
+    <script src="microformat-node-helper.js"></script>
+    
+    <script>mocha.setup('bdd')</script>
+    <script src="h-adr-test.js"></script>
+    <script src="h-card-test.js"></script>
+    <script src="h-entry-test.js"></script>
+    <script src="h-event-test.js"></script>
+    <script src="h-geo-test.js"></script>
+    <script src="h-org-test.js"></script>
+    <script src="h-resume-test.js"></script>
+    
+    <script>
+      onload = function(){
+        mocha.run();
+      };
+    </script>
+  
+  </head>
+  <body>
+    <h3>microformat-node - version 2 microformats test</h3>
+    <div id="mocha"></div>
+  </body>
+</html>
