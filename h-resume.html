@@ -62,13 +62,13 @@
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
 <div class="h-resume">
-    <p class="name">Tim Berners-Lee</p>
-    <p class="summary">Invented the World Wide Web.</p><hr>
+    <p class="p-name">Tim Berners-Lee</p>
+    <p class="p-summary">Invented the World Wide Web.</p><hr>
     <div class="p-contact h-card">
         <p class="p-name">MIT</p>
         <p>
             <span class="p-street-address">32 Vassar Street</span>, 
-            <span class="p-additional-address">Room 32-G524</span>, 
+            <span class="p-extended-address">Room 32-G524</span>, 
             <span class="p-locality">Cambridge</span>,  
             <span class="p-region">MA</span> 
             <span class="p-postal-code">02139</span>, 
@@ -100,7 +100,7 @@
                     "postal-code": ["02139"], 
                     "country-name": ["USA"],
                     "tel": ["+1 (617) 253 5702"],
-                    "email": ["timbl@w3.org"]
+                    "email": ["mailto:timbl@w3.org"]
                 }
             }]
         }
@@ -131,11 +131,11 @@
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
 <div class="h-resume">
-    <p class="name">Tim Berners-Lee</p>
+    <p class="p-name">Tim Berners-Lee</p>
     <div class="p-contact h-card">
         <p class="p-title">Director of the World Wide Web Foundation</p>
     </div>
-    <p class="summary">Invented the World Wide Web.</p><hr>
+    <p class="p-summary">Invented the World Wide Web.</p><hr>
     <div class="p-experience h-event h-card">
         <p class="p-title">Director</p>
         <p><a class="p-name p-org u-url" href="http://www.webfoundation.org/">World Wide Web Foundation</a></p>
@@ -165,7 +165,7 @@
             }],
             "experience": [{
                 "value": "Director World Wide Web Foundation Jan 2009 - Present (2 years 11 month)",
-                "type": ["h-event h-card"],
+                "type": ["h-event", "h-card"],
                 "properties": {
                     "name": ["World Wide Web Foundation"],
                     "org": ["World Wide Web Foundation"],
@@ -213,11 +213,11 @@
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
 <div class="h-resume">
-    <p class="name">Tim Berners-Lee</p>
+    <p class="p-name">Tim Berners-Lee</p>
     <div class="p-contact h-card">
         <p class="p-title">Director of the World Wide Web Foundation</p>
     </div>
-    <p class="summary">Invented the World Wide Web.</p><hr>
+    <p class="p-summary">Invented the World Wide Web.</p><hr>
     <p class="p-education h-event h-card">
         <span class="p-name p-org">The Queen's College, Oxford University</span>, 
         <span class="p-description">BA Hons (I) Physics</span> 
@@ -245,7 +245,7 @@
             }],
             "education": [{
                 "value": "The Queen's College, Oxford University, BA Hons (I) Physics 1973 - 1976",
-                "type": ["h-event h-card"],
+                "type": ["h-event", "h-card"],
                 "properties": {
                     "name": ["The Queen's College, Oxford University"],
                     "org": ["The Queen's College, Oxford University"],
@@ -315,7 +315,7 @@
         "properties": {
             "name": ["Tim Berners-Lee"],
             "summary": ["invented the World Wide Web"],
-            "skills": ["information systems", "advocacy", "leadership"]
+            "skill": ["information systems", "advocacy", "leadership"]
         }
     }]
 }
@@ -339,11 +339,9 @@
     </p> 
     Belongs to following groups:
     <p>   
-        <span class="p-affiliation h-card">
-            <a class="u-url" href="http://www.w3.org/" >
-                <img class="p-name p-org u-photo" title="W3C" src="http://www.w3.org/Icons/WWW/w3c_home_nb.png" />
-            </a>
-        <span>
+        <a class="p-affiliation h-card" href="http://www.w3.org/" >
+            <img class="p-name u-photo" alt="W3C" src="http://www.w3.org/Icons/WWW/w3c_home_nb.png" />
+        </a>
     </p>   
 </div>
 </div>
@@ -361,20 +359,18 @@
                 "value": "",
                 "type": ["h-card"],
                 "properties": {
-                    "url": ["http://www.w3.org/"],
                     "name": ["W3C"],
-                    "org": ["W3C"],
-                    "photo": ["http://www.w3.org/Icons/WWW/w3c_home_nb.png"]
+                    "photo": ["http://www.w3.org/Icons/WWW/w3c_home_nb.png"],
+                    "url": ["http://www.w3.org/"]
                 }
             }]
         }
     },{
         "type": ["h-card"],
         "properties": {
-            "url": ["http://www.w3.org/"],
             "name": ["W3C"],
-            "org": ["W3C"],
-            "photo": ["http://www.w3.org/Icons/WWW/w3c_home_nb.png"]
+            "photo": ["http://www.w3.org/Icons/WWW/w3c_home_nb.png"],
+            "url": ["http://www.w3.org/"]
         }
     }]
 }
@@ -397,18 +393,18 @@
     Experience and skills:     
     <ul>
         <li class="p-skill h-competency">
-            <span class="p-name">information systems<span> (
-                <span class="p-rate">5<span>/5  &ndash;  
+            <span class="p-name">information systems</span> (
+                <span class="p-rate">5</span>/5  &ndash;  
                 <time class="dt-duration" datetime="PY37">37 years</time>
         )</li>
         <li class="p-skill h-competency">
-            <span class="p-name">advocacy<span> (
-                <span class="p-rate">4<span>/5  &ndash; 
+            <span class="p-name">advocacy</span> (
+                <span class="p-rate">4</span>/5  &ndash; 
                 <time class="dt-duration" datetime="PY22">22 years</time>
         )</li>
         <li class="p-skill h-competency">
-            <span class="p-name">leadership<span> (
-                <span class="p-rate">5<span>/5  &ndash; 
+            <span class="p-name">leadership</span> (
+                <span class="p-rate">5</span>/5  &ndash; 
                 <time class="dt-duration" datetime="PY22">22 years</time>
         )</li>
     <ul>   
@@ -424,7 +420,7 @@
         "properties": {
             "name": ["Tim Berners-Lee"],
             "summary": ["invented the World Wide Web"],
-            "skills": [{
+            "skill": [{
                 "value": "information systems ( 5/5 – 37 years )",
                 "type": ["h-competency"],
                 "properties": {
