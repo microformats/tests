@@ -1,6 +1,6 @@
 /*
 Mocha integration test from: h-card.html
-The test was built on Fri Jan 04 2013 14:24:02 GMT+0000 (GMT)
+The test was built on Tue Jan 08 2013 15:47:00 GMT+0000 (GMT)
 */
 
 var assert = chai.assert;
@@ -213,6 +213,52 @@ describe('Additional nested microformats (h-card parsing test)', function() {
 
    it("found.items[0].properties['url'][0]", function(){
       assert.equal(found.items[0].properties["url"][0].toString(), "http://blog.lizardwrangler.com/");
+   })
+
+})
+
+
+
+
+describe('p-property (h-card parsing test)', function() {
+   var htmlFragment = "\n<div class=\"h-card\">\n    <!-- innerText and value pattern -->\n    <span class=\"p-name\">\n        <span class=\"p-given-name value\">John</span> \n        <abbr class=\"p-additional-name\" title=\"Peter\">P</abbr>  \n        <span class=\"p-family-name value \">Doe</span> \n    </span>\n    <data class=\"p-honorific-suffix\" value=\"MSc\"></data>\n    \n    <!-- theses should return no value -->\n    <br class=\"p-honorific-suffix\">BSc<br>\n    <hr class=\"p-honorific-suffix\">BA\n    \n    <!-- image and area tags -->\n    <img class=\"p-honorific-suffix\" src=\"images/logo.gif\" alt=\"PHD\">\n    <img src=\"images/logo.gif\" alt=\"company logos\" usemap=\"#logomap\">\n    <map name=\"logomap\">\n        <area class=\"p-org\" shape=\"rect\" coords=\"0,0,82,126\" href=\"madgex.htm\" alt=\"Madgex\">\n        <area class=\"p-org\" shape=\"circle\" coords=\"90,58,3\" href=\"mozilla.htm\" alt=\"Mozilla\">\n    </map>\n</div>\n"
+   var found = helper.parseHTML(htmlFragment,'http://example.com/')
+   var expected = {"items":[{"type":["h-card"],"properties":{"name":["John Doe"],"given-name":["John"],"additional-name":["Peter"],"family-name":["Doe"],"honorific-suffix":["MSc","PHD"],"org":["Madgex","Mozilla"]}}]}
+
+   it("found.items[0].type[0]", function(){
+      assert.equal(found.items[0].type[0].toString(), "h-card");
+   })
+
+   it("found.items[0].properties['name'][0]", function(){
+      assert.equal(found.items[0].properties["name"][0].toString(), "John Doe");
+   })
+
+   it("found.items[0].properties['given-name'][0]", function(){
+      assert.equal(found.items[0].properties["given-name"][0].toString(), "John");
+   })
+
+   it("found.items[0].properties['additional-name'][0]", function(){
+      assert.equal(found.items[0].properties["additional-name"][0].toString(), "Peter");
+   })
+
+   it("found.items[0].properties['family-name'][0]", function(){
+      assert.equal(found.items[0].properties["family-name"][0].toString(), "Doe");
+   })
+
+   it("found.items[0].properties['honorific-suffix'][0]", function(){
+      assert.equal(found.items[0].properties["honorific-suffix"][0].toString(), "MSc");
+   })
+
+   it("found.items[0].properties['honorific-suffix'][1]", function(){
+      assert.equal(found.items[0].properties["honorific-suffix"][1].toString(), "PHD");
+   })
+
+   it("found.items[0].properties['org'][0]", function(){
+      assert.equal(found.items[0].properties["org"][0].toString(), "Madgex");
+   })
+
+   it("found.items[0].properties['org'][1]", function(){
+      assert.equal(found.items[0].properties["org"][1].toString(), "Mozilla");
    })
 
 })

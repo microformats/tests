@@ -16,12 +16,13 @@
         <h1 class="p-name">hcard parsing tests</h1>
         <p class="p-description">This page was design to test the parsing of hcard and its output to the newer JSON structure of micorformats 2. These tests are part of the micorformats 2 test suite.</p> 
 
-        <p class="p-description"><strong>Theses are backwards compatibility tests for the older version 1 microformats specification. Please do not use this as a reference or guide to current microformat mark-up.</strong></p>  
+        <p class="p-description"><strong>Theses are backwards compatibility tests for the older version 1 microformats specification. Please do not use this as a reference for authoring microformats.</strong></p>  
 
 
         <ul>
             <li><a href="#justaname">Just a name</a></li>
             <li><a href="#justahyperlink">Just a hyperlink</a></li>
+            <li><a href="#hyperlinkedphoto">Hyperlinked photo</a></li>
             <li><a href="#name">Name properties</a></li>
             <li><a href="#format">Class attribute format</a></li>
             <li><a href="#email">Email parsing</a></li>
@@ -83,6 +84,34 @@
 
         </section> 
 
+
+        <!-- a test -->
+        <section class="p-x-test-fixture h-x-test-fixture">
+            <h1 class="p-name"><a name="hyperlinkedphoto">A hyperlinked photo</a> (<span class="p-format">hcard</span> parsing test)</h1>
+
+<!-- microformats example we are going to test -->
+<div class="e-x-microformat">
+    <a class="vcard" href="http://rohit.khare.org/">
+   <img alt="Rohit Khare" src="https://twimg0-a.akamaihd.net/profile_images/53307499/180px-Rohit-sq.jpg" />
+</a>
+</div>
+
+
+            <h3>The expected JSON output:</h3>
+<pre class="p-x-output prettyprint"><code class="language-json">
+{
+    "items": [{
+        "type": ["h-card"],
+        "properties": {
+            "name": ["Rohit Khare"],
+            "photo": ["https://twimg0-a.akamaihd.net/profile_images/53307499/180px-Rohit-sq.jpg"],
+            "url": ["http://rohit.khare.org/"]
+        }
+    }]
+}
+</code></pre>
+
+        </section> 
 
 
 
@@ -172,7 +201,7 @@
         <li>
             <span class="email">
                 <span class="type">internet</span> 
-                <a class="value" href="mailto:notthis@example.com">john@example.com</a>
+                <a class="value" href="mailto:john@example.com">notthis@example.com</a>
             </span>
         </li> 
         <li><a class="email" href="mailto:john@example.com?subject=parser-test">notthis@example.com</a></li>
@@ -191,7 +220,7 @@
             "name": ["John Doe"],
             "email": [
                 "mailto:john@example.com", 
-                "john@example.com",
+                "mailto:john@example.com",
                 "mailto:john@example.com?subject=parser-test",
                 "john@example.com"
             ]
@@ -199,7 +228,7 @@
     }]
 }
 </code></pre>
-
+<p>Note: The second example (value pattern) parses differently to a V1 parser</P>
         </section>
 
 
@@ -220,7 +249,7 @@
         <div>Time zone: <abbr class="tz" title="-05:00">Eastern Standard Time</abbr></div>
         
         <div>Profile details:
-            <div>Profile id: <span class="uid">/profiles/johndoe</span></div>
+            <div>Profile id: <span class="uid">http://example.com/profiles/johndoe</span></div>
             <div>Details are: <span class="class">Public</span></div>
             <div>Last updated: <abbr class="rev" title="2008-01-01T13:45:00">January 1st, 2008 - 13:45</abbr></div>
         </div>
@@ -237,7 +266,7 @@
             "name": ["John Doe"],
             "given-name": ["John"],
             "sort-string": ["John"],
-            "bday": ["2000-01-01T00:00:00-08:00"],
+            "bday": ["2000-01-01T00:00:00-0800"],
             "role": ["Designer"],
             "geo": [{
                 "value": "Brighton",
@@ -338,7 +367,7 @@
         </li>
     </ul>
     
-    <p>In emergency contact: <span class="agent">Jane Doe</span> or <span class="agent">Dave Doe</span>.</p>
+    <p>In emergency contact: <span class="agent">Jane Doe</span> or <span class="agent vcard">Dave Doe</span>.</p>
     <p>Key: <span class="key">hd02$Gfu*d%dh87KTa2=23934532479</span></p>
 </div>
 </div>
@@ -385,13 +414,8 @@
                 }
             }],
             "label": ["Work: North Street, Brighton, United Kingdom", "Home: West Street, Brighton, United Kingdom"],
-            "agent": [{
-                "value": "Jane Doe",
-                "type": ["h-card"],
-                "properties": {
-                    "name": ["Jane Doe"]
-                }
-            },{
+            "agent": ["Jane Doe",
+            {
                 "value": "Dave Doe",
                 "type": ["h-card"],
                 "properties": {

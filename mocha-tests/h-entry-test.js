@@ -1,6 +1,6 @@
 /*
 Mocha integration test from: h-entry.html
-The test was built on Fri Jan 04 2013 14:24:02 GMT+0000 (GMT)
+The test was built on Tue Jan 08 2013 15:47:00 GMT+0000 (GMT)
 */
 
 var assert = chai.assert;
@@ -89,6 +89,60 @@ describe('Entry with summary and content (h-entry parsing test)', function() {
 
    it("found.items[0].properties['author'][0].properties['url'][0]", function(){
       assert.equal(found.items[0].properties["author"][0].properties["url"][0].toString(), "http://tantek.com/");
+   })
+
+})
+
+
+
+
+describe('u-property (h-entry parsing test)', function() {
+   var htmlFragment = "\n<div class=\"h-entry\">\n    <p class=\"p-name\">microformats.org at 7</p>\n\n    <!-- value and value-title patterns -->\n    <p class=\"u-url\">\n      <span class=\"value-title\" title=\"http://microformats.org/\"> </span>\n      Article permalink\n    </p>\n    <p class=\"u-url\">\n        <span class=\"value\">http://microformats.org/</span> - \n        <span class=\"value\">2012/06/25/microformats-org-at-7</span> \n    </p> \n\n    <p><a class=\"u-url\" href=\"http://microformats.org/2012/06/25/microformats-org-at-7\">Article permalink</a></p>\n\n    <img src=\"images/logo.gif\" alt=\"company logos\" usemap=\"#logomap\">\n    <map name=\"logomap\">\n        <area class=\"u-url\" shape=\"rect\" coords=\"0,0,82,126\" href=\"http://microformats.org/\" alt=\"microformats.org\">\n    </map>\n\n    <img class=\"u-photo\" src=\"images/logo.gif\" alt=\"company logos\">\n\n    <object class=\"u-url\" data=\"http://microformats.org/wiki/microformats2-parsing\"></object>\n\n    <abbr class=\"u-url\" title=\"http://microformats.org/wiki/value-class-pattern\">value-class-pattern</abbr> \n    <data class=\"u-url\" value=\"http://microformats.org/wiki/\"></data>\n    <p class=\"u-url\">http://microformats.org/discuss</p>\n</div>\n"
+   var found = helper.parseHTML(htmlFragment,'http://example.com/')
+   var expected = {"items":[{"type":["h-entry"],"properties":{"name":["microformats.org at 7"],"url":["http://microformats.org/","http://microformats.org/2012/06/25/microformats-org-at-7","http://microformats.org/2012/06/25/microformats-org-at-7","http://microformats.org/","http://microformats.org/wiki/microformats2-parsing","http://microformats.org/wiki/value-class-pattern","http://microformats.org/wiki/","http://microformats.org/discuss"],"photo":["http://example.com/images/logo.gif"]}}]}
+
+   it("found.items[0].type[0]", function(){
+      assert.equal(found.items[0].type[0].toString(), "h-entry");
+   })
+
+   it("found.items[0].properties['name'][0]", function(){
+      assert.equal(found.items[0].properties["name"][0].toString(), "microformats.org at 7");
+   })
+
+   it("found.items[0].properties['url'][0]", function(){
+      assert.equal(found.items[0].properties["url"][0].toString(), "http://microformats.org/");
+   })
+
+   it("found.items[0].properties['url'][1]", function(){
+      assert.equal(found.items[0].properties["url"][1].toString(), "http://microformats.org/2012/06/25/microformats-org-at-7");
+   })
+
+   it("found.items[0].properties['url'][2]", function(){
+      assert.equal(found.items[0].properties["url"][2].toString(), "http://microformats.org/2012/06/25/microformats-org-at-7");
+   })
+
+   it("found.items[0].properties['url'][3]", function(){
+      assert.equal(found.items[0].properties["url"][3].toString(), "http://microformats.org/");
+   })
+
+   it("found.items[0].properties['url'][4]", function(){
+      assert.equal(found.items[0].properties["url"][4].toString(), "http://microformats.org/wiki/microformats2-parsing");
+   })
+
+   it("found.items[0].properties['url'][5]", function(){
+      assert.equal(found.items[0].properties["url"][5].toString(), "http://microformats.org/wiki/value-class-pattern");
+   })
+
+   it("found.items[0].properties['url'][6]", function(){
+      assert.equal(found.items[0].properties["url"][6].toString(), "http://microformats.org/wiki/");
+   })
+
+   it("found.items[0].properties['url'][7]", function(){
+      assert.equal(found.items[0].properties["url"][7].toString(), "http://microformats.org/discuss");
+   })
+
+   it("found.items[0].properties['photo'][0]", function(){
+      assert.equal(found.items[0].properties["photo"][0].toString(), "http://example.com/images/logo.gif");
    })
 
 })

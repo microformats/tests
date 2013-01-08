@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>h-geo parsing tests</title>
+    <title>geo parsing backwards compatibility tests</title>
 
     <link rel="stylesheet" href="/css/testsuite.css">
     <link rel="stylesheet" href="/css/prettify.css">
@@ -13,30 +13,29 @@
 </head>
 <body class="h-x-test-suite">
         
+        <h1 class="p-name">geo parsing tests</h1>
+        <p class="p-description">This page was design to test the parsing of geo and its output to the newer JSON structure of micorformats 2. These tests are part of the micorformats 2 test suite.</p> 
 
-
-        <h1 class="p-name">h-geo parsing tests</h1>
-        <p class="p-description">This page was design to test the parsing of h-geo. These tests are part of the micorformats 2 test suite.</p> 
+        <p class="p-description"><strong>Theses are backwards compatibility tests for the older version 1 microformats specification. Please do not use this as a reference for authoring microformats.</strong></p>  
 
 
         <ul>
             <li><a href="#justaname">Just a name</a></li>
             <li><a href="#simpleproperties">Broken into properties</a></li>
-            <li><a href="#altitude">Geo with a altitude property</a></li>
             <li><a href="#valuetitleclass">Value-title class pattern</a></li>
             <li><a href="#hidden">Hidden value-title pattern</a></li>
             <li><a href="#abbrpattern">The &lt;abbr&gt; tag pattern</a></li>
         </ul>
 
 
-         <!-- a test -->
+ <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="justaname">Just a name</a> (<span class="p-format">h-geo</span> parsing test)</h1>
+            <h1 class="p-name"><a name="justaname">Just a name</a> (<span class="p-format">geo</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
 <p>On my way to The Bricklayer's Arms
-    (Geo: <span class="h-geo">51.513458;-0.14812</span>)
+    (Geo: <span class="geo">51.513458;-0.14812</span>)
 </p>
 </div>
 
@@ -44,7 +43,7 @@
             <h3>The expected JSON output:</h3>
 <pre class="p-x-output prettyprint"><code class="language-json">
 {
-    "items": [{ 
+    "items": [{
         "type": ["h-geo"],
         "properties": {
             "name": ["51.513458;-0.14812"]
@@ -53,21 +52,22 @@
 }
 </code></pre>
 
-        </section>
+        </section> 
 
 
 
          <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="simpleproperties">Broken into properties</a> (<span class="p-format">h-geo</span> parsing test)</h1>
+            <h1 class="p-name"><a name="simpleproperties">Broken into properties</a> (<span class="p-format">geo</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<p class="h-geo">We are meeting at 
-    <span class="p-name">The Bricklayer's Arms</span>
+We are meeting at 
+<span class="geo"> 
+    <span>The Bricklayer's Arms</span>
     (Geo: <span class="p-latitude">51.513458</span>:
     <span class="p-longitude">-0.14812</span>)
-</p>
+</span>
 </div>
 
 
@@ -77,9 +77,9 @@
     "items": [{ 
         "type": ["h-geo"],
         "properties": {
-            "name": ["The Bricklayer's Arms"],
             "latitude": ["51.513458"],
-            "longitude": ["-0.14812"]
+            "longitude": ["-0.14812"],
+            "name": ["The Bricklayer's Arms (Geo: 51.513458: -0.14812)"]
         }
     }]
 }
@@ -87,59 +87,20 @@
 
 
         </section>
-
-
-
-
-        <!-- a test -->
-        <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="altitude">Geo with a altitude property</a> (<span class="p-format">h-geo</span> parsing test)</h1>
-
-<!-- microformats example we are going to test -->
-<div class="e-x-microformat">
-<p>My favourite hill in the lakes is 
-    <span class="h-geo">
-        <span class="p-name">Pen-y-ghent</span> 
-        (Geo: <span class="p-latitude">54.155278</span>,
-        <span class="p-longitude">-2.249722</span>). It
-        raises to <span class="p-altitude">694</span>m.
-  </span>
-</p>
-</div>
-
-
-            <h3>The expected JSON output:</h3>
-<pre class="p-x-output prettyprint"><code class="language-json">
-{
-    "items": [{ 
-        "type": ["h-geo"],
-        "properties": {
-            "name": ["Pen-y-ghent"],
-            "latitude": ["54.155278"],
-            "longitude": ["-2.249722"],
-            "altitude": ["694"]
-        }
-    }]
-}
-</code></pre>
-
-
-        </section>
-
 
 
        <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="valuetitleclass">Value-title class pattern</a> (<span class="p-format">h-geo</span> parsing test)</h1>
+            <h1 class="p-name"><a name="valuetitleclass">Value-title class pattern</a> (<span class="p-format">geo</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
 <p>
-    <span class="h-geo">
-        <span class="p-latitude">
+    <span class="geo">
+        <span class="latitude">
             <span class="value-title" title="51.513458">N 51° 51.345</span>, 
         </span>
-        <span class="p-longitude">
+        <span class="longitude">
             <span class="value-title" title="-0.14812">W -0° 14.812</span>
         </span>
     </span>
@@ -167,16 +128,16 @@
 
        <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="hidden">The &lt;abbr&gt; tag pattern</a> (<span class="p-format">h-geo</span> parsing test)</h1>
+            <h1 class="p-name"><a name="hidden">Hidden value-title pattern</a> (<span class="p-format">geo</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
 <p>
-    <span class="h-geo">The Bricklayer's Arms
-        <span class="p-latitude">
+    <span class="geo">The Bricklayer's Arms
+        <span class="latitude">
             <span class="value-title" title="51.513458"> </span> 
         </span>
-        <span class="p-longitude">
+        <span class="longitude">
             <span class="value-title" title="-0.14812"> </span>
         </span>
     </span>
@@ -204,13 +165,13 @@
 
                  <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="abbrpattern">The &lt;abbr&gt; Tag Pattern</a> (<span class="p-format">h-geo</span> parsing test)</h1>
+            <h1 class="p-name"><a name="abbrpattern">The &lt;abbr&gt; tag pattern</a> (<span class="p-format">geo</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<p class="h-geo">
- <abbr class="p-latitude" title="37.408183">N 37° 24.491</abbr>,  
- <abbr class="p-longitude" title="-122.13855">W 122° 08.313</abbr>
+<p class="geo">
+ <abbr class="latitude" title="37.408183">N 37° 24.491</abbr>,  
+ <abbr class="longitude" title="-122.13855">W 122° 08.313</abbr>
 </p>
 </div>
 
@@ -234,21 +195,26 @@
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
 
     <h2>Change log:</h2>
     <ul>
         <li class="p-x-history h-entry">
-            <span class="p-name">Change to follow implied name property rule</span>: <time class="dt-published" datetime="2012-12-27">27 December 2012</time> &ndash; <span class="p-summary">Changed all the test so that they followed the implied name property rule</span> &ndash; by <span class="p-author">Glenn Jones</span>
-        </li>      
-        <li class="p-x-history h-entry">
-            <span class="p-name">Created</span>: <time class="dt-published" datetime="2012-12-24">24 December 2012</time> 
-            by <span class="p-author">Glenn Jones</span>
+            <span class="p-name">Copied from version 1 test suite</span>: <time class="dt-published" datetime="2013-01-07">7 January 2013</time> by <span class="p-author">Glenn Jones</span>
         </li>
     </ul>
 
 
-    <h2>Contributors :</h2>
+    <h2>Contributors:</h2>
     <ul>
         <li class="h-card">
             <a class="u-url p-name" rel="author" href="http://tantek.com/">Tantek Çelik</a> 
@@ -257,6 +223,19 @@
             <a class="u-url p-name" rel="author" href="http://www.glennjones.net/">Glenn Jones</a> 
         </li>
     </ul>
+    <p>The orginal test also had contributions from: </p>
+    <ul>
+        <li class="h-card">
+            <a class="u-url p-name" rel="author" href="http://mike.kaply.com/">Mike Kaply</a> 
+        </li>    
+        <li class="h-card">
+            <a class="u-url p-name" rel="author" href="http://tobyinkster.co.uk/">Toby Inkster</a> 
+        </li>
+        <li class="h-card">
+            <a class="u-url p-name" rel="author" href="http://georgebrock.com/">George Brocklehurst</a> 
+        </li>
+    </ul>
+
   
         
     <footer>

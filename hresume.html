@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>h-resume parsing tests</title>
+    <title>hresume parsing backwards compatibility tests</title>
 
     <link rel="stylesheet" href="/css/testsuite.css">
     <link rel="stylesheet" href="/css/prettify.css">
@@ -13,10 +13,10 @@
 </head>
 <body class="h-x-test-suite">
         
+        <h1 class="p-name">hresume parsing tests</h1>
+        <p class="p-description">This page was design to test the parsing of hresume and its output to the newer JSON structure of micorformats 2. These tests are part of the micorformats 2 test suite.</p> 
 
-
-        <h1 class="p-name">h-resume parsing tests</h1>
-        <p class="p-description">This page was design to test the parsing of h-resume. These tests are part of the micorformats 2 test suite.</p> 
+        <p class="p-description"><strong>Theses are backwards compatibility tests for the older version 1 microformats specification. Please do not use this as a reference for authoring microformats.</strong></p>  
 
 
         <ul>
@@ -30,7 +30,7 @@
         </ul>
 
 
-        <!-- a test -->
+ <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
             <h1 class="p-name"><a name="justaname">Just a name</a> (<span class="p-format">h-resume</span> parsing test)</h1>
 
@@ -61,22 +61,23 @@
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<div class="h-resume">
-    <p class="p-name">Tim Berners-Lee</p>
-    <p class="p-summary">Invented the World Wide Web.</p><hr>
-    <div class="p-contact h-card">
-        <p class="p-name">MIT</p>
-        <p>
-            <span class="p-street-address">32 Vassar Street</span>, 
-            <span class="p-extended-address">Room 32-G524</span>, 
-            <span class="p-locality">Cambridge</span>,  
-            <span class="p-region">MA</span> 
-            <span class="p-postal-code">02139</span>, 
-            <span class="p-country-name">USA</span>.
+<div class="hresume">
+    <div class="contact vcard">
+        <p class="fn">Tim Berners-Lee</p>
+        <p class="org">MIT</p>
+        <p class="adr">
+            <span class="street-address">32 Vassar Street</span>, 
+            <span class="extended-address">Room 32-G524</span>, 
+            <span class="locality">Cambridge</span>,  
+            <span class="region">MA</span> 
+            <span class="postal-code">02139</span>, 
+            <span class="country-name">USA</span>.  
+            (<span class="type">Work</span>)
         </p>
-        <p>Tel:<span class="p-tel">+1 (617) 253 5702</span></p>
-        <p>Email:<a class="u-email" href="mailto:timbl@w3.org">timbl@w3.org</a></p>
+        <p>Tel:<span class="tel">+1 (617) 253 5702</span></p>
+        <p>Email:<a class="email" href="mailto:timbl@w3.org">timbl@w3.org</a></p>
     </div>
+    <p class="summary">Invented the World Wide Web.</p>
 </div>
 </div>
 
@@ -86,36 +87,51 @@
     "items": [{
         "type": ["h-resume"],
         "properties": {
-            "name": ["Tim Berners-Lee"],
-            "summary": ["Invented the World Wide Web."],
-             "contact": [{
-                "value": "MIT 32 Vassar Street, Room 32-G524, Cambridge, MA 02139, USA. Tel:+1 (617) 253 5702 Email:timbl@w3.org",
+            "contact": [{
+                "value": "Tim Berners-Lee MIT 32 Vassar Street, Room 32-G524, Cambridge, MA 02139, USA. (Work) Tel:+1 (617) 253 5702 Email:timbl@w3.org",
                 "type": ["h-card"],
                 "properties": {
-                    "name": ["MIT"],
+                    "name": ["Tim Berners-Lee"],
+                    "org": ["MIT"],
+                    "adr": [{
+                        "value": "32 Vassar Street, Room 32-G524, Cambridge, MA 02139, USA. (Work)",
+                        "type": ["h-adr"],
+                        "properties": {
+                            "street-address": ["32 Vassar Street"], 
+                            "extended-address": ["Room 32-G524"], 
+                            "locality": ["Cambridge"], 
+                            "region": ["MA"], 
+                            "postal-code": ["02139"], 
+                            "country-name": ["USA"],
+                            "name": ["32 Vassar Street, Room 32-G524, Cambridge, MA 02139, USA. (Work)"]
+                        }
+                    }],
+                    "tel": ["+1 (617) 253 5702"],
+                    "email": ["mailto:timbl@w3.org"]
+                }
+            }],
+            "summary": ["Invented the World Wide Web."]
+        }
+    },{
+        "type": ["h-card"],
+        "properties": {
+            "name": ["Tim Berners-Lee"],
+            "org": ["MIT"],
+            "adr": [{
+                "value": "32 Vassar Street, Room 32-G524, Cambridge, MA 02139, USA. (Work)",
+                "type": ["h-adr"],
+                "properties": {
                     "street-address": ["32 Vassar Street"], 
                     "extended-address": ["Room 32-G524"], 
                     "locality": ["Cambridge"], 
                     "region": ["MA"], 
                     "postal-code": ["02139"], 
                     "country-name": ["USA"],
-                    "tel": ["+1 (617) 253 5702"],
-                    "email": ["mailto:timbl@w3.org"]
+                    "name": ["32 Vassar Street, Room 32-G524, Cambridge, MA 02139, USA. (Work)"]
                 }
-            }]
-        }
-    },{
-        "type": ["h-card"],
-        "properties": {
-            "name": ["MIT"],
-            "street-address": ["32 Vassar Street"], 
-            "extended-address": ["Room 32-G524"], 
-            "locality": ["Cambridge"], 
-            "region": ["MA"], 
-            "postal-code": ["02139"], 
-            "country-name": ["USA"],
+            }],
             "tel": ["+1 (617) 253 5702"],
-            "email": ["timbl@w3.org"]
+            "email": ["mailto:timbl@w3.org"]
         }
     }]
 }
@@ -130,18 +146,18 @@
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<div class="h-resume">
-    <p class="p-name">Tim Berners-Lee</p>
-    <div class="p-contact h-card">
-        <p class="p-title">Director of the World Wide Web Foundation</p>
+<div class="hresume">
+    <div class="contact vcard">
+        <p class="fn">Tim Berners-Lee</p>
+        <p class="title">Director of the World Wide Web Foundation</p>
     </div>
-    <p class="p-summary">Invented the World Wide Web.</p><hr>
-    <div class="p-experience h-event h-card">
-        <p class="p-title">Director</p>
-        <p><a class="p-name p-org u-url" href="http://www.webfoundation.org/">World Wide Web Foundation</a></p>
+    <p class="summary">Invented the World Wide Web.</p><hr>
+    <div class="experience vevent vcard">
+        <p class="title">Director</p>
+        <p><a class="fn summary org url" href="http://www.webfoundation.org/">World Wide Web Foundation</a></p>
         <p>
-            <time class="dt-start" datetime="2009-01-18">Jan 2009</time> &ndash; Present
-            <time class="dt-duration" datetime="P2Y11M">(2 years 11 month)</time>
+            <time class="dtstart" datetime="2009-01-18">Jan 2009</time> &ndash; Present
+            <time class="duration" datetime="P2Y11M">(2 years 11 month)</time>
         </p>
     </div>
 </div>
@@ -153,21 +169,20 @@
     "items": [{
         "type": ["h-resume"],
         "properties": {
-            "name": ["Tim Berners-Lee"],
-            "summary": ["Invented the World Wide Web."],
             "contact": [{
-                "value": "Director of the World Wide Web Foundation",
+                "value": "Tim Berners-Lee Director of the World Wide Web Foundation",
                 "type": ["h-card"],
                 "properties": {
-                    "name": ["Director of the World Wide Web Foundation"],
+                    "name": ["Tim Berners-Lee"],
                     "title": ["Director of the World Wide Web Foundation"]
                 }
             }],
+            "summary": ["Invented the World Wide Web."],
             "experience": [{
                 "value": "Director World Wide Web Foundation Jan 2009 - Present (2 years 11 month)",
                 "type": ["h-event", "h-card"],
                 "properties": {
-                    "name": ["World Wide Web Foundation"],
+                    "name": ["World Wide Web Foundation", "World Wide Web Foundation"],
                     "org": ["World Wide Web Foundation"],
                     "url": ["http://www.webfoundation.org/"],
                     "start": ["2009-01-18"],
@@ -178,7 +193,7 @@
     },{
         "type": ["h-card"],
         "properties": {
-            "name": ["Director of the World Wide Web Foundation"],
+            "name": ["Tim Berners-Lee"],
             "title": ["Director of the World Wide Web Foundation"]
         }
     },{
@@ -212,17 +227,17 @@
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<div class="h-resume">
-    <p class="p-name">Tim Berners-Lee</p>
-    <div class="p-contact h-card">
-        <p class="p-title">Director of the World Wide Web Foundation</p>
+<div class="hresume">
+    <div class="contact vcard">
+        <p class="fn">Tim Berners-Lee</p>
+        <p class="title">Director of the World Wide Web Foundation</p>
     </div>
-    <p class="p-summary">Invented the World Wide Web.</p><hr>
-    <p class="p-education h-event h-card">
-        <span class="p-name p-org">The Queen's College, Oxford University</span>, 
-        <span class="p-description">BA Hons (I) Physics</span> 
-        <time class="dt-start" datetime="1973-09">1973</time> &ndash;
-        <time class="dt-end" datetime="1976-06">1976</time>
+    <p class="summary">Invented the World Wide Web.</p><hr>
+    <p class="education vevent vcard">
+        <span class="fn summary org">The Queen's College, Oxford University</span>, 
+        <span class="description">BA Hons (I) Physics</span> 
+        <time class="dtstart" datetime="1973-09">1973</time> &ndash;
+        <time class="dtend" datetime="1976-06">1976</time>
     </p>
 </div>
 </div>
@@ -233,21 +248,20 @@
     "items": [{
         "type": ["h-resume"],
         "properties": {
-            "name": ["Tim Berners-Lee"],
-            "summary": ["Invented the World Wide Web."],
             "contact": [{
-                "value": "Director of the World Wide Web Foundation",
+                "value": "Tim Berners-Lee Director of the World Wide Web Foundation",
                 "type": ["h-card"],
                 "properties": {
-                    "name": ["Director of the World Wide Web Foundation"],
+                    "name": ["Tim Berners-Lee"],
                     "title": ["Director of the World Wide Web Foundation"]
                 }
             }],
+            "summary": ["Invented the World Wide Web."],
             "education": [{
                 "value": "The Queen's College, Oxford University, BA Hons (I) Physics 1973 - 1976",
                 "type": ["h-event", "h-card"],
                 "properties": {
-                    "name": ["The Queen's College, Oxford University"],
+                    "name": ["The Queen's College, Oxford University", "The Queen's College, Oxford University"],
                     "org": ["The Queen's College, Oxford University"],
                     "description": ["BA Hons (I) Physics"],
                     "start": ["1973-09"],
@@ -258,7 +272,7 @@
     },{
         "type": ["h-card"],
         "properties": {
-            "name": ["Director of the World Wide Web Foundation"],
+            "name": ["Tim Berners-Lee"],
             "title": ["Director of the World Wide Web Foundation"]
         }
     },{
@@ -273,11 +287,11 @@
     },{
         "type": ["h-card"],
         "properties": {
-            "name": ["World Wide Web Foundation"],
-            "org": ["World Wide Web Foundation"],
-            "url": ["http://www.webfoundation.org/"],
-            "start": ["2009-01-18"],
-            "duration": ["P2Y11M"]
+            "name": ["The Queen's College, Oxford University"],
+            "org": ["The Queen's College, Oxford University"],
+            "description": ["BA Hons (I) Physics"],
+            "start": ["1973-09"],
+            "end": ["1976-06"]
         }
     }]
 }
@@ -293,15 +307,16 @@
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
 <div class="h-resume">
+    
     <p>
-        <span class="p-name">Tim Berners-Lee</span>, 
-        <span class="p-summary">invented the World Wide Web</span>.
+        <span class="contact vcard"><span class="fn">Tim Berners-Lee</span></span>, 
+        <span class="summary">invented the World Wide Web</span>.
     </p>
     Skills:     
     <ul>
-        <li class="p-skill">information systems</li>
-        <li class="p-skill">advocacy</li>
-        <li class="p-skill">leadership</li>
+        <li><a class="skill" rel="tag" href="http://example.com/skills/informationsystems">information systems</a></li>
+        <li><a class="skill" rel="tag" href="http://example.com/skills/advocacy">advocacy</a></li>
+        <li><a class="skill" rel="tag" href="http://example.com/skills/informationsystems">leadership</a></li>
     <ul>   
 </div>
 </div>
@@ -313,9 +328,14 @@
     "items": [{
         "type": ["h-resume"],
         "properties": {
-            "name": ["Tim Berners-Lee"],
-            "summary": ["invented the World Wide Web"],
-            "skill": ["information systems", "advocacy", "leadership"]
+            "contact": [{
+                "value": "Tim Berners-Lee",
+                "type": ["h-card"],
+                "properties": {
+                    "name": ["Tim Berners-Lee"]
+                }
+            }],
+            "summary": ["invented the World Wide Web"]
         }
     }]
 }
@@ -334,13 +354,13 @@
 <div class="e-x-microformat">
 <div class="h-resume">
     <p>
-        <span class="p-name">Tim Berners-Lee</span>, 
-        <span class="p-summary">invented the World Wide Web</span>. 
-    </p> 
+        <span class="contact vcard"><span class="fn">Tim Berners-Lee</span></span>, 
+        <span class="summary">invented the World Wide Web</span>.
+    </p>
     Belongs to following groups:
     <p>   
-        <a class="p-affiliation h-card" href="http://www.w3.org/" >
-            <img class="p-name u-photo" alt="W3C" src="http://www.w3.org/Icons/WWW/w3c_home_nb.png" />
+        <a class="affiliation vcard" href="http://www.w3.org/" >
+            <img class="fn photo" alt="W3C" src="http://www.w3.org/Icons/WWW/w3c_home_nb.png" />
         </a>
     </p>   
 </div>
@@ -353,7 +373,13 @@
     "items": [{
         "type": ["h-resume"],
         "properties": {
-            "name": ["Tim Berners-Lee"],
+            "contact": [{
+                "value": "Tim Berners-Lee",
+                "type": ["h-card"],
+                "properties": {
+                    "name": ["Tim Berners-Lee"]
+                }
+            }],
             "summary": ["invented the World Wide Web"],
             "affiliation": [{
                 "value": "",
@@ -387,25 +413,25 @@
 <div class="e-x-microformat">
 <div class="h-resume">
     <p>
-        <span class="p-name">Tim Berners-Lee</span>, 
-        <span class="p-summary">invented the World Wide Web</span>.
+        <span class="contact vcard"><span class="fn">Tim Berners-Lee</span></span>, 
+        <span class="summary">invented the World Wide Web</span>.
     </p>
     Experience and skills:     
     <ul>
-        <li class="p-skill h-competency">
-            <span class="p-name">information systems</span> (
-                <span class="p-rate">5</span>/5  &ndash;  
-                <time class="dt-duration" datetime="PY37">37 years</time>
+        <li class="skill competency">
+            <span class="summary">information systems</span> (
+                <span class="rate">5</span>/5  &ndash;  
+                <time class="duration" datetime="PY37">37 years</time>
         )</li>
-        <li class="p-skill h-competency">
-            <span class="p-name">advocacy</span> (
-                <span class="p-rate">4</span>/5  &ndash; 
-                <time class="dt-duration" datetime="PY22">22 years</time>
+        <li class="skill competency">
+            <span class="summary">advocacy</span> (
+                <span class="rate">4</span>/5  &ndash; 
+                <time class="duration" datetime="PY22">22 years</time>
         )</li>
-        <li class="p-skill h-competency">
-            <span class="p-name">leadership</span> (
-                <span class="p-rate">5</span>/5  &ndash; 
-                <time class="dt-duration" datetime="PY22">22 years</time>
+        <li class="skill competency">
+            <span class="summary">leadership</span> (
+                <span class="rate">5</span>/5  &ndash; 
+                <time class="duration" datetime="PY22">22 years</time>
         )</li>
     <ul>   
 </div>
@@ -418,10 +444,16 @@
     "items": [{
         "type": ["h-resume"],
         "properties": {
-            "name": ["Tim Berners-Lee"],
+            "contact": [{
+                "value": "Tim Berners-Lee",
+                "type": ["h-card"],
+                "properties": {
+                    "name": ["Tim Berners-Lee"]
+                }
+            }],
             "summary": ["invented the World Wide Web"],
             "skill": [{
-                "value": "information systems ( 5/5 - 37 years )",
+                "value": "information systems ( 5/5 – 37 years )",
                 "type": ["h-competency"],
                 "properties": {
                     "name": ["information systems"],
@@ -429,7 +461,7 @@
                     "duration": ["PY37"]
                 }
             },{
-                "value": "advocacy ( 5/5 - 22 years )",
+                "value": "advocacy ( 5/5 – 22 years )",
                 "type": ["h-competency"],
                 "properties": {
                     "name": ["advocacy"],
@@ -437,7 +469,7 @@
                     "duration": ["PY22"]
                 }
             },{
-                "value": "advocacy ( 5/5 - 22 years )",
+                "value": "advocacy ( 5/5 – 22 years )",
                 "type": ["h-competency"],
                 "properties": {
                     "name": ["leadership"],
@@ -446,7 +478,12 @@
                 }
             }]
         }
-    },{
+    },{            
+        "type": ["h-card"],
+        "properties": {
+            "name": ["Tim Berners-Lee"]
+        }
+     },{
         "type": ["h-competency"],
         "properties": {
             "name": ["information systems"],
@@ -477,15 +514,23 @@
 
 
 
+
+
+
+
+
+
+
+
     <h2>Change log:</h2>
     <ul>
         <li class="p-x-history h-entry">
-            <span class="p-name">Created</span>: <time class="dt-published" datetime="2012-12-29">29 December 2012</time>  by <span class="p-author">Glenn Jones</span>
+            <span class="p-name">Copied from version 1 test suite</span>: <time class="dt-published" datetime="2013-01-07">7 January 2013</time> by <span class="p-author">Glenn Jones</span>
         </li>
     </ul>
 
 
-    <h2>Contributors :</h2>
+    <h2>Contributors:</h2>
     <ul>
         <li class="h-card">
             <a class="u-url p-name" rel="author" href="http://tantek.com/">Tantek Çelik</a> 
@@ -494,6 +539,19 @@
             <a class="u-url p-name" rel="author" href="http://www.glennjones.net/">Glenn Jones</a> 
         </li>
     </ul>
+    <p>The orginal test also had contributions from: </p>
+    <ul>
+        <li class="h-card">
+            <a class="u-url p-name" rel="author" href="http://mike.kaply.com/">Mike Kaply</a> 
+        </li>    
+        <li class="h-card">
+            <a class="u-url p-name" rel="author" href="http://tobyinkster.co.uk/">Toby Inkster</a> 
+        </li>
+        <li class="h-card">
+            <a class="u-url p-name" rel="author" href="http://georgebrock.com/">George Brocklehurst</a> 
+        </li>
+    </ul>
+
   
         
     <footer>
