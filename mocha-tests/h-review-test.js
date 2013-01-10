@@ -1,6 +1,6 @@
 /*
 Mocha integration test from: h-review.html
-The test was built on Tue Jan 08 2013 15:47:00 GMT+0000 (GMT)
+The test was built on Thu Jan 10 2013 17:03:49 GMT+0000 (GMT)
 */
 
 var assert = chai.assert;
@@ -25,7 +25,7 @@ describe('Just a name (h-review parsing test)', function() {
 
 
 describe('Just a hyperlink (h-review parsing test)', function() {
-   var htmlFragment = "\n<a class=\"vcard\" href=\"https://plus.google.com/116941523817079328322/about\">Crepes on Cole</a>\n"
+   var htmlFragment = "\n<a class=\"h-review\" href=\"https://plus.google.com/116941523817079328322/about\">Crepes on Cole</a>\n"
    var found = helper.parseHTML(htmlFragment,'http://example.com/')
    var expected = {"items":[{"type":["h-review"],"properties":{"name":["Crepes on Cole"],"url":["https://plus.google.com/116941523817079328322/about"]}}]}
 

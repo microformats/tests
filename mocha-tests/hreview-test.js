@@ -1,22 +1,22 @@
 /*
 Mocha integration test from: hreview.html
-The test was built on Tue Jan 08 2013 15:47:00 GMT+0000 (GMT)
+The test was built on Thu Jan 10 2013 17:03:49 GMT+0000 (GMT)
 */
 
 var assert = chai.assert;
 
 
-describe('Just a name (adr parsing test)', function() {
-   var htmlFragment = "\n<p class=\"adr\">665 3rd St. Suite 207 San Francisco, CA 94107 U.S.A.</p>\n"
+describe('Just a name (hreview parsing test)', function() {
+   var htmlFragment = "\n<p class=\"hreview\">Crepes on Cole</p>\n"
    var found = helper.parseHTML(htmlFragment,'http://example.com/')
-   var expected = {"items":[{"type":["h-adr"],"properties":{"name":["665 3rd St. Suite 207 San Francisco, CA 94107 U.S.A."]}}]}
+   var expected = {"items":[{"type":["h-review"],"properties":{"name":["Crepes on Cole"]}}]}
 
    it("found.items[0].type[0]", function(){
-      assert.equal(found.items[0].type[0].toString(), "h-adr");
+      assert.equal(found.items[0].type[0].toString(), "h-review");
    })
 
    it("found.items[0].properties['name'][0]", function(){
-      assert.equal(found.items[0].properties["name"][0].toString(), "665 3rd St. Suite 207 San Francisco, CA 94107 U.S.A.");
+      assert.equal(found.items[0].properties["name"][0].toString(), "Crepes on Cole");
    })
 
 })
