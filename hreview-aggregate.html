@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>h-review-aggregate parsing tests</title>
+    <title>hreview-aggregate parsing tests</title>
 
     <link rel="stylesheet" href="/css/testsuite.css">
     <link rel="stylesheet" href="/css/prettify.css">
@@ -15,33 +15,30 @@
         
 
 
-        <h1 class="p-name">h-review-aggregate parsing tests</h1>
-        <p class="p-description">This page was design to test the parsing of h-review-aggregate. These tests are part of the micorformats 2 test suite.</p> 
+        <h1 class="p-name">hreview-aggregate parsing tests</h1>
+        <p class="p-description">This page was design to test the parsing of hreview-aggregate. These tests are part of the micorformats 2 test suite.</p> 
 
 
         <ul>
             <li><a href="#minimum">Minimum properties</a></li>
-            <li><a href="#hcard">With p-item as a h-card</a></li>
-            <li><a href="#hevent">With p-item as a h-event</a></li>
+            <li><a href="#hcard">With item as a vcard</a></li>
+            <li><a href="#hevent">With item as a vevent</a></li>
         </ul>
-
 
 
 
                 <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="justahyperlink">Minimum properties</a> (<span class="p-format">h-review-aggregate</span> parsing test)</h1>
+            <h1 class="p-name"><a name="justahyperlink">Minimum properties</a> (<span class="p-format">hreview-aggregate</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<div class="h-review-aggregate">
-    <h3 class="p-item h-item">Mediterranean Wraps</span></h3>
-     <span class="p-summary">
-        Customers flock to this small restaurant for their 
-        tasty falafel and shawerma wraps and welcoming staff.
-    </span>
-    <span class="p-rating">4.5</span> out of 5 
-</div>   
+<p class="hreview-aggregate">
+    <span class="item">
+        <a class="fn url" href="http://example.com/mediterraneanwraps">Mediterranean Wraps</a>
+    </span> - Rated: 
+    <span class="rating">4.5</span> out of 5 (<span class="count">6</span> reviews)
+</p>   
 </div>
 
 
@@ -52,15 +49,16 @@
         "type": ["h-review-aggregate"],
         "properties": {
             "item": [{
-                "value": "Mediterranean Wraps",
+                "value": "",
                 "type": ["h-item"],
                 "properties": {
-                    "name": ["Mediterranean Wraps"]
+                    "name": ["Mediterranean Wraps"],
+                    "url": ["http://example.com/mediterraneanwraps"]
                 }
             }],
-            "summary": ["Customers flock to this small restaurant for their tasty falafel and shawerma wraps and welcoming staff."],
             "rating": ["4.5"],
-            "name": ["Mediterranean Wraps Customers flock to this small restaurant for their tasty falafel and shawerma wraps and welcoming staff. 4.5 out of 5"]
+            "count": ["6"],
+            "name": ["Mediterranean Wraps - Rated: 4.5 out of 5 (6 reviews)"]
         }
     }]
 }
@@ -73,27 +71,27 @@
 
         <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="simpleproperties">Broken into properties</a> (<span class="p-format">h-review-aggregate</span> parsing test)</h1>
+            <h1 class="p-name"><a name="hcard">With item as a vcard</a> (<span class="p-format">hreview-aggregate</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
 <div class="hreview-aggregate">
-    <div class="p-item h-card">
-        <h3 class="p-name">Mediterranean Wraps</h3>
+    <div class="item vcard">
+        <h3 class="fn org">Mediterranean Wraps</h3>    
         <p>
-            <span class="p-street-address">433 S California Ave</span>, 
-            <span class="p-locality">Palo Alto</span>, 
-            <span class="p-region">CA</span></span> - 
-            <span class="p-tel">(650) 321-8189</span>
+            <span class="adr">
+                <span class="street-address">433 S California Ave</span>, 
+                <span class="locality">Palo Alto</span>, 
+                <span class="region">CA</span></span> - 
+            </span>
+            <span class="tel">(650) 321-8189</span>
         </p>
     </div> 
-    <span class="p-summary">Customers flock to this small restaurant for their 
-    tasty falafel and shawerma wraps and welcoming staff.</span>
-    <span class="p-rating">
-        <span class="p-average value">9.2</span> out of 
-        <span class="p-best">10</span> 
-        based on <span class="p-count">17</span> reviews
-    </span>
+    <p class="rating">
+        <span class="average value">9.2</span> out of 
+        <span class="best">10</span> 
+        based on <span class="count">17</span> reviews
+    </p>
 </div>
 </div>
 
@@ -106,21 +104,26 @@
         "properties": {
             "item": [{
                 "value": "Mediterranean Wraps 433 S California Ave, Palo Alto, CA - (650) 321-8189",
-                "type": ["h-card"],
+                "type": ["h-item","h-card"],
                 "properties": {
                     "name": ["Mediterranean Wraps"],
-                    "street-address": ["433 S California Ave"],
-                    "locality": ["Palo Alto"],
-                    "region": ["CA"],
+                    "adr": [{
+                        "value": "433 S California Ave, Palo Alto, CA",
+                        "type": ["h-adr"],
+                        "properties": {
+                            "street-address": ["433 S California Ave"],
+                            "locality": ["Palo Alto"],
+                            "region": ["CA"]
+                        }
+                    }],
                     "tel": ["(650) 321-8189"]
                 }
             }],
-            "summary": ["Customers flock to this small restaurant for their tasty falafel and shawerma wraps and welcoming staff."],
             "rating": ["9.2"],
             "average": ["9.2"],
             "best": ["10"],
             "count": ["17"],
-            "name": ["Mediterranean Wraps 433 S California Ave, Palo Alto, CA - (650) 321-8189 Customers flock to this small restaurant for their tasty falafel and shawerma wraps and welcoming staff. 9.2 out of 10 based on 17 reviews"]
+            "name": ["Mediterranean Wraps 433 S California Ave, Palo Alto, CA - (650) 321-8189 9.2 out of 10 based on 17 reviews"]
         }
     }]
 }
@@ -132,21 +135,21 @@
 
          <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="hevent">With p-item as a h-event</a> (<span class="p-format">hreview-aggregate</span> parsing test)</h1>
+            <h1 class="p-name"><a name="vevent">With item as a vevent</a> (<span class="p-format">hreview-aggregate</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<div class="h-review-aggregate">
-    <div class="p-item h-event">
-        <h3 class="p-name">Fullfrontal</h3>
-        <p class="p-description">A one day JavaScript Conference held in Brighton</p>
-        <p><time class="dt-start" datetime="2012-11-09">9th November 2012</time></p>    
+<div class="hreview-aggregate">
+    <div class="item vevent">
+        <h3 class="summary">Fullfrontal</h3>
+        <p class="description">A one day JavaScript Conference held in Brighton</p>
+        <p><time class="dtstart" datetime="2012-11-09">9th November 2012</time></p>    
     </div> 
     
-    <p class="p-rating">
-        <span class="p-average value">9.9</span> out of 
-        <span class="p-best">10</span> 
-        based on <span class="p-count">62</span> reviews
+    <p class="rating">
+        <span class="average value">9.9</span> out of 
+        <span class="best">10</span> 
+        based on <span class="count">62</span> reviews
     </p>
 </div>
 </div>
@@ -160,7 +163,7 @@
         "properties": {
             "item": [{
                 "value": "Fullfrontal A one day JavaScript Conference held in Brighton 9th November 2012",
-                "type": ["h-event"],
+                "type": ["h-item","h-event"],
                 "properties": {
                     "name": ["Fullfrontal"],
                     "description": ["A one day JavaScript Conference held in Brighton"],

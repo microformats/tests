@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>h-news parsing tests</title>
+    <title>hnews parsing tests</title>
 
     <link rel="stylesheet" href="/css/testsuite.css">
     <link rel="stylesheet" href="/css/prettify.css">
@@ -15,28 +15,28 @@
         
 
 
-        <h1 class="p-name">h-news parsing tests</h1>
-        <p class="p-description">This page was design to test the parsing of h-news. These tests are part of the micorformats 2 test suite.</p> 
+        <h1 class="p-name">hnews parsing tests</h1>
+        <p class="p-description">This page was design to test the parsing of hnews. These tests are part of the micorformats 2 test suite.</p> 
 
 
         <ul>
             <li><a href="#minimum">Minimum properties</a></li>
-            <li><a href="#all">With dateline h-card</a></li>
+            <li><a href="#all">With dateline vcard</a></li>
         </ul>
 
-        <p><strong>Notes: We need to add item-license (<a href="http://microformats.org/wiki/licensing-brainstorming#item_as_container">see brainstorming</a>) or some other license structure. It may be worthwhile considering flattening the h-entry structure into h-news properties.</strong></p>
+        <p><strong>Notes: The item-license property (<a href="http://microformats.org/wiki/licensing-brainstorming#item_as_container">see brainstorming</a>) is not processed as there is currently no mapping for it. Also rel="bookmark" and rel="principles" can be found in the page level rel collection.</strong></p>
 
         <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="minimum">Minimum properties</a> (<span class="p-format">h-news</span> parsing test)</h1>
+            <h1 class="p-name"><a name="minimum">Minimum properties</a> (<span class="p-format">hnews</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<div class="h-news">
-    <div class="p-entry h-entry">
-        <h1><a  class="p-name u-url" href="http://microformats.org/2012/06/25/microformats-org-at-7">microformats.org at 7</a></h1>
-        <div class="e-content">
-            <p  class="p-summary">Last week the microformats.org community 
+<div class="hnews">
+    <div class="entry hentry">
+        <h1><a  class="entry-title" rel="bookmark" href="http://microformats.org/2012/06/25/microformats-org-at-7">microformats.org at 7</a></h1>
+        <div class="entry-content">
+            <p  class="entry-summary">Last week the microformats.org community 
                 celebrated its 7th birthday at a gathering hosted by Mozilla in 
                 San Francisco and recognized accomplishments, challenges, and 
                 opportunities.</p>
@@ -48,12 +48,13 @@
                 thank them for their years of volunteer service </p>
         </div>  
         <p>Updated 
-            <time class="dt-updated" datetime="2012-06-25T17:08:26">June 25th, 2012</time> by
-            <a class="p-author h-card" href="http://tantek.com/">Tantek</a>
+            <time class="updated" datetime="2012-06-25T17:08:26">June 25th, 2012</time> by
+            <span class="author vcard"><a class="fn url" href="http://tantek.com/">Tantek</a></span>
         </p>
     </div>
-    <p>
-        <a class="p-source-org h-card" href="http://microformats.org/">microformats.org</a> 
+
+    <p class="source-org vcard">
+        <a class="fn org url" href="http://microformats.org/">microformats.org</a> 
     </p>
 </div>
 </div>
@@ -70,8 +71,7 @@
                 "type": ["h-entry"],
                 "properties": {
                     "name": ["microformats.org at 7"], 
-                    "url": ["http://microformats.org/2012/06/25/microformats-org-at-7"], 
-                    "content": ["\n            &lt;p class=\&quot;p-summary\&quot;&gt;Last week the microformats.org community \n                celebrated its 7th birthday at a gathering hosted by Mozilla in \n                San Francisco and recognized accomplishments, challenges, and \n                opportunities.&lt;/p&gt;\n\n            &lt;p&gt;The microformats tagline “humans first, machines second” \n                forms the basis of many of our \n                &lt;a href=\&quot;http://microformats.org/wiki/principles\&quot;&gt;principles&lt;/a&gt;, and \n                in that regard, we’d like to recognize a few people and \n                thank them for their years of volunteer service &lt;/p&gt;\n        "], 
+                    "content": ["\n            &lt;p class=\&quot;entry-summary\&quot;&gt;Last week the microformats.org community \n                celebrated its 7th birthday at a gathering hosted by Mozilla in \n                San Francisco and recognized accomplishments, challenges, and \n                opportunities.&lt;/p&gt;\n\n            &lt;p&gt;The microformats tagline “humans first, machines second” \n                forms the basis of many of our \n                &lt;a href=\&quot;http://microformats.org/wiki/principles\&quot;&gt;principles&lt;/a&gt;, and \n                in that regard, we’d like to recognize a few people and \n                thank them for their years of volunteer service &lt;/p&gt;\n        "], 
                     "summary": ["Last week the microformats.org community celebrated its 7th birthday at a gathering hosted by Mozilla in San Francisco and recognized accomplishments, challenges, and opportunities."],
                     "updated": ["2012-06-25T17:08:26"],
                     "author": {
@@ -94,6 +94,11 @@
             }],
             "name": ["microformats.org at 7 Last week the microformats.org community celebrated its 7th birthday at a gathering hosted by Mozilla in San Francisco and recognized accomplishments, challenges, and opportunities. The microformats tagline “humans first, machines second” forms the basis of many of our principles, and in that regard, we’d like to recognize a few people and thank them for their years of volunteer service Updated June 25th, 2012 by Tantek microformats.org"]
         }
+    },{
+        "type": ["rel"],
+        "properties": {
+            "bookmark": ["http://microformats.org/2012/06/25/microformats-org-at-7"]
+        }
     }]
 }
 </code></pre>
@@ -104,15 +109,15 @@
 
         <!-- a test -->
         <section class="p-x-test-fixture h-x-test-fixture">
-            <h1 class="p-name"><a name="all">With dateline h-card</a> (<span class="p-format">h-news</span> parsing test)</h1>
+            <h1 class="p-name"><a name="all">With dateline vcard</a> (<span class="p-format">hnews</span> parsing test)</h1>
 
 <!-- microformats example we are going to test -->
 <div class="e-x-microformat">
-<div class="h-news">
-    <div class="p-entry h-entry">
-        <h1><a  class="p-name u-url" href="http://microformats.org/2012/06/25/microformats-org-at-7">microformats.org at 7</a></h1>
-        <div class="e-content">
-            <p  class="p-summary">Last week the microformats.org community 
+<div class="hnews">
+    <div class="entry hentry">
+        <h1><a  class="entry-title" rel="bookmark" href="http://microformats.org/2012/06/25/microformats-org-at-7">microformats.org at 7</a></h1>
+        <div class="entry-content">
+            <p  class="entry-summary">Last week the microformats.org community 
                 celebrated its 7th birthday at a gathering hosted by Mozilla in 
                 San Francisco and recognized accomplishments, challenges, and 
                 opportunities.</p>
@@ -124,23 +129,25 @@
                 thank them for their years of volunteer service </p>
         </div>  
         <p>Updated 
-            <time class="dt-updated" datetime="2012-06-25T17:08:26">June 25th, 2012</time> by
-            <a class="p-author h-card" href="http://tantek.com/">Tantek</a>
+            <time class="updated" datetime="2012-06-25T17:08:26">June 25th, 2012</time> by
+            <span class="author vcard"><a class="fn url" href="http://tantek.com/">Tantek</a></span>
         </p>
     </div>
 
     <p>
-        <span class="p-dateline h-adr">
-            <span class="p-locality">San Francisco</span>, 
-            <span class="p-region">CA</span> 
+        <span class="dateline vcard">
+            <span class="adr">
+                <span class="locality">San Francisco</span>, 
+                <span class="region">CA</span> 
+            </span>
         </span>
-        (Geo: <span class="p-geo">37.774921;-122.445202</span>) 
-        <span class="p-source-org h-card">
-            <a class="p-name u-url" href="http://microformats.org/">microformats.org</a>
+        (Geo: <span class="geo">37.774921;-122.445202</span>) 
+        <span class="source-org vcard">
+            <a class="fn org url" href="http://microformats.org/">microformats.org</a>
         </span>
     </p>
     <p>
-        <a class="u-principles" href="http://microformats.org/wiki/Category:public_domain_license">Publishing policy</a>
+        <a rel="principles" href="http://microformats.org/wiki/Category:public_domain_license">Publishing policy</a>
     </p>
 </div>
 </div>
@@ -157,8 +164,7 @@
                 "type": ["h-entry"],
                 "properties": {
                     "name": ["microformats.org at 7"], 
-                    "url": ["http://microformats.org/2012/06/25/microformats-org-at-7"], 
-                    "content": ["\n            &lt;p class=\&quot;p-summary\&quot;&gt;Last week the microformats.org community \n                celebrated its 7th birthday at a gathering hosted by Mozilla in \n                San Francisco and recognized accomplishments, challenges, and \n                opportunities.&lt;/p&gt;\n\n            &lt;p&gt;The microformats tagline “humans first, machines second” \n                forms the basis of many of our \n                &lt;a href=\&quot;http://microformats.org/wiki/principles\&quot;&gt;principles&lt;/a&gt;, and \n                in that regard, we’d like to recognize a few people and \n                thank them for their years of volunteer service &lt;/p&gt;\n        "], 
+                    "content": ["\n            &lt;p class=\&quot;entry-summary\&quot;&gt;Last week the microformats.org community \n                celebrated its 7th birthday at a gathering hosted by Mozilla in \n                San Francisco and recognized accomplishments, challenges, and \n                opportunities.&lt;/p&gt;\n\n            &lt;p&gt;The microformats tagline “humans first, machines second” \n                forms the basis of many of our \n                &lt;a href=\&quot;http://microformats.org/wiki/principles\&quot;&gt;principles&lt;/a&gt;, and \n                in that regard, we’d like to recognize a few people and \n                thank them for their years of volunteer service &lt;/p&gt;\n        "], 
                     "summary": ["Last week the microformats.org community celebrated its 7th birthday at a gathering hosted by Mozilla in San Francisco and recognized accomplishments, challenges, and opportunities."],
                     "updated": ["2012-06-25T17:08:26"],
                     "author": {
@@ -173,14 +179,27 @@
             }],
             "dateline": [{
                 "value": "San Francisco, CA",
-                "type": ["h-adr"],
+                "type": ["h-card"],
                 "properties": {
-                    "locality": ["San Francisco"],
-                    "region": ["CA"],
+                    "adr": [{
+                        "value": "San Francisco, CA",
+                        "type": ["h-adr"],
+                        "properties": {
+                            "locality": ["San Francisco"],
+                            "region": ["CA"],
+                            "name": ["San Francisco, CA"]
+                        }
+                    }],
                     "name": ["San Francisco, CA"]
                 }
             }],
-            "geo": ["37.774921;-122.445202"],
+            "geo": [{
+                "value": "37.774921;-122.445202",
+                "type": ["h-geo"],
+                "properties": {
+                    "name": ["37.774921;-122.445202"]
+                }
+            }],
             "source-org": [{
                 "value": "microformats.org",
                 "type": ["h-card"],
@@ -189,8 +208,13 @@
                     "url": ["http://microformats.org/"]
                 }
             }],
-            "principles": ["http://microformats.org/wiki/Category:public_domain_license"],
             "name": ["microformats.org at 7 Last week the microformats.org community celebrated its 7th birthday at a gathering hosted by Mozilla in San Francisco and recognized accomplishments, challenges, and opportunities. The microformats tagline “humans first, machines second” forms the basis of many of our principles, and in that regard, we’d like to recognize a few people and thank them for their years of volunteer service Updated June 25th, 2012 by Tantek San Francisco, CA (Geo: 37.774921;-122.445202) microformats.org Publishing policy"]
+        }
+    },{
+        "type": ["rel"],
+        "properties": {
+            "bookmark": ["http://microformats.org/2012/06/25/microformats-org-at-7"],
+            "principles": ["http://microformats.org/wiki/Category:public_domain_license"]
         }
     }]
 }
