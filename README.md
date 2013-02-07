@@ -4,7 +4,7 @@
 This test suite was built to test microformats parsers. The tests are marked up in web pages and are human readable and then converted into JavaScript mocha.js test. The test are broken into two sets: 
 
 
-###Version 2 test 
+### Version 2 test 
 * [h-adr](http://microformat2-node.jit.su/h-adr.html) 
 * [h-card](http://microformat2-node.jit.su/h-card.html) 
 * [h-entry](http://microformat2-node.jit.su/h-entry.html) 
@@ -22,7 +22,7 @@ This test suite was built to test microformats parsers. The tests are marked up 
 
 
 
-###Version 1 test (backwards compatibility tests) 
+### Version 1 test (backwards compatibility tests) 
 * [mixed-versions](http://microformat2-node.jit.su/mixed-versions.html) 
 * [adr](http://microformat2-node.jit.su/adr.html)
 * [geo](http://microformat2-node.jit.su/geo.html)
@@ -46,8 +46,24 @@ You can test a browser compatibility by building a simple a simple helper.js wra
 ### Current parsers using the suite
 [microformat-node](http://microformat2-node.jit.su/) - [v1 test](http://microformat2-node.jit.su/mocha-v1.html) and [v2 test](http://microformat2-node.jit.su/mocha-v2.html)
 
-###To do...
-There is already a node.js app that can convert the html mark-up into the mocha.js test files. It needs to be added to this site so other can use it.
+### Server tool for creating *-test.js files
+The project contains a node.js app that can convert the html mark-up into the mocha.js test files. You need to setup simple a node.js server. You will need to install node.js and nmp. At the command line for the downloaded directory for this project excute the following:
+
+    npm install 
+
+then start the server with the command:
+
+	node bin/tests
+
+within a browser you should now be able to view the test html pages:
+
+	http://localhost:8888/h-card.html	
+
+finally call the web page to recreate the *.test.js files, by view the web address:
+
+	http://localhost:8888/update/
+
+
 
 ###License
 All content and code in this repo is released into the [public domain](http://en.wikipedia.org/wiki/public_domain).

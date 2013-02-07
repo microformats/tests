@@ -1,6 +1,6 @@
 /*
 Mocha integration test from: hcard.html
-The test was built on Wed Jan 23 2013 10:54:56 GMT+0000 (GMT)
+The test was built on Thu Feb 07 2013 15:33:14 GMT+0000 (GMT)
 */
 
 var assert = chai.assert;
@@ -73,7 +73,7 @@ describe('A hyperlinked photo (hcard parsing test)', function() {
 
 
 describe('Name properties (hcard parsing test)', function() {
-   var htmlFragment = "\n<p class=\"vcard\">\n    <span class=\"fn n\">\n        <span class=\"honorific-prefix\">Dr</span> \n        <span class=\"given-name\">John</span> \n        <span class=\"additional-name\">Peter</span> \n        <span class=\"family-name\">Doe</span> \n        <span class=\"honorific-suffix\">MSc</span>, \n        <span class=\"honorific-suffix\">PHD</span>\n    </span>\n</p>\n"
+   var htmlFragment = "\n\n"
    var found = helper.parseHTML(htmlFragment,'http://example.com/')
    var expected = {"items":[{"type":["h-card"],"properties":{"name":["Dr John Peter Doe MSc, PHD"],"honorific-prefix":["Dr"],"given-name":["John"],"additional-name":["Peter"],"family-name":["Doe"],"honorific-suffix":["MSc","PHD"]}}]}
 

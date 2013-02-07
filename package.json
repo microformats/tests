@@ -1,0 +1,24 @@
+{
+  "author": "Glenn Jones",
+  "name": "microformats-testsuite",
+  "description": "A microformat 2 testsuite",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/microformats/tests.git"
+  },
+  "engines": {
+    "node": ">= 0.8.x"
+  },
+  "main": "index",
+  "bin": {
+    "tests": "./bin/tests"
+  },
+  "dependencies": {
+    "request": "2.10.x",
+    "microformat-node": "0.2.x",
+    "cheerio": "0.10.0"
+  }
+
+}

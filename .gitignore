@@ -1,6 +1,24 @@
 
-mocha-tests/parsers/.DS_Store
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
 
-mocha-tests/.DS_Store
+pids
+logs
+results
 
+node_modules
+npm-debug.log
+_site
 .DS_Store
+
+/static/testsuite/
+*.svn-base
+
+mocha-tests/parsers/.DS_Store
+mocha-tests/.DS_Store
