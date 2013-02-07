@@ -36,7 +36,7 @@ This test suite was built to test microformats parsers. The tests are marked up 
 * [hreview-aggregate](http://microformat2-node.jit.su/hreview-aggregate.html)
 * [hreview](http://microformat2-node.jit.su/hreview.html)
 
-(last update on 30 Jan 2013)
+(last update on 7 Feb 2013)
 
 
 ### Using the test suite
