@@ -18,6 +18,7 @@ This test suite was built to test microformats parsers. The tests are marked up 
 * [h-review-aggregate](http://microformat2-node.jit.su/h-review-aggregate.html) 
 * [h-review](http://microformat2-node.jit.su/h-review.html) 
 * [rel=*](http://microformat2-node.jit.su/rel.html) 
+* [url](http://microformat2-node.jit.su/url.html) 
 * [include patterns](http://microformat2-node.jit.su/includes.html) 
 
 
