@@ -1,6 +1,6 @@
 /*
 Mocha integration test from: hreview.html
-The test was built on Mon Jul 22 2013 14:08:50 GMT+0100 (BST)
+The test was built on Thu Sep 19 2013 13:39:02 GMT+0100 (BST)
 */
 
 var assert = chai.assert;
@@ -49,7 +49,7 @@ describe('Just a hyperlink (hreview parsing test)', function() {
 describe('Just a photo (hreview parsing test)', function() {
    var htmlFragment = "\n<img class=\"hreview\" src=\"images/photo.gif\" alt=\"Crepes on Cole\">\n"
    var found = helper.parseHTML(htmlFragment,'http://example.com/')
-   var expected = {"items":[{"type":["h-review"],"properties":{"name":["Crepes on Cole"],"photo":["images/photo.gif"]}}]}
+   var expected = {"items":[{"type":["h-review"],"properties":{"name":["Crepes on Cole"],"photo":["http://example.com/images/photo.gif"]}}]}
 
    it("found.items[0].type[0]", function(){
       assert.equal(found.items[0].type[0].toString(), "h-review");
@@ -60,7 +60,7 @@ describe('Just a photo (hreview parsing test)', function() {
    })
 
    it("found.items[0].properties['photo'][0]", function(){
-      assert.equal(found.items[0].properties["photo"][0].toString(), "images/photo.gif");
+      assert.equal(found.items[0].properties["photo"][0].toString(), "http://example.com/images/photo.gif");
    })
 
 })

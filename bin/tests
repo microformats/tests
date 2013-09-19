@@ -87,11 +87,12 @@ function handler(req, res) {
     filePath = '../images/' + parts[1];
     filePath = path.resolve(__dirname, filePath);
     res.writeHead(200, {'Content-Type': 'image/gif'});
-    fs.readFile(filePath, function (err, page) {
+    fs.readFile(filePath, function (err, img) {
       if(err) {
         console.log(err)
       }else{
-        res.end(page);
+        res.writeHead(200, {'Content-Type': 'image/gif' });
+        res.end(img, 'binary');
       }
     });
     return;
@@ -99,7 +100,8 @@ function handler(req, res) {
 
 
 
+
 }
 
-app.listen(8888, 'localhost');
-console.log('App @ http://localhost:8888');
+app.listen(8889, 'localhost');
+console.log('App @ http://localhost:8889');
