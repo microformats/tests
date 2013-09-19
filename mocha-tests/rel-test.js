@@ -1,6 +1,6 @@
 /*
 Mocha integration test from: rel.html
-The test was built on Thu Sep 19 2013 13:39:01 GMT+0100 (BST)
+The test was built on Thu Sep 19 2013 15:25:23 GMT+0100 (BST)
 */
 
 var assert = chai.assert;
@@ -47,7 +47,7 @@ describe('A xfn all properties (xfn parsing test)', function() {
 
 
 describe('A rel=alternate (rel=alternate parsing test)', function() {
-   var htmlFragment = "\n<link rel=\"updates alternate\" type=\"application/atom+xml\" href=\"updates.atom\">\n"
+   var htmlFragment = "\n<link rel=\"updates alternate\" type=\"application/atom+xml\" href=\"http://localhost:8889/updates.atom\">\n"
    var found = helper.parseHTML(htmlFragment,'http://example.com/')
    var expected = {"items":[],"alternates":[{"url":"http://tantek.com/updates.atom","type":"application/atom+xml","rel":"updates"}]}
 

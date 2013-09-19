@@ -1,6 +1,6 @@
 /*
 Mocha integration test from: adr.html
-The test was built on Thu Sep 19 2013 13:39:01 GMT+0100 (BST)
+The test was built on Thu Sep 19 2013 15:25:23 GMT+0100 (BST)
 */
 
 var assert = chai.assert;

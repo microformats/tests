@@ -6,32 +6,32 @@
       Parser      = require('microformat-node').Parser,
       parser      = new Parser();
 
-      urls = ['http://localhost:8888/test/h-adr.html',
-              'http://localhost:8888/test/h-card.html',
-              'http://localhost:8888/test/h-event.html',
-              'http://localhost:8888/test/h-entry.html',
-              'http://localhost:8888/test/h-geo.html',
-              'http://localhost:8888/test/h-news.html',
-              'http://localhost:8888/test/h-org.html',
-              'http://localhost:8888/test/h-product.html',
-              'http://localhost:8888/test/h-recipe.html',
-              'http://localhost:8888/test/h-resume.html',
-              'http://localhost:8888/test/h-review-aggregate.html',
-              'http://localhost:8888/test/h-review.html',
-              'http://localhost:8888/test/rel.html',
-              'http://localhost:8888/test/includes.html',
+      urls = ['http://localhost:8889/test/h-adr.html',
+              'http://localhost:8889/test/h-card.html',
+              'http://localhost:8889/test/h-event.html',
+              'http://localhost:8889/test/h-entry.html',
+              'http://localhost:8889/test/h-geo.html',
+              'http://localhost:8889/test/h-news.html',
+              'http://localhost:8889/test/h-org.html',
+              'http://localhost:8889/test/h-product.html',
+              'http://localhost:8889/test/h-recipe.html',
+              'http://localhost:8889/test/h-resume.html',
+              'http://localhost:8889/test/h-review-aggregate.html',
+              'http://localhost:8889/test/h-review.html',
+              'http://localhost:8889/test/rel.html',
+              'http://localhost:8889/test/includes.html',
 
-              'http://localhost:8888/test/adr.html',
-              'http://localhost:8888/test/geo.html',
-              'http://localhost:8888/test/hcalendar.html',
-              'http://localhost:8888/test/hcard.html',
-              'http://localhost:8888/test/hnews.html',
-              'http://localhost:8888/test/hproduct.html',
-              'http://localhost:8888/test/hentry.html',
-              'http://localhost:8888/test/hresume.html',
-              'http://localhost:8888/test/hreview-aggregate.html',
-              'http://localhost:8888/test/hreview.html',
-              'http://localhost:8888/test/mixed-versions.html']
+              'http://localhost:8889/test/adr.html',
+              'http://localhost:8889/test/geo.html',
+              'http://localhost:8889/test/hcalendar.html',
+              'http://localhost:8889/test/hcard.html',
+              'http://localhost:8889/test/hnews.html',
+              'http://localhost:8889/test/hproduct.html',
+              'http://localhost:8889/test/hentry.html',
+              'http://localhost:8889/test/hresume.html',
+              'http://localhost:8889/test/hreview-aggregate.html',
+              'http://localhost:8889/test/hreview.html',
+              'http://localhost:8889/test/mixed-versions.html']
        
 
   function updateTests(){
@@ -158,46 +158,18 @@
         console.log('writing test: ' + p.name)
 
         if(p['x-output'] && p['x-microformat']){
-          var json = p['x-output'][0];
-          var html = p['x-microformat'][0];
-          console.log(json)
-          var expected = JSON.parse( json );
+          var json = p['x-output'][0].html;
+          var html = p['x-microformat'][0].html;
+
+
+          // need to decode html from pre/code block
+          var expected = JSON.parse( json.replace(/&lt;/g,"<").replace(/&gt;/g,">") );
+
 
           var out = "describe('" + p.name  + "', function() {\r\n"
           out += "   var htmlFragment = " + JSON.stringify(html) + "\r\n";
           out += "   var found = helper.parseHTML(htmlFragment,'http://example.com/')\r\n";
           out += "   var expected = " + JSON.stringify(expected) + "\r\n\r\n"
-
-
-  /*        if(expected.items[0]){
-
-            if(expected.items[0].value){
-              out += getAssertsStr(expected.items[0].value, 'found.items[0].value');
-            } 
-
-            if(expected.items[0].type){
-              out += getAssertsArr(expected.items[0].type, 'found.items[0].type');
-            }
-
-            if(expected.items[0].properties){
-              out += getAssertsObj(expected.items[0].properties, 'found.items[0].properties');
-            }
-          }
-
-          if(expected.items[0].children){
-
-            if(expected.items[0].children.value){
-              out += getAssertsStr(expected.items[0].children[0].value, 'found.items[0].children[0].value');
-            }
-
-            if(expected.items[0].children.type){
-              out += getAssertsArr(expected.items[0].children[0].type, 'found.items[0].children[0].type');
-            }
-
-            if(expected.items[0].children.properties){
-              out += getAssertsObj(expected.items[0].children[0].properties, 'found.items[0].children[0].properties');
-            }
-          }*/
 
           out += getAssertsForRootUF(expected.items[0], 'found.items[0]') + "})\r\n\r\n\r\n\r\n\r\n";
         }

@@ -1,6 +1,6 @@
 /*
 Mocha integration test from: h-card.html
-The test was built on Thu Sep 19 2013 13:39:01 GMT+0100 (BST)
+The test was built on Thu Sep 19 2013 15:25:23 GMT+0100 (BST)
 */
 
 var assert = chai.assert;
@@ -247,7 +247,7 @@ describe('Additional nested microformats (h-card parsing test)', function() {
 
 
 describe('p-property (h-card parsing test)', function() {
-   var htmlFragment = "\n<div class=\"h-card\">\n    <!-- innerText and value pattern -->\n    <span class=\"p-name\">\n        <span class=\"p-given-name value\">John</span> \n        <abbr class=\"p-additional-name\" title=\"Peter\">P</abbr>  \n        <span class=\"p-family-name value \">Doe</span> \n    </span>\n    <data class=\"p-honorific-suffix\" value=\"MSc\"></data>\n    \n    <!-- theses should return no value -->\n    <br class=\"p-honorific-suffix\">BSc<br>\n    <hr class=\"p-honorific-suffix\">BA\n    \n    <!-- image and area tags -->\n    <img class=\"p-honorific-suffix\" src=\"images/logo.gif\" alt=\"PHD\">\n    <img src=\"images/logo.gif\" alt=\"company logos\" usemap=\"#logomap\">\n    <map name=\"logomap\">\n        <area class=\"p-org\" shape=\"rect\" coords=\"0,0,82,126\" href=\"madgex.htm\" alt=\"Madgex\">\n        <area class=\"p-org\" shape=\"circle\" coords=\"90,58,3\" href=\"mozilla.htm\" alt=\"Mozilla\">\n    </map>\n</div>\n"
+   var htmlFragment = "\n<div class=\"h-card\">\n    <!-- innerText and value pattern -->\n    <span class=\"p-name\">\n        <span class=\"p-given-name value\">John</span> \n        <abbr class=\"p-additional-name\" title=\"Peter\">P</abbr>  \n        <span class=\"p-family-name value \">Doe</span> \n    </span>\n    <data class=\"p-honorific-suffix\" value=\"MSc\"></data>\n    \n    <!-- theses should return no value -->\n    <br class=\"p-honorific-suffix\">BSc<br>\n    <hr class=\"p-honorific-suffix\">BA\n    \n    <!-- image and area tags -->\n    <img class=\"p-honorific-suffix\" src=\"http://localhost:8889/images/logo.gif\" alt=\"PHD\">\n    <img src=\"http://localhost:8889/images/logo.gif\" alt=\"company logos\" usemap=\"#logomap\">\n    <map name=\"logomap\">\n        <area class=\"p-org\" shape=\"rect\" coords=\"0,0,82,126\" href=\"http://localhost:8889/madgex.htm\" alt=\"Madgex\">\n        <area class=\"p-org\" shape=\"circle\" coords=\"90,58,3\" href=\"http://localhost:8889/mozilla.htm\" alt=\"Mozilla\">\n    </map>\n</div>\n"
    var found = helper.parseHTML(htmlFragment,'http://example.com/')
    var expected = {"items":[{"type":["h-card"],"properties":{"name":["John Doe"],"given-name":["John"],"additional-name":["Peter"],"family-name":["Doe"],"honorific-suffix":["MSc","PHD"],"org":["Madgex","Mozilla"]}}]}
 
