@@ -1,3 +1,10 @@
+'use strict';
+// This file create a small node server so 
+// you view the files over http://localhost:3009/
+// enter in commandline - $ node app
+// Glenn Jones
+
+
 var Hapi            = require('hapi'),
     Blipp           = require('blipp'),
     Pack            = require('./package');

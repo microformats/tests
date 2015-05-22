@@ -2,7 +2,7 @@
   "author": "Glenn Jones",
   "name": "microformat-tests",
   "description": "A microformat 2 testsuite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "Public Domain",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
   "engines": {
     "node": ">= 0.12.x"
   },
-  "main": "app",
+  "main": "interface.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
