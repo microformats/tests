@@ -2,23 +2,26 @@
   "author": "Glenn Jones",
   "name": "microformats-testsuite",
   "description": "A microformat 2 testsuite",
-  "version": "0.0.1",
-  "license": "MIT",
+  "version": "0.1.0",
+  "license": "Public Domain",
   "repository": {
     "type": "git",
     "url": "git://github.com/microformats/tests.git"
   },
   "engines": {
-    "node": ">= 0.8.x"
+    "node": ">= 0.12.x"
   },
-  "main": "index",
-  "bin": {
-    "tests": "./bin/tests"
+  "main": "app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "request": "2.10.x",
-    "microformat-node": "0.2.x",
-    "cheerio": "0.10.0"
+    "blipp": "2.1.x",
+    "boom": "2.7.x",
+    "good": "6.1.x",
+    "good-console": "5.0.x",
+    "handlebars": "3.0.x",
+    "hapi": "8.4.x",
+    "joi": "6.4.x"
   }
-
 }

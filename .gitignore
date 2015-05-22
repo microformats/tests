@@ -13,12 +13,13 @@ logs
 results
 
 node_modules
+lib
+oldhtml
+templates/change-log.html
+
 npm-debug.log
 _site
 .DS_Store
-
-/static/testsuite/
 *.svn-base
 
-mocha-tests/parsers/.DS_Store
-mocha-tests/.DS_Store
+
