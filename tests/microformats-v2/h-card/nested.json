@@ -6,23 +6,13 @@
             "url": ["http://blog.lizardwrangler.com/"]
         },
         "children": [{
+            "value": "Mozilla Foundation",
             "type": ["h-card", "h-org"],
             "properties": {
                 "name": ["Mozilla Foundation"],
                 "url": ["http://mozilla.org/"]
             }
         }]
-    }, {
-        "type": ["h-card"],
-        "properties": {
-            "name": ["Mozilla Foundation"],
-            "url": ["http://mozilla.org/"]
-        }
-    }, {
-        "type": ["h-org"],
-        "properties": {
-            "name": ["Mozilla Foundation"]
-        }
     }],
     "rels": {}
 }

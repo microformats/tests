@@ -31,26 +31,6 @@
                 }
             }]
         }
-    }, {
-        "type": ["h-card"],
-        "properties": {
-            "name": ["Brian Warner"]
-        }
-    }, {
-        "type": ["h-card"],
-        "properties": {
-            "name": ["Kyle Machulis"]
-        }
-    }, {
-        "type": ["h-card"],
-        "properties": {
-            "name": ["Tantek Çelik"]
-        }
-    }, {
-        "type": ["h-card"],
-        "properties": {
-            "name": ["Sid Sutter"]
-        }
     }],
     "rels": {}
 }

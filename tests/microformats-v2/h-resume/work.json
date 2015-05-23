@@ -24,30 +24,6 @@
                 }
             }]
         }
-    }, {
-        "type": ["h-card"],
-        "properties": {
-            "name": ["Director of the World Wide Web Foundation"],
-            "title": ["Director of the World Wide Web Foundation"]
-        }
-    }, {
-        "type": ["h-event"],
-        "properties": {
-            "name": ["World Wide Web Foundation"],
-            "org": ["World Wide Web Foundation"],
-            "url": ["http://www.webfoundation.org/"],
-            "start": ["2009-01-18"],
-            "duration": ["P2Y11M"]
-        }
-    }, {
-        "type": ["h-card"],
-        "properties": {
-            "name": ["World Wide Web Foundation"],
-            "org": ["World Wide Web Foundation"],
-            "url": ["http://www.webfoundation.org/"],
-            "start": ["2009-01-18"],
-            "duration": ["P2Y11M"]
-        }
     }],
     "rels": {}
 }

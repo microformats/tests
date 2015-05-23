@@ -13,17 +13,6 @@
                 }
             }]
         }
-    }, {
-        "type": ["h-card"],
-        "properties": {
-            "name": ["Mozilla Foundation"],
-            "url": ["http://mozilla.org/"]
-        }
-    }, {
-        "type": ["h-org"],
-        "properties": {
-            "name": ["Mozilla Foundation"]
-        }
     }],
     "rels": {}
 }

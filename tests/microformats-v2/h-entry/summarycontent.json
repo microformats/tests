@@ -18,12 +18,6 @@
                 }
             }]
         }
-    }, {
-        "type": ["h-card"],
-        "properties": {
-            "name": ["Tantek"],
-            "url": ["http://tantek.com/"]
-        }
     }],
     "rels": {}
 }
