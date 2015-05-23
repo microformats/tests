@@ -5,7 +5,6 @@
             "name": ["Tim Berners-Lee"],
             "summary": ["invented the World Wide Web"],
             "affiliation": [{
-                "value": "",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["W3C"],
