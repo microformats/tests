@@ -7,7 +7,7 @@
         },
         "children": [{
             "value": "Mozilla Foundation",
-            "type": ["h-card", "h-org"],
+            "type": ["h-org", "h-card"],
             "properties": {
                 "name": ["Mozilla Foundation"],
                 "url": ["http://mozilla.org/"]
