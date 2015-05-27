@@ -1,0 +1,20 @@
+{
+    "items": [{
+        "type": ["h-resume"],
+        "properties": {
+            "contact": [{
+                "value": "Tim Berners-Lee",
+                "type": ["h-card"],
+                "properties": {
+                    "name": ["Tim Berners-Lee"]
+                }
+            }],
+            "summary": ["invented the World Wide Web"],
+            "skill": ["information systems", "advocacy", "leadership"],
+            "name": ["Tim Berners-Lee, invented the World Wide Web. Skills: information systems advocacy leadership"]
+        }
+    }],
+    "rels": {
+        "tag": ["http://example.com/skills/informationsystems", "http://example.com/skills/advocacy", "http://example.com/skills/informationsystems"]
+    }
+}

@@ -21,5 +21,7 @@
             }]
         }
     }],
-    "rels": {}
+    "rels": {
+        "tag": ["http://en.wikipedia.org/wiki/computer", "http://en.wikipedia.org/wiki/education"]
+    }
 }

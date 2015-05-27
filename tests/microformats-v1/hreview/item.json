@@ -11,7 +11,8 @@
                     "url": ["http://example.com/crepeoncole"]
                 }
             }],
-            "rating": ["5"]
+            "rating": ["5"],
+            "name": ["Crepes on Cole 5 out of 5 stars"]
         }
     }],
     "rels": {}

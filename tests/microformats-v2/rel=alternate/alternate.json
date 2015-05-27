@@ -2,7 +2,7 @@
     "items": [],
     "rels": {},
     "alternates": [{
-        "url": "updates.atom",
+        "url": "http://example.com/updates.atom",
         "type": "application/atom+xml",
         "rel": "updates"
     }]

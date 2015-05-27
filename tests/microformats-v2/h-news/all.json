@@ -14,14 +14,14 @@
                     }],
                     "summary": ["Last week the microformats.org community celebrated its 7th birthday at a gathering hosted by Mozilla in San Francisco and recognized accomplishments, challenges, and opportunities."],
                     "updated": ["2012-06-25T17:08:26"],
-                    "author": {
+                    "author": [{
                         "value": "Tantek",
                         "type": ["h-card"],
                         "properties": {
                             "name": ["Tantek"],
                             "url": ["http://tantek.com/"]
                         }
-                    }
+                    }]
                 }
             }],
             "dateline": [{
