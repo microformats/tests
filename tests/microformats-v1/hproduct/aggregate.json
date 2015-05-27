@@ -17,7 +17,8 @@
                     "rating": ["9.2"],
                     "average": ["9.2"],
                     "best": ["10"],
-                    "count": ["178"]
+                    "count": ["178"],
+                    "name": ["9.2 out of 10 based on 178 reviews"]
                 }
             }],
             "category": ["Computer", "Education"],
@@ -40,5 +41,7 @@
             }]
         }
     }],
-    "rels": {}
+    "rels": {
+        "tag": ["http://en.wikipedia.org/wiki/computer", "http://en.wikipedia.org/wiki/education"]
+    }
 }
