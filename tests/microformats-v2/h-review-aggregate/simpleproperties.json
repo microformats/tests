@@ -3,7 +3,7 @@
         "type": ["h-review-aggregate"],
         "properties": {
             "item": [{
-                "value": "Mediterranean Wraps 433 S California Ave, Palo Alto, CA - (650) 321-8189",
+                "value": "Mediterranean Wraps\n\n433 S California Ave, \n            Palo Alto, \n            CA - \n            (650) 321-8189",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Mediterranean Wraps"],
@@ -13,12 +13,12 @@
                     "tel": ["(650) 321-8189"]
                 }
             }],
-            "summary": ["Customers flock to this small restaurant for their tasty falafel and shawerma wraps and welcoming staff."],
+            "summary": ["Customers flock to this small restaurant for their \n    tasty falafel and shawerma wraps and welcoming staff."],
             "rating": ["9.2"],
             "average": ["9.2"],
             "best": ["10"],
             "count": ["17"],
-            "name": ["Mediterranean Wraps 433 S California Ave, Palo Alto, CA - (650) 321-8189 Customers flock to this small restaurant for their tasty falafel and shawerma wraps and welcoming staff. 9.2 out of 10 based on 17 reviews"]
+            "name": ["Mediterranean Wraps\n\n433 S California Ave, \n            Palo Alto, \n            CA - \n            (650) 321-8189\n\n\nCustomers flock to this small restaurant for their \n    tasty falafel and shawerma wraps and welcoming staff.\n\n9.2 out of \n        10 \n        based on 17 reviews"]
         }
     }],
     "rels": {}
