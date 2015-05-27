@@ -1,4 +1,4 @@
 {
     "items": [],
-    "rels": {}
+    "rels": {'nofollow': ['http://microformats.org/wiki/microformats:copyrights']}
 }
