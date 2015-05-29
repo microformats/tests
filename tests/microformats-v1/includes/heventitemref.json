@@ -2,50 +2,34 @@
     "items": [{
         "type": ["h-event"],
         "properties": {
-            "name": ["Monetizing Android Apps"],
-            "speaker": ["Chrix Finne", "Kenneth Lui"],
             "location": [{
-                "value": "Room 10 Moscone Center, San Francisco",
+                "value": "\n        Room 10\n    \n    Moscone Center,   \n    San Francisco  \n",
                 "type": ["h-adr"],
                 "properties": {
                     "extended-address": ["Room 10", "Moscone Center"],
                     "locality": ["San Francisco"],
-                    "name": ["Room 10 Moscone Center, San Francisco"]
+                    "name": ["\n        Room 10\n    \n    Moscone Center,   \n    San Francisco  \n"]
                 }
             }],
             "start": ["2012-06-27T15:45:00-0800"],
-            "end": ["2012-06-27T16:45:00-0800"]
+            "end": ["2012-06-27T16:45:00-0800"],
+            "name": ["\n    Monetizing Android Apps - spaekers: \n    Chrix Finne, \n    Kenneth Lui - \n    \n        Room 10\n    \n    Moscone Center,   \n    San Francisco  \n  \n\n    Session 01 is between: \n    3:45PM to \n    4:45PM \n"]
         }
     }, {
         "type": ["h-event"],
         "properties": {
-            "name": ["New Low-Level Media APIs in Android"],
-            "speaker": ["Dave Burke"],
             "location": [{
-                "value": "Room 11 Moscone Center, San Francisco",
+                "value": "\n        Room 11\n    \n    Moscone Center,   \n    San Francisco  \n",
                 "type": ["h-adr"],
                 "properties": {
                     "extended-address": ["Room 11", "Moscone Center"],
                     "locality": ["San Francisco"],
-                    "name": ["Room 11 Moscone Center, San Francisco"]
+                    "name": ["\n        Room 11\n    \n    Moscone Center,   \n    San Francisco  \n"]
                 }
             }],
             "start": ["2012-06-27T15:45:00-0800"],
-            "end": ["2012-06-27T16:45:00-0800"]
-        }
-    }, {
-        "type": ["h-adr"],
-        "properties": {
-            "extended-address": ["Room 10", "Moscone Center"],
-            "locality": ["San Francisco"],
-            "name": ["Room 10 Moscone Center, San Francisco"]
-        }
-    }, {
-        "type": ["h-adr"],
-        "properties": {
-            "extended-address": ["Room 11", "Moscone Center"],
-            "locality": ["San Francisco"],
-            "name": ["Room 11 Moscone Center, San Francisco"]
+            "end": ["2012-06-27T16:45:00-0800"],
+            "name": ["\n    New Low-Level Media APIs in Android - spaekers: \n    Dave Burke -\n    \n        Room 11\n    \n    Moscone Center,   \n    San Francisco  \n  \n\n    Session 01 is between: \n    3:45PM to \n    4:45PM \n"]
         }
     }],
     "rels": {}

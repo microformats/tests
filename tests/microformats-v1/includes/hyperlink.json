@@ -2,36 +2,45 @@
     "items": [{
         "type": ["h-card"],
         "properties": {
-            "name": ["Ben Ward"],
             "org": ["Twitter"],
             "adr": [{
-                "value": "1355 Market St, San Francisco, CA 94103",
+                "value": "\n        1355 Market St,\n        San Francisco, \n        CA\n        94103\n    ",
                 "type": ["h-adr"],
                 "properties": {
                     "street-address": ["1355 Market St"],
                     "locality": ["San Francisco"],
                     "region": ["CA"],
                     "postal-code": ["94103"],
-                    "name": ["1355 Market St, San Francisco, CA 94103"]
+                    "name": ["\n        1355 Market St,\n        San Francisco, \n        CA\n        94103\n    "]
                 }
-            }]
+            }],
+            "name": ["\n    Ben Ward\n    Twitter\n    Twitter\n    \n        1355 Market St,\n        San Francisco, \n        CA\n        94103\n    \n\n"]
         }
     }, {
         "type": ["h-card"],
         "properties": {
-            "name": ["Dan Webb"],
             "org": ["Twitter"],
             "adr": [{
-                "value": "1355 Market St, San Francisco, CA 94103",
+                "value": "\n        1355 Market St,\n        San Francisco, \n        CA\n        94103\n    ",
                 "type": ["h-adr"],
                 "properties": {
                     "street-address": ["1355 Market St"],
                     "locality": ["San Francisco"],
                     "region": ["CA"],
                     "postal-code": ["94103"],
-                    "name": ["1355 Market St, San Francisco, CA 94103"]
+                    "name": ["\n        1355 Market St,\n        San Francisco, \n        CA\n        94103\n    "]
                 }
-            }]
+            }],
+            "name": ["\n    Dan Webb\n    Twitter\n    Twitter\n    \n        1355 Market St,\n        San Francisco, \n        CA\n        94103\n    \n\n"]
+        }
+    }, {
+        "type": ["h-adr"],
+        "properties": {
+            "street-address": ["1355 Market St"],
+            "locality": ["San Francisco"],
+            "region": ["CA"],
+            "postal-code": ["94103"],
+            "name": ["\n        1355 Market St,\n        San Francisco, \n        CA\n        94103\n    "]
         }
     }],
     "rels": {}
