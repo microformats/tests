@@ -3,17 +3,17 @@
         "type": ["h-resume"],
         "properties": {
             "name": ["Tim Berners-Lee"],
-            "summary": ["Invented the World Wide Web."],
             "contact": [{
-                "value": "Director of the World Wide Web Foundation",
+                "value": "\n        Director of the World Wide Web Foundation\n    ",
                 "type": ["h-card"],
                 "properties": {
-                    "name": ["Director of the World Wide Web Foundation"],
-                    "title": ["Director of the World Wide Web Foundation"]
+                    "title": ["Director of the World Wide Web Foundation"],
+                    "name": ["\n        Director of the World Wide Web Foundation\n    "]
                 }
             }],
+            "summary": ["Invented the World Wide Web."],
             "education": [{
-                "value": "The Queen's College, Oxford University, \n        BA Hons (I) Physics \n        1973 –\n        1976",
+                "value": "\n        The Queen's College, Oxford University, \n        BA Hons (I) Physics \n        1973 –\n        1976\n    ",
                 "type": ["h-event", "h-card"],
                 "properties": {
                     "name": ["The Queen's College, Oxford University"],

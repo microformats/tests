@@ -2,12 +2,12 @@
     "items": [{
         "type": ["h-event"],
         "properties": {
-            "name": ["IndieWebCamp 2012"],
+            "name": ["\n    IndieWebCamp 2012\n  "],
             "url": ["http://indiewebcamp.com/2012"],
             "start": ["2012-06-30"],
             "end": ["2012-07-01"],
             "location": [{
-                "value": "Geoloqi, \n    920 SW 3rd Ave. Suite 400, \n    Portland, \n    OR",
+                "value": "\n    Geoloqi, \n    920 SW 3rd Ave. Suite 400, \n    Portland, \n    OR\n  ",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Geoloqi"],
