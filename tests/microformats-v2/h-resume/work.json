@@ -13,8 +13,8 @@
                 }
             }],
             "experience": [{
-                "value": "Director World Wide Web Foundation Jan 2009 - Present (2 years 11 month)",
-                "type": ["h-event", "h-card"],
+               "value": "Director\n        World Wide Web Foundation\n        \n            Jan 2009 – Present\n            (2 years 11 month)",
+               "type": ["h-event", "h-card"],
                 "properties": {
                     "title": ["Director"],
                     "name": ["World Wide Web Foundation"],

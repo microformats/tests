@@ -5,7 +5,7 @@
             "name": ["Tim Berners-Lee"],
             "summary": ["Invented the World Wide Web."],
             "contact": [{
-                "value": "MIT 32 Vassar Street, Room 32-G524, Cambridge, MA 02139, USA. Tel:+1 (617) 253 5702 Email:timbl@w3.org",
+                "value": "MIT\n        \n            32 Vassar Street, \n            Room 32-G524, \n            Cambridge,  \n            MA \n            02139, \n            USA.\n        \n        Tel:+1 (617) 253 5702\n        Email:timbl@w3.org",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["MIT"],

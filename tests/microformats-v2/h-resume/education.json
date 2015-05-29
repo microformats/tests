@@ -13,7 +13,7 @@
                 }
             }],
             "education": [{
-                "value": "The Queen's College, Oxford University, BA Hons (I) Physics 1973 - 1976",
+                "value": "The Queen's College, Oxford University, \n        BA Hons (I) Physics \n        1973 –\n        1976",
                 "type": ["h-event", "h-card"],
                 "properties": {
                     "name": ["The Queen's College, Oxford University"],
