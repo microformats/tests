@@ -3,7 +3,7 @@
         "type": ["h-resume"],
         "properties": {
             "contact": [{
-                "value": "Tim Berners-Lee Director of the World Wide Web Foundation",
+                "value": "\n        Tim Berners-Lee\n        Director of the World Wide Web Foundation\n    ",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Tim Berners-Lee"],
@@ -12,7 +12,7 @@
             }],
             "summary": ["Invented the World Wide Web."],
             "experience": [{
-                "value": "Director World Wide Web Foundation Jan 2009 - Present (2 years 11 month)",
+                "value": "\n        Director\n        World Wide Web Foundation\n        \n            Jan 2009 – Present\n            (2 years 11 month)\n        \n    ",
                 "type": ["h-event", "h-card"],
                 "properties": {
                     "title": ["Director"],
@@ -23,7 +23,7 @@
                     "duration": ["P2Y11M"]
                 }
             }],
-            "name": ["Tim Berners-Lee Director of the World Wide Web Foundation Invented the World Wide Web. Director World Wide Web Foundation Jan 2009 - Present (2 years 11 month)"]
+            "name": ["\n    \n        Tim Berners-Lee\n        Director of the World Wide Web Foundation\n    \n    Invented the World Wide Web.\n    \n        Director\n        World Wide Web Foundation\n        \n            Jan 2009 – Present\n            (2 years 11 month)\n        \n    \n"]
         }
     }],
     "rels": {}

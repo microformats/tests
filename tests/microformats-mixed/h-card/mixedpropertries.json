@@ -6,7 +6,7 @@
             "org": ["Mozilla Foundation"],
             "url": ["http://mozilla.org/"],
             "adr": [{
-                "value": "665 3rd St. Suite 207 San Francisco, CA 94107 U.S.A.",
+                "value": "\n        665 3rd St.  \n        Suite 207  \n        San Francisco,  \n        CA  \n        94107  \n        U.S.A.  \n    ",
                 "type": ["h-adr"],
                 "properties": {
                     "street-address": ["665 3rd St."],
@@ -15,7 +15,7 @@
                     "region": ["CA"],
                     "postal-code": ["94107"],
                     "country-name": ["U.S.A."],
-                    "name": ["665 3rd St. Suite 207 San Francisco, CA 94107 U.S.A."]
+                    "name": ["\n        665 3rd St.  \n        Suite 207  \n        San Francisco,  \n        CA  \n        94107  \n        U.S.A.  \n    "]
                 }
             }]
         }

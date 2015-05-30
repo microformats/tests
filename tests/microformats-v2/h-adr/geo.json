@@ -3,7 +3,7 @@
         "type": ["h-adr"],
         "properties": {
             "name": ["Bricklayer's Arms"],
-            "label": ["3 Charlotte Road, City of London, EC2A 3PE, UK"],
+            "label": [" \n        3 Charlotte Road,  \n        City of London,  \n        EC2A 3PE, \n        UK \n    "],
             "street-address": ["3 Charlotte Road"],
             "locality": ["City of London"],
             "postal-code": ["EC2A 3PE"],

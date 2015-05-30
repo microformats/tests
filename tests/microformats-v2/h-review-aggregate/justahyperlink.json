@@ -9,9 +9,9 @@
                     "name": ["Mediterranean Wraps"]
                 }
             }],
-            "summary": ["Customers flock to this small restaurant for their \n        tasty falafel and shawerma wraps and welcoming staff."],
+            "summary": ["\n        Customers flock to this small restaurant for their \n        tasty falafel and shawerma wraps and welcoming staff.\n    "],
             "rating": ["4.5"],
-            "name": ["Mediterranean Wraps\n\n        Customers flock to this small restaurant for their \n        tasty falafel and shawerma wraps and welcoming staff.\n    \n4.5 out of 5"]
+            "name": ["\n    Mediterranean Wraps\n     \n        Customers flock to this small restaurant for their \n        tasty falafel and shawerma wraps and welcoming staff.\n    \n    4.5 out of 5 \n"]
         }
     }],
     "rels": {}

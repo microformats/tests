@@ -17,26 +17,26 @@
             "tel": ["+1 415 555 100", "+1 415 555 200", "+1 415 555 300"],
             "email": ["mailto:john.doe@madgex.com", "mailto:john.doe@webfeetmedia.com"],
             "mailer": ["PigeonMail 2.1", "Outlook 2007"],
+            "label": ["\n            \n                Work: \n                North Street, \n                Brighton, \n                United Kingdom\n            \n            \n        ", "\n            \n                Home: \n                West Street, \n                Brighton, \n                United Kingdom\n            \n        "],
             "adr": [{
-                "value": "Work: North Street, Brighton, United Kingdom",
+                "value": "\n                Work: \n                North Street, \n                Brighton, \n                United Kingdom\n            ",
                 "type": ["h-adr"],
                 "properties": {
                     "street-address": ["North Street"],
                     "locality": ["Brighton"],
                     "country-name": ["United Kingdom"],
-                    "name": ["Work: North Street, Brighton, United Kingdom"]
+                    "name": ["\n                Work: \n                North Street, \n                Brighton, \n                United Kingdom\n            "]
                 }
             }, {
-                "value": "Home: West Street, Brighton, United Kingdom",
+                "value": "\n                Home: \n                West Street, \n                Brighton, \n                United Kingdom\n            ",
                 "type": ["h-adr"],
                 "properties": {
                     "street-address": ["West Street"],
                     "locality": ["Brighton"],
                     "country-name": ["United Kingdom"],
-                    "name": ["Home: West Street, Brighton, United Kingdom"]
+                    "name": ["\n                Home: \n                West Street, \n                Brighton, \n                United Kingdom\n            "]
                 }
             }],
-            "label": ["Work: North Street, Brighton, United Kingdom", "Home: West Street, Brighton, United Kingdom"],
             "agent": ["Jane Doe", {
                 "value": "Dave Doe",
                 "type": ["h-card"],
@@ -47,7 +47,7 @@
             "key": ["hd02$Gfu*d%dh87KTa2=23934532479"]
         }
     }],
-     "rels": {
+    "rels": {
         "tag": ["http://en.wikipedia.org/wiki/design", "http://en.wikipedia.org/wiki/development", "http://en.wikipedia.org/wiki/web"]
     }
 }

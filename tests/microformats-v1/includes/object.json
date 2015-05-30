@@ -2,38 +2,44 @@
     "items": [{
         "type": ["h-event"],
         "properties": {
-            "name": ["HTML5 & CSS3 latest features in action!"],
-            "speaker": ["David Rousset"],
-            "summary": ["Build Conference"],
             "start": ["2012-10-30T11:45:00-0800"],
+            "name": ["Build Conference"],
             "location": [{
-                "value": "Redmond, Washington, USA",
+                "value": "\n        Redmond, \n        Washington, \n        USA\n    ",
                 "type": ["h-adr"],
                 "properties": {
                     "locality": ["Redmond"],
                     "region": ["Washington"],
                     "country-name": ["USA"],
-                    "name": ["Redmond, Washington, USA"]
+                    "name": ["\n        Redmond, \n        Washington, \n        USA\n    "]
                 }
-            }]
+            }],
+            "photo": ["http://example.com/#buildconf"]
         }
     }, {
         "type": ["h-event"],
         "properties": {
-            "name": ["Building High-Performing JavaScript for Modern Engines"],
-            "speaker": ["John-David Dalton", "Amanda Silver"],
-            "summary": ["Build Conference"],
             "start": ["2012-10-31T11:15:00-0800"],
+            "name": ["Build Conference"],
             "location": [{
-                "value": "Redmond, Washington, USA",
+                "value": "\n        Redmond, \n        Washington, \n        USA\n    ",
                 "type": ["h-adr"],
                 "properties": {
                     "locality": ["Redmond"],
                     "region": ["Washington"],
                     "country-name": ["USA"],
-                    "name": ["Redmond, Washington, USA"]
+                    "name": ["\n        Redmond, \n        Washington, \n        USA\n    "]
                 }
-            }]
+            }],
+            "photo": ["http://example.com/#buildconf"]
+        }
+    }, {
+        "type": ["h-adr"],
+        "properties": {
+            "locality": ["Redmond"],
+            "region": ["Washington"],
+            "country-name": ["USA"],
+            "name": ["\n        Redmond, \n        Washington, \n        USA\n    "]
         }
     }],
     "rels": {}

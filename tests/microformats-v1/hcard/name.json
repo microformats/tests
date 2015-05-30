@@ -7,7 +7,7 @@
             "additional-name": ["Peter"],
             "family-name": ["Doe"],
             "honorific-suffix": ["MSc", "PHD"],
-            "name": ["Dr John P Doe"],
+            "name": ["\n    \n        Dr \n        John \n        P  \n        Doe \n        \n        \n    \n"],
             "photo": ["http://example.com/images/logo.gif"]
         }
     }],

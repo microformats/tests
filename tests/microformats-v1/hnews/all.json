@@ -3,16 +3,16 @@
         "type": ["h-news"],
         "properties": {
             "entry": [{
-                "value": "microformats.org at 7 Last week the microformats.org community celebrated its 7th birthday at a gathering hosted by Mozilla in San Francisco and recognized accomplishments, challenges, and opportunities. The microformats tagline “humans first, machines second” forms the basis of many of our principles, and in that regard, we’d like to recognize a few people and thank them for their years of volunteer service Updated June 25th, 2012 by Tantek",
+                "value": "\n        microformats.org at 7\n        \n            Last week the microformats.org community \n                celebrated its 7th birthday at a gathering hosted by Mozilla in \n                San Francisco and recognized accomplishments, challenges, and \n                opportunities.\n\n            The microformats tagline “humans first, machines second” \n                forms the basis of many of our \n                principles, and \n                in that regard, we’d like to recognize a few people and \n                thank them for their years of volunteer service \n          \n        Updated \n            June 25th, 2012 by\n            Tantek\n        \n    ",
                 "type": ["h-entry"],
                 "properties": {
                     "name": ["microformats.org at 7"],
                     "url": ["http://microformats.org/2012/06/25/microformats-org-at-7"],
-                    "summary": ["Last week the microformats.org community celebrated its 7th birthday at a gathering hosted by Mozilla in San Francisco and recognized accomplishments, challenges, and opportunities."],
                     "content": [{
-                        "value": "Last week the microformats.org community celebrated its 7th birthday at a gathering hosted by Mozilla in San Francisco and recognized accomplishments, challenges, and opportunities. The microformats tagline “humans first, machines second” forms the basis of many of our principles, and in that regard, we’d like to recognize a few people and thank them for their years of volunteer service",
+                        "value": "\n            Last week the microformats.org community \n                celebrated its 7th birthday at a gathering hosted by Mozilla in \n                San Francisco and recognized accomplishments, challenges, and \n                opportunities.\n\n            The microformats tagline “humans first, machines second” \n                forms the basis of many of our \n                principles, and \n                in that regard, we’d like to recognize a few people and \n                thank them for their years of volunteer service \n        ",
                         "html": "Last week the microformats.org community \n                celebrated its 7th birthday at a gathering hosted by Mozilla in \n                San Francisco and recognized accomplishments, challenges, and \n                opportunities.\n\n            The microformats tagline “humans first, machines second” \n                forms the basis of many of our \n                principles, and \n                in that regard, we’d like to recognize a few people and \n                thank them for their years of volunteer service "
                     }],
+                    "summary": ["Last week the microformats.org community \n                celebrated its 7th birthday at a gathering hosted by Mozilla in \n                San Francisco and recognized accomplishments, challenges, and \n                opportunities."],
                     "updated": ["2012-06-25T17:08:26"],
                     "author": [{
                         "value": "Tantek",
@@ -25,19 +25,19 @@
                 }
             }],
             "dateline": [{
-                "value": "San Francisco, CA",
+                "value": "\n            \n                San Francisco, \n                CA \n            \n        ",
                 "type": ["h-card"],
                 "properties": {
                     "adr": [{
-                        "value": "San Francisco, CA",
+                        "value": "\n                San Francisco, \n                CA \n            ",
                         "type": ["h-adr"],
                         "properties": {
                             "locality": ["San Francisco"],
                             "region": ["CA"],
-                            "name": ["San Francisco, CA"]
+                            "name": ["\n                San Francisco, \n                CA \n            "]
                         }
                     }],
-                    "name": ["San Francisco, CA"]
+                    "name": ["\n            \n                San Francisco, \n                CA \n            \n        "]
                 }
             }],
             "geo": [{
@@ -48,7 +48,7 @@
                 }
             }],
             "source-org": [{
-                "value": "microformats.org",
+                "value": "\n            microformats.org\n        ",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["microformats.org"],
@@ -57,7 +57,7 @@
                 }
             }],
             "principles": ["http://microformats.org/wiki/Category:public_domain_license"],
-            "name": ["microformats.org at 7 Last week the microformats.org community celebrated its 7th birthday at a gathering hosted by Mozilla in San Francisco and recognized accomplishments, challenges, and opportunities. The microformats tagline “humans first, machines second” forms the basis of many of our principles, and in that regard, we’d like to recognize a few people and thank them for their years of volunteer service Updated June 25th, 2012 by Tantek San Francisco, CA (Geo: 37.774921;-122.445202) microformats.org Publishing policy"]
+            "name": ["\n    \n        microformats.org at 7\n        \n            Last week the microformats.org community \n                celebrated its 7th birthday at a gathering hosted by Mozilla in \n                San Francisco and recognized accomplishments, challenges, and \n                opportunities.\n\n            The microformats tagline “humans first, machines second” \n                forms the basis of many of our \n                principles, and \n                in that regard, we’d like to recognize a few people and \n                thank them for their years of volunteer service \n          \n        Updated \n            June 25th, 2012 by\n            Tantek\n        \n    \n\n    \n        \n            \n                San Francisco, \n                CA \n            \n        \n        (Geo: 37.774921;-122.445202) \n        \n            microformats.org\n        \n    \n    \n        Publishing policy\n    \n"]
         }
     }],
     "rels": {
@@ -65,3 +65,8 @@
         "principles": ["http://microformats.org/wiki/Category:public_domain_license"]
     }
 }
+
+
+
+
+

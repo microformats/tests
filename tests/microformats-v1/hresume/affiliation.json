@@ -11,6 +11,7 @@
             }],
             "summary": ["invented the World Wide Web"],
             "affiliation": [{
+                "value": "\n            \n        ",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["W3C"],
@@ -18,7 +19,7 @@
                     "url": ["http://www.w3.org/"]
                 }
             }],
-            "name": ["Tim Berners-Lee, invented the World Wide Web. Belongs to following groups:"]
+            "name": ["\n    \n        Tim Berners-Lee, \n        invented the World Wide Web.\n    \n    Belongs to following groups:\n       \n        \n            \n        \n       \n"]
         }
     }],
     "rels": {}

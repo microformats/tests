@@ -4,7 +4,7 @@
         "properties": {
             "organization-name": ["W3C"],
             "organization-unit": ["CSS Working Group"],
-            "name": ["W3C - \n    CSS Working Group"]
+            "name": ["\n    W3C - \n    CSS Working Group\n"]
         }
     }],
     "rels": {}
