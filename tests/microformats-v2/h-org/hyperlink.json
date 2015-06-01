@@ -6,5 +6,6 @@
             "url": ["http://mozilla.org/"]
         }
     }],
-    "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

@@ -10,5 +10,6 @@
             "org": ["Madgex", "Mozilla"]
         }
     }],
-    "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

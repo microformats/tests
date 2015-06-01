@@ -6,5 +6,6 @@
             "photo": ["http://example.com/images/photo.gif"]
         }
     }],
-    "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

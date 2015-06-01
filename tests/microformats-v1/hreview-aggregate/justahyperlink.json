@@ -3,7 +3,7 @@
         "type": ["h-review-aggregate"],
         "properties": {
             "item": [{
-                "value": "Mediterranean Wraps",
+                "value": "\n        Mediterranean Wraps\n    ",
                 "type": ["h-item"],
                 "properties": {
                     "name": ["Mediterranean Wraps"],
@@ -12,8 +12,9 @@
             }],
             "rating": ["4.5"],
             "count": ["6"],
-            "name": ["Mediterranean Wraps - Rated: 4.5 out of 5 (6 reviews)"]
+            "name": ["\n    \n        Mediterranean Wraps\n     - Rated: \n    4.5 out of 5 (6 reviews)\n"]
         }
     }],
-    "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

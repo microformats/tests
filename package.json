@@ -2,7 +2,7 @@
   "author": "Glenn Jones",
   "name": "microformat-tests",
   "description": "A microformat 2 testsuite",
-  "version": "0.1.7",
+  "version": "0.1.12",
   "license": "Public Domain",
   "repository": {
     "type": "git",
