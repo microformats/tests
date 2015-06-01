@@ -3,7 +3,7 @@
         "type": ["h-review-aggregate"],
         "properties": {
             "item": [{
-                "value": "Mediterranean Wraps",
+                "value": "\n        Mediterranean Wraps\n    ",
                 "type": ["h-item"],
                 "properties": {
                     "name": ["Mediterranean Wraps"],
