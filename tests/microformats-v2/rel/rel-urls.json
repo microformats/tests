@@ -4,7 +4,7 @@
     "author": [ "http://example.com/a", "http://example.com/b" ],
     "in-reply-to": [ "http://example.com/1", "http://example.com/2" ] 
   },
-  "rel-urls": [{
+  "rel-urls": {
     "http://example.com/a": {
       "rels": ["author"], 
       "text": "author a"
@@ -27,7 +27,7 @@
       "hreflang": "fr", 
       "text": "French mobile homepage"
     }
-  }
+  },
   "alternates": [{
      "url": "http://example.com/fr", 
      "rel": "home", 

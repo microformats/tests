@@ -42,5 +42,6 @@
             "name": ["\n        Redmond, \n        Washington, \n        USA\n    "]
         }
     }],
-    "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

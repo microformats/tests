@@ -24,5 +24,6 @@
         "photo": ["http://example.com/bios/mitchell-baker/picture.jpeg"]
       }
    }],
-  "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

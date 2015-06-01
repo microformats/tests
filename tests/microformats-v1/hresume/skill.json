@@ -16,5 +16,21 @@
     }],
     "rels": {
         "tag": ["http://example.com/skills/informationsystems", "http://example.com/skills/advocacy", "http://example.com/skills/informationsystems"]
+    },
+    "rel-urls": {
+        "http://example.com/skills/informationsystems": {
+            "text": "information systems",
+            "rels": ["tag"]
+        }
+    }, {
+        "http://example.com/skills/advocacy": {
+            "text": "advocacy",
+            "rels": ["tag"]
+        }
+    }, {
+        "http://example.com/skills/informationsystems": {
+            "text": "leadership",
+            "rels": ["tag"]
+        }
     }
 }

@@ -7,5 +7,6 @@
             "locality": ["London"]
         }
     }],
-    "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

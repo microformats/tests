@@ -11,5 +11,6 @@
             "photo": ["http://example.com/images/logo.gif"]
         }
     }],
-    "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

@@ -6,5 +6,6 @@
             "url": ["http://www.raspberrypi.org/"]
         }
     }],
-    "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

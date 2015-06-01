@@ -49,5 +49,21 @@
     }],
     "rels": {
         "tag": ["http://en.wikipedia.org/wiki/design", "http://en.wikipedia.org/wiki/development", "http://en.wikipedia.org/wiki/web"]
+    },
+    "rel-urls": {
+        "http://en.wikipedia.org/wiki/design": {
+            "text": "design",
+            "rels": ["tag"]
+        }
+    }, {
+        "http://en.wikipedia.org/wiki/development": {
+            "text": "development",
+            "rels": ["tag"]
+        }
+    }, {
+        "http://en.wikipedia.org/wiki/web": {
+            "text": "web",
+            "rels": ["tag"]
+        }
     }
 }

@@ -6,5 +6,6 @@
             "given-name": ["John"]
         }
     }],
-    "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

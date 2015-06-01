@@ -6,5 +6,6 @@
             "url": ["http://microformats.org/2012/06/25/microformats-org-at-7"]
         }
     }],
-    "rels": {}
+    "rels": {},
+    "rel-urls": {}
 }

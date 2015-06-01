@@ -62,6 +62,17 @@
     "rels": {
         "bookmark": ["http://microformats.org/2012/06/25/microformats-org-at-7"],
         "principles": ["http://microformats.org/wiki/Category:public_domain_license"]
+    },
+    "rel-urls": {
+        "http://microformats.org/2012/06/25/microformats-org-at-7": {
+            "text": "microformats.org at 7",
+            "rels": ["bookmark"]
+        }
+    }, {
+        "http://microformats.org/wiki/Category:public_domain_license": {
+            "text": "Publishing policy",
+            "rels": ["principles"]
+        }
     }
 }
 
