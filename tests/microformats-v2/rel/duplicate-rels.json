@@ -1,8 +1,8 @@
 {
     "rels": {
         "bookmark": [
-            "http://ma.tt/2015/06/jefferson-on-idleness/", 
-            "http://ma.tt/2015/05/beethoven-mozart-bach/"
+            "http://ma.tt/2015/05/beethoven-mozart-bach/",
+            "http://ma.tt/2015/06/jefferson-on-idleness/" 
         ], 
         "category": [
             "http://ma.tt/category/asides/"
