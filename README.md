@@ -8,6 +8,27 @@ The test have been added to npm (Node Package Manager) and the latest version ca
 
     npm i microformats-tests --save
 
+### Contributing new tests or updating tests
+
+This set of test belongs to the microformats community. If you find any errors in the current test or new patterns you believe should be in the test suite please feel free to send a pull request. 
+
+Notes on creating a new test
+
+A test is built in two parts a HTML file, which contains a fragment of HTML to parse, and JSON file with the expected output from a parser.
+
+1.	Within the “test” directory of this project select the correct directory for the version of microformats the test belongs to. If you are creating a test for a new microformats feature or exploring an issue please add these tests to the “experimental” directory.
+
+2.	Within the correct directory add your new test to subdirecory with either the name of it format i.e. `h-card` or the name of the new feature.
+
+3.	Create the HTML file. Add the smallest and clearest example of the markup you can. There is no need to add head or body tags etc.
+
+4.	Create a JSON file with the same name as your HTML file. The JSON should be the expected output from a parser.
+
+5.	Once you have created the test please update the change-log.html Add a `h-entry` with details of the test . At the bottom of the page please add yourself as a contributor on the authors list
+
+
+
+
 ###License
 All content and code in this repo is released into the [public domain](http://en.wikipedia.org/wiki/public_domain).
 
