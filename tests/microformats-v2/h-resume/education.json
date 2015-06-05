@@ -4,16 +4,16 @@
         "properties": {
             "name": ["Tim Berners-Lee"],
             "contact": [{
-                "value": "\n        Director of the World Wide Web Foundation\n    ",
+                "value": "Director of the World Wide Web Foundation",
                 "type": ["h-card"],
                 "properties": {
                     "title": ["Director of the World Wide Web Foundation"],
-                    "name": ["\n        Director of the World Wide Web Foundation\n    "]
+                    "name": ["Director of the World Wide Web Foundation"]
                 }
             }],
             "summary": ["Invented the World Wide Web."],
             "education": [{
-                "value": "\n        The Queen's College, Oxford University, \n        BA Hons (I) Physics \n        1973 –\n        1976\n    ",
+                "value": "The Queen's College, Oxford University, \n        BA Hons (I) Physics \n        1973 –\n        1976",
                 "type": ["h-event", "h-card"],
                 "properties": {
                     "name": ["The Queen's College, Oxford University"],

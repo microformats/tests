@@ -5,7 +5,7 @@
             "rating": ["5"],
             "name": ["Crepes on Cole is awesome"],
             "reviewer": [{
-                "value": "\n        Reviewer: Tantek - \n    ",
+                "value": "Tantek",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Tantek"]
@@ -13,11 +13,11 @@
             }],
             "reviewed": ["2005-04-18"],
             "description": [{
-                 "value": "\n        \n        Crepes on Cole is one of the best little \n        creperies in San Francisco.\n        Excellent food and service. Plenty of tables in a variety of sizes \n        for parties large and small.  Window seating makes for excellent \n        people watching to/from the N-Judah which stops right outside.  \n        I've had many fun social gatherings here, as well as gotten \n        plenty of work done thanks to neighborhood WiFi.\n        \n    ",
+                 "value": "Crepes on Cole is one of the best little \n        creperies in San Francisco.\n        Excellent food and service. Plenty of tables in a variety of sizes \n        for parties large and small.  Window seating makes for excellent \n        people watching to/from the N-Judah which stops right outside.  \n        I've had many fun social gatherings here, as well as gotten \n        plenty of work done thanks to neighborhood WiFi.",
                 "html": "\n        <p class=\"p-item h-card\">\n        <span class=\"p-name p-org\">Crepes on Cole</span> is one of the best little \n        creperies in <span class=\"p-adr h-adr\"><span class=\"p-locality\">San Francisco</span></span>.\n        Excellent food and service. Plenty of tables in a variety of sizes \n        for parties large and small.  Window seating makes for excellent \n        people watching to/from the N-Judah which stops right outside.  \n        I've had many fun social gatherings here, as well as gotten \n        plenty of work done thanks to neighborhood WiFi.\n        </p>\n    "
             }],
            "item": [{
-                "value": "\n        Crepes on Cole is one of the best little \n        creperies in San Francisco.\n        Excellent food and service. Plenty of tables in a variety of sizes \n        for parties large and small.  Window seating makes for excellent \n        people watching to/from the N-Judah which stops right outside.  \n        I've had many fun social gatherings here, as well as gotten \n        plenty of work done thanks to neighborhood WiFi.\n        ",
+                "value": "Crepes on Cole is one of the best little \n        creperies in San Francisco.\n        Excellent food and service. Plenty of tables in a variety of sizes \n        for parties large and small.  Window seating makes for excellent \n        people watching to/from the N-Judah which stops right outside.  \n        I've had many fun social gatherings here, as well as gotten \n        plenty of work done thanks to neighborhood WiFi.",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Crepes on Cole"],
