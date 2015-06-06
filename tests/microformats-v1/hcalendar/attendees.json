@@ -3,7 +3,6 @@
         "type": ["h-event"],
         "properties": {
             "name": ["CPJ Online Press Freedom Summit"],
-            "summary": ["CPJ Online Press Freedom Summit"],
             "start": ["2012-10-10"],
             "location": ["San Francisco"],
             "attendee": [{
