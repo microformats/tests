@@ -48,8 +48,7 @@
         "http://en.wikipedia.org/wiki/computer": {
             "text": "Computer",
             "rels": ["tag"]
-        }
-    }, {
+        },
         "http://en.wikipedia.org/wiki/education": {
             "text": "Education",
             "rels": ["tag"]
