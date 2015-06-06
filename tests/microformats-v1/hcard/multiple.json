@@ -58,7 +58,6 @@
         "http://en.wikipedia.org/wiki/development": {
             "text": "development",
             "rels": ["tag"]
-        
         },
         "http://en.wikipedia.org/wiki/web": {
             "text": "web",
