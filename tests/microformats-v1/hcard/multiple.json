@@ -19,22 +19,22 @@
             "mailer": ["PigeonMail 2.1", "Outlook 2007"],
             "label": ["\n            \n                Work: \n                North Street, \n                Brighton, \n                United Kingdom\n            \n            \n        ", "\n            \n                Home: \n                West Street, \n                Brighton, \n                United Kingdom\n            \n        "],
             "adr": [{
-                "value": "\n                Work: \n                North Street, \n                Brighton, \n                United Kingdom\n            ",
+                "value": "Work: \n                North Street, \n                Brighton, \n                United Kingdom",
                 "type": ["h-adr"],
                 "properties": {
                     "street-address": ["North Street"],
                     "locality": ["Brighton"],
                     "country-name": ["United Kingdom"],
-                    "name": ["\n                Work: \n                North Street, \n                Brighton, \n                United Kingdom\n            "]
+                    "name": ["Work: \n                North Street, \n                Brighton, \n                United Kingdom"]
                 }
             }, {
-                "value": "\n                Home: \n                West Street, \n                Brighton, \n                United Kingdom\n            ",
+                "value": "Home: \n                West Street, \n                Brighton, \n                United Kingdom",
                 "type": ["h-adr"],
                 "properties": {
                     "street-address": ["West Street"],
                     "locality": ["Brighton"],
                     "country-name": ["United Kingdom"],
-                    "name": ["\n                Home: \n                West Street, \n                Brighton, \n                United Kingdom\n            "]
+                    "name": ["Home: \n                West Street, \n                Brighton, \n                United Kingdom"]
                 }
             }],
             "agent": ["Jane Doe", {
