@@ -44,13 +44,11 @@
         "http://en.wikipedia.org/wiki/crepe": {
             "text": "crepe",
             "rels": ["tag"]
-        }
-    }, {
+        },
         "http://example.com/crepe": {
             "text": "http://example.com/crepe",
             "rels": ["self", "bookmark"]
-        }
-    }, {
+        },
         "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License": {
             "text": "Creative Commons Attribution-ShareAlike License",
             "rels": ["license"]
