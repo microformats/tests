@@ -1,6 +1,13 @@
 {
     "items": [],
-    "rels": {},
+    "rels": {
+        "alternate": [
+            "http://example.com/updates.atom"
+        ], 
+        "updates": [
+            "http://example.com/updates.atom"
+        ]
+    }, 
     "rel-urls": {
         "http://example.com/updates.atom": {
             "type": "application/atom+xml",
