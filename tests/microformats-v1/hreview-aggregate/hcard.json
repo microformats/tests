@@ -3,19 +3,19 @@
         "type": ["h-review-aggregate"],
         "properties": {
             "item": [{
-                "value": "\n        Mediterranean Wraps    \n        \n            \n                433 S California Ave, \n                Palo Alto, \n                CA - \n            \n            (650) 321-8189\n        \n    ",
+                "value": "Mediterranean Wraps    \n        \n            \n                433 S California Ave, \n                Palo Alto, \n                CA - \n            \n            (650) 321-8189",
                 "type": ["h-item", "h-card"],
                 "properties": {
                     "name": ["Mediterranean Wraps"],
                     "org": ["Mediterranean Wraps"],
                     "adr": [{
-                        "value": "\n                433 S California Ave, \n                Palo Alto, \n                CA",
+                        "value": "433 S California Ave, \n                Palo Alto, \n                CA",
                         "type": ["h-adr"],
                         "properties": {
                             "street-address": ["433 S California Ave"],
                             "locality": ["Palo Alto"],
                             "region": ["CA"],
-                            "name": ["\n                433 S California Ave, \n                Palo Alto, \n                CA"]
+                            "name": ["433 S California Ave, \n                Palo Alto, \n                CA"]
                         }
                     }],
                     "tel": ["(650) 321-8189"]
@@ -25,7 +25,7 @@
             "average": ["9.2"],
             "best": ["10"],
             "count": ["17"],
-            "name": ["\n    \n        Mediterranean Wraps    \n        \n            \n                433 S California Ave, \n                Palo Alto, \n                CA - \n            \n            (650) 321-8189\n        \n     \n    \n        9.2 out of \n        10 \n        based on 17 reviews\n    \n"]
+            "name": ["Mediterranean Wraps    \n        \n            \n                433 S California Ave, \n                Palo Alto, \n                CA - \n            \n            (650) 321-8189\n        \n     \n    \n        9.2 out of \n        10 \n        based on 17 reviews"]
         }
     }],
     "rels": {},
