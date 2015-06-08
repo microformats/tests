@@ -2,7 +2,7 @@
     "items": [{
         "type": ["h-card"],
         "properties": {
-            "name": ["\n        John \n        Doe \n    "],
+            "name": ["John \n        Doe"],
             "given-name": ["John"]
         }
     }],

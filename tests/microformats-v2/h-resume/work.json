@@ -4,11 +4,11 @@
         "properties": {
             "name": ["Tim Berners-Lee"],
             "contact": [{
-                "value": "\n        Director of the World Wide Web Foundation\n    ",
+                "value": "Director of the World Wide Web Foundation",
                 "type": ["h-card"],
                 "properties": {
                     "title": ["Director of the World Wide Web Foundation"],
-                    "name": ["\n        Director of the World Wide Web Foundation\n    "]
+                    "name": ["Director of the World Wide Web Foundation"]
                 }
             }],
             "summary": ["Invented the World Wide Web."],

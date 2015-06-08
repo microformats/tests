@@ -2,7 +2,9 @@
   "items": [],
   "rels": { 
     "author": [ "http://example.com/a", "http://example.com/b" ],
-    "in-reply-to": [ "http://example.com/1", "http://example.com/2" ] 
+    "in-reply-to": [ "http://example.com/1", "http://example.com/2" ], 
+    "home": [ "http://example.com/fr" ], 
+    "alternate": [ "http://example.com/fr" ] 
   },
   "rel-urls": {
     "http://example.com/a": {
