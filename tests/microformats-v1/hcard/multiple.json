@@ -17,7 +17,7 @@
             "tel": ["+1 415 555 100", "+1 415 555 200", "+1 415 555 300"],
             "email": ["mailto:john.doe@madgex.com", "mailto:john.doe@webfeetmedia.com"],
             "mailer": ["PigeonMail 2.1", "Outlook 2007"],
-            "label": ["\n            \n                Work: \n                North Street, \n                Brighton, \n                United Kingdom\n            \n            \n        ", "\n            \n                Home: \n                West Street, \n                Brighton, \n                United Kingdom\n            \n        "],
+            "label": ["Work: \n                North Street, \n                Brighton, \n                United Kingdom", "Home: \n                West Street, \n                Brighton, \n                United Kingdom"],
             "adr": [{
                 "value": "Work: \n                North Street, \n                Brighton, \n                United Kingdom",
                 "type": ["h-adr"],
