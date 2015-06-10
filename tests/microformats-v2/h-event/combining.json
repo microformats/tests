@@ -7,7 +7,7 @@
             "start": ["2012-06-30"],
             "end": ["2012-07-01"],
             "location": [{
-                "value": "Geoloqi, \n    920 SW 3rd Ave. Suite 400, \n    Portland, \n    OR",
+                "value": "Geoloqi",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Geoloqi"],

@@ -10,7 +10,7 @@
                 "value": "4.5 stars out 5 based on \n            35 reviews",
                 "type": ["h-review-aggregate"],
                 "properties": {
-                    "rating": ["\n            4.5 stars out 5 based on "],
+                    "rating": ["4.5 stars out 5 based on"],
                     "average": ["4.5"],
                     "count": ["35"],
                     "name": ["4.5 stars out 5 based on \n            35 reviews"]

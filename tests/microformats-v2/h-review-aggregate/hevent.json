@@ -3,7 +3,7 @@
         "type": ["h-review-aggregate"],
         "properties": {
             "item": [{
-                "value": "Fullfrontal\n        A one day JavaScript Conference held in Brighton\n        9th November 2012",
+                "value": "Fullfrontal",
                 "type": ["h-event"],
                 "properties": {
                     "name": ["Fullfrontal"],
