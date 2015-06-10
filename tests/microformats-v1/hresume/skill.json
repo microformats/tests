@@ -15,7 +15,7 @@
         }
     }],
     "rels": {
-        "tag": ["http://example.com/skills/informationsystems", "http://example.com/skills/advocacy", "http://example.com/skills/informationsystems"]
+        "tag": ["http://example.com/skills/informationsystems", "http://example.com/skills/advocacy", "http://example.com/skills/leadership"]
     },
     "rel-urls": {
         "http://example.com/skills/informationsystems": {
@@ -26,7 +26,7 @@
             "text": "advocacy",
             "rels": ["tag"]
         },
-        "http://example.com/skills/informationsystems": {
+        "http://example.com/skills/leadership": {
             "text": "leadership",
             "rels": ["tag"]
         }

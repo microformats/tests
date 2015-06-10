@@ -4,7 +4,7 @@
     "type": ["h-entry"],
     "properties": {
       "author": [{
-        "value": "aaronparecki.com\r\n    Aaron Parecki\r\n    Aaron Parecki",
+        "value": "aaronparecki.com\n    Aaron Parecki\n    Aaron Parecki",
         "type": ["h-card"],
         "properties": {
           "photo": ["https://aaronparecki.com/images/aaronpk.png"],
@@ -15,10 +15,10 @@
         }
       }],
       "content": [{
-        "value": "Did you play\r\n    @playmapattackat\r\n    #realtimeconf? Here is some more info about how we built it!\r\n    http://pdx.esri.com/blog/2013/10/17/introducting-mapattack/",
-        "html": "Did you play\r\n    <a href=\"http://twitter.com/playmapattack\">@playmapattack</a>at\r\n    <a href=\"http://aaronparecki.com/tag/realtimeconf\">#<span class=\"p-category\">realtimeconf</span></a>? Here is some more info about how we built it!\r\n    <a href=\"http://pdx.esri.com/blog/2013/10/17/introducting-mapattack/\"><span class=\"protocol\">http://</span>pdx.esri.com/blog/2013/10/17/introducting-mapattack/</a>\r\n  "
+        "value": "Did you play\n    @playmapattackat\n    #realtimeconf? Here is some more info about how we built it!\n    http://pdx.esri.com/blog/2013/10/17/introducting-mapattack/",
+        "html": "Did you play\n    <a href=\"http://twitter.com/playmapattack\">@playmapattack</a>at\n    <a href=\"http://aaronparecki.com/tag/realtimeconf\">#<span class=\"p-category\">realtimeconf</span></a>? Here is some more info about how we built it!\n    <a href=\"http://pdx.esri.com/blog/2013/10/17/introducting-mapattack/\"><span class=\"protocol\">http://</span>pdx.esri.com/blog/2013/10/17/introducting-mapattack/</a>\n  "
       }],
-      "name": ["Did you play\r\n    @playmapattackat\r\n    #realtimeconf? Here is some more info about how we built it!\r\n    http://pdx.esri.com/blog/2013/10/17/introducting-mapattack/"],
+      "name": ["Did you play\n    @playmapattackat\n    #realtimeconf? Here is some more info about how we built it!\n    http://pdx.esri.com/blog/2013/10/17/introducting-mapattack/"],
       "category": ["realtimeconf"]
     }
   }],
