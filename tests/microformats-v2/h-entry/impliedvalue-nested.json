@@ -19,7 +19,7 @@
                 },
                 "value": "http://example.com/post"
             }],
-            "name": ["Example Author Home\n        Example Post"]
+            "name": ["Example Author\n                  Home\n            \n            Example Post"]
         }
     }],
 	"rels": {},

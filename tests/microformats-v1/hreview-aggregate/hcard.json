@@ -3,7 +3,7 @@
         "type": ["h-review-aggregate"],
         "properties": {
             "item": [{
-                "value": "Mediterranean Wraps    \n        \n            \n                433 S California Ave, \n                Palo Alto, \n                CA - \n            \n            (650) 321-8189",
+                "value": "Mediterranean Wraps",
                 "type": ["h-item", "h-card"],
                 "properties": {
                     "name": ["Mediterranean Wraps"],

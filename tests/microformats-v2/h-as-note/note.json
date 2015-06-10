@@ -25,15 +25,13 @@
                     "url": ["http://tantek.com/"]
                 }
             }],
-            "name": ["\n      @benwerd\n      @erinjoalso proud of you &\n      @withknown— so much #indieweb & especially user empathy. Keep up the great work!"],
+            "name": ["@benwerd\n      @erinjoalso proud of you &\n      @withknown— so much #indieweb & especially user empathy. Keep up the great work!"],
             "content": [{
-                "value": "\n      @benwerd\n      @erinjoalso proud of you &\n      @withknown— so much #indieweb & especially user empathy. Keep up the great work!",
-                "html": "\n      @benwerd\n      @erinjoalso proud of you &\n      @withknown— so much #indieweb & especially user empathy. Keep up the great work!"
+                "value": "@benwerd\n      @erinjoalso proud of you &\n      @withknown— so much #indieweb & especially user empathy. Keep up the great work!",
+                "html": "\n      <a class=\"auto-link h-x-username\" href=\"https://twitter.com/benwerd\">@benwerd</a>\n      <a class=\"auto-link h-x-username\" href=\"https://twitter.com/erinjo\">@erinjo</a>also proud of you &\n      <a class=\"auto-link h-x-username\" href=\"https://twitter.com/withknown\">@withknown</a>— so much #indieweb & especially user empathy. Keep up the great work!"
             }],
             "published": ["2015-06-01T22:20:00-0700"],
             "updated": ["2015-06-01T22:20:00-0700"],
-            "url": ["\n            "],
-            "uid": ["\n            "],
             "syndication": ["https://twitter.com/t/status/605604965566906369"]
         },
         "children": [{
@@ -90,7 +88,7 @@
             "rels": ["author"]
         },
         "https://twitter.com/t/status/605604965566906369": {
-            "text": "\n    \n   View \n      Conversation\n      on Twitter\n",
+            "text": "View \n      Conversation\n      on Twitter",
             "rels": ["syndication"]
         }
     }

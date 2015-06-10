@@ -13,7 +13,7 @@
             }],
             "summary": ["Invented the World Wide Web."],
             "experience": [{
-                "value": "\n        Director\n        World Wide Web Foundation\n        \n            Jan 2009 – Present\n            (2 years 11 month)\n        \n    ",
+               "value": "World Wide Web Foundation",
                 "type": ["h-event", "h-card"],
                 "properties": {
                     "title": ["Director"],

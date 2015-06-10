@@ -8,7 +8,7 @@
             "bday": ["2000-01-01T00:00:00-0800"],
             "role": ["Designer"],
             "geo": [{
-                "value": "Brighton",
+                "value": "30.267991;-97.739568",
                 "type": ["h-geo"],
                 "properties": {
                     "name": ["30.267991;-97.739568"]

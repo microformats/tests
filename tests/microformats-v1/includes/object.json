@@ -5,13 +5,13 @@
             "start": ["2012-10-30T11:45:00-0800"],
             "name": ["Build Conference"],
             "location": [{
-                "value": "\n        Redmond, \n        Washington, \n        USA\n    ",
+                "value": "Redmond, \n        Washington, \n        USA",
                 "type": ["h-adr"],
                 "properties": {
                     "locality": ["Redmond"],
                     "region": ["Washington"],
                     "country-name": ["USA"],
-                    "name": ["\n        Redmond, \n        Washington, \n        USA\n    "]
+                    "name": ["Redmond, \n        Washington, \n        USA"]
                 }
             }],
             "photo": ["http://example.com/#buildconf"]
@@ -22,13 +22,13 @@
             "start": ["2012-10-31T11:15:00-0800"],
             "name": ["Build Conference"],
             "location": [{
-                "value": "\n        Redmond, \n        Washington, \n        USA\n    ",
+                "value": "Redmond, \n        Washington, \n        USA",
                 "type": ["h-adr"],
                 "properties": {
                     "locality": ["Redmond"],
                     "region": ["Washington"],
                     "country-name": ["USA"],
-                    "name": ["\n        Redmond, \n        Washington, \n        USA\n    "]
+                    "name": ["Redmond, \n        Washington, \n        USA"]
                 }
             }],
             "photo": ["http://example.com/#buildconf"]
@@ -39,7 +39,7 @@
             "locality": ["Redmond"],
             "region": ["Washington"],
             "country-name": ["USA"],
-            "name": ["\n        Redmond, \n        Washington, \n        USA\n    "]
+            "name": ["Redmond, \n        Washington, \n        USA"]
         }
     }],
     "rels": {},

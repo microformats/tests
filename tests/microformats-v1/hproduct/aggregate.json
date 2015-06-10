@@ -11,30 +11,30 @@
             "url": ["http://www.raspberrypi.org/"],
             "price": ["£29.95"],
             "review": [{
-                "value": "\n        \n            9.2 out of \n            10 \n            based on 178 reviews\n        \n    ",
+                "value": "9.2 out of \n            10 \n            based on 178 reviews",
                 "type": ["h-review-aggregate"],
                 "properties": {
                     "rating": ["9.2"],
                     "average": ["9.2"],
                     "best": ["10"],
                     "count": ["178"],
-                    "name": ["\n        \n            9.2 out of \n            10 \n            based on 178 reviews\n        \n    "]
+                    "name": ["9.2 out of \n            10 \n            based on 178 reviews"]
                 }
             }],
             "category": ["Computer", "Education"],
             "brand": [{
-                "value": "From: \n        The Raspberry Pi Foundation - \n        \n            Cambridge \n            UK\n        \n    ",
+                "value": "The Raspberry Pi Foundation",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["The Raspberry Pi Foundation"],
                     "org": ["The Raspberry Pi Foundation"],
                     "adr": [{
-                        "value": "\n            Cambridge \n            UK\n        ",
+                        "value": "Cambridge \n            UK",
                         "type": ["h-adr"],
                         "properties": {
                             "locality": ["Cambridge"],
                             "country-name": ["UK"],
-                            "name": ["\n            Cambridge \n            UK\n        "]
+                            "name": ["Cambridge \n            UK"]
                         }
                     }]
                 }
