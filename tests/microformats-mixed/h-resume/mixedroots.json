@@ -3,7 +3,7 @@
         "type": ["h-resume"],
         "properties": {
             "contact": [{
-                "value": "Tim Berners-Lee\n        Director of the World Wide Web Foundation",
+                "value": "Tim Berners-Lee",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Tim Berners-Lee"],
@@ -12,7 +12,7 @@
             }],
             "summary": ["Invented the World Wide Web."],
             "experience": [{
-                "value": "Director\n        World Wide Web Foundation\n        \n            Jan 2009 – Present\n            (2 years 11 month)",
+                "value": "World Wide Web Foundation",
                 "type": ["h-event", "h-card"],
                 "properties": {
                     "title": ["Director"],
