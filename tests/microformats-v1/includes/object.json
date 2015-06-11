@@ -2,7 +2,7 @@
     "items": [{
         "type": ["h-event"],
         "properties": {
-            "start": ["2012-10-30T11:45:00-0800"],
+            "start": ["2012-10-30T11:45:00-08:00"],
             "name": ["Build Conference"],
             "location": [{
                 "value": "Redmond, \n        Washington, \n        USA",
@@ -19,7 +19,7 @@
     }, {
         "type": ["h-event"],
         "properties": {
-            "start": ["2012-10-31T11:15:00-0800"],
+            "start": ["2012-10-31T11:15:00-08:00"],
             "name": ["Build Conference"],
             "location": [{
                 "value": "Redmond, \n        Washington, \n        USA",
