@@ -21,7 +21,7 @@
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Tantek Çelik"],
-                    "photo": ["http://tantek.com/logo.jpg"],
+                    "photo": ["http://tantek.com/images/photo.gif"],
                     "url": ["http://tantek.com/"]
                 }
             }],
