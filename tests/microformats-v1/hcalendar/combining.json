@@ -14,13 +14,13 @@
                     "org": ["Geoloqi"],
                     "url": ["http://geoloqi.com/"],
                     "adr": [{
-                        "value": "920 SW 3rd Ave. Suite 400, \n        Portland, \n        OR",
+                        "value": "Oregon",
                         "type": ["h-adr"],
                         "properties": {
                             "street-address": ["920 SW 3rd Ave. Suite 400"],
                             "locality": ["Portland"],
                             "region": ["Oregon"],
-                            "name": ["920 SW 3rd Ave. Suite 400, \n        Portland, \n        OR"]
+                            "name": ["Oregon"]
                         }
                     }]
                 }
