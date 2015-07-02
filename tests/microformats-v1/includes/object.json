@@ -13,8 +13,7 @@
                     "country-name": ["USA"],
                     "name": ["Redmond, \n        Washington, \n        USA"]
                 }
-            }],
-            "photo": ["http://example.com/#buildconf"]
+            }]
         }
     }, {
         "type": ["h-event"],
@@ -30,8 +29,7 @@
                     "country-name": ["USA"],
                     "name": ["Redmond, \n        Washington, \n        USA"]
                 }
-            }],
-            "photo": ["http://example.com/#buildconf"]
+            }]
         }
     }, {
         "type": ["h-adr"],
