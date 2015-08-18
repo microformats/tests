@@ -10,8 +10,7 @@
                 "properties": {
                     "locality": ["Redmond"],
                     "region": ["Washington"],
-                    "country-name": ["USA"],
-                    "name": ["Redmond, \n        Washington, \n        USA"]
+                    "country-name": ["USA"]
                 }
             }]
         }
@@ -26,8 +25,7 @@
                 "properties": {
                     "locality": ["Redmond"],
                     "region": ["Washington"],
-                    "country-name": ["USA"],
-                    "name": ["Redmond, \n        Washington, \n        USA"]
+                    "country-name": ["USA"]
                 }
             }]
         }
@@ -36,8 +34,7 @@
         "properties": {
             "locality": ["Redmond"],
             "region": ["Washington"],
-            "country-name": ["USA"],
-            "name": ["Redmond, \n        Washington, \n        USA"]
+            "country-name": ["USA"]
         }
     }],
     "rels": {},
