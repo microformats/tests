@@ -1,9 +1,7 @@
 {
     "items": [{
         "type": ["h-card"],
-        "properties": {
-            "name": ["Frances Berriman"]
-        }
+        "properties": {}
     }],
     "rels": {},
     "rel-urls": {}
