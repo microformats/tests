@@ -9,7 +9,8 @@
                     "name": ["http://werd.io/2015/im-super-proud-of-everything-weve-done-on-withknown-so-far"],
                     "url": ["http://werd.io/2015/im-super-proud-of-everything-weve-done-on-withknown-so-far"]
                 }
-            }, {
+            },
+            {
                 "value": "https://twitter.com/benwerd/status/604733231284383744",
                 "type": ["h-cite"],
                 "properties": {
@@ -32,6 +33,8 @@
             }],
             "published": ["2015-06-01T22:20-0700"],
             "updated": ["2015-06-01T22:20-0700"],
+            "url": ["http://tantek.com/2015/152/t2/proud-withknown-indieweb-user-empathy"],
+            "uid": ["http://tantek.com/2015/152/t2/proud-withknown-indieweb-user-empathy"],
             "syndication": ["https://twitter.com/t/status/605604965566906369"]
         },
         "children": [{
@@ -41,14 +44,16 @@
                 "name": ["@benwerd"],
                 "url": ["https://twitter.com/benwerd"]
             }
-        }, {
+        },
+        {
             "value": "@erinjo",
             "type": ["h-x-username"],
             "properties": {
                 "name": ["@erinjo"],
                 "url": ["https://twitter.com/erinjo"]
             }
-        }, {
+        },
+        {
             "value": "@withknown",
             "type": ["h-x-username"],
             "properties": {
