@@ -9,7 +9,7 @@
     {
         "type": ["h-card"],
         "properties": {
-            "name": [""],
+            "name": ["Jane Doe"],
             "url": ["http://example.com/jane.html"]
         }
     },
