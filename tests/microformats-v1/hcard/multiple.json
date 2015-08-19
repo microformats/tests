@@ -12,7 +12,7 @@
             "logo": ["http://example.com/images/logo.gif", "http://example.com/images/logo.gif"],
             "url": ["http://www.madgex.com/", "http://www.webfeetmedia.com/"],
             "org": ["Madgex", "Web Feet Media Ltd"],
-            "title": ["Creative Director", "Owner"],
+            "job-title": ["Creative Director", "Owner"],
             "category": ["design", "development", "web"],
             "tel": ["+1 415 555 100", "+1 415 555 200", "+1 415 555 300"],
             "email": ["mailto:john.doe@madgex.com", "mailto:john.doe@webfeetmedia.com"],
