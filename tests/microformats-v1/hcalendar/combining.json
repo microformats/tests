@@ -10,6 +10,9 @@
                 "value": "Geoloqi",
                 "type": ["h-card"],
                 "properties": {
+                    "name": ["Geoloqi"],
+                    "org": ["Geoloqi"],
+                    "url": ["http://geoloqi.com/"],
                     "adr": [{
                         "value": "920 SW 3rd Ave. Suite 400, \n        Portland, \n        OR",
                         "type": ["h-adr"],
@@ -18,9 +21,7 @@
                             "locality": ["Portland"],
                             "region": ["Oregon"]
                         }
-                    }],
-                    "name": ["Geoloqi, \n    \n        920 SW 3rd Ave. Suite 400, \n        Portland, \n        OR"],
-                    "url": ["http://geoloqi.com/"]
+                    }]
                 }
             }]
         }

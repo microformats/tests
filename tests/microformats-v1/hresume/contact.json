@@ -17,16 +17,14 @@
                             "locality": ["Cambridge"],
                             "region": ["MA"],
                             "postal-code": ["02139"],
-                            "country-name": ["USA"],
-                            "name": ["32 Vassar Street, \n            Room 32-G524, \n            Cambridge,  \n            MA \n            02139, \n            USA.  \n            (Work)"]
-                        }
+                            "country-name": ["USA"]
+                         }
                     }],
                     "tel": ["+1 (617) 253 5702"],
                     "email": ["mailto:timbl@w3.org"]
                 }
             }],
-            "summary": ["Invented the World Wide Web."],
-            "name": ["Tim Berners-Lee\n        MIT\n        \n            32 Vassar Street, \n            Room 32-G524, \n            Cambridge,  \n            MA \n            02139, \n            USA.  \n            (Work)\n        \n        Tel:+1 (617) 253 5702\n        Email:timbl@w3.org\n    \n    Invented the World Wide Web."]
+            "summary": ["Invented the World Wide Web."]
         }
     }],
     "rels": {},
