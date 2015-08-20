@@ -7,7 +7,7 @@
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Tim Berners-Lee"],
-                    "title": ["Director of the World Wide Web Foundation"]
+                    "job-title": ["Director of the World Wide Web Foundation"]
                 }
             }],
             "summary": ["Invented the World Wide Web."],
