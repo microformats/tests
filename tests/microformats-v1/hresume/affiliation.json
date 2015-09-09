@@ -14,12 +14,10 @@
                 "type": ["h-card"],
                 "properties": {
                     "name": ["W3C"],
-                    "photo": ["http://www.w3.org/Icons/WWW/w3c_home_nb.png"],
-                    "url": ["http://www.w3.org/"]
+                    "photo": ["http://www.w3.org/Icons/WWW/w3c_home_nb.png"]
                 }
-            }],
-            "name": ["Tim Berners-Lee, \n        invented the World Wide Web.\n    \n    Belongs to following groups:"]
-        }
+            }]
+         }
     }],
     "rels": {},
     "rel-urls": {}

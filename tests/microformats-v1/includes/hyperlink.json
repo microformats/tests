@@ -10,12 +10,10 @@
                     "street-address": ["1355 Market St"],
                     "locality": ["San Francisco"],
                     "region": ["CA"],
-                    "postal-code": ["94103"],
-                    "name": ["1355 Market St,\n        San Francisco, \n        CA\n        94103"]
+                    "postal-code": ["94103"]
                 }
-            }],
-            "name": ["Ben Ward\n    Twitter\n    Twitter\n    \n        1355 Market St,\n        San Francisco, \n        CA\n        94103"]
-        }
+            }]
+         }
     }, {
         "type": ["h-card"],
         "properties": {
@@ -27,20 +25,17 @@
                     "street-address": ["1355 Market St"],
                     "locality": ["San Francisco"],
                     "region": ["CA"],
-                    "postal-code": ["94103"],
-                    "name": ["1355 Market St,\n        San Francisco, \n        CA\n        94103"]
+                    "postal-code": ["94103"]
                 }
-            }],
-            "name": ["Dan Webb\n    Twitter\n    Twitter\n    \n        1355 Market St,\n        San Francisco, \n        CA\n        94103"]
-        }
+            }]
+          }
     }, {
         "type": ["h-adr"],
         "properties": {
             "street-address": ["1355 Market St"],
             "locality": ["San Francisco"],
             "region": ["CA"],
-            "postal-code": ["94103"],
-            "name": ["1355 Market St,\n        San Francisco, \n        CA\n        94103"]
+            "postal-code": ["94103"]
         }
     }],
     "rels": {},

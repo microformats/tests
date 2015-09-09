@@ -3,8 +3,7 @@
         "type": ["h-geo"],
         "properties": {
             "latitude": ["51.513458"],
-            "longitude": ["-0.14812"],
-            "name": ["The Bricklayer's Arms\n    (Geo: 51.513458:\n    -0.14812)"]
+            "longitude": ["-0.14812"]
         }
     }],
     "rels": {},

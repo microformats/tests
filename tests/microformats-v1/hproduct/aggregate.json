@@ -17,8 +17,7 @@
                     "rating": ["9.2"],
                     "average": ["9.2"],
                     "best": ["10"],
-                    "count": ["178"],
-                    "name": ["9.2 out of \n            10 \n            based on 178 reviews"]
+                    "count": ["178"]
                 }
             }],
             "category": ["Computer", "Education"],
@@ -33,8 +32,7 @@
                         "type": ["h-adr"],
                         "properties": {
                             "locality": ["Cambridge"],
-                            "country-name": ["UK"],
-                            "name": ["Cambridge \n            UK"]
+                            "country-name": ["UK"]
                         }
                     }]
                 }

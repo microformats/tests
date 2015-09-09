@@ -2,7 +2,7 @@
     "items": [{
         "type": ["h-event"],
         "properties": {
-            "start": ["2012-10-30T11:45:00-08:00"],
+            "start": ["2012-10-30 11:45:00-08:00"],
             "name": ["Build Conference"],
             "location": [{
                 "value": "Redmond, \n        Washington, \n        USA",
@@ -10,15 +10,14 @@
                 "properties": {
                     "locality": ["Redmond"],
                     "region": ["Washington"],
-                    "country-name": ["USA"],
-                    "name": ["Redmond, \n        Washington, \n        USA"]
+                    "country-name": ["USA"]
                 }
             }]
         }
     }, {
         "type": ["h-event"],
         "properties": {
-            "start": ["2012-10-31T11:15:00-08:00"],
+            "start": ["2012-10-31 11:15:00-08:00"],
             "name": ["Build Conference"],
             "location": [{
                 "value": "Redmond, \n        Washington, \n        USA",
@@ -26,8 +25,7 @@
                 "properties": {
                     "locality": ["Redmond"],
                     "region": ["Washington"],
-                    "country-name": ["USA"],
-                    "name": ["Redmond, \n        Washington, \n        USA"]
+                    "country-name": ["USA"]
                 }
             }]
         }
@@ -36,8 +34,7 @@
         "properties": {
             "locality": ["Redmond"],
             "region": ["Washington"],
-            "country-name": ["USA"],
-            "name": ["Redmond, \n        Washington, \n        USA"]
+            "country-name": ["USA"]
         }
     }],
     "rels": {},

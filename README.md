@@ -26,7 +26,13 @@ A test is built in two parts a HTML file, which contains a fragment of HTML to p
 
 5.	Once you have created the test please update the change-log.html Add a `h-entry` with details of the test . At the bottom of the page please add yourself as a contributor on the authors list
 
+### Date format for testing purposes
+Within the tests datetime formats are based on the [HTML5 profile](http://www.w3.org/TR/html5/infrastructure.html#dates-and-times) which is a subset of ISO8601 and allows a space to separate the date and time. To allow us to compare dates please provide a way for your parser to output dates/times with the follwing rules:
 
+* Date and time are separated by a spaces ie `2015-04-29 15:34`
+* Date and time keeps the authored level of specificity  ie `15:34` does NOT become `15:34:00`
+* Times and timezones always use the `:` separator ie `+01:30` NOT `+0130`
+* If used the zulu is always uppercase ie `2015-04-29 15:34Z`
 
 
 ###License

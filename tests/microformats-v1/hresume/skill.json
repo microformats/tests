@@ -10,9 +10,8 @@
                 }
             }],
             "summary": ["invented the World Wide Web"],
-            "skill": ["information systems", "advocacy", "leadership"],
-            "name": ["Tim Berners-Lee, \n        invented the World Wide Web.\n    \n    Skills:     \n    \n        information systems\n        advocacy\n        leadership"]
-        }
+            "skill": ["information systems", "advocacy", "leadership"]
+         }
     }],
     "rels": {
         "tag": ["http://example.com/skills/informationsystems", "http://example.com/skills/advocacy", "http://example.com/skills/leadership"]
