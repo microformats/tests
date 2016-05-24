@@ -29,7 +29,7 @@
             "name": ["@benwerd\n      @erinjoalso proud of you &\n      @withknown— so much #indieweb & especially user empathy. Keep up the great work!"],
             "content": [{
                 "value": "@benwerd\n      @erinjoalso proud of you &\n      @withknown— so much #indieweb & especially user empathy. Keep up the great work!",
-                "html": "\n      <a class=\"auto-link h-x-username\" href=\"https://twitter.com/benwerd\">@benwerd</a>\n      <a class=\"auto-link h-x-username\" href=\"https://twitter.com/erinjo\">@erinjo</a>also proud of you &\n      <a class=\"auto-link h-x-username\" href=\"https://twitter.com/withknown\">@withknown</a>— so much #indieweb & especially user empathy. Keep up the great work!"
+                "html": "\n      <a class=\"auto-link h-x-username\" href=\"https://twitter.com/benwerd\">@benwerd</a>\n      <a class=\"auto-link h-x-username\" href=\"https://twitter.com/erinjo\">@erinjo</a>also proud of you &amp;\n      <a class=\"auto-link h-x-username\" href=\"https://twitter.com/withknown\">@withknown</a>— so much #indieweb &amp; especially user empathy. Keep up the great work!"
             }],
             "published": ["2015-06-01 22:20-07:00"],
             "updated": ["2015-06-01 22:20-07:00"],
