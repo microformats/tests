@@ -5,7 +5,7 @@
             "name": ["x<y AT&T <b>NotBold</b> Bold"],
             "content": [{
                 "value": "x<y AT&T <b>NotBold</b> Bold",
-                "html": "x<y AT&T <b>NotBold</b> <b>Bold</b>"
+                "html": "x&lt;y AT&amp;T &lt;b&gt;NotBold&lt;/b&gt; <b>Bold</b>"
             }]
         }
     }],
