@@ -9,7 +9,7 @@ The tests are broken into sets within the tests directory of this project. They 
 
 The test have been added to npm (Node Package Manager) and the latest version can be add to a project using the following command:
 
-    npm i microformats-tests --save
+    npm i microformat-tests --save
 
 
 ## Contributing new tests or updating tests
