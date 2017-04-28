@@ -33,7 +33,6 @@
             "name": ["Jane Doe"]
         },
         "children": [{
-            "value": "Jane Doe",
             "type": ["h-card"],
             "properties": {
                 "name": ["Jane Doe"],
