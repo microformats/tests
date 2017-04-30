@@ -19,6 +19,7 @@
                 }
             }],
             "author": [{
+                "value": "Tantek Çelik",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Tantek Çelik"],
