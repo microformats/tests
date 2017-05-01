@@ -15,7 +15,6 @@
             "category": ["microformats", "html"]
         },
         "children": [{
-            "value": "microformats.org at 7\n\t    \n\t        Last week the microformats.org community \n\t            celebrated its 7th birthday at a gathering hosted by Mozilla in \n\t            San Francisco and recognized accomplishments, challenges, and \n\t            opportunities.\n\t\n\t        The microformats tagline “humans first, machines second” \n\t            forms the basis of many of our \n\t            principles, and \n\t            in that regard, we’d like to recognize a few people and \n\t            thank them for their years of volunteer service \n\t      \n\t    Updated \n\t        June 25th, 2012",
             "type": ["h-entry"],
             "properties": {
                 "name": ["microformats.org at 7"],

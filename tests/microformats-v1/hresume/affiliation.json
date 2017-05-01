@@ -11,6 +11,7 @@
             }],
             "summary": ["invented the World Wide Web"],
             "affiliation": [{
+                "value": "W3C",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["W3C"],
