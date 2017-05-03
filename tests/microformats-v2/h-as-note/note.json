@@ -19,6 +19,7 @@
                 }
             }],
             "author": [{
+                "value": "Tantek Çelik",
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Tantek Çelik"],
@@ -38,7 +39,6 @@
             "syndication": ["https://twitter.com/t/status/605604965566906369"]
         },
         "children": [{
-            "value": "@benwerd",
             "type": ["h-x-username"],
             "properties": {
                 "name": ["@benwerd"],
@@ -46,7 +46,6 @@
             }
         },
         {
-            "value": "@erinjo",
             "type": ["h-x-username"],
             "properties": {
                 "name": ["@erinjo"],
@@ -54,7 +53,6 @@
             }
         },
         {
-            "value": "@withknown",
             "type": ["h-x-username"],
             "properties": {
                 "name": ["@withknown"],
