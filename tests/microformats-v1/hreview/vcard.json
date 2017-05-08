@@ -5,7 +5,7 @@
     "properties": {
       "rating": ["5"],
       "name": ["Crepes on Cole is awesome"],
-      "reviewer": [{
+      "author": [{
         "value": "Tantek",
         "type": ["h-card"],
         "properties": {
@@ -18,7 +18,7 @@
       }],
       "item": [{
         "value": "Crepes on Cole",
-        "type": ["h-item", "h-card"],
+        "type": ["h-card"],
         "properties": {
           "name": ["Crepes on Cole"],
           "org": ["Crepes on Cole"],
