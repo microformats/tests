@@ -29,12 +29,5 @@
       "hreflang": "fr", 
       "text": "French mobile homepage"
     }
-  },
-  "alternates": [{
-     "url": "http://example.com/fr", 
-     "rel": "home", 
-     "media": "handheld", 
-     "hreflang": "fr",
-     "text": "French mobile homepage"
-  }]
+  }
 }

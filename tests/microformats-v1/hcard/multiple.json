@@ -12,20 +12,19 @@
             "logo": ["http://example.com/images/logo.gif", "http://example.com/images/logo.gif"],
             "url": ["http://www.madgex.com/", "http://www.webfeetmedia.com/"],
             "org": ["Madgex", "Web Feet Media Ltd"],
-            "title": ["Creative Director", "Owner"],
+            "job-title": ["Creative Director", "Owner"],
             "category": ["design", "development", "web"],
             "tel": ["+1 415 555 100", "+1 415 555 200", "+1 415 555 300"],
             "email": ["mailto:john.doe@madgex.com", "mailto:john.doe@webfeetmedia.com"],
             "mailer": ["PigeonMail 2.1", "Outlook 2007"],
-            "label": ["\n            \n                Work: \n                North Street, \n                Brighton, \n                United Kingdom\n            \n            \n        ", "\n            \n                Home: \n                West Street, \n                Brighton, \n                United Kingdom\n            \n        "],
+            "label": ["Work: \n                North Street, \n                Brighton, \n                United Kingdom", "Home: \n                West Street, \n                Brighton, \n                United Kingdom"],
             "adr": [{
                 "value": "Work: \n                North Street, \n                Brighton, \n                United Kingdom",
                 "type": ["h-adr"],
                 "properties": {
                     "street-address": ["North Street"],
                     "locality": ["Brighton"],
-                    "country-name": ["United Kingdom"],
-                    "name": ["Work: \n                North Street, \n                Brighton, \n                United Kingdom"]
+                    "country-name": ["United Kingdom"]
                 }
             }, {
                 "value": "Home: \n                West Street, \n                Brighton, \n                United Kingdom",
@@ -33,8 +32,7 @@
                 "properties": {
                     "street-address": ["West Street"],
                     "locality": ["Brighton"],
-                    "country-name": ["United Kingdom"],
-                    "name": ["Home: \n                West Street, \n                Brighton, \n                United Kingdom"]
+                    "country-name": ["United Kingdom"]
                 }
             }],
             "agent": ["Jane Doe", {

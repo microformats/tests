@@ -2,44 +2,39 @@
     "items": [{
         "type": ["h-event"],
         "properties": {
-            "start": ["2012-10-30T11:45:00-0800"],
+            "start": ["2012-10-30 11:45:00-08:00"],
             "name": ["Build Conference"],
             "location": [{
-                "value": "\n        Redmond, \n        Washington, \n        USA\n    ",
+                "value": "Redmond, \n        Washington, \n        USA",
                 "type": ["h-adr"],
                 "properties": {
                     "locality": ["Redmond"],
                     "region": ["Washington"],
-                    "country-name": ["USA"],
-                    "name": ["\n        Redmond, \n        Washington, \n        USA\n    "]
+                    "country-name": ["USA"]
                 }
-            }],
-            "photo": ["http://example.com/#buildconf"]
+            }]
         }
     }, {
         "type": ["h-event"],
         "properties": {
-            "start": ["2012-10-31T11:15:00-0800"],
+            "start": ["2012-10-31 11:15:00-08:00"],
             "name": ["Build Conference"],
             "location": [{
-                "value": "\n        Redmond, \n        Washington, \n        USA\n    ",
+                "value": "Redmond, \n        Washington, \n        USA",
                 "type": ["h-adr"],
                 "properties": {
                     "locality": ["Redmond"],
                     "region": ["Washington"],
-                    "country-name": ["USA"],
-                    "name": ["\n        Redmond, \n        Washington, \n        USA\n    "]
+                    "country-name": ["USA"]
                 }
-            }],
-            "photo": ["http://example.com/#buildconf"]
+            }]
         }
     }, {
         "type": ["h-adr"],
         "properties": {
             "locality": ["Redmond"],
             "region": ["Washington"],
-            "country-name": ["USA"],
-            "name": ["\n        Redmond, \n        Washington, \n        USA\n    "]
+            "country-name": ["USA"]
         }
     }],
     "rels": {},
