@@ -4,7 +4,7 @@
         "properties": {
             "item": [{
                 "value": "Fullfrontal",
-                "type": ["h-item", "h-event"],
+                "type": ["h-event"],
                 "properties": {
                     "name": ["Fullfrontal"],
                     "description": ["A one day JavaScript Conference held in Brighton"],
