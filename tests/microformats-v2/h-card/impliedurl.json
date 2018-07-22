@@ -29,9 +29,7 @@
     },
     {
         "type": ["h-card"],
-        "properties": {
-            "name": ["Jane Doe"]
-        },
+        "properties": {},
         "children": [{
             "type": ["h-card"],
             "properties": {
