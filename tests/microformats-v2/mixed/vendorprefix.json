@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "type": ["h-card"],
+      "properties": {
+        "name": ["Valid"]
+      }
+    },
+    {
+      "type": ["h-vendor-card"],
+      "properties": {
+        "name": ["Valid"]
+      }
+    },
+    {
+      "type": ["h-8-vendor-card"],
+      "properties": {
+        "name": ["Valid"]
+      }
+    },
+    {
+      "type": ["h-8to8-vendor-card"],
+      "properties": {
+        "name": ["Valid"]
+      }
+    },
+    {
+      "type": ["h-super-extra-long-microformat-type"],
+      "properties": {
+        "name": ["Valid"]
+      }
+    }
+  ],
+  "rels": {},
+  "rel-urls": {}
+}
