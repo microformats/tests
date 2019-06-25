@@ -3,10 +3,12 @@
     {
       "type": ["h-card"],
       "properties": {
-        "photo": {
-          "alt": "photo of Mitchell",
-          "value": "http://blog.mozilla.org/press/files/2012/04/mitchell-baker.jpg"
-        },
+        "photo": [
+          {
+            "alt": "photo of Mitchell",
+            "value": "http://blog.mozilla.org/press/files/2012/04/mitchell-baker.jpg"
+          }
+        ],
         "url": ["http://blog.lizardwrangler.com/", "https://twitter.com/MitchellBaker"],
         "name": ["Mitchell Baker"],
         "org": ["Mozilla Foundation"],
