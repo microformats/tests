@@ -67,14 +67,14 @@
         "type": ["h-card"],
         "properties": {
             "name": ["John Doe"],
-            "url": ["https://example.com"]
+            "url": ["https://example.com/"]
         }
     },
     {
         "type": ["h-card"],
         "properties": {
             "name": ["John Doe"],
-            "url": ["https://example.com"]
+            "url": ["https://example.com/"]
         }
     }],
     "rels": {},
