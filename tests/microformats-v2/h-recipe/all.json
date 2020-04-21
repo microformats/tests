@@ -42,7 +42,7 @@
                 "type": ["h-card"],
                 "properties": {
                     "name": ["Glenn Jones"],
-                    "url": ["http://glennjones.net"]
+                    "url": ["http://glennjones.net/"]
                 }
             }]
         }
