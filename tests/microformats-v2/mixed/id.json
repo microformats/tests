@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "id": "first",
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Luca Sparrow"
+        ]
+      }
+    },
+    {
+      "id": "Second:but-with5cool_extras.",
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Selin Holden"
+        ]
+      }
+    },
+    {
+      "type": [
+        "h-card"
+      ],
+      "properties": {
+        "name": [
+          "Danyaal Rasmussen"
+        ]
+      }
+    }
+  ],
+  "rels": {},
+  "rel-urls": {}
+}
