@@ -17,7 +17,7 @@
         "photo": [
           {
             "alt": "company logos",
-            "value": "images/logo.gif"
+            "value": "http://example.com/images/logo.gif"
           },
           "http://example.com/posterimage.jpg"
         ]
