@@ -3,7 +3,12 @@
         "type": ["h-card"],
         "properties": {
             "name": ["Rohit Khare"],
-            "photo": ["http://example.com/images/photo.gif"],
+            "photo": [
+                {
+                    "alt": "Rohit Khare",
+                    "value": "http://example.com/images/photo.gif"
+                }
+            ],
             "url": ["http://rohit.khare.org/"]
         }
     }],
