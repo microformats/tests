@@ -3,7 +3,12 @@
         "type": ["h-card"],
         "properties": {
             "name": ["Jane Doe"],
-            "photo": ["http://example.com/jane.jpeg"]
+            "photo": [
+                {
+                    "alt": "Jane Doe",
+                    "value": "http://example.com/jane.jpeg"
+                }
+            ]
         }
     },
     {
@@ -17,7 +22,12 @@
         "type": ["h-card"],
         "properties": {
             "name": ["Jane Doe"],
-            "photo": ["http://example.com/jane.jpeg"]
+            "photo": [
+                {
+                    "alt": "Jane Doe",
+                    "value": "http://example.com/jane.jpeg"
+                }
+            ]
         }
     },
     {
@@ -31,7 +41,12 @@
         "type": ["h-card"],
         "properties": {
             "name": ["Jane Doe"],
-            "photo": ["http://example.com/jane.jpeg"]
+            "photo": [
+                {
+                    "alt": "Jane Doe",
+                    "value": "http://example.com/jane.jpeg"
+                }
+            ]
         }
     },
     {
@@ -48,7 +63,12 @@
             "type": ["h-card"],
             "properties": {
                 "name": ["Jane Doe"],
-                "photo": ["http://example.com/jane.jpeg"]
+                "photo": [
+                    {
+                        "alt": "Jane Doe",
+                        "value": "http://example.com/jane.jpeg"
+                    }
+                ]
             }
         }]
     },

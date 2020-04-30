@@ -3,7 +3,12 @@
         "type": ["h-card"],
         "properties": {
             "name": ["Jane Doe"],
-            "photo": ["http://example.com/jane.html"]
+            "photo": [
+                {
+                    "alt": "Jane Doe",
+                    "value": "http://example.com/jane.html"
+                }
+            ]
         }
     },
     {
@@ -23,7 +28,12 @@
         "type": ["h-card"],
         "properties": {
             "name": ["Jane Doe"],
-            "photo": ["http://example.com/jane.html"]
+            "photo": [
+                {
+                    "alt": "Jane Doe",
+                    "value": "http://example.com/jane.html"
+                }
+            ]
         }
     },
     {
@@ -43,7 +53,12 @@
         "type": ["h-card"],
         "properties": {
             "name": ["Jane Doe"],
-            "photo": ["http://example.com/jane.html"]
+            "photo": [
+                {
+                    "alt": "Jane Doe",
+                    "value": "http://example.com/jane.html"
+                }
+            ]
         }
     },
     {
@@ -66,7 +81,12 @@
             "type": ["h-card"],
             "properties": {
                 "name": ["John Doe"],
-                "photo": ["http://example.com/john.html"]
+                "photo": [
+                    {
+                        "alt": "Jane Doe",
+                        "value": "http://example.com/jane.html"
+                    }
+                ]
             }
         }]
     },
@@ -77,7 +97,12 @@
             "type": ["h-card"],
             "properties": {
                 "name": ["John Doe"],
-                "photo": ["http://example.com/john.html"]
+                "photo": [
+                    {
+                        "alt": "Jane Doe",
+                        "value": "http://example.com/jane.html"
+                    }
+                ]
             }
         }]
     },
@@ -101,7 +126,12 @@
         "type": ["h-card"],
         "properties": {
             "name": ["John Doe Jr."],
-            "photo": ["http://example.com/photo.jpg"]
+            "photo": [
+                {
+                    "alt": "Jr.",
+                    "value": "http://example.com/photo.jpg"
+                }
+            ]
         }
     }],
     "rels": {},
