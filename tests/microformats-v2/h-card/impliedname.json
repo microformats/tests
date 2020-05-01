@@ -83,8 +83,8 @@
                 "name": ["John Doe"],
                 "photo": [
                     {
-                        "alt": "Jane Doe",
-                        "value": "http://example.com/jane.html"
+                        "alt": "John Doe",
+                        "value": "http://example.com/john.html"
                     }
                 ]
             }
@@ -99,8 +99,8 @@
                 "name": ["John Doe"],
                 "photo": [
                     {
-                        "alt": "Jane Doe",
-                        "value": "http://example.com/jane.html"
+                        "alt": "John Doe",
+                        "value": "http://example.com/john.html"
                     }
                 ]
             }
