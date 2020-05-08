@@ -15,7 +15,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
+  "devDependencies": {
     "blipp": "2.1.x",
     "boom": "2.7.x",
     "good": "6.1.x",
