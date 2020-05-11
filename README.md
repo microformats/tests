@@ -4,6 +4,17 @@ This group of tests was built to test microformats parsers. The individual tests
 
 The tests are broken into sets within the tests directory of this project. They are first grouped by version. Some parsers only support a single version of microformats. They are then subdivided by the type of microformat i.e. h-card.
 
+## NPM
+
+To add the latest microformats test suite to your project using npm, run the following command:
+
+`npm install microformats/tests --save-dev`
+
+Update to the latest microformats test suite with the following command:
+
+`npm update microformats/tests`
+
+
 
 ## Contributing new tests or updating tests
 
