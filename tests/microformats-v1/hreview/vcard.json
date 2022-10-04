@@ -47,7 +47,7 @@
     },
     "http://example.com/crepe": {
       "text": "http://example.com/crepe",
-      "rels": ["self", "bookmark"]
+      "rels": ["bookmark", "self"]
     },
     "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License": {
       "text": "Creative Commons Attribution-ShareAlike License",
