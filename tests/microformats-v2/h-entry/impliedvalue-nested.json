@@ -10,7 +10,7 @@
                     "author": [{
                         "type": ["h-card"],
                         "properties": {
-                            "url": ["http://example.com"],
+                            "url": ["http://example.com/"],
                             "name": ["Example Author"]
                         },
                         "value": "Example Author"
