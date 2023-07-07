@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-a"
+      ],
+      "properties": {
+        "z": [
+          {
+            "type": [
+              "h-b"
+            ],
+            "properties": {
+              "name": [
+                ""
+              ]
+            },
+            "id": "b",
+            "value": ""
+          }
+        ]
+      },
+      "id": "a",
+      "children": [
+        {
+          "type": [
+            "h-c"
+          ],
+          "properties": {
+            "name": [
+              ""
+            ]
+          },
+          "id": "c"
+        }
+      ]
+    }
+  ],
+  "rels": {},
+  "rel-urls": {}
+}
