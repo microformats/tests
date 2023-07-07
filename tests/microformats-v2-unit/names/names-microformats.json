@@ -109,6 +109,56 @@
                     "Valid"
                 ]
             }
+        },
+        {
+            "type": [
+                "h-t12-test"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-t13-test"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-t14-test"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-t15-test"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-t16-test"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
         }
     ],
     "rels": {},

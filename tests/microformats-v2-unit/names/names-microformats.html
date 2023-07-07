@@ -22,12 +22,23 @@
 
 <div class="h-t11t-test-t">Valid</div>
 
+<!-- valid names: ASCII whitespace, see https://infra.spec.whatwg.org/#ascii-whitespace -->
+<div class=" h-t12-test ">Valid</div>
+
+<div class="&#x9;h-t13-test&#x9;">Valid</div>
+
+<div class="&#xA;h-t14-test&#xA;">Valid</div>
+
+<div class="&#xC;h-t15-test&#xC;">Valid</div>
+
+<div class="&#xD;h-t16-test&#xD;">Valid</div>
+
 <!-- invalid names -->
 <div class="h"></div>
 
 <div class="h-"></div>
 
-<div class="h-14"></div>
+<div class="h-19"></div>
 
 <div class="h--"></div>
 
@@ -37,14 +48,55 @@
 
 <div class="h-t_t"></div>
 
-<div class="h-19-19"></div>
+<div class="h-24-24"></div>
 
 <div class="h-⛔"></div>
 
-<div class="h-test-21"></div>
+<div class="h-test-26"></div>
 
 <div class="h-test-"></div>
 
 <div class="h-test--test"></div>
 
 <div class="h-test!"></div>
+
+<!-- invalid names: Unicode whitespace but not ASCII whitespace per HTML -->
+<div class="h-t30-test&#xB;"></div>
+
+<div class="h-t31-test&#x85;"></div>
+
+<div class="h-t32-test&#xA0;"></div>
+
+<div class="h-t33-test&#x1680;"></div>
+
+<div class="h-t34-test&#x2000;"></div>
+
+<div class="h-t35-test&#x2001;"></div>
+
+<div class="h-t36-test&#x2002;"></div>
+
+<div class="h-t37-test&#x2003;"></div>
+
+<div class="h-t38-test&#x2004;"></div>
+
+<div class="h-t39-test&#x2005;"></div>
+
+<div class="h-t40-test&#x2006;"></div>
+
+<div class="h-t41-test&#x2007;"></div>
+
+<div class="h-t42-test&#x2008;"></div>
+
+<div class="h-t43-test&#x2009;"></div>
+
+<div class="h-t44-test&#x200A;"></div>
+
+<div class="h-t45-test&#x2028;"></div>
+
+<div class="h-t46-test&#x2029;"></div>
+
+<div class="h-t47-test&#x202F;"></div>
+
+<div class="h-t48-test&#x205F;"></div>
+
+<div class="h-t49-test&#x3000;"></div>
