@@ -1,0 +1,60 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-1-test"
+            ],
+            "properties": {
+                "a": [
+                    "Duplicated",
+                    "Duplicated"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test"
+            ],
+            "properties": {
+                "b": [
+                    "2000-01-01 00:00:00-0000",
+                    "2000-01-01 00:00:00-0000"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test"
+            ],
+            "properties": {
+                "c": [
+                    "Valid"
+                ],
+                "d": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test"
+            ],
+            "properties": {
+                "e": [
+                    "Valid"
+                ],
+                "f": [
+                    "Valid"
+                ],
+                "g": [
+                    "Valid"
+                ],
+                "h": [
+                    "Valid"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

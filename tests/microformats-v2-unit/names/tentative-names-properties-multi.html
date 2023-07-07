@@ -1,0 +1,22 @@
+<!--
+    This test documents present incidental behaviour. Dicussion on whether the
+    status quo is the desired behaviour can be found here:
+    https://github.com/microformats/microformats2-parsing/issues/61
+-->
+
+<div class="h-1-test">
+    <div class="p-a p-a">Duplicated</div>
+</div>
+
+<div class="h-2-test">
+    <div class="p-b dt-b">2000-01-01 00:00:00-0000</div>
+</div>
+
+<!-- The rest should be uncontroversial -->
+<div class="h-3-test">
+    <div class="p-c p-d">Valid</div>
+</div>
+
+<div class="h-4-test">
+    <div class="a p-1 p-e&#xA;&#xA;&#xA;p-f :&#xC;&#xC;p-g&#xD;p-h">Valid</div>
+</div>
