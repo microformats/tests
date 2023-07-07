@@ -279,6 +279,16 @@
                     }
                 ]
             }
+        },
+        {
+            "type": [
+                "h-bogus"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
         }
     ],
     "rels": {},
