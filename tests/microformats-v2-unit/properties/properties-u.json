@@ -1,0 +1,361 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-a"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "href-missing": [
+                    "http://example.test/Valid"
+                ],
+                "href-empty": [
+                    "http://example.test"
+                ],
+                "href-filled": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "href-missing": [
+                    "http://example.test"
+                ],
+                "href-empty": [
+                    "http://example.test"
+                ],
+                "href-filled": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-link"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "href-missing": [
+                    "http://example.test"
+                ],
+                "href-empty": [
+                    "http://example.test"
+                ],
+                "href-filled": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "src-missing-alt-missing": [
+                    "http://example.test"
+                ],
+                "src-missing-alt-empty": [
+                    "http://example.test"
+                ],
+                "src-missing-alt-filled": [
+                    "http://example.test"
+                ],
+                "src-missing-alt-filled-space": [
+                    "http://example.test"
+                ],
+                "src-empty-alt-missing": [
+                    "http://example.test"
+                ],
+                "src-empty-alt-empty": [
+                    {
+                        "value": "http://example.test",
+                        "alt": ""
+                    }
+                ],
+                "src-empty-alt-filled": [
+                    {
+                        "value": "http://example.test",
+                        "alt": "Valid"
+                    }
+                ],
+                "src-empty-alt-filled-space": [
+                    {
+                        "value": "http://example.test",
+                        "alt": "No Trim"
+                    }
+                ],
+                "src-filled-alt-missing": [
+                    "http://example.test/Valid"
+                ],
+                "src-filled-alt-empty": [
+                    {
+                        "value": "http://example.test/Valid",
+                        "alt": ""
+                    }
+                ],
+                "src-filled-alt-filled": [
+                    {
+                        "value": "http://example.test/Valid",
+                        "alt": "Valid"
+                    }
+                ],
+                "src-filled-alt-filled-space": [
+                    {
+                        "value": "http://example.test/Valid",
+                        "alt": "No Trim"
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-audio"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "src-missing": [
+                    "http://example.test/Valid"
+                ],
+                "src-empty": [
+                    "http://example.test"
+                ],
+                "src-filled": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-iframe"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "src-missing": [
+                    "http://example.test/Valid"
+                ],
+                "src-empty": [
+                    "http://example.test"
+                ],
+                "src-filled": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-source"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "src-missing": [
+                    "http://example.test"
+                ],
+                "src-empty": [
+                    "http://example.test"
+                ],
+                "src-filled": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-video"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "src-and-poster-missing": [
+                    "http://example.test/Valid"
+                ],
+                "src-empty": [
+                    "http://example.test"
+                ],
+                "src-filled": [
+                    "http://example.test/Valid"
+                ],
+                "poster-empty": [
+                    "http://example.test"
+                ],
+                "poster-filled": [
+                    "http://example.test/Valid"
+                ],
+                "src-trumps-poster": [
+                    "http://example.test/Valid",
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-object"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "data-missing": [
+                    "http://example.test/Valid"
+                ],
+                "data-empty": [
+                    "http://example.testInvalid"
+                ],
+                "data-filled": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "title-missing": [
+                    "http://example.test/Valid"
+                ],
+                "title-empty": [
+                    "http://example.test"
+                ],
+                "title-filled": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-data"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "value-missing": [
+                    "http://example.test/Valid"
+                ],
+                "value-empty": [
+                    "http://example.test"
+                ],
+                "value-filled": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-input"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "value-missing": [
+                    "http://example.test"
+                ],
+                "value-empty": [
+                    "http://example.test"
+                ],
+                "value-filled": [
+                    "http://example.test/Valid"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}
