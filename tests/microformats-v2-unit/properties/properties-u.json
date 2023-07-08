@@ -354,6 +354,25 @@
                     "http://example.test/Valid"
                 ]
             }
+        },
+        {
+            "type": [
+                "h-else"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "anything else": [
+                    "http://example.test/Valid"
+                ]
+            }
         }
     ],
     "rels": {},
