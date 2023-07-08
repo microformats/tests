@@ -1,0 +1,148 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-abbr"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "title-missing": [
+                    "Valid"
+                ],
+                "title-empty": [
+                    ""
+                ],
+                "title-filled": [
+                    "Valid"
+                ],
+                "title-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-link"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "title-missing": [
+                    ""
+                ],
+                "title-empty": [
+                    ""
+                ],
+                "title-filled": [
+                    "Valid"
+                ],
+                "title-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-data"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "value-missing": [
+                    "Valid"
+                ],
+                "value-empty": [
+                    ""
+                ],
+                "value-filled": [
+                    "Valid"
+                ],
+                "value-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-input"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "value-missing": [
+                    ""
+                ],
+                "value-empty": [
+                    ""
+                ],
+                "value-filled": [
+                    "Valid"
+                ],
+                "value-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "alt-missing": [
+                    ""
+                ],
+                "alt-empty": [
+                    ""
+                ],
+                "alt-filled": [
+                    "Valid"
+                ],
+                "alt-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "alt-missing": [
+                    ""
+                ],
+                "alt-empty": [
+                    ""
+                ],
+                "alt-filled": [
+                    "Valid"
+                ],
+                "alt-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-else"
+            ],
+            "properties": {
+                "anything-else": [
+                    "Valid"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}
