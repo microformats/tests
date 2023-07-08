@@ -6,7 +6,13 @@
             ],
             "properties": {
                 "name": [
-                    ""
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
                 ],
                 "title-missing": [
                     "Valid"
@@ -28,7 +34,13 @@
             ],
             "properties": {
                 "name": [
-                    ""
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
                 ],
                 "title-missing": [
                     ""
@@ -50,7 +62,13 @@
             ],
             "properties": {
                 "name": [
-                    ""
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
                 ],
                 "value-missing": [
                     "Valid"
@@ -72,7 +90,13 @@
             ],
             "properties": {
                 "name": [
-                    ""
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
                 ],
                 "value-missing": [
                     ""
@@ -94,7 +118,13 @@
             ],
             "properties": {
                 "name": [
-                    ""
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
                 ],
                 "alt-missing": [
                     ""
@@ -116,7 +146,13 @@
             ],
             "properties": {
                 "name": [
-                    ""
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
                 ],
                 "alt-missing": [
                     ""
@@ -137,6 +173,15 @@
                 "h-else"
             ],
             "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
                 "anything-else": [
                     "Valid"
                 ]
