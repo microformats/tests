@@ -1,0 +1,1607 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-explicit"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-has-p"
+            ],
+            "properties": {
+                "override": [
+                    "NotPartOfTest"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-has-e"
+            ],
+            "properties": {
+                "override": [
+                    {
+                        "html": "NotPartOfTest",
+                        "value": "NotPartOfTest"
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-nested"
+            ],
+            "properties": {},
+            "children": [
+                {
+                    "type": [
+                        "h-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-nested-prop"
+            ],
+            "properties": {
+                "prop": [
+                    {
+                        "value": "NotPartOfTestNotPartOfTest",
+                        "type": [
+                            "h-child"
+                        ],
+                        "properties": {
+                            "name": [
+                                "NotPartOfTest"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-title"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlychild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlychild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlychild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlygrandchild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlygrandchild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlygrandchild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlychild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlychild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlychild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Invalid Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlygrandchild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlygrandchild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlygrandchild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlychild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlychild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlychild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-img-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-area-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlygrandchild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlygrandchild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlygrandchild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-abbr-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlychild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlychild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlychild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-img-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-area-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlygrandchild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlygrandchild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlygrandchild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-abbr-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}
