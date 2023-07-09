@@ -83,6 +83,16 @@
         },
         {
             "type": [
+                "h-img-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-img-empty"
             ],
             "properties": {
@@ -108,6 +118,16 @@
             "properties": {
                 "name": [
                     "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
                 ]
             }
         },
@@ -173,6 +193,16 @@
         },
         {
             "type": [
+                "h-img-onlychild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-img-onlychild-alt-empty"
             ],
             "properties": {
@@ -218,6 +248,16 @@
             "properties": {
                 "name": [
                     "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area-onlychild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
                 ]
             }
         },
@@ -273,6 +313,16 @@
         },
         {
             "type": [
+                "h-abbr-onlychild-title-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-abbr-onlychild-title-empty"
             ],
             "properties": {
@@ -318,6 +368,16 @@
             "properties": {
                 "name": [
                     "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img-onlygrandchild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
                 ]
             }
         },
@@ -393,6 +453,16 @@
         },
         {
             "type": [
+                "h-area-onlygrandchild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-area-onlygrandchild-alt-empty"
             ],
             "properties": {
@@ -458,6 +528,16 @@
             "properties": {
                 "name": [
                     "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-onlygrandchild-title-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
                 ]
             }
         },
@@ -533,6 +613,16 @@
         },
         {
             "type": [
+                "h-2-img-onlychild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-2-img-onlychild-alt-empty"
             ],
             "properties": {
@@ -578,6 +668,16 @@
             "properties": {
                 "name": [
                     "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-area-onlychild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
                 ]
             }
         },
@@ -633,6 +733,16 @@
         },
         {
             "type": [
+                "h-2-abbr-onlychild-title-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-2-abbr-onlychild-title-empty"
             ],
             "properties": {
@@ -678,6 +788,16 @@
             "properties": {
                 "name": [
                     "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-img-onlygrandchild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
                 ]
             }
         },
@@ -753,6 +873,16 @@
         },
         {
             "type": [
+                "h-2-area-onlygrandchild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-2-area-onlygrandchild-alt-empty"
             ],
             "properties": {
@@ -818,6 +948,16 @@
             "properties": {
                 "name": [
                     "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-abbr-onlygrandchild-title-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    " No Trim "
                 ]
             }
         },
