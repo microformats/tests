@@ -371,6 +371,27 @@
                 ],
                 "anything else": [
                     "http://example.test/Valid"
+                ],
+                "meaningless-title": [
+                    "http://example.test/Valid"
+                ],
+                "meaningless-value": [
+                    "http://example.test/Valid"
+                ],
+                "meaningless-alt": [
+                    "http://example.test/Valid"
+                ],
+                "meaningless-href": [
+                    "http://example.test/Valid"
+                ],
+                "meaningless-src": [
+                    "http://example.test/Valid"
+                ],
+                "meaningless-data": [
+                    "http://example.test/Valid"
+                ],
+                "meaningless-poster": [
+                    "http://example.test/Valid"
                 ]
             }
         }

@@ -156,6 +156,15 @@
                 ],
                 "anything-else": [
                     "Valid"
+                ],
+                "meaningless-datetime": [
+                    "Valid"
+                ],
+                "meaningless-title": [
+                    "Valid"
+                ],
+                "meaningless-value": [
+                    "Valid"
                 ]
             }
         }

@@ -184,6 +184,15 @@
                 ],
                 "anything-else": [
                     "Valid"
+                ],
+                "meaningless-title": [
+                    "Valid"
+                ],
+                "meaningless-value": [
+                    "Valid"
+                ],
+                "meaningless-alt": [
+                    "Valid"
                 ]
             }
         }
