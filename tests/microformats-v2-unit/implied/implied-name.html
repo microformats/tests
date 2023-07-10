@@ -29,44 +29,44 @@
 
 <!-- Simple tests -->
 <img class="h-img-filled" alt="Valid">
-<img class="h-img-filled-space" alt=" No Trim ">
+<img class="h-img-filled-space" alt=" Do Trim ">
 <img class="h-img-empty" alt="">
 <img class="h-img-missing">
 
 <area class="h-area-filled" alt="Valid">
-<area class="h-area-filled-space" alt=" No Trim ">
+<area class="h-area-filled-space" alt=" Do Trim ">
 <area class="h-area-empty" alt="">
 <area class="h-area-missing">
 
 <abbr class="h-abbr-title" title="Valid">Invalid</abbr>
-<abbr class="h-abbr-title-space" title=" No Trim ">Invalid</abbr>
+<abbr class="h-abbr-title-space" title=" Do Trim ">Invalid</abbr>
 <abbr class="h-abbr-title-empty" title="">Invalid</abbr>
 <abbr class="h-abbr-title-missing">Valid</abbr>
 
 <!-- These tests are tripled below to rigurously test the primacy of abbr[title] -->
 <div class="h-img-onlychild-alt-filled"><img alt="Valid">Invalid</div>
-<div class="h-img-onlychild-alt-filled-space"><img alt=" No Trim ">Invalid</div>
+<div class="h-img-onlychild-alt-filled-space"><img alt=" Do Trim ">Invalid</div>
 <div class="h-img-onlychild-alt-empty"><img alt="">Valid</div>
 <div class="h-img-onlychild-alt-missing"><img>Valid</div>
 <div class="h-img-onlychild-sibling-before"><hr><img alt="Invalid">Valid</div>
 <div class="h-img-onlychild-sibling-after"><img alt="Invalid"><hr>Valid</div>
 
 <div class="h-area-onlychild-alt-filled"><area alt="Valid">Invalid</div>
-<div class="h-area-onlychild-alt-filled-space"><area alt=" No Trim ">Invalid</div>
+<div class="h-area-onlychild-alt-filled-space"><area alt=" Do Trim ">Invalid</div>
 <div class="h-area-onlychild-alt-empty"><area alt="">Valid</div>
 <div class="h-area-onlychild-alt-missing"><area>Valid</div>
 <div class="h-area-onlychild-sibling-before"><hr><area alt="Invalid">Valid</div>
 <div class="h-area-onlychild-sibling-after"><area alt="Invalid"><hr>Valid</div>
 
 <div class="h-abbr-onlychild-title-filled"><abbr title="Valid">Invalid</abbr></div>
-<div class="h-abbr-onlychild-title-filled-space"><abbr title=" No Trim ">Invalid</abbr></div>
+<div class="h-abbr-onlychild-title-filled-space"><abbr title=" Do Trim ">Invalid</abbr></div>
 <div class="h-abbr-onlychild-title-empty"><abbr title="">Valid</abbr></div>
 <div class="h-abbr-onlychild-title-missing"><abbr>Valid</abbr></div>
 <div class="h-abbr-onlychild-sibling-before"><hr><abbr title="Invalid">Valid</abbr></div>
 <div class="h-abbr-onlychild-sibling-after"><abbr title="Invalid">Valid</abbr><hr></div>
 
 <div class="h-img-onlygrandchild-alt-filled"><div><img alt="Valid">Invalid</div></div>
-<div class="h-img-onlygrandchild-alt-filled-space"><div><img alt=" No Trim ">Invalid</div></div>
+<div class="h-img-onlygrandchild-alt-filled-space"><div><img alt=" Do Trim ">Invalid</div></div>
 <div class="h-img-onlygrandchild-alt-empty"><div><img alt="">Valid</div></div>
 <div class="h-img-onlygrandchild-alt-missing"><div><img>Valid</div></div>
 <div class="h-img-onlygrandchild-sibling-before"><div><hr><img alt="Invalid">Valid</div></div>
@@ -75,7 +75,7 @@
 <div class="h-img-onlygrandchild-parent-sibling-after"><div><img alt="Invalid">Valid</div><hr></div>
 
 <div class="h-area-onlygrandchild-alt-filled"><div><area alt="Valid">Invalid</div></div>
-<div class="h-area-onlygrandchild-alt-filled-space"><div><area alt=" No Trim ">Invalid</div></div>
+<div class="h-area-onlygrandchild-alt-filled-space"><div><area alt=" Do Trim ">Invalid</div></div>
 <div class="h-area-onlygrandchild-alt-empty"><div><area alt="">Valid</div></div>
 <div class="h-area-onlygrandchild-alt-missing"><div><area>Valid</div></div>
 <div class="h-area-onlygrandchild-sibling-before"><div><hr><area alt="Invalid">Valid</div></div>
@@ -84,7 +84,7 @@
 <div class="h-area-onlygrandchild-parent-sibling-after"><div><area alt="Invalid">Valid</div><hr></div>
 
 <div class="h-abbr-onlygrandchild-title-filled"><div><abbr title="Valid">Invalid</abbr></div></div>
-<div class="h-abbr-onlygrandchild-title-filled-space"><div><abbr title=" No Trim ">Invalid</abbr></div></div>
+<div class="h-abbr-onlygrandchild-title-filled-space"><div><abbr title=" Do Trim ">Invalid</abbr></div></div>
 <div class="h-abbr-onlygrandchild-title-empty"><div><abbr title="">Valid</abbr></div></div>
 <div class="h-abbr-onlygrandchild-title-missing"><div><abbr>Valid</abbr></div></div>
 <div class="h-abbr-onlygrandchild-sibling-before"><div><hr><abbr title="Invalid">Valid</abbr></div></div>
@@ -94,28 +94,28 @@
 
 <!-- Test above with abbr: results are the same -->
 <abbr class="h-2-img-onlychild-alt-filled"><img alt="Valid">Invalid</abbr>
-<abbr class="h-2-img-onlychild-alt-filled-space"><img alt=" No Trim ">Invalid</abbr>
+<abbr class="h-2-img-onlychild-alt-filled-space"><img alt=" Do Trim ">Invalid</abbr>
 <abbr class="h-2-img-onlychild-alt-empty"><img alt="">Valid</abbr>
 <abbr class="h-2-img-onlychild-alt-missing"><img>Valid</abbr>
 <abbr class="h-2-img-onlychild-sibling-before"><hr><img alt="Invalid">Valid</abbr>
 <abbr class="h-2-img-onlychild-sibling-after"><img alt="Invalid"><hr>Valid</abbr>
 
 <abbr class="h-2-area-onlychild-alt-filled"><area alt="Valid">Invalid</abbr>
-<abbr class="h-2-area-onlychild-alt-filled-space"><area alt=" No Trim ">Invalid</abbr>
+<abbr class="h-2-area-onlychild-alt-filled-space"><area alt=" Do Trim ">Invalid</abbr>
 <abbr class="h-2-area-onlychild-alt-empty"><area alt="">Valid</abbr>
 <abbr class="h-2-area-onlychild-alt-missing"><area>Valid</abbr>
 <abbr class="h-2-area-onlychild-sibling-before"><hr><area alt="Invalid">Valid</abbr>
 <abbr class="h-2-area-onlychild-sibling-after"><area alt="Invalid"><hr>Valid</abbr>
 
 <abbr class="h-2-abbr-onlychild-title-filled"><abbr title="Valid">Invalid</abbr></abbr>
-<abbr class="h-2-abbr-onlychild-title-filled-space"><abbr title=" No Trim ">Invalid</abbr></abbr>
+<abbr class="h-2-abbr-onlychild-title-filled-space"><abbr title=" Do Trim ">Invalid</abbr></abbr>
 <abbr class="h-2-abbr-onlychild-title-empty"><abbr title="">Valid</abbr></abbr>
 <abbr class="h-2-abbr-onlychild-title-missing"><abbr>Valid</abbr></abbr>
 <abbr class="h-2-abbr-onlychild-sibling-before"><hr><abbr title="Invalid">Valid</abbr></abbr>
 <abbr class="h-2-abbr-onlychild-sibling-after"><abbr title="Invalid">Valid</abbr><hr></abbr>
 
 <abbr class="h-2-img-onlygrandchild-alt-filled"><div><img alt="Valid">Invalid</div></abbr>
-<abbr class="h-2-img-onlygrandchild-alt-filled-space"><div><img alt=" No Trim ">Invalid</div></abbr>
+<abbr class="h-2-img-onlygrandchild-alt-filled-space"><div><img alt=" Do Trim ">Invalid</div></abbr>
 <abbr class="h-2-img-onlygrandchild-alt-empty"><div><img alt="">Valid</div></abbr>
 <abbr class="h-2-img-onlygrandchild-alt-missing"><div><img>Valid</div></abbr>
 <abbr class="h-2-img-onlygrandchild-sibling-before"><div><hr><img alt="Invalid">Valid</div></abbr>
@@ -124,7 +124,7 @@
 <abbr class="h-2-img-onlygrandchild-parent-sibling-after"><div><img alt="Invalid">Valid</div><hr></abbr>
 
 <abbr class="h-2-area-onlygrandchild-alt-filled"><div><area alt="Valid">Invalid</div></abbr>
-<abbr class="h-2-area-onlygrandchild-alt-filled-space"><div><area alt=" No Trim ">Invalid</div></abbr>
+<abbr class="h-2-area-onlygrandchild-alt-filled-space"><div><area alt=" Do Trim ">Invalid</div></abbr>
 <abbr class="h-2-area-onlygrandchild-alt-empty"><div><area alt="">Valid</div></abbr>
 <abbr class="h-2-area-onlygrandchild-alt-missing"><div><area>Valid</div></abbr>
 <abbr class="h-2-area-onlygrandchild-sibling-before"><div><hr><area alt="Invalid">Valid</div></abbr>
@@ -133,7 +133,7 @@
 <abbr class="h-2-area-onlygrandchild-parent-sibling-after"><div><area alt="Invalid">Valid</div><hr></abbr>
 
 <abbr class="h-2-abbr-onlygrandchild-title-filled"><div><abbr title="Valid">Invalid</abbr></div></abbr>
-<abbr class="h-2-abbr-onlygrandchild-title-filled-space"><div><abbr title=" No Trim ">Invalid</abbr></div></abbr>
+<abbr class="h-2-abbr-onlygrandchild-title-filled-space"><div><abbr title=" Do Trim ">Invalid</abbr></div></abbr>
 <abbr class="h-2-abbr-onlygrandchild-title-empty"><div><abbr title="">Valid</abbr></div></abbr>
 <abbr class="h-2-abbr-onlygrandchild-title-missing"><div><abbr>Valid</abbr></div></abbr>
 <abbr class="h-2-abbr-onlygrandchild-sibling-before"><div><hr><abbr title="Invalid">Valid</abbr></div></abbr>

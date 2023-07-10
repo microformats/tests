@@ -87,7 +87,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -127,7 +127,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -158,6 +158,16 @@
             "properties": {
                 "name": [
                     "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr-title-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
                 ]
             }
         },
@@ -197,7 +207,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -257,7 +267,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -317,7 +327,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -377,7 +387,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -457,7 +467,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -537,7 +547,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -617,7 +627,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -677,7 +687,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -737,7 +747,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -797,7 +807,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -877,7 +887,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },
@@ -957,7 +967,7 @@
             ],
             "properties": {
                 "name": [
-                    " No Trim "
+                    "Do Trim"
                 ]
             }
         },

@@ -119,7 +119,7 @@
                 "src-empty-alt-filled-space": [
                     {
                         "value": "http://example.test",
-                        "alt": "No Trim"
+                        "alt": " No Trim "
                     }
                 ],
                 "src-filled-alt-missing": [
@@ -140,7 +140,7 @@
                 "src-filled-alt-filled-space": [
                     {
                         "value": "http://example.test/Valid",
-                        "alt": "No Trim"
+                        "alt": " No Trim "
                     }
                 ]
             }
@@ -273,7 +273,7 @@
                     "http://example.test/Valid"
                 ],
                 "data-empty": [
-                    "http://example.testInvalid"
+                    "http://example.test/Invalid"
                 ],
                 "data-filled": [
                     "http://example.test/Valid"
@@ -369,7 +369,7 @@
                 "url": [
                     "http://example.test/NotPartOfTest"
                 ],
-                "anything else": [
+                "anything-else": [
                     "http://example.test/Valid"
                 ],
                 "meaningless-title": [
