@@ -1,0 +1,44 @@
+<!-- NOTE: 
+    The details of textContent processing are tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+-->
+
+<div class="h-value">
+    <div class="p-single">Invalid <span class="value">Valid</span> Invalid</div>
+    <div class="p-double">Invalid <span class="value">Va</span> Invalid <span class="value">lid</span></div>
+    <div class="p-quintuple">Invalid <span class="value">V</span> <span class="value">a</span> <span class="value">l</span> <span class="value">i</span> <span class="value">d</span> Invalid</div>
+    <div class="p-nested">Invalid <span class="value">Va<span class="value">li</span>d</span> Invalid</div>
+    <div class="p-other-classes"> Invalid <span class="a b value c d">Valid</span> Invalid</div>
+    <div class="p-self value">Invalid <span class="value">Valid</span> Invalid</div>
+</div>
+
+<div class="h-img">
+    <div class="p-filled">Invalid <img class="value" alt="Valid"> Invalid</div>
+    <div class="p-empty">Invalid <img class="value" alt=""> Invalid</div>
+    <div class="p-missing">Invalid <img class="value"> Invalid</div>
+</div>
+
+<div class="h-area">
+    <div class="p-filled">Invalid <area class="value" alt="Valid"> Invalid</div>
+    <div class="p-empty">Invalid <area class="value" alt=""> Invalid</div>
+    <div class="p-missing">Invalid <area class="value"> Invalid</div>
+</div>
+
+<div class="h-data">
+    <div class="p-filled">Invalid <data class="value" value="Valid">Invalid</data> Invalid</div>
+    <div class="p-empty">Invalid <data class="value" value="">Invalid</data> Invalid</div>
+    <div class="p-missing">Invalid <data class="value">Valid</data> Invalid</div>
+</div>
+
+<div class="h-abbr">
+    <div class="p-filled">Invalid <abbr class="value" title="Valid">Invalid</abbr> Invalid</div>
+    <div class="p-empty">Invalid <abbr class="value" title="">Invalid</abbr> Invalid</div>
+    <div class="p-missing">Invalid <abbr class="value">Valid</abbr> Invalid</div>
+</div>
+
+<!-- This test checks Value Class Pattern execution order within p-property processing -->
+<div class="h-override">
+    <abbr class="p-abbr" title="Invalid">Invalid <span class="value">Valid</span> Invalid</abbr>
+    <data class="p-data" value="Invalid">Invalid <span class="value">Valid</span> Invalid</data>
+</div>

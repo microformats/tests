@@ -43,6 +43,10 @@
 <abbr class="h-abbr-title-empty" title="">Invalid</abbr>
 <abbr class="h-abbr-title-missing">Valid</abbr>
 
+<!-- These tests check that value-class parsing is not used during implied property parsing -->
+<div class="h-no-value">Va<span class="value">lid</span></div>
+<div class="h-no-value-title">Va<span class="value-title" title="Invalid">lid</span></div>
+
 <!-- These tests are tripled below to rigurously test the primacy of abbr[title] -->
 <div class="h-img-onlychild-alt-filled"><img alt="Valid">Invalid</div>
 <div class="h-img-onlychild-alt-filled-space"><img alt=" Do Trim ">Invalid</div>

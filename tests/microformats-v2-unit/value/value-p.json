@@ -1,0 +1,108 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-value"
+            ],
+            "properties": {
+                "single": [
+                    "Valid"
+                ],
+                "double": [
+                    "Valid"
+                ],
+                "quintuple": [
+                    "Valid"
+                ],
+                "nested": [
+                    "Valid"
+                ],
+                "other-classes": [
+                    "Valid"
+                ],
+                "self": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img"
+            ],
+            "properties": {
+                "filled": [
+                    "Valid"
+                ],
+                "empty": [
+                    ""
+                ],
+                "missing": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area"
+            ],
+            "properties": {
+                "filled": [
+                    "Valid"
+                ],
+                "empty": [
+                    ""
+                ],
+                "missing": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-data"
+            ],
+            "properties": {
+                "filled": [
+                    "Valid"
+                ],
+                "empty": [
+                    ""
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr"
+            ],
+            "properties": {
+                "filled": [
+                    "Valid"
+                ],
+                "empty": [
+                    ""
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-override"
+            ],
+            "properties": {
+                "abbr": [
+                    "Valid"
+                ],
+                "data": [
+                    "Valid"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

@@ -193,6 +193,26 @@
         },
         {
             "type": [
+                "h-no-value"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-no-value-title"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-img-onlychild-alt-filled"
             ],
             "properties": {
