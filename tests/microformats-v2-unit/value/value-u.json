@@ -1,0 +1,141 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-value"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "single": [
+                    "http://example.test/Valid"
+                ],
+                "double": [
+                    "http://example.test/Valid"
+                ],
+                "quintuple": [
+                    "http://example.test/Valid"
+                ],
+                "nested": [
+                    "http://example.test/Valid"
+                ],
+                "other-classes": [
+                    "http://example.test/Valid"
+                ],
+                "self": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "filled": [
+                    "http://example.test/Valid"
+                ],
+                "empty": [
+                    "http://example.test"
+                ],
+                "missing": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "filled": [
+                    "http://example.test/Valid"
+                ],
+                "empty": [
+                    "http://example.test"
+                ],
+                "missing": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-data"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "filled": [
+                    "http://example.test/Valid"
+                ],
+                "empty": [
+                    "http://example.test"
+                ],
+                "missing": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "filled": [
+                    "http://example.test/Valid"
+                ],
+                "empty": [
+                    "http://example.test"
+                ],
+                "missing": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-override"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "audio": [
+                    "http://example.test/Valid"
+                ],
+                "iframe": [
+                    "http://example.test/Valid"
+                ],
+                "video-src": [
+                    "http://example.test/Valid"
+                ],
+                "video-poster": [
+                    "http://example.test/Valid"
+                ],
+                "object": [
+                    "http://example.test/Valid"
+                ],
+                "abbr": [
+                    "http://example.test/Valid"
+                ],
+                "data": [
+                    "http://example.test/Valid"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}
