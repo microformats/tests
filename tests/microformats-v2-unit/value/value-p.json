@@ -22,8 +22,49 @@
                 ],
                 "self": [
                     "Valid"
+                ],
+                "deep": [
+                    "Valid"
+                ],
+                "is-property": [
+                    "Valid"
+                ],
+                "not-part-of-test": [
+                    "Valid",
+                    "NotPartOfTest"
+                ],
+                "is-microformat": [
+                    "Valid"
+                ],
+                "inside-property": [
+                    "Valid"
+                ],
+                "inside-microformat": [
+                    "Valid"
                 ]
-            }
+            },
+            "children": [
+                {
+                    "type": [
+                        "h-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "Valid"
+                        ]
+                    }
+                },
+                {
+                    "type": [
+                        "h-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
         },
         {
             "type": [
@@ -32,6 +73,9 @@
             "properties": {
                 "filled": [
                     "Valid"
+                ],
+                "filled-space": [
+                    " No Trim "
                 ],
                 "empty": [
                     ""
@@ -49,6 +93,9 @@
                 "filled": [
                     "Valid"
                 ],
+                "filled-space": [
+                    " No Trim "
+                ],
                 "empty": [
                     ""
                 ],
@@ -65,6 +112,9 @@
                 "filled": [
                     "Valid"
                 ],
+                "filled-space": [
+                    " No Trim "
+                ],
                 "empty": [
                     ""
                 ],
@@ -80,6 +130,9 @@
             "properties": {
                 "filled": [
                     "Valid"
+                ],
+                "filled-space": [
+                    " No Trim "
                 ],
                 "empty": [
                     ""

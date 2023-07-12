@@ -6,7 +6,7 @@
             ],
             "properties": {
                 "name": [
-                    "http://example.test/NotPartOfTest"
+                    "NotPartOfTest"
                 ],
                 "single": [
                     "http://example.test/Valid"
@@ -23,10 +23,48 @@
                 "other-classes": [
                     "http://example.test/Valid"
                 ],
-                "self": [
+                "deep": [
+                    "http://example.test/Valid"
+                ],
+                "is-property": [
+                    "http://example.test/Valid"
+                ],
+                "not-part-of-test": [
+                    "http://example.test/Valid",
+                    "NotPartOfTest"
+                ],
+                "is-microformat": [
+                    "http://example.test/Valid"
+                ],
+                "inside-property": [
+                    "http://example.test/Valid"
+                ],
+                "inside-microformat": [
                     "http://example.test/Valid"
                 ]
-            }
+            },
+            "children": [
+                {
+                    "type": [
+                        "h-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "Valid"
+                        ]
+                    }
+                },
+                {
+                    "type": [
+                        "h-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
         },
         {
             "type": [
@@ -34,7 +72,7 @@
             ],
             "properties": {
                 "name": [
-                    "http://example.test/NotPartOfTest"
+                    "NotPartOfTest"
                 ],
                 "filled": [
                     "http://example.test/Valid"
@@ -53,7 +91,7 @@
             ],
             "properties": {
                 "name": [
-                    "http://example.test/NotPartOfTest"
+                    "NotPartOfTest"
                 ],
                 "filled": [
                     "http://example.test/Valid"
@@ -72,7 +110,7 @@
             ],
             "properties": {
                 "name": [
-                    "http://example.test/NotPartOfTest"
+                    "NotPartOfTest"
                 ],
                 "filled": [
                     "http://example.test/Valid"
@@ -91,7 +129,7 @@
             ],
             "properties": {
                 "name": [
-                    "http://example.test/NotPartOfTest"
+                    "NotPartOfTest"
                 ],
                 "filled": [
                     "http://example.test/Valid"
@@ -110,7 +148,7 @@
             ],
             "properties": {
                 "name": [
-                    "http://example.test/NotPartOfTest"
+                    "NotPartOfTest"
                 ],
                 "audio": [
                     "http://example.test/Valid"
