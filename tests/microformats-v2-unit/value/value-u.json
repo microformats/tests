@@ -23,6 +23,9 @@
                 "other-classes": [
                     "http://example.test/Valid"
                 ],
+                "self": [
+                    "http://example.test/Valid"
+                ],
                 "deep": [
                     "http://example.test/Valid"
                 ],
