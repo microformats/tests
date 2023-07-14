@@ -9,7 +9,7 @@
 
     YYYY-MM-DD
     YYYY-MM-DD hh:mm:ss (24-hour clock)
-    YYYY-MM-DD hh:mm:ss±0000 (24-hour clock)
+    YYYY-MM-DD hh:mm:ss±oooo (24-hour clock)
 -->
 
 <div class="h-value">
@@ -38,8 +38,8 @@
 <div class="h-acceptable">
     <div class="p-name">NotPartOfTest</div>
     <div class="dt-not-a-date">Valid <span class="value">NotADate</span> Valid</div>
-    <div class="dt-1-with-tz">Invalid <span class="value">2000-01-01 00:00:00-0000</span> Invalid</div>
-    <div class="dt-2-with-tz">Invalid <span class="value">2000-01-01</span><span class="value">00:00:00-0000</span> Invalid</div>  
+    <div class="dt-1-with-tz">Invalid <span class="value">2000-01-01 00:00:00+00:00</span> Invalid</div>
+    <div class="dt-2-with-tz">Invalid <span class="value">2000-01-01</span><span class="value">00:00:00+00:00</span> Invalid</div>  
     <div class="dt-1-first-wins">
         Invalid
         <span class="value">2000-01-01</span>
@@ -57,7 +57,7 @@
         Invalid
         <span class="value">2000-01-01</span>
         <span class="value">00:00:00</span>
-        <span class="value">00:00:00-0000</span>
+        <span class="value">00:00:00+00:00</span>
         Invalid
     </div>
 </div>
@@ -65,7 +65,7 @@
 <div class="h-img">
     <div class="p-name">NotPartOfTest</div>
     <div class="dt-filled">Invalid <img class="value" alt="2000-01-01"> Invalid</div>
-    <div class="dt-empty">Va<img class="value" alt="">lid</div>
+    <div class="dt-empty">Valid<img class="value" alt=""></div>
     <div class="dt-missing">Valid<img class="value"></div>
 </div>
 
