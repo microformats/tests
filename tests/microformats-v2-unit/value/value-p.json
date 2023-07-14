@@ -144,6 +144,63 @@
         },
         {
             "type": [
+                "h-time"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "Valid"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-ins"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "Valid"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-del"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "Valid"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-override"
             ],
             "properties": {

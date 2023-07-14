@@ -58,6 +58,28 @@
     <div class="u-missing">Invalid <abbr class="value">http://example.test/Valid</abbr> Invalid</div>
 </div>
 
+<!-- The datetime attribute on these elements only applies to date parsing, and not other VCP parsing -->
+<div class="h-time">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <time class="value" datetime="Invalid">http://example.test/Valid</time> Invalid</div>
+    <div class="u-empty">Invalid <time class="value" datetime="">http://example.test/Valid</time> Invalid</div>
+    <div class="u-missing">Invalid <time class="value">http://example.test/Valid</time> Invalid</div>
+</div>
+
+<div class="h-ins">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <ins class="value" datetime="Invalid">http://example.test/Valid</ins> Invalid</div>
+    <div class="u-empty">Invalid <ins class="value" datetime="">http://example.test/Valid</ins> Invalid</div>
+    <div class="u-missing">Invalid <ins class="value">http://example.test/Valid</ins> Invalid</div>
+</div>
+
+<div class="h-del">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <del class="value" datetime="Invalid">http://example.test/Valid</del> Invalid</div>
+    <div class="u-empty">Invalid <del class="value" datetime="">http://example.test/Valid</del> Invalid</div>
+    <div class="u-missing">Invalid <del class="value">http://example.test/Valid</del> Invalid</div>
+</div>
+
 <!-- This test checks Value Class Pattern execution order within u-property processing -->
 <div class="h-override">
     <div class="p-name">NotPartOfTest</div>

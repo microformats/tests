@@ -90,6 +90,28 @@
     <div class="dt-missing">Invalid <abbr class="value">2000-01-01</abbr> Invalid</div>
 </div>
 
+<!-- The datetime attribute on these elements only applies to date parsing, and not other VCP parsing -->
+<div class="h-time">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <time class="value" datetime="2000-01-01">Invalid</time> Invalid</div>
+    <div class="dt-empty">Va<time class="value" datetime="">l</time>id</div>
+    <div class="dt-missing">Invalid <time class="value">2000-01-01</time> Invalid</div>
+</div>
+
+<div class="h-ins">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <ins class="value" datetime="2000-01-01">Invalid</ins> Invalid</div>
+    <div class="dt-empty">Va<ins class="value" datetime="">l</ins>id</div>
+    <div class="dt-missing">Invalid <ins class="value">2000-01-01</ins> Invalid</div>
+</div>
+
+<div class="h-del">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <del class="value" datetime="2000-01-01">Invalid</del> Invalid</div>
+    <div class="dt-empty">Va<del class="value" datetime="">l</del>id</div>
+    <div class="dt-missing">Invalid <del class="value">2000-01-01</del> Invalid</div>
+</div>
+
 <!-- This test checks Value Class Pattern execution order within dt-property processing -->
 <div class="h-override">
     <div class="p-name">NotPartOfTest</div>

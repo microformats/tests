@@ -57,6 +57,28 @@
     <div class="p-missing">Invalid <abbr class="value">Valid</abbr> Invalid</div>
 </div>
 
+<!-- The datetime attribute on these elements only applies to date parsing, and not other VCP parsing -->
+<div class="h-time">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="p-filled">Invalid <time class="value" datetime="Invalid">Valid</time> Invalid</div>
+    <div class="p-empty">Invalid <time class="value" datetime="">Valid</time> Invalid</div>
+    <div class="p-missing">Invalid <time class="value">Valid</time> Invalid</div>
+</div>
+
+<div class="h-ins">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="p-filled">Invalid <ins class="value" datetime="Invalid">Valid</ins> Invalid</div>
+    <div class="p-empty">Invalid <ins class="value" datetime="">Valid</ins> Invalid</div>
+    <div class="p-missing">Invalid <ins class="value">Valid</ins> Invalid</div>
+</div>
+
+<div class="h-del">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="p-filled">Invalid <del class="value" datetime="Invalid">Valid</del> Invalid</div>
+    <div class="p-empty">Invalid <del class="value" datetime="">Valid</del> Invalid</div>
+    <div class="p-missing">Invalid <del class="value">Valid</del> Invalid</div>
+</div>
+
 <!-- This test checks Value Class Pattern execution order within p-property processing -->
 <div class="h-override">
     <abbr class="p-abbr" title="Invalid">Invalid <span class="value">Valid</span> Invalid</abbr>

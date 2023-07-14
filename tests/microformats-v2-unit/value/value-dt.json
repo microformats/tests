@@ -166,6 +166,63 @@
         },
         {
             "type": [
+                "h-time"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "2000-01-01"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-ins"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "2000-01-01"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-del"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "2000-01-01"
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-override"
             ],
             "properties": {

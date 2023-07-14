@@ -147,6 +147,63 @@
         },
         {
             "type": [
+                "h-time"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "http://example.test/Valid"
+                ],
+                "empty": [
+                    "http://example.test/Valid"
+                ],
+                "missing": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-ins"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "http://example.test/Valid"
+                ],
+                "empty": [
+                    "http://example.test/Valid"
+                ],
+                "missing": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-del"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "http://example.test/Valid"
+                ],
+                "empty": [
+                    "http://example.test/Valid"
+                ],
+                "missing": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
                 "h-override"
             ],
             "properties": {
