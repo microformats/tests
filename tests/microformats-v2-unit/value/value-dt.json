@@ -1,0 +1,195 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-value"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "single": [
+                    "2000-01-01"
+                ],
+                "double": [
+                    "2000-01-01 00:00:00"
+                ],
+                "other-classes": [
+                    "2000-01-01"
+                ],
+                "deep": [
+                    "2000-01-01 00:00:00"
+                ],
+                "is-property": [
+                    "2000-01-01"
+                ],
+                "not-part-of-test": [
+                    "2000-01-01",
+                    "23:59:59"
+                ],
+                "is-microformat": [
+                    "2000-01-01"
+                ],
+                "inside-property": [
+                    "2000-01-01"
+                ],
+                "inside-microformat": [
+                    "2000-01-01"
+                ]
+            },
+            "children": [
+                {
+                    "type": [
+                        "h-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "2000-01-01"
+                        ]
+                    }
+                },
+                {
+                    "type": [
+                        "h-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "23:59:59"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-acceptable"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "not-a-date": [
+                    "Valid NotADate Valid"
+                ],
+                "1-with-tz": [
+                    "2000-01-01 00:00:00-0000"
+                ],
+                "2-with-tz": [
+                    "2000-01-01 00:00:00-0000"
+                ],
+                "1-first-wins": [
+                    "2000-01-01"
+                ],
+                "2-first-wins": [
+                    "2000-01-01 00:00:00"
+                ],
+                "3-first-wins": [
+                    "2000-01-01 00:00:00"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-img"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-area"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-data"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "2000-01-01"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-abbr"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "2000-01-01"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-override"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "time": [
+                    "2000-01-01"
+                ],
+                "ins": [
+                    "2000-01-01"
+                ],
+                "del": [
+                    "2000-01-01"
+                ],
+                "abbr": [
+                    "2000-01-01"
+                ],
+                "data": [
+                    "2000-01-01"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}
