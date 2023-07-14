@@ -1,7 +1,13 @@
-<!-- NOTE: 
+<!--
+    NOTE:
     The details of textContent processing are tested in a dedicated test
     series, thus here valid output is carefully designed to pass even if no
     trimming is performed.
+
+    The details of URL resolution and normalization are likewise tested in a
+    dedicated test series, thus valid output is carefully designed to pass
+    even if no URL normalization is performed. URL resolution is an unavoidable
+    aspect of these tests, but resolution complexity is kept to a minimum.
 -->
 
 <div class="h-value">
@@ -16,14 +22,14 @@
     <div class="u-is-property">Invalid <div class="value p-not-part-of-test">http://example.test/Valid</div> Invalid</div>
     <div class="u-is-microformat">Invalid <div class="value h-child"><span class="p-name">Valid</span></div> Invalid</div>
     <div class="u-inside-property">
-        Invalid 
+        Invalid
         <span class="value">http://example.test/Valid</span>
         <div class="p-not-part-of-test"><span class="value">NotPartOfTest</span></div>
         Invalid
     </div>
     <!-- This is assumed to be the intent of the specification text; see https://github.com/microformats/microformats2-parsing/issues/63 -->
     <div class="u-inside-microformat">
-        Invalid 
+        Invalid
         <span class="value">http://example.test/Valid</span>
         <div class="h-child"><span class="value">NotPartOfTest</span></div>
         Invalid
