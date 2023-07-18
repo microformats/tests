@@ -8,33 +8,33 @@
     See https://github.com/microformats/microformats2-parsing/issues/51
     All parsers except Rust have the same behaviour here
 -->
-<div class="h-as-e">
+<div class="h-test-as-e">
     <div class="p-name">NotPartOfTest</div>
-    <div class="e-test h-a"><div class="p-name">Valid</div></div>
+    <div class="e-test h-test-a"><div class="p-name">Valid</div></div>
 </div>
 <!-- 
     Behaviour is less consistent in this case with no clear winner, though a
     plain reading of the specification would yield this test's result
 -->
-<div class="h-as-u-with-img">
+<div class="h-test-as-u-with-img">
     <div class="p-name">NotPartOfTest</div>
-    <div class="u-test h-a">
+    <div class="u-test h-test-a">
         <div class="p-name">NotPartOfTest</div>
         <img class="u-url" src="http://example.test/Valid" alt="Valid">
     </div>
 </div>
 
 <!-- See https://github.com/microformats/microformats2-parsing/issues/66 -->
-<div class="h-implied-name">
-    <div class="p-name h-a">
+<div class="h-test-implied-name">
+    <div class="p-name h-test-a">
         Invalid 
         <abbr title="Valid">Invalid</abbr>
         Invalid
     </div>
 </div>
-<div class="h-implied-url">
+<div class="h-test-implied-url">
     <div class="p-name">NotPartOfTest</div>
-    <div class="u-url h-a">
+    <div class="u-url h-test-a">
         Invalid 
         <a href="http://example.test/Valid" class="p-name">NotPartOfTest</a>
         Invalid

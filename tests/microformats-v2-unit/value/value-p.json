@@ -2,7 +2,7 @@
     "items": [
         {
             "type": [
-                "h-value"
+                "h-test-value"
             ],
             "properties": {
                 "single": [
@@ -46,7 +46,7 @@
             "children": [
                 {
                     "type": [
-                        "h-child"
+                        "h-test-child"
                     ],
                     "properties": {
                         "name": [
@@ -56,7 +56,7 @@
                 },
                 {
                     "type": [
-                        "h-child"
+                        "h-test-child"
                     ],
                     "properties": {
                         "name": [
@@ -68,7 +68,7 @@
         },
         {
             "type": [
-                "h-img"
+                "h-test-img"
             ],
             "properties": {
                 "filled": [
@@ -87,7 +87,7 @@
         },
         {
             "type": [
-                "h-area"
+                "h-test-area"
             ],
             "properties": {
                 "filled": [
@@ -106,7 +106,7 @@
         },
         {
             "type": [
-                "h-data"
+                "h-test-data"
             ],
             "properties": {
                 "filled": [
@@ -125,7 +125,7 @@
         },
         {
             "type": [
-                "h-abbr"
+                "h-test-abbr"
             ],
             "properties": {
                 "filled": [
@@ -144,7 +144,7 @@
         },
         {
             "type": [
-                "h-time"
+                "h-test-time"
             ],
             "properties": {
                 "name": [
@@ -163,7 +163,7 @@
         },
         {
             "type": [
-                "h-ins"
+                "h-test-ins"
             ],
             "properties": {
                 "name": [
@@ -182,7 +182,7 @@
         },
         {
             "type": [
-                "h-del"
+                "h-test-del"
             ],
             "properties": {
                 "name": [
@@ -201,7 +201,7 @@
         },
         {
             "type": [
-                "h-override"
+                "h-test-override"
             ],
             "properties": {
                 "abbr": [

@@ -2,7 +2,7 @@
     "items": [
         {
             "type": [
-                "h-p"
+                "h-test-p"
             ],
             "properties": {
                 "name": [
@@ -60,7 +60,7 @@
         },
         {
             "type": [
-                "h-dt"
+                "h-test-dt"
             ],
             "properties": {
                 "name": [
@@ -118,7 +118,7 @@
         },
         {
             "type": [
-                "h-u"
+                "h-test-u"
             ],
             "properties": {
                 "name": [
@@ -176,7 +176,7 @@
         },
         {
             "type": [
-                "h-e"
+                "h-test-e"
             ],
             "properties": {
                 "name": [
@@ -282,7 +282,7 @@
         },
         {
             "type": [
-                "h-bogus"
+                "h-test-bogus"
             ],
             "properties": {
                 "name": [

@@ -2,7 +2,7 @@
     "items": [
         {
             "type": [
-                "h-abbr"
+                "h-test-abbr"
             ],
             "properties": {
                 "name": [
@@ -30,7 +30,7 @@
         },
         {
             "type": [
-                "h-link"
+                "h-test-link"
             ],
             "properties": {
                 "name": [
@@ -58,7 +58,7 @@
         },
         {
             "type": [
-                "h-data"
+                "h-test-data"
             ],
             "properties": {
                 "name": [
@@ -86,7 +86,7 @@
         },
         {
             "type": [
-                "h-input"
+                "h-test-input"
             ],
             "properties": {
                 "name": [
@@ -114,7 +114,7 @@
         },
         {
             "type": [
-                "h-img"
+                "h-test-img"
             ],
             "properties": {
                 "name": [
@@ -142,7 +142,7 @@
         },
         {
             "type": [
-                "h-area"
+                "h-test-area"
             ],
             "properties": {
                 "name": [
@@ -170,7 +170,7 @@
         },
         {
             "type": [
-                "h-else"
+                "h-test-else"
             ],
             "properties": {
                 "name": [

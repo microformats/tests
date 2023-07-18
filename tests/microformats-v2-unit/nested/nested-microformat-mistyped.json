@@ -2,7 +2,7 @@
     "items": [
         {
             "type": [
-                "h-as-p-with-u-name"
+                "h-test-as-p-with-u-name"
             ],
             "properties": {
                 "name": [
@@ -12,7 +12,7 @@
                     {
                         "value": "Valid",
                         "type": [
-                            "h-a"
+                            "h-test-a"
                         ],
                         "properties": {
                             "name": [
@@ -25,7 +25,7 @@
         },
         {
             "type": [
-                "h-as-p-with-dt-name"
+                "h-test-as-p-with-dt-name"
             ],
             "properties": {
                 "name": [
@@ -35,7 +35,7 @@
                     {
                         "value": "Valid",
                         "type": [
-                            "h-a"
+                            "h-test-a"
                         ],
                         "properties": {
                             "name": [
@@ -48,7 +48,7 @@
         },
         {
             "type": [
-                "h-as-p-with-e-name"
+                "h-test-as-p-with-e-name"
             ],
             "properties": {
                 "name": [
@@ -58,7 +58,7 @@
                     {
                         "value": "Valid",
                         "type": [
-                            "h-a"
+                            "h-test-a"
                         ],
                         "properties": {
                             "name": [
@@ -74,7 +74,7 @@
         },
         {
             "type": [
-                "h-as-u-with-p-url"
+                "h-test-as-u-with-p-url"
             ],
             "properties": {
                 "name": [
@@ -84,7 +84,7 @@
                     {
                         "value": "Valid",
                         "type": [
-                            "h-a"
+                            "h-test-a"
                         ],
                         "properties": {
                             "url": [
@@ -97,7 +97,7 @@
         },
         {
             "type": [
-                "h-as-u-with-dt-url"
+                "h-test-as-u-with-dt-url"
             ],
             "properties": {
                 "name": [
@@ -107,7 +107,7 @@
                     {
                         "value": "Valid",
                         "type": [
-                            "h-a"
+                            "h-test-a"
                         ],
                         "properties": {
                             "url": [
@@ -123,7 +123,7 @@
         },
         {
             "type": [
-                "h-as-u-with-e-url"
+                "h-test-as-u-with-e-url"
             ],
             "properties": {
                 "name": [
@@ -133,7 +133,7 @@
                     {
                         "value": "Valid",
                         "type": [
-                            "h-a"
+                            "h-test-a"
                         ],
                         "properties": {
                             "url": [

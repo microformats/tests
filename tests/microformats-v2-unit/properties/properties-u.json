@@ -2,7 +2,7 @@
     "items": [
         {
             "type": [
-                "h-a"
+                "h-test-a"
             ],
             "properties": {
                 "name": [
@@ -27,7 +27,7 @@
         },
         {
             "type": [
-                "h-area"
+                "h-test-area"
             ],
             "properties": {
                 "name": [
@@ -52,7 +52,7 @@
         },
         {
             "type": [
-                "h-link"
+                "h-test-link"
             ],
             "properties": {
                 "name": [
@@ -77,7 +77,7 @@
         },
         {
             "type": [
-                "h-img"
+                "h-test-img"
             ],
             "properties": {
                 "name": [
@@ -147,7 +147,7 @@
         },
         {
             "type": [
-                "h-audio"
+                "h-test-audio"
             ],
             "properties": {
                 "name": [
@@ -172,7 +172,7 @@
         },
         {
             "type": [
-                "h-iframe"
+                "h-test-iframe"
             ],
             "properties": {
                 "name": [
@@ -197,7 +197,7 @@
         },
         {
             "type": [
-                "h-source"
+                "h-test-source"
             ],
             "properties": {
                 "name": [
@@ -222,7 +222,7 @@
         },
         {
             "type": [
-                "h-video"
+                "h-test-video"
             ],
             "properties": {
                 "name": [
@@ -257,7 +257,7 @@
         },
         {
             "type": [
-                "h-object"
+                "h-test-object"
             ],
             "properties": {
                 "name": [
@@ -282,7 +282,7 @@
         },
         {
             "type": [
-                "h-abbr"
+                "h-test-abbr"
             ],
             "properties": {
                 "name": [
@@ -307,7 +307,7 @@
         },
         {
             "type": [
-                "h-data"
+                "h-test-data"
             ],
             "properties": {
                 "name": [
@@ -332,7 +332,7 @@
         },
         {
             "type": [
-                "h-input"
+                "h-test-input"
             ],
             "properties": {
                 "name": [
@@ -357,7 +357,7 @@
         },
         {
             "type": [
-                "h-else"
+                "h-test-else"
             ],
             "properties": {
                 "name": [

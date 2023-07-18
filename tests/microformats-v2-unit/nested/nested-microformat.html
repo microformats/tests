@@ -10,14 +10,14 @@
     aspect of these tests, but resolution complexity is kept to a minimum.
 -->
 
-<div class="h-as-child">
+<div class="h-test-as-child">
     <div class="p-name">NotPartOfTest</div>
-    <div class="h-a">
+    <div class="h-test-a">
         <div class="p-name">NotPartOfTest</div>
     </div>
-</div><div class="h-as-child-multi">
+</div><div class="h-test-as-child-multi">
     <div class="p-name">NotPartOfTest</div>
-    <div class="h-a h-b">
+    <div class="h-test-a h-test-b">
         <div class="p-name">NotPartOfTest</div>
     </div>
 </div>
@@ -27,36 +27,36 @@
     assumed to be the intent.
     See https://github.com/microformats/microformats2-parsing/issues/67
  -->
-<div class="h-as-p">
+<div class="h-test-as-p">
     <div class="p-name">NotPartOfTest</div>
-    <div class="p-test h-a">Va<span class="p-not-part-of-test">l</span>id</div>
+    <div class="p-test h-test-a">Va<span class="p-not-part-of-test">l</span>id</div>
 </div>
-<div class="h-as-p-with-name">
+<div class="h-test-as-p-with-name">
     <div class="p-name">NotPartOfTest</div>
-    <div class="p-test h-a">
+    <div class="p-test h-test-a">
         Invalid <span class="p-name">Valid</span> Invalid
     </div>
 </div>
 
-<div class="h-as-u">
+<div class="h-test-as-u">
     <div class="p-name">NotPartOfTest</div>
-    <div class="u-test h-a">Va<span class="u-not-part-of-test">l</span>id</div>
+    <div class="u-test h-test-a">Va<span class="u-not-part-of-test">l</span>id</div>
 </div>
-<div class="h-as-u-with-url">
+<div class="h-test-as-u-with-url">
     <div class="p-name">NotPartOfTest</div>
-    <div class="u-test h-a">
+    <div class="u-test h-test-a">
         Invalid <span class="u-url p-name">Valid</span> Invalid
     </div>
 </div>
 
-<div class="h-as-dt">
+<div class="h-test-as-dt">
     <div class="p-name">NotPartOfTest</div>
-    <div class="dt-test h-a">Va<span class="dt-not-part-of-test">l</span>id</div>
+    <div class="dt-test h-test-a">Va<span class="dt-not-part-of-test">l</span>id</div>
 </div>
 
-<div class="h-as-multi">
+<div class="h-test-as-multi">
     <div class="p-name">NotPartOfTest</div>
-    <div class="p-a u-b h-a h-b">
+    <div class="p-a u-b h-test-a h-test-b">
         <div class="p-name">Valid</div>
         <div class="u-url">http://example.test/Valid</div>
     </div>

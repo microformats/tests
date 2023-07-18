@@ -10,7 +10,7 @@
     aspect of these tests, but resolution complexity is kept to a minimum.
 -->
 
-<div class="h-value">
+<div class="h-test-value">
     <div class="p-name">NotPartOfTest</div>
     <div class="u-single">Invalid <span class="value">http://example.test/Valid</span> Invalid</div>
     <div class="u-double">Invalid <span class="value">http://example.test/Va</span> Invalid <span class="value">lid</span></div>
@@ -20,7 +20,7 @@
     <div class="u-self value">Invalid <span class="value">http://example.test/Valid</span> Invalid</div>
     <div class="u-deep">Invalid <span class="value">http://example.test/Va</span> <span>Invalid <span>Invalid <span class="value">lid</span> Invalid</span> Invalid</span> Invalid</div>
     <div class="u-is-property">Invalid <div class="value p-not-part-of-test">http://example.test/Valid</div> Invalid</div>
-    <div class="u-is-microformat">Invalid <div class="value h-child"><span class="p-name">Valid</span></div> Invalid</div>
+    <div class="u-is-microformat">Invalid <div class="value h-test-child"><span class="p-name">Valid</span></div> Invalid</div>
     <div class="u-inside-property">
         Invalid
         <span class="value">http://example.test/Valid</span>
@@ -31,33 +31,33 @@
     <div class="u-inside-microformat">
         Invalid
         <span class="value">http://example.test/Valid</span>
-        <div class="h-child"><span class="value">NotPartOfTest</span></div>
+        <div class="h-test-child"><span class="value">NotPartOfTest</span></div>
         Invalid
     </div>
 </div>
 
-<div class="h-img">
+<div class="h-test-img">
     <div class="p-name">NotPartOfTest</div>
     <div class="u-filled">Invalid <img class="value" alt="http://example.test/Valid"> Invalid</div>
     <div class="u-empty">Invalid <img class="value" alt=""> Invalid</div>
     <div class="u-missing">Invalid <img class="value"> Invalid</div>
 </div>
 
-<div class="h-area">
+<div class="h-test-area">
     <div class="p-name">NotPartOfTest</div>
     <div class="u-filled">Invalid <area class="value" alt="http://example.test/Valid"> Invalid</div>
     <div class="u-empty">Invalid <area class="value" alt=""> Invalid</div>
     <div class="u-missing">Invalid <area class="value"> Invalid</div>
 </div>
 
-<div class="h-data">
+<div class="h-test-data">
     <div class="p-name">NotPartOfTest</div>
     <div class="u-filled">Invalid <data class="value" value="http://example.test/Valid">Invalid</data> Invalid</div>
     <div class="u-empty">Invalid <data class="value" value="">Invalid</data> Invalid</div>
     <div class="u-missing">Invalid <data class="value">http://example.test/Valid</data> Invalid</div>
 </div>
 
-<div class="h-abbr">
+<div class="h-test-abbr">
     <div class="p-name">NotPartOfTest</div>
     <div class="u-filled">Invalid <abbr class="value" title="http://example.test/Valid">Invalid</abbr> Invalid</div>
     <div class="u-empty">Invalid <abbr class="value" title="">Invalid</abbr> Invalid</div>
@@ -65,21 +65,21 @@
 </div>
 
 <!-- The datetime attribute on these elements only applies to date parsing, and not other VCP parsing -->
-<div class="h-time">
+<div class="h-test-time">
     <div class="p-name">NotPartOfTest</div>
     <div class="u-filled">Invalid <time class="value" datetime="Invalid">http://example.test/Valid</time> Invalid</div>
     <div class="u-empty">Invalid <time class="value" datetime="">http://example.test/Valid</time> Invalid</div>
     <div class="u-missing">Invalid <time class="value">http://example.test/Valid</time> Invalid</div>
 </div>
 
-<div class="h-ins">
+<div class="h-test-ins">
     <div class="p-name">NotPartOfTest</div>
     <div class="u-filled">Invalid <ins class="value" datetime="Invalid">http://example.test/Valid</ins> Invalid</div>
     <div class="u-empty">Invalid <ins class="value" datetime="">http://example.test/Valid</ins> Invalid</div>
     <div class="u-missing">Invalid <ins class="value">http://example.test/Valid</ins> Invalid</div>
 </div>
 
-<div class="h-del">
+<div class="h-test-del">
     <div class="p-name">NotPartOfTest</div>
     <div class="u-filled">Invalid <del class="value" datetime="Invalid">http://example.test/Valid</del> Invalid</div>
     <div class="u-empty">Invalid <del class="value" datetime="">http://example.test/Valid</del> Invalid</div>
@@ -87,7 +87,7 @@
 </div>
 
 <!-- This test checks Value Class Pattern execution order within u-property processing -->
-<div class="h-override">
+<div class="h-test-override">
     <div class="p-name">NotPartOfTest</div>
     <audio class="u-audio" src="http://example.test/Valid"><span class="value">Invalid</span></audio>
     <iframe class="u-iframe" src="http://example.test/Valid"><span class="value">Invalid</span></iframe>

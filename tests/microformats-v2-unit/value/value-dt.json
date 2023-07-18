@@ -2,7 +2,7 @@
     "items": [
         {
             "type": [
-                "h-value"
+                "h-test-value"
             ],
             "properties": {
                 "name": [
@@ -40,7 +40,7 @@
             "children": [
                 {
                     "type": [
-                        "h-child"
+                        "h-test-child"
                     ],
                     "properties": {
                         "name": [
@@ -50,7 +50,7 @@
                 },
                 {
                     "type": [
-                        "h-child"
+                        "h-test-child"
                     ],
                     "properties": {
                         "name": [
@@ -62,7 +62,7 @@
         },
         {
             "type": [
-                "h-acceptable"
+                "h-test-acceptable"
             ],
             "properties": {
                 "name": [
@@ -90,7 +90,7 @@
         },
         {
             "type": [
-                "h-img"
+                "h-test-img"
             ],
             "properties": {
                 "name": [
@@ -109,7 +109,7 @@
         },
         {
             "type": [
-                "h-area"
+                "h-test-area"
             ],
             "properties": {
                 "name": [
@@ -128,7 +128,7 @@
         },
         {
             "type": [
-                "h-data"
+                "h-test-data"
             ],
             "properties": {
                 "name": [
@@ -147,7 +147,7 @@
         },
         {
             "type": [
-                "h-abbr"
+                "h-test-abbr"
             ],
             "properties": {
                 "name": [
@@ -166,7 +166,7 @@
         },
         {
             "type": [
-                "h-time"
+                "h-test-time"
             ],
             "properties": {
                 "name": [
@@ -185,7 +185,7 @@
         },
         {
             "type": [
-                "h-ins"
+                "h-test-ins"
             ],
             "properties": {
                 "name": [
@@ -204,7 +204,7 @@
         },
         {
             "type": [
-                "h-del"
+                "h-test-del"
             ],
             "properties": {
                 "name": [
@@ -223,7 +223,7 @@
         },
         {
             "type": [
-                "h-override"
+                "h-test-override"
             ],
             "properties": {
                 "name": [

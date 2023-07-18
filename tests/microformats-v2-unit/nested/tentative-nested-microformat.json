@@ -2,7 +2,7 @@
     "items": [
         {
             "type": [
-                "h-as-e"
+                "h-test-as-e"
             ],
             "properties": {
                 "name": [
@@ -13,7 +13,7 @@
                         "html": "<div class=\"p-name\">Valid</div>",
                         "value": "Valid",
                         "type": [
-                            "h-a"
+                            "h-test-a"
                         ],
                         "properties": {
                             "name": [
@@ -26,7 +26,7 @@
         },
         {
             "type": [
-                "h-as-u-with-img"
+                "h-test-as-u-with-img"
             ],
             "properties": {
                 "name": [
@@ -39,7 +39,7 @@
                             "alt": "Valid"
                         },
                         "type": [
-                            "h-a"
+                            "h-test-a"
                         ],
                         "properties": {
                             "name": [
@@ -58,14 +58,14 @@
         },
         {
             "type": [
-                "h-implied-name"
+                "h-test-implied-name"
             ],
             "properties": {
                 "name": [
                     {
                         "value": "Valid",
                         "type": [
-                            "h-a"
+                            "h-test-a"
                         ],
                         "properties": {
                             "name": [
@@ -78,7 +78,7 @@
         },
         {
             "type": [
-                "h-implied-url"
+                "h-test-implied-url"
             ],
             "properties": {
                 "name": [
@@ -88,7 +88,7 @@
                     {
                         "value": "http://example.test/Valid",
                         "type": [
-                            "h-a"
+                            "h-test-a"
                         ],
                         "properties": {
                             "name": [
