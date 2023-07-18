@@ -1,0 +1,153 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-as-p-with-u-name"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                "http://example.test/l"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-as-p-with-dt-name"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                "l"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-as-p-with-e-name"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                {
+                                    "html": "l",
+                                    "value": "l"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-as-u-with-p-url"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "url": [
+                                "l"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-as-u-with-dt-url"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "url": [
+                                "l"
+                            ],
+                            "name": [
+                                "Valid"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-as-u-with-e-url"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "url": [
+                                {
+                                    "html": "l",
+                                    "value": "l"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

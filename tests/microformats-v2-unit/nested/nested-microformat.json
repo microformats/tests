@@ -1,0 +1,219 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-as-child"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ]
+            },
+            "children": [
+                {
+                    "type": [
+                        "h-a"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-as-child-multi"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ]
+            },
+            "children": [
+                {
+                    "type": [
+                        "h-a",
+                        "h-b"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-as-p"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "not-part-of-test": [
+                                "l"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-as-p-with-name"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                "Valid"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-as-u"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "http://example.test/Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "not-part-of-test": [
+                                "http://example.test/l"
+                            ],
+                            "name": [
+                                "Valid"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-as-u-with-url"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "http://example.test/Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "url": [
+                                "http://example.test/Valid"
+                            ],
+                            "name": [
+                                "Valid"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-as-dt"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-a"
+                        ],
+                        "properties": {
+                            "not-part-of-test": [
+                                "l"
+                            ],
+                            "name": [
+                                "Valid"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-as-multi"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "a": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-a",
+                            "h-b"
+                        ],
+                        "properties": {
+                            "name": [
+                                "Valid"
+                            ],
+                            "url": [
+                                "http://example.test/Valid"
+                            ]
+                        }
+                    }
+                ],
+                "b": [
+                    {
+                        "value": "http://example.test/Valid",
+                        "type": [
+                            "h-a",
+                            "h-b"
+                        ],
+                        "properties": {
+                            "name": [
+                                "Valid"
+                            ],
+                            "url": [
+                                "http://example.test/Valid"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}
