@@ -273,7 +273,7 @@
                     "http://example.test/Valid"
                 ],
                 "data-empty": [
-                    "http://example.test/Invalid"
+                    "http://example.test"
                 ],
                 "data-filled": [
                     "http://example.test/Valid"
