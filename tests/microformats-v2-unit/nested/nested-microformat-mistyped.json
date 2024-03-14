@@ -1,0 +1,153 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-as-p-with-u-name"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-test-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                "http://example.test/l"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-as-p-with-dt-name"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-test-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                "l"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-as-p-with-e-name"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-test-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                {
+                                    "html": "l",
+                                    "value": "l"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-as-u-with-p-url"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-test-a"
+                        ],
+                        "properties": {
+                            "url": [
+                                "l"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-as-u-with-dt-url"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-test-a"
+                        ],
+                        "properties": {
+                            "url": [
+                                "l"
+                            ],
+                            "name": [
+                                "Valid"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-as-u-with-e-url"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-test-a"
+                        ],
+                        "properties": {
+                            "url": [
+                                {
+                                    "html": "l",
+                                    "value": "l"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

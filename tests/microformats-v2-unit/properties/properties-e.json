@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "html": "<span>Valid</span>",
+                        "value": "Valid"
+                    }
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

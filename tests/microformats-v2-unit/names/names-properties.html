@@ -1,0 +1,285 @@
+<div class="h-test-p">
+    <div class="p-name">NotPartOfTest</div>
+    <!-- valid basic names -->
+    <div class="p-t">Valid</div>
+    <div class="p-test">Valid</div>
+    <div class="p-test-three">Valid</div>
+    <div class="p-test-test-four">Valid</div>
+    <div class="p-test-five-t">Valid</div>
+    <!-- valid vendor names -->
+    <div class="p-6-test">Valid</div>
+    <div class="p-7t-test">Valid</div>
+    <div class="p-8t8-test">Valid</div>
+    <div class="p-t9-test">Valid</div>
+    <div class="p-t10-test-test">Valid</div>
+    <div class="p-t11t-test-t">Valid</div>
+    <!-- valid names: ASCII whitespace, see https://infra.spec.whatwg.org/#ascii-whitespace -->
+    <div class=" p-t12-test ">Valid</div>
+    <div class="&#x9;p-t13-test&#x9;">Valid</div>
+    <div class="&#xA;p-t14-test&#xA;">Valid</div>
+    <div class="&#xC;p-t15-test&#xC;">Valid</div>
+    <div class="&#xD;p-t16-test&#xD;">Valid</div>
+    <!-- invalid names -->
+    <div class="p">Invalid</div>
+    <div class="p-">Invalid</div>
+    <div class="p-19">Invalid</div>
+    <div class="p--">Invalid</div>
+    <div class="p-TEST">Invalid</div>
+    <div class="P-test">Invalid</div>
+    <div class="p-t_t">Invalid</div>
+    <div class="p-24-24">Invalid</div>
+    <div class="p-⛔">Invalid</div>
+    <div class="p-test-26">Invalid</div>
+    <div class="p-test-">Invalid</div>
+    <div class="p-test--test">Invalid</div>
+    <div class="p-test!">Invalid</div>
+    <!-- invalid names: Unicode whitespace but not ASCII whitespace per HTML -->
+    <div class="p-t30-test&#xB;">Invalid</div>
+    <div class="p-t31-test&#x85;">Invalid</div>
+    <div class="p-t32-test&#xA0;">Invalid</div>
+    <div class="p-t33-test&#x1680;">Invalid</div>
+    <div class="p-t34-test&#x2000;">Invalid</div>
+    <div class="p-t35-test&#x2001;">Invalid</div>
+    <div class="p-t36-test&#x2002;">Invalid</div>
+    <div class="p-t37-test&#x2003;">Invalid</div>
+    <div class="p-t38-test&#x2004;">Invalid</div>
+    <div class="p-t39-test&#x2005;">Invalid</div>
+    <div class="p-t40-test&#x2006;">Invalid</div>
+    <div class="p-t41-test&#x2007;">Invalid</div>
+    <div class="p-t42-test&#x2008;">Invalid</div>
+    <div class="p-t43-test&#x2009;">Invalid</div>
+    <div class="p-t44-test&#x200A;">Invalid</div>
+    <div class="p-t45-test&#x2028;">Invalid</div>
+    <div class="p-t46-test&#x2029;">Invalid</div>
+    <div class="p-t47-test&#x202F;">Invalid</div>
+    <div class="p-t48-test&#x205F;">Invalid</div>
+    <div class="p-t49-test&#x3000;">Invalid</div>
+</div>
+
+<div class="h-test-dt">
+    <div class="p-name">NotPartOfTest</div>
+    <!-- valid basic names -->
+    <div class="dt-t">2000-01-01 00:00:00+00:00</div>
+    <div class="dt-test">2000-01-01 00:00:00+00:00</div>
+    <div class="dt-test-three">2000-01-01 00:00:00+00:00</div>
+    <div class="dt-test-test-four">2000-01-01 00:00:00+00:00</div>
+    <div class="dt-test-five-t">2000-01-01 00:00:00+00:00</div>
+    <!-- valid vendor names -->
+    <div class="dt-6-test">2000-01-01 00:00:00+00:00</div>
+    <div class="dt-7t-test">2000-01-01 00:00:00+00:00</div>
+    <div class="dt-8t8-test">2000-01-01 00:00:00+00:00</div>
+    <div class="dt-t9-test">2000-01-01 00:00:00+00:00</div>
+    <div class="dt-t10-test-test">2000-01-01 00:00:00+00:00</div>
+    <div class="dt-t11t-test-t">2000-01-01 00:00:00+00:00</div>
+    <!-- valid names: ASCII whitespace, see https://infra.spec.whatwg.org/#ascii-whitespace -->
+    <div class=" dt-t12-test ">2000-01-01 00:00:00+00:00</div>
+    <div class="&#x9;dt-t13-test&#x9;">2000-01-01 00:00:00+00:00</div>
+    <div class="&#xA;dt-t14-test&#xA;">2000-01-01 00:00:00+00:00</div>
+    <div class="&#xC;dt-t15-test&#xC;">2000-01-01 00:00:00+00:00</div>
+    <div class="&#xD;dt-t16-test&#xD;">2000-01-01 00:00:00+00:00</div>
+    <!-- invalid names -->
+    <div class="dt">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-19">1900-01-01 00:00:00+00:00</div>
+    <div class="dt--">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-TEST">1900-01-01 00:00:00+00:00</div>
+    <div class="DT-test">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t_t">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-24-24">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-⛔">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-test-26">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-test-">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-test--test">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-test!">1900-01-01 00:00:00+00:00</div>
+    <!-- invalid names: Unicode whitespace but not ASCII whitespace per HTML -->
+    <div class="dt-t30-test&#xB;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t31-test&#x85;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t32-test&#xA0;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t33-test&#x1680;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t34-test&#x2000;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t35-test&#x2001;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t36-test&#x2002;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t37-test&#x2003;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t38-test&#x2004;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t39-test&#x2005;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t40-test&#x2006;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t41-test&#x2007;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t42-test&#x2008;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t43-test&#x2009;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t44-test&#x200A;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t45-test&#x2028;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t46-test&#x2029;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t47-test&#x202F;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t48-test&#x205F;">1900-01-01 00:00:00+00:00</div>
+    <div class="dt-t49-test&#x3000;">1900-01-01 00:00:00+00:00</div>
+</div>
+
+<div class="h-test-u">
+    <div class="p-name">NotPartOfTest</div>
+    <!-- valid basic names -->
+    <div class="u-t">http://example.test/Valid</div>
+    <div class="u-test">http://example.test/Valid</div>
+    <div class="u-test-three">http://example.test/Valid</div>
+    <div class="u-test-test-four">http://example.test/Valid</div>
+    <div class="u-test-five-t">http://example.test/Valid</div>
+    <!-- valid vendor names -->
+    <div class="u-6-test">http://example.test/Valid</div>
+    <div class="u-7t-test">http://example.test/Valid</div>
+    <div class="u-8t8-test">http://example.test/Valid</div>
+    <div class="u-t9-test">http://example.test/Valid</div>
+    <div class="u-t10-test-test">http://example.test/Valid</div>
+    <div class="u-t11t-test-t">http://example.test/Valid</div>
+    <!-- valid names: ASCII whitespace, see https://infra.spec.whatwg.org/#ascii-whitespace -->
+    <div class=" u-t12-test ">http://example.test/Valid</div>
+    <div class="&#x9;u-t13-test&#x9http://example.test/;">http://example.test/Valid</div>
+    <div class="&#xA;u-t14-test&#xA;">http://example.test/Valid</div>
+    <div class="&#xC;u-t15-test&#xC;">http://example.test/Valid</div>
+    <div class="&#xD;u-t16-test&#xD;">http://example.test/Valid</div>
+    <!-- invalid names -->
+    <div class="u">Invalid</div>
+    <div class="u-">Invalid</div>
+    <div class="u-19">Invalid</div>
+    <div class="u--">Invalid</div>
+    <div class="u-TEST">Invalid</div>
+    <div class="U-test">Invalid</div>
+    <div class="u-t_t">Invalid</div>
+    <div class="u-24-24">Invalid</div>
+    <div class="u-⛔">Invalid</div>
+    <div class="u-test-26">Invalid</div>
+    <div class="u-test-">Invalid</div>
+    <div class="u-test--test">Invalid</div>
+    <div class="u-test!">Invalid</div>
+    <!-- invalid names: Unicode whitespace but not ASCII whitespace per HTML -->
+    <div class="u-t30-test&#xB;">Invalid</div>
+    <div class="u-t31-test&#x85;">Invalid</div>
+    <div class="u-t32-test&#xA0;">Invalid</div>
+    <div class="u-t33-test&#x1680;">Invalid</div>
+    <div class="u-t34-test&#x2000;">Invalid</div>
+    <div class="u-t35-test&#x2001;">Invalid</div>
+    <div class="u-t36-test&#x2002;">Invalid</div>
+    <div class="u-t37-test&#x2003;">Invalid</div>
+    <div class="u-t38-test&#x2004;">Invalid</div>
+    <div class="u-t39-test&#x2005;">Invalid</div>
+    <div class="u-t40-test&#x2006;">Invalid</div>
+    <div class="u-t41-test&#x2007;">Invalid</div>
+    <div class="u-t42-test&#x2008;">Invalid</div>
+    <div class="u-t43-test&#x2009;">Invalid</div>
+    <div class="u-t44-test&#x200A;">Invalid</div>
+    <div class="u-t45-test&#x2028;">Invalid</div>
+    <div class="u-t46-test&#x2029;">Invalid</div>
+    <div class="u-t47-test&#x202F;">Invalid</div>
+    <div class="u-t48-test&#x205F;">Invalid</div>
+    <div class="u-t49-test&#x3000;">Invalid</div>
+</div>
+
+<div class="h-test-e">
+    <div class="p-name">NotPartOfTest</div>
+    <!-- valid basic names -->
+    <div class="e-t">Valid</div>
+    <div class="e-test">Valid</div>
+    <div class="e-test-three">Valid</div>
+    <div class="e-test-test-four">Valid</div>
+    <div class="e-test-five-t">Valid</div>
+    <!-- valid vendor names -->
+    <div class="e-6-test">Valid</div>
+    <div class="e-7t-test">Valid</div>
+    <div class="e-8t8-test">Valid</div>
+    <div class="e-t9-test">Valid</div>
+    <div class="e-t10-test-test">Valid</div>
+    <div class="e-t11t-test-t">Valid</div>
+    <!-- valid names: ASCII whitespace, see https://infra.spec.whatwg.org/#ascii-whitespace -->
+    <div class=" e-t12-test ">Valid</div>
+    <div class="&#x9;e-t13-test&#x9;">Valid</div>
+    <div class="&#xA;e-t14-test&#xA;">Valid</div>
+    <div class="&#xC;e-t15-test&#xC;">Valid</div>
+    <div class="&#xD;e-t16-test&#xD;">Valid</div>
+    <!-- invalid names -->
+    <div class="e">Invalid</div>
+    <div class="e-">Invalid</div>
+    <div class="e-19">Invalid</div>
+    <div class="e--">Invalid</div>
+    <div class="e-TEST">Invalid</div>
+    <div class="E-test">Invalid</div>
+    <div class="e-t_t">Invalid</div>
+    <div class="e-24-24">Invalid</div>
+    <div class="e-⛔">Invalid</div>
+    <div class="e-test-26">Invalid</div>
+    <div class="e-test-">Invalid</div>
+    <div class="e-test--test">Invalid</div>
+    <div class="e-test!">Invalid</div>
+    <!-- invalid names: Unicode whitespace but not ASCII whitespace per HTML -->
+    <div class="e-t30-test&#xB;">Invalid</div>
+    <div class="e-t31-test&#x85;">Invalid</div>
+    <div class="e-t32-test&#xA0;">Invalid</div>
+    <div class="e-t33-test&#x1680;">Invalid</div>
+    <div class="e-t34-test&#x2000;">Invalid</div>
+    <div class="e-t35-test&#x2001;">Invalid</div>
+    <div class="e-t36-test&#x2002;">Invalid</div>
+    <div class="e-t37-test&#x2003;">Invalid</div>
+    <div class="e-t38-test&#x2004;">Invalid</div>
+    <div class="e-t39-test&#x2005;">Invalid</div>
+    <div class="e-t40-test&#x2006;">Invalid</div>
+    <div class="e-t41-test&#x2007;">Invalid</div>
+    <div class="e-t42-test&#x2008;">Invalid</div>
+    <div class="e-t43-test&#x2009;">Invalid</div>
+    <div class="e-t44-test&#x200A;">Invalid</div>
+    <div class="e-t45-test&#x2028;">Invalid</div>
+    <div class="e-t46-test&#x2029;">Invalid</div>
+    <div class="e-t47-test&#x202F;">Invalid</div>
+    <div class="e-t48-test&#x205F;">Invalid</div>
+    <div class="e-t49-test&#x3000;">Invalid</div>
+</div>
+
+<!-- All properties in this microformat save p-name are invalid due to using a bogus prefix -->
+<div class="h-test-bogus">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="b-t">Invalid</div>
+    <div class="b-test">Invalid</div>
+    <div class="b-test-three">Invalid</div>
+    <div class="b-test-test-four">Invalid</div>
+    <div class="b-test-five-t">Invalid</div>
+    <div class="b-6-test">Invalid</div>
+    <div class="b-7t-test">Invalid</div>
+    <div class="b-8t8-test">Invalid</div>
+    <div class="b-t9-test">Invalid</div>
+    <div class="b-t10-test-test">Invalid</div>
+    <div class="b-t11t-test-t">Invalid</div>
+    <div class=" b-t12-test ">Invalid</div>
+    <div class="&#x9;b-t13-test&#x9;">Invalid</div>
+    <div class="&#xA;b-t14-test&#xA;">Invalid</div>
+    <div class="&#xC;b-t15-test&#xC;">Invalid</div>
+    <div class="&#xD;b-t16-test&#xD;">Invalid</div>
+    <div class="b">Invalid</div>
+    <div class="b-">Invalid</div>
+    <div class="b-19">Invalid</div>
+    <div class="b--">Invalid</div>
+    <div class="b-TEST">Invalid</div>
+    <div class="B-test">Invalid</div>
+    <div class="b-t_t">Invalid</div>
+    <div class="b-24-24">Invalid</div>
+    <div class="b-⛔">Invalid</div>
+    <div class="b-test-26">Invalid</div>
+    <div class="b-test-">Invalid</div>
+    <div class="b-test--test">Invalid</div>
+    <div class="b-test!">Invalid</div>
+    <div class="b-t30-test&#xB;">Invalid</div>
+    <div class="b-t31-test&#x85;">Invalid</div>
+    <div class="b-t32-test&#xA0;">Invalid</div>
+    <div class="b-t33-test&#x1680;">Invalid</div>
+    <div class="b-t34-test&#x2000;">Invalid</div>
+    <div class="b-t35-test&#x2001;">Invalid</div>
+    <div class="b-t36-test&#x2002;">Invalid</div>
+    <div class="b-t37-test&#x2003;">Invalid</div>
+    <div class="b-t38-test&#x2004;">Invalid</div>
+    <div class="b-t39-test&#x2005;">Invalid</div>
+    <div class="b-t40-test&#x2006;">Invalid</div>
+    <div class="b-t41-test&#x2007;">Invalid</div>
+    <div class="b-t42-test&#x2008;">Invalid</div>
+    <div class="b-t43-test&#x2009;">Invalid</div>
+    <div class="b-t44-test&#x200A;">Invalid</div>
+    <div class="b-t45-test&#x2028;">Invalid</div>
+    <div class="b-t46-test&#x2029;">Invalid</div>
+    <div class="b-t47-test&#x202F;">Invalid</div>
+    <div class="b-t48-test&#x205F;">Invalid</div>
+    <div class="b-t49-test&#x3000;">Invalid</div>
+</div>

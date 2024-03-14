@@ -1,0 +1,63 @@
+<!--
+    NOTE:
+    The details of textContent processing are tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+
+    The details of URL resolution and normalization are likewise tested in a
+    dedicated test series, thus valid output is carefully designed to pass
+    even if no URL normalization is performed. URL resolution is an unavoidable
+    aspect of these tests, but resolution complexity is kept to a minimum.
+-->
+
+<div class="h-test-as-child">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="h-test-a">
+        <div class="p-name">NotPartOfTest</div>
+    </div>
+</div><div class="h-test-as-child-multi">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="h-test-a h-test-b">
+        <div class="p-name">NotPartOfTest</div>
+    </div>
+</div>
+
+<!-- 
+    The specification is a bit ambiguous about correct behaviour, but this is
+    assumed to be the intent.
+    See https://github.com/microformats/microformats2-parsing/issues/67
+ -->
+<div class="h-test-as-p">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="p-test h-test-a">Va<span class="p-not-part-of-test">l</span>id</div>
+</div>
+<div class="h-test-as-p-with-name">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="p-test h-test-a">
+        Invalid <span class="p-name">Valid</span> Invalid
+    </div>
+</div>
+
+<div class="h-test-as-u">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-test h-test-a">Va<span class="u-not-part-of-test">l</span>id</div>
+</div>
+<div class="h-test-as-u-with-url">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-test h-test-a">
+        Invalid <span class="u-url p-name">Valid</span> Invalid
+    </div>
+</div>
+
+<div class="h-test-as-dt">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-test h-test-a">Va<span class="dt-not-part-of-test">l</span>id</div>
+</div>
+
+<div class="h-test-as-multi">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="p-a u-b h-test-a h-test-b">
+        <div class="p-name">Valid</div>
+        <div class="u-url">http://example.test/Valid</div>
+    </div>
+</div>

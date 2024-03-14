@@ -1,0 +1,1777 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-explicit"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-has-p"
+            ],
+            "properties": {
+                "override": [
+                    "NotPartOfTest"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-has-e"
+            ],
+            "properties": {
+                "override": [
+                    {
+                        "html": "NotPartOfTest",
+                        "value": "NotPartOfTest"
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-nested"
+            ],
+            "properties": {},
+            "children": [
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-test-nested-prop"
+            ],
+            "properties": {
+                "prop": [
+                    {
+                        "value": "NotPartOfTestNotPartOfTest",
+                        "type": [
+                            "h-test-child"
+                        ],
+                        "properties": {
+                            "name": [
+                                "NotPartOfTest"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-title"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-title-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-no-value"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-no-value-title"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlychild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlychild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlychild-title-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlychild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlychild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlygrandchild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlygrandchild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlygrandchild-title-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlygrandchild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlygrandchild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlychild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlychild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlychild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlychild-title-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlychild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlychild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlygrandchild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-img-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Alt Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlygrandchild-alt-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-area-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlygrandchild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlygrandchild-title-filled-space"
+            ],
+            "properties": {
+                "name": [
+                    "Do Trim"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlygrandchild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlygrandchild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test-abbr-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlychild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlychild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlychild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-img-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-area-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlygrandchild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlygrandchild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlygrandchild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test-abbr-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlychild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlychild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlychild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlychild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlychild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlychild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlychild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlychild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-img-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlygrandchild-alt-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlygrandchild-alt-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlygrandchild-alt-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-area-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlygrandchild-title-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlygrandchild-title-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlygrandchild-title-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlygrandchild-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlygrandchild-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlygrandchild-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-4-test-abbr-onlygrandchild-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

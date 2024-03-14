@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-1-test"
+            ],
+            "properties": {
+                "a": [
+                    "Duplicated",
+                    "Duplicated"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test"
+            ],
+            "properties": {
+                "b": [
+                    "2000-01-01 00:00:00+00:00",
+                    "2000-01-01 00:00:00+00:00"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

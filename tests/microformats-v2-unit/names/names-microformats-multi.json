@@ -1,0 +1,53 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-a"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-aa",
+                "h-bb",
+                "h-cc"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-aaa",
+                "h-bbb",
+                "h-ccc",
+                "h-ddd"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-1-test",
+                "h-11-test",
+                "h-2-test"
+            ],
+            "properties": {
+                "name": [
+                    "Valid"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

@@ -1,0 +1,22 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-no-vcp"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "no-vcp": [
+                    {
+                        "html": "Va<span class=\"value\">l</span>id",
+                        "value": "Valid"
+                    }
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

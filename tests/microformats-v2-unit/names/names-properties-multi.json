@@ -1,0 +1,49 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-1-test"
+            ],
+            "properties": {
+                "a": [
+                    "Valid"
+                ],
+                "b": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-2-test"
+            ],
+            "properties": {
+                "c": [
+                    "Valid"
+                ],
+                "d": [
+                    "Valid"
+                ],
+                "e": [
+                    "Valid"
+                ],
+                "f": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-3-test"
+            ],
+            "properties": {
+                "g": [
+                    "Valid 1",
+                    "Valid 2"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

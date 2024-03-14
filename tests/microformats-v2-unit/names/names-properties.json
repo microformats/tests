@@ -1,0 +1,296 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-p"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "t": [
+                    "Valid"
+                ],
+                "test": [
+                    "Valid"
+                ],
+                "test-three": [
+                    "Valid"
+                ],
+                "test-test-four": [
+                    "Valid"
+                ],
+                "test-five-t": [
+                    "Valid"
+                ],
+                "6-test": [
+                    "Valid"
+                ],
+                "7t-test": [
+                    "Valid"
+                ],
+                "8t8-test": [
+                    "Valid"
+                ],
+                "t9-test": [
+                    "Valid"
+                ],
+                "t10-test-test": [
+                    "Valid"
+                ],
+                "t11t-test-t": [
+                    "Valid"
+                ],
+                "t12-test": [
+                    "Valid"
+                ],
+                "t13-test": [
+                    "Valid"
+                ],
+                "t14-test": [
+                    "Valid"
+                ],
+                "t15-test": [
+                    "Valid"
+                ],
+                "t16-test": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-dt"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "t": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "test": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "test-three": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "test-test-four": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "test-five-t": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "6-test": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "7t-test": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "8t8-test": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "t9-test": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "t10-test-test": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "t11t-test-t": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "t12-test": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "t13-test": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "t14-test": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "t15-test": [
+                    "2000-01-01 00:00:00+00:00"
+                ],
+                "t16-test": [
+                    "2000-01-01 00:00:00+00:00"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-u"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "t": [
+                    "http://example.test/Valid"
+                ],
+                "test": [
+                    "http://example.test/Valid"
+                ],
+                "test-three": [
+                    "http://example.test/Valid"
+                ],
+                "test-test-four": [
+                    "http://example.test/Valid"
+                ],
+                "test-five-t": [
+                    "http://example.test/Valid"
+                ],
+                "6-test": [
+                    "http://example.test/Valid"
+                ],
+                "7t-test": [
+                    "http://example.test/Valid"
+                ],
+                "8t8-test": [
+                    "http://example.test/Valid"
+                ],
+                "t9-test": [
+                    "http://example.test/Valid"
+                ],
+                "t10-test-test": [
+                    "http://example.test/Valid"
+                ],
+                "t11t-test-t": [
+                    "http://example.test/Valid"
+                ],
+                "t12-test": [
+                    "http://example.test/Valid"
+                ],
+                "t13-test": [
+                    "http://example.test/Valid"
+                ],
+                "t14-test": [
+                    "http://example.test/Valid"
+                ],
+                "t15-test": [
+                    "http://example.test/Valid"
+                ],
+                "t16-test": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-e"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "t": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "test-three": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "test-test-four": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "test-five-t": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "6-test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "7t-test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "8t8-test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "t9-test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "t10-test-test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "t11t-test-t": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "t12-test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "t13-test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "t14-test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "t15-test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ],
+                "t16-test": [
+                    {
+                        "html": "Valid",
+                        "value": "Valid"
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-bogus"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}
