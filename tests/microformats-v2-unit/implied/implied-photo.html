@@ -1,0 +1,109 @@
+<!--
+    NOTE:
+    The details of textContent processing are tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+
+    The details of URL resolution and normalization are likewise tested in a
+    dedicated test series, thus valid output is carefully designed to pass
+    even if no URL normalization is performed. URL resolution is an unavoidable
+    aspect of these tests, but resolution complexity is kept to a minimum.
+-->
+
+<img class="h-test-img-src-missing-alt-missing">
+<img class="h-test-img-src-missing-alt-empty" alt="">
+<img class="h-test-img-src-missing-alt-filled" alt="NameOnly">
+<img class="h-test-img-src-missing-alt-filled-space" alt=" NameOnly ">
+<img class="h-test-img-src-empty-alt-missing" src="">
+<img class="h-test-img-src-empty-alt-empty" src="" alt="">
+<img class="h-test-img-src-empty-alt-filled" src="" alt="Valid">
+<img class="h-test-img-src-empty-alt-filled-space" src="" alt=" No Trim ">
+<img class="h-test-img-src-filled-alt-missing" src="http://example.test/Valid">
+<img class="h-test-img-src-filled-alt-empty" src="http://example.test/Valid" alt="">
+<img class="h-test-img-src-filled-alt-filled" src="http://example.test/Valid" alt="Valid">
+<img class="h-test-img-src-filled-alt-filled-space" src="http://example.test/Valid" alt=" No Trim ">
+
+<object class="h-test-object-data-missing">Name</object>
+<object class="h-test-object-data-empty" data="">Name</object>
+<object class="h-test-object-data-filled" data="http://example.test/Valid">Name</object>
+<object class="h-test-object-data-filled-has-child" data="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></object>
+<object class="h-test-object-data-filled-has-u" data="http://example.test/Invalid"><div class="u-override">http://exaple.test/NotPartOfTest</div></object>
+<object class="h-test-object-data-filled-has-photo" data="http://example.test/Invalid"><div class="p-photo">Valid</div></object>
+
+<div class="h-test-img-onlychildoftype-src-missing-alt-missing"><img></div>
+<div class="h-test-img-onlychildoftype-src-missing-alt-empty"><img alt=""></div>
+<div class="h-test-img-onlychildoftype-src-missing-alt-filled"><img alt="NameOnly"></div>
+<div class="h-test-img-onlychildoftype-src-missing-alt-filled-space"><img alt=" NameOnly "></div>
+<div class="h-test-img-onlychildoftype-src-empty-alt-missing"><img class="p-name" src=""></div>
+<div class="h-test-img-onlychildoftype-src-empty-alt-empty"><img src="" alt=""></div>
+<div class="h-test-img-onlychildoftype-src-empty-alt-filled"><img src="" alt="Valid"></div>
+<div class="h-test-img-onlychildoftype-src-empty-alt-filled-space"><img src="" alt=" No Trim "></div>
+<div class="h-test-img-onlychildoftype-src-filled-alt-missing"><img class="p-name" src="http://example.test/Valid"></div>
+<div class="h-test-img-onlychildoftype-src-filled-alt-empty"><img src="http://example.test/Valid" alt=""></div>
+<div class="h-test-img-onlychildoftype-src-filled-alt-filled"><img src="http://example.test/Valid" alt="Valid"></div>
+<div class="h-test-img-onlychildoftype-src-filled-alt-filled-space"><img src="http://example.test/Valid" alt=" No Trim "></div>
+<div class="h-test-img-onlychildoftype-type-sibling-before"><img><img src="http://example.test/Invalid" class="p-name"></div>
+<div class="h-test-img-onlychildoftype-type-sibling-after"><img src="http://example.test/Invalid" class="p-name"><img></div>
+<div class="h-test-img-onlychildoftype-nontype-sibling-before"><hr><img class="p-name" src="http://example.test/Valid"></div>
+<div class="h-test-img-onlychildoftype-nontype-sibling-after"><img class="p-name" src="http://example.test/Valid"><hr></div>
+<div class="h-test-img-onlychildoftype-has-child"><img class="h-test-child p-name" src="http://example.test/ChildOnly"></div>
+<div class="h-test-img-onlychildoftype-has-u"><img class="u-override p-name" src="http://example.test/NotPartOfTest"></div>
+<div class="h-test-img-onlychildoftype-has-photo"><img class="p-photo" src="http://example.test/Invalid"></div>
+<object class="h-test-img-onlychildoftype-root-object"><img class="p-name" src="http://example.test/Valid"></object>
+<object class="h-test-img-onlychildoftype-root-object-with-data" data="http://example.test/Valid"><img src="http://example.test/Invalid" class="p-name"></object>
+<object class="h-test-img-onlychildoftype-root-object-with-data-empty" data=""><img src="http://example.test/Invalid" class="p-name"></object>
+
+<div class="h-test-object-onlychildoftype-data-missing"><object></object></div>
+<div class="h-test-object-onlychildoftype-data-empty"><object data="">Name</object></div>
+<div class="h-test-object-onlychildoftype-data-filled"><object data="http://example.test/Valid">Name</object></div>
+<div class="h-test-object-onlychildoftype-type-sibling-before"><object></object><object data="http://example.test/Invalid">Name</object></div>
+<div class="h-test-object-onlychildoftype-type-sibling-after"><object data="http://example.test/Invalid"></object><object>Name</object></div>
+<div class="h-test-object-onlychildoftype-nontype-sibling-before"><hr><object data="http://example.test/Valid">Name</object></div>
+<div class="h-test-object-onlychildoftype-nontype-sibling-after"><object data="http://example.test/Valid">Name</object><hr></div>
+<div class="h-test-object-onlychildoftype-has-child"><object data="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></object></div>
+<div class="h-test-object-onlychildoftype-has-u"><object data="http://example.test/NotPartOfTest"><div class="u-override">http://example.test/NameAndOverride</div></object></div>
+<div class="h-test-object-onlychildoftype-has-photo"><object data="http://example.test/Invalid"><div class="p-photo">Valid</div></object></div>
+<object class="h-test-object-onlychildoftype-root-object"><object data="http://example.test/Valid">Name</object></object>
+<object class="h-test-object-onlychildoftype-root-object-with-data" data="http://example.test/Valid"><object data="http://example.test/Invalid" class="p-name">Name</object></object>
+<object class="h-test-object-onlychildoftype-root-object-with-data-empty" data=""><object data="http://example.test/Invalid" class="p-name">Name</object></object>
+
+<div class="h-test-img-onlygrandchildoftype-src-missing-alt-missing"><div><img></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-missing-alt-empty"><div><img alt=""></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-missing-alt-filled"><div><img alt="NameOnly"></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-missing-alt-filled-space"><div><img alt=" NameOnly "></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-empty-alt-missing"><div><img class="p-name" src=""></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-empty-alt-empty"><div><img src="" alt=""></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-empty-alt-filled"><div><img src="" alt="Valid"></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-empty-alt-filled-space"><div><img src="" alt=" No Trim "></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-filled-alt-missing"><div><img class="p-name" src="http://example.test/Valid"></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-filled-alt-empty"><div><img src="http://example.test/Valid" alt=""></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-filled-alt-filled"><div><img src="http://example.test/Valid" alt="Valid"></div></div>
+<div class="h-test-img-onlygrandchildoftype-src-filled-alt-filled-space"><div><img src="http://example.test/Valid" alt=" No Trim "></div></div>
+<div class="h-test-img-onlygrandchildoftype-type-sibling-before"><div><img><img src="http://example.test/Invalid" class="p-name"></div></div>
+<div class="h-test-img-onlygrandchildoftype-type-sibling-after"><div><img src="http://example.test/Invalid" class="p-name"><img></div></div>
+<div class="h-test-img-onlygrandchildoftype-nontype-sibling-before"><div><hr><img class="p-name" src="http://example.test/Valid"></div></div>
+<div class="h-test-img-onlygrandchildoftype-nontype-sibling-after"><div><img class="p-name" src="http://example.test/Valid"><hr></div></div>
+<div class="h-test-img-onlygrandchildoftype-parent-sibling-before"><hr><div><img src="http://example.test/Invalid" class="p-name"></div></div>
+<div class="h-test-img-onlygrandchildoftype-parent-sibling-after"><div><img src="http://example.test/Invalid" class="p-name"></div><hr></div>
+<div class="h-test-img-onlygrandchildoftype-has-child"><div><img class="h-test-child p-name" src="http://example.test/ChildOnly"></div></div>
+<div class="h-test-img-onlygrandchildoftype-has-u"><div><img class="u-override p-name" src="http://example.test/NotPartOfTest"></div></div>
+<div class="h-test-img-onlygrandchildoftype-has-photo"><div><img class="p-photo" src="http://example.test/Invalid"></div></div>
+<object class="h-test-img-onlygrandchildoftype-root-object"><div><img class="p-name" src="http://example.test/Valid"></div></object>
+<object class="h-test-img-onlygrandchildoftype-root-object-with-data" data="http://example.test/Valid"><div><img src="http://example.test/Invalid" class="p-name"></div></object>
+<object class="h-test-img-onlygrandchildoftype-root-object-with-data-empty" data=""><div><img src="http://example.test/Invalid" class="p-name"></div></object>
+
+<div class="h-test-object-onlygrandchildoftype-data-missing"><div><object></object></div></div>
+<div class="h-test-object-onlygrandchildoftype-data-empty"><div><object data="">Name</object></div></div>
+<div class="h-test-object-onlygrandchildoftype-data-filled"><div><object data="http://example.test/Valid">Name</object></div></div>
+<div class="h-test-object-onlygrandchildoftype-type-sibling-before"><div><object></object><object data="http://example.test/Invalid">Name</object></div></div>
+<div class="h-test-object-onlygrandchildoftype-type-sibling-after"><div><object data="http://example.test/Invalid"></object><object>Name</object></div></div>
+<div class="h-test-object-onlygrandchildoftype-nontype-sibling-before"><div><hr><object data="http://example.test/Valid">Name</object></div></div>
+<div class="h-test-object-onlygrandchildoftype-nontype-sibling-after"><div><object data="http://example.test/Valid">Name</object><hr></div></div>
+<div class="h-test-object-onlygrandchildoftype-parent-sibling-before"><hr><div><object data="http://example.test/Invalid">Name</object></div></div>
+<div class="h-test-object-onlygrandchildoftype-parent-sibling-after"><div><object data="http://example.test/Invalid">Name</object></div><hr></div>
+<div class="h-test-object-onlygrandchildoftype-has-child"><div><object data="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></object></div></div>
+<div class="h-test-object-onlygrandchildoftype-has-u"><div><object data="http://example.test/NotPartOfTest"><div class="u-override">http://example.test/NameAndOverride</div></object></div></div>
+<div class="h-test-object-onlygrandchildoftype-has-photo"><div><object data="http://example.test/Invalid"><div class="p-photo">Valid</div></object></div></div>
+<object class="h-test-object-onlygrandchildoftype-root-object"><div><object data="http://example.test/Valid">Name</object></div></object>
+<object class="h-test-object-onlygrandchildoftype-root-object-with-data" data="http://example.test/Valid"><div><object data="http://example.test/Invalid">Name</object></div></object>
+<object class="h-test-object-onlygrandchildoftype-root-object-with-data-empty" data=""><div><object data="http://example.test/Invalid">Name</object></div></object>

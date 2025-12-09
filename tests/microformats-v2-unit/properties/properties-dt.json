@@ -1,0 +1,174 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-time"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "datetime-missing": [
+                    "Valid"
+                ],
+                "datetime-empty": [
+                    ""
+                ],
+                "datetime-filled": [
+                    "Valid"
+                ],
+                "datetime-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-ins"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "datetime-missing": [
+                    "Valid"
+                ],
+                "datetime-empty": [
+                    ""
+                ],
+                "datetime-filled": [
+                    "Valid"
+                ],
+                "datetime-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-del"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "datetime-missing": [
+                    "Valid"
+                ],
+                "datetime-empty": [
+                    ""
+                ],
+                "datetime-filled": [
+                    "Valid"
+                ],
+                "datetime-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "title-missing": [
+                    "Valid"
+                ],
+                "title-empty": [
+                    ""
+                ],
+                "title-filled": [
+                    "Valid"
+                ],
+                "title-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-data"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "value-missing": [
+                    "Valid"
+                ],
+                "value-empty": [
+                    ""
+                ],
+                "value-filled": [
+                    "Valid"
+                ],
+                "value-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-else"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "anything-else": [
+                    "Valid"
+                ],
+                "meaningless-datetime": [
+                    "Valid"
+                ],
+                "meaningless-title": [
+                    "Valid"
+                ],
+                "meaningless-value": [
+                    "Valid"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

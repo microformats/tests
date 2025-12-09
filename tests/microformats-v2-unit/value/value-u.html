@@ -1,0 +1,99 @@
+<!--
+    NOTE:
+    The details of textContent processing are tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+
+    The details of URL resolution and normalization are likewise tested in a
+    dedicated test series, thus valid output is carefully designed to pass
+    even if no URL normalization is performed. URL resolution is an unavoidable
+    aspect of these tests, but resolution complexity is kept to a minimum.
+-->
+
+<div class="h-test-value">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-single">Invalid <span class="value">http://example.test/Valid</span> Invalid</div>
+    <div class="u-double">Invalid <span class="value">http://example.test/Va</span> Invalid <span class="value">lid</span></div>
+    <div class="u-quintuple">Invalid <span class="value">http://example.test/V</span> <span class="value">a</span> <span class="value">l</span> <span class="value">i</span> <span class="value">d</span> Invalid</div>
+    <div class="u-nested">Invalid <span class="value">http://example.test/Va<span class="value">li</span>d</span> Invalid</div>
+    <div class="u-other-classes"> Invalid <span class="a b value c d">http://example.test/Valid</span> Invalid</div>
+    <div class="u-self value">Invalid <span class="value">http://example.test/Valid</span> Invalid</div>
+    <div class="u-deep">Invalid <span class="value">http://example.test/Va</span> <span>Invalid <span>Invalid <span class="value">lid</span> Invalid</span> Invalid</span> Invalid</div>
+    <div class="u-is-property">Invalid <div class="value p-not-part-of-test">http://example.test/Valid</div> Invalid</div>
+    <div class="u-is-microformat">Invalid <div class="value h-test-child"><span class="p-name">Valid</span></div> Invalid</div>
+    <div class="u-inside-property">
+        Invalid
+        <span class="value">http://example.test/Valid</span>
+        <div class="p-not-part-of-test"><span class="value">NotPartOfTest</span></div>
+        Invalid
+    </div>
+    <!-- This is assumed to be the intent of the specification text; see https://github.com/microformats/microformats2-parsing/issues/63 -->
+    <div class="u-inside-microformat">
+        Invalid
+        <span class="value">http://example.test/Valid</span>
+        <div class="h-test-child"><span class="value">NotPartOfTest</span></div>
+        Invalid
+    </div>
+</div>
+
+<div class="h-test-img">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <img class="value" alt="http://example.test/Valid"> Invalid</div>
+    <div class="u-empty">Invalid <img class="value" alt=""> Invalid</div>
+    <div class="u-missing">Invalid <img class="value"> Invalid</div>
+</div>
+
+<div class="h-test-area">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <area class="value" alt="http://example.test/Valid"> Invalid</div>
+    <div class="u-empty">Invalid <area class="value" alt=""> Invalid</div>
+    <div class="u-missing">Invalid <area class="value"> Invalid</div>
+</div>
+
+<div class="h-test-data">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <data class="value" value="http://example.test/Valid">Invalid</data> Invalid</div>
+    <div class="u-empty">Invalid <data class="value" value="">Invalid</data> Invalid</div>
+    <div class="u-missing">Invalid <data class="value">http://example.test/Valid</data> Invalid</div>
+</div>
+
+<div class="h-test-abbr">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <abbr class="value" title="http://example.test/Valid">Invalid</abbr> Invalid</div>
+    <div class="u-empty">Invalid <abbr class="value" title="">Invalid</abbr> Invalid</div>
+    <div class="u-missing">Invalid <abbr class="value">http://example.test/Valid</abbr> Invalid</div>
+</div>
+
+<!-- The datetime attribute on these elements only applies to date parsing, and not other VCP parsing -->
+<div class="h-test-time">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <time class="value" datetime="Invalid">http://example.test/Valid</time> Invalid</div>
+    <div class="u-empty">Invalid <time class="value" datetime="">http://example.test/Valid</time> Invalid</div>
+    <div class="u-missing">Invalid <time class="value">http://example.test/Valid</time> Invalid</div>
+</div>
+
+<div class="h-test-ins">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <ins class="value" datetime="Invalid">http://example.test/Valid</ins> Invalid</div>
+    <div class="u-empty">Invalid <ins class="value" datetime="">http://example.test/Valid</ins> Invalid</div>
+    <div class="u-missing">Invalid <ins class="value">http://example.test/Valid</ins> Invalid</div>
+</div>
+
+<div class="h-test-del">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <del class="value" datetime="Invalid">http://example.test/Valid</del> Invalid</div>
+    <div class="u-empty">Invalid <del class="value" datetime="">http://example.test/Valid</del> Invalid</div>
+    <div class="u-missing">Invalid <del class="value">http://example.test/Valid</del> Invalid</div>
+</div>
+
+<!-- This test checks Value Class Pattern execution order within u-property processing -->
+<div class="h-test-override">
+    <div class="p-name">NotPartOfTest</div>
+    <audio class="u-audio" src="http://example.test/Valid"><span class="value">Invalid</span></audio>
+    <iframe class="u-iframe" src="http://example.test/Valid"><span class="value">Invalid</span></iframe>
+    <video class="u-video-src" src="http://example.test/Valid"><span class="value">Invalid</span></video>
+    <video class="u-video-poster" poster="http://example.test/Valid"><span class="value">Invalid</span></video>
+    <object class="u-object" data="http://example.test/Valid"><span class="value">Invalid</span></object>
+    <abbr class="u-abbr" title="Invalid">Invalid <span class="value">http://example.test/Valid</span> Invalid</abbr>
+    <data class="u-data" value="Invalid">Invalid <span class="value">http://example.test/Valid</span> Invalid</data>
+</div>

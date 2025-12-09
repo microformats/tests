@@ -1,0 +1,202 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-abbr"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "title-missing": [
+                    "Valid"
+                ],
+                "title-empty": [
+                    ""
+                ],
+                "title-filled": [
+                    "Valid"
+                ],
+                "title-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-link"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "title-missing": [
+                    ""
+                ],
+                "title-empty": [
+                    ""
+                ],
+                "title-filled": [
+                    "Valid"
+                ],
+                "title-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-data"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "value-missing": [
+                    "Valid"
+                ],
+                "value-empty": [
+                    ""
+                ],
+                "value-filled": [
+                    "Valid"
+                ],
+                "value-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-input"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "value-missing": [
+                    ""
+                ],
+                "value-empty": [
+                    ""
+                ],
+                "value-filled": [
+                    "Valid"
+                ],
+                "value-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "alt-missing": [
+                    ""
+                ],
+                "alt-empty": [
+                    ""
+                ],
+                "alt-filled": [
+                    "Valid"
+                ],
+                "alt-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "alt-missing": [
+                    ""
+                ],
+                "alt-empty": [
+                    ""
+                ],
+                "alt-filled": [
+                    "Valid"
+                ],
+                "alt-filled-space": [
+                    " No Trim "
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-else"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "anything-else": [
+                    "Valid"
+                ],
+                "meaningless-title": [
+                    "Valid"
+                ],
+                "meaningless-value": [
+                    "Valid"
+                ],
+                "meaningless-alt": [
+                    "Valid"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

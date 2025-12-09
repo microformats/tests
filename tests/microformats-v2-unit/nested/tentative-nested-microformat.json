@@ -1,0 +1,108 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-as-e"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "html": "<div class=\"p-name\">Valid</div>",
+                        "value": "Valid",
+                        "type": [
+                            "h-test-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                "Valid"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-as-u-with-img"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "test": [
+                    {
+                        "value": {
+                            "value": "http://example.test/Valid",
+                            "alt": "Valid"
+                        },
+                        "type": [
+                            "h-test-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                "NotPartOfTest"
+                            ],
+                            "url": [
+                                {
+                                    "value": "http://example.test/Valid",
+                                    "alt": "Valid"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-implied-name"
+            ],
+            "properties": {
+                "name": [
+                    {
+                        "value": "Valid",
+                        "type": [
+                            "h-test-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                "Valid"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-implied-url"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "url": [
+                    {
+                        "value": "http://example.test/Valid",
+                        "type": [
+                            "h-test-a"
+                        ],
+                        "properties": {
+                            "name": [
+                                "NotPartOfTest"
+                            ],
+                            "url": [
+                                "http://example.test/Valid"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

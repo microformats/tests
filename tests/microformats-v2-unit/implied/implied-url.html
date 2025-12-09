@@ -1,0 +1,82 @@
+<!--
+    NOTE:
+    The details of textContent processing are tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+
+    The details of URL resolution and normalization are likewise tested in a
+    dedicated test series, thus valid output is carefully designed to pass
+    even if no URL normalization is performed. URL resolution is an unavoidable
+    aspect of these tests, but resolution complexity is kept to a minimum.
+-->
+
+<area class="h-test-area-href-missing">
+<area class="h-test-area-href-empty" href="">
+<area class="h-test-area-href-filled" href="http://example.test/Valid">
+
+<a class="h-test-a-href-missing">Name</a>
+<a class="h-test-a-href-empty" href="">Name</a>
+<a class="h-test-a-href-filled" href="http://example.test/Valid">Name</a>
+<a class="h-test-a-href-filled-has-child" href="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></a>
+<a class="h-test-a-href-filled-has-u" href="http://example.test/Invalid"><div class="u-override">http://exaple.test/NotPartOfTest</div></a>
+<a class="h-test-a-href-filled-has-url" href="http://example.test/Invalid"><div class="p-url">Valid</div></a>
+
+<div class="h-test-area-onlychildoftype-href-missing"><area></div>
+<div class="h-test-area-onlychildoftype-href-empty"><area href=""></div>
+<div class="h-test-area-onlychildoftype-href-filled"><area href="http://example.test/Valid"></div>
+<div class="h-test-area-onlychildoftype-type-sibling-before"><area><area href="http://example.test/Invalid"></div>
+<div class="h-test-area-onlychildoftype-type-sibling-after"><area href="http://example.test/Invalid"><area></div>
+<div class="h-test-area-onlychildoftype-nontype-sibling-before"><hr><area href="http://example.test/Valid"></div>
+<div class="h-test-area-onlychildoftype-nontype-sibling-after"><area href="http://example.test/Valid"><hr></div>
+<div class="h-test-area-onlychildoftype-has-child"><area class="h-test-child p-name" href="http://example.test/ChildOnly"></div>
+<div class="h-test-area-onlychildoftype-has-u"><area class="u-override" href="http://example.test/NotPartOfTest"></div>
+<div class="h-test-area-onlychildoftype-has-url"><area class="p-url" href="http://example.test/Invalid"></div>
+<a class="h-test-area-onlychildoftype-root-a"><area href="http://example.test/Valid"></a>
+<a class="h-test-area-onlychildoftype-root-a-with-href" href="http://example.test/Valid"><area href="http://example.test/Invalid"></a>
+<a class="h-test-area-onlychildoftype-root-a-with-href-empty" href=""><area href="http://example.test/Invalid"></a>
+
+<div class="h-test-a-onlychildoftype-href-missing"><a></a></div>
+<div class="h-test-a-onlychildoftype-href-empty"><a href="">Name</a></div>
+<div class="h-test-a-onlychildoftype-href-filled"><a href="http://example.test/Valid">Name</a></div>
+<div class="h-test-a-onlychildoftype-type-sibling-before"><a></a><a href="http://example.test/Invalid">Name</a></div>
+<div class="h-test-a-onlychildoftype-type-sibling-after"><a href="http://example.test/Invalid"><a>Name</a></div>
+<div class="h-test-a-onlychildoftype-nontype-sibling-before"><hr><a href="http://example.test/Valid">Name</a></div>
+<div class="h-test-a-onlychildoftype-nontype-sibling-after"><a href="http://example.test/Valid">Name</a><hr></div>
+<div class="h-test-a-onlychildoftype-has-child"><a href="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></a></div>
+<div class="h-test-a-onlychildoftype-has-u"><a href="http://example.test/NotPartOfTest"><div class="u-override">http://example.test/NameAndOverride</div></a></div>
+<div class="h-test-a-onlychildoftype-has-url"><a href="http://example.test/Invalid"><div class="p-url">Valid</div></a></div>
+<a class="h-test-a-onlychildoftype-root-a"><a href="http://example.test/Valid">Name</a></a>
+<a class="h-test-a-onlychildoftype-root-a-with-href" href="http://example.test/Valid"><a href="http://example.test/Invalid">Name</a></a>
+<a class="h-test-a-onlychildoftype-root-a-with-href-empty" href=""><a href="http://example.test/Invalid">Name</a></a>
+
+<div class="h-test-area-onlygrandchildoftype-href-missing"><div><area></div></div>
+<div class="h-test-area-onlygrandchildoftype-href-empty"><div><area href=""></div></div>
+<div class="h-test-area-onlygrandchildoftype-href-filled"><div><area href="http://example.test/Valid"></div></div>
+<div class="h-test-area-onlygrandchildoftype-type-sibling-before"><div><area><area href="http://example.test/Invalid"></div></div>
+<div class="h-test-area-onlygrandchildoftype-type-sibling-after"><div><area href="http://example.test/Invalid"><area></div></div>
+<div class="h-test-area-onlygrandchildoftype-nontype-sibling-before"><div><hr><area href="http://example.test/Valid"></div></div>
+<div class="h-test-area-onlygrandchildoftype-nontype-sibling-after"><div><area href="http://example.test/Valid"><hr></div></div>
+<div class="h-test-area-onlygrandchildoftype-parent-sibling-before"><hr><div><area href="http://example.test/Invalid"></div></div>
+<div class="h-test-area-onlygrandchildoftype-parent-sibling-after"><div><area href="http://example.test/Invalid"></div><hr></div>
+<div class="h-test-area-onlygrandchildoftype-has-child"><div><area class="h-test-child p-name" href="http://example.test/ChildOnly"></div></div>
+<div class="h-test-area-onlygrandchildoftype-has-u"><div><area class="u-override" href="http://example.test/NotPartOfTest"></div></div>
+<div class="h-test-area-onlygrandchildoftype-has-url"><div><area class="p-url" href="http://example.test/Invalid"></div></div>
+<a class="h-test-area-onlygrandchildoftype-root-a"><div><area href="http://example.test/Valid"></div></a>
+<a class="h-test-area-onlygrandchildoftype-root-a-with-href" href="http://example.test/Valid"><div><area href="http://example.test/Invalid"></div></a>
+<a class="h-test-area-onlygrandchildoftype-root-a-with-href-empty" href=""><div><area href="http://example.test/Invalid"></div></a>
+
+<div class="h-test-a-onlygrandchildoftype-href-missing"><div><a></a></div></div>
+<div class="h-test-a-onlygrandchildoftype-href-empty"><div><a href="">Name</a></div></div>
+<div class="h-test-a-onlygrandchildoftype-href-filled"><div><a href="http://example.test/Valid">Name</a></div></div>
+<div class="h-test-a-onlygrandchildoftype-type-sibling-before"><div><a></a><a href="http://example.test/Invalid">Name</a></div></div>
+<div class="h-test-a-onlygrandchildoftype-type-sibling-after"><div><a href="http://example.test/Invalid"><a>Name</a></div></div>
+<div class="h-test-a-onlygrandchildoftype-nontype-sibling-before"><div><hr><a href="http://example.test/Valid">Name</a></div></div>
+<div class="h-test-a-onlygrandchildoftype-nontype-sibling-after"><div><a href="http://example.test/Valid">Name</a><hr></div></div>
+<div class="h-test-a-onlygrandchildoftype-parent-sibling-before"><hr><div><a href="http://example.test/Invalid">Name</a></div></div>
+<div class="h-test-a-onlygrandchildoftype-parent-sibling-after"><div><a href="http://example.test/Invalid">Name</a></div><hr></div>
+<div class="h-test-a-onlygrandchildoftype-has-child"><div><a href="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></a></div></div>
+<div class="h-test-a-onlygrandchildoftype-has-u"><div><a href="http://example.test/NotPartOfTest"><div class="u-override">http://example.test/NameAndOverride</div></a></div></div>
+<div class="h-test-a-onlygrandchildoftype-has-url"><div><a href="http://example.test/Invalid"><div class="p-url">Valid</div></a></div></div>
+<a class="h-test-a-onlygrandchildoftype-root-a"><div><a href="http://example.test/Valid">Name</a></div></a>
+<a class="h-test-a-onlygrandchildoftype-root-a-with-href" href="http://example.test/Valid"><div><a href="http://example.test/Invalid">Name</a></div></a>
+<a class="h-test-a-onlygrandchildoftype-root-a-with-href-empty" href=""><div><a href="http://example.test/Invalid">Name</a></div></a>

@@ -1,0 +1,15 @@
+<!--
+    NOTE:
+    Value-class parsing does not apply to e-properties. This test simply
+    confirms that the implementation is not accidentally performing value-class
+    processing where it should not.
+
+    Also, the details of textContent processing are tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+-->
+
+<div class="h-test-no-vcp">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="e-no-vcp">Va<span class="value">l</span>id</div>
+</div>

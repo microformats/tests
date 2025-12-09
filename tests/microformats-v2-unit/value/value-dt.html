@@ -1,0 +1,123 @@
+<!--
+    NOTE:
+    The details of textContent processing are tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+
+    The list of acceptable date formats is also exhaustively tested in another
+    file. The only date formats required to pass this test are the following:
+
+    YYYY-MM-DD
+    YYYY-MM-DD hh:mm:ss (24-hour clock)
+    YYYY-MM-DD hh:mm:ss±oooo (24-hour clock)
+-->
+
+<div class="h-test-value">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-single">Invalid <span class="value">2000-01-01</span> Invalid</div>
+    <div class="dt-double">Invalid <span class="value">2000-01-01</span> Invalid <span class="value">00:00:00</span></div>
+    <div class="dt-other-classes">Invalid <span class="a b value c d">2000-01-01</span> Invalid</div>
+    <div class="dt-deep">Invalid <span class="value">2000-01-01</span> <span>Invalid <span>Invalid <span class="value">00:00:00</span> Invalid</span> Invalid</span> Invalid</div>
+    <div class="dt-is-property">Invalid <div class="value p-not-part-of-test">2000-01-01</div> Invalid</div>
+    <div class="dt-is-microformat">Invalid <div class="value h-test-child"><span class="p-name">2000-01-01</span></div> Invalid</div>
+    <div class="dt-inside-property">
+        Invalid
+        <span class="value">2000-01-01</span>
+        <div class="p-not-part-of-test"><span class="value">23:59:59</span></div>
+        Invalid
+    </div>
+    <!-- This is assumed to be the intent of the specification text; see https://github.com/microformats/microformats2-parsing/issues/63 -->
+    <div class="dt-inside-microformat">
+        Invalid
+        <span class="value">2000-01-01</span>
+        <div class="h-test-child"><span class="value">23:59:59</span></div>
+        Invalid
+    </div>
+</div>
+
+<div class="h-test-acceptable">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-not-a-date">Valid <span class="value">NotADate</span> Valid</div>
+    <div class="dt-1-with-tz">Invalid <span class="value">2000-01-01 00:00:00+00:00</span> Invalid</div>
+    <div class="dt-2-with-tz">Invalid <span class="value">2000-01-01</span><span class="value">00:00:00+00:00</span> Invalid</div> 
+    <div class="dt-1-first-wins">
+        Invalid
+        <span class="value">2000-01-01</span>
+        <span class="value">1999-12-31</span>
+        Invalid
+    </div>
+    <div class="dt-2-first-wins">
+        Invalid
+        <span class="value">00:00:00</span>
+        <span class="value">2099-12-31 23:59:59</span>
+        <span class="value">2000-01-01</span>
+        Invalid
+    </div>
+    <div class="dt-3-first-wins">
+        Invalid
+        <span class="value">2000-01-01</span>
+        <span class="value">00:00:00</span>
+        <span class="value">00:00:00+00:00</span>
+        Invalid
+    </div>
+</div>
+
+<div class="h-test-img">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <img class="value" alt="2000-01-01"> Invalid</div>
+    <div class="dt-empty">Valid<img class="value" alt=""></div>
+    <div class="dt-missing">Valid<img class="value"></div>
+</div>
+
+<div class="h-test-area">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <area class="value" alt="2000-01-01"> Invalid</div>
+    <div class="dt-empty">Va<area class="value" alt="">lid</div>
+    <div class="dt-missing">Va<area class="value">lid</div>
+</div>
+
+<div class="h-test-data">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <data class="value" value="2000-01-01">Invalid</data> Invalid</div>
+    <div class="dt-empty">Va<data class="value" value="">l</data>id</div>
+    <div class="dt-missing">Invalid <data class="value">2000-01-01</data> Invalid</div>
+</div>
+
+<div class="h-test-abbr">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <abbr class="value" title="2000-01-01">Invalid</abbr> Invalid</div>
+    <div class="dt-empty">Va<abbr class="value" title="">l</abbr>id</div>
+    <div class="dt-missing">Invalid <abbr class="value">2000-01-01</abbr> Invalid</div>
+</div>
+
+<!-- The datetime attribute on these elements only applies to date parsing, and not other VCP parsing -->
+<div class="h-test-time">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <time class="value" datetime="2000-01-01">Invalid</time> Invalid</div>
+    <div class="dt-empty">Va<time class="value" datetime="">l</time>id</div>
+    <div class="dt-missing">Invalid <time class="value">2000-01-01</time> Invalid</div>
+</div>
+
+<div class="h-test-ins">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <ins class="value" datetime="2000-01-01">Invalid</ins> Invalid</div>
+    <div class="dt-empty">Va<ins class="value" datetime="">l</ins>id</div>
+    <div class="dt-missing">Invalid <ins class="value">2000-01-01</ins> Invalid</div>
+</div>
+
+<div class="h-test-del">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <del class="value" datetime="2000-01-01">Invalid</del> Invalid</div>
+    <div class="dt-empty">Va<del class="value" datetime="">l</del>id</div>
+    <div class="dt-missing">Invalid <del class="value">2000-01-01</del> Invalid</div>
+</div>
+
+<!-- This test checks Value Class Pattern execution order within dt-property processing -->
+<div class="h-test-override">
+    <div class="p-name">NotPartOfTest</div>
+    <time class="dt-time" datetime="Invalid">Invalid <span class="value">2000-01-01</span> Invalid</time>
+    <ins class="dt-ins" datetime="Invalid">Invalid <span class="value">2000-01-01</span> Invalid</ins>
+    <del class="dt-del" datetime="Invalid">Invalid <span class="value">2000-01-01</span> Invalid</del>
+    <abbr class="dt-abbr" title="Invalid">Invalid <span class="value">2000-01-01</span> Invalid</abbr>
+    <data class="dt-data" value="Invalid">Invalid <span class="value">2000-01-01</span> Invalid</data>
+</div>

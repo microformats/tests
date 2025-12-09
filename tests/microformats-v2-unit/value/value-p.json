@@ -1,0 +1,218 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-value"
+            ],
+            "properties": {
+                "single": [
+                    "Valid"
+                ],
+                "double": [
+                    "Valid"
+                ],
+                "quintuple": [
+                    "Valid"
+                ],
+                "nested": [
+                    "Valid"
+                ],
+                "other-classes": [
+                    "Valid"
+                ],
+                "self": [
+                    "Valid"
+                ],
+                "deep": [
+                    "Valid"
+                ],
+                "is-property": [
+                    "Valid"
+                ],
+                "not-part-of-test": [
+                    "Valid",
+                    "NotPartOfTest"
+                ],
+                "is-microformat": [
+                    "Valid"
+                ],
+                "inside-property": [
+                    "Valid"
+                ],
+                "inside-microformat": [
+                    "Valid"
+                ]
+            },
+            "children": [
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "Valid"
+                        ]
+                    }
+                },
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-test-img"
+            ],
+            "properties": {
+                "filled": [
+                    "Valid"
+                ],
+                "filled-space": [
+                    " No Trim "
+                ],
+                "empty": [
+                    ""
+                ],
+                "missing": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area"
+            ],
+            "properties": {
+                "filled": [
+                    "Valid"
+                ],
+                "filled-space": [
+                    " No Trim "
+                ],
+                "empty": [
+                    ""
+                ],
+                "missing": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-data"
+            ],
+            "properties": {
+                "filled": [
+                    "Valid"
+                ],
+                "filled-space": [
+                    " No Trim "
+                ],
+                "empty": [
+                    ""
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr"
+            ],
+            "properties": {
+                "filled": [
+                    "Valid"
+                ],
+                "filled-space": [
+                    " No Trim "
+                ],
+                "empty": [
+                    ""
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-time"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "Valid"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-ins"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "Valid"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-del"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "Valid"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-override"
+            ],
+            "properties": {
+                "abbr": [
+                    "Valid"
+                ],
+                "data": [
+                    "Valid"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

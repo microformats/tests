@@ -1,0 +1,847 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-area-href-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-href-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-href-missing"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-href-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-href-filled-has-child"
+            ],
+            "properties": {},
+            "children": [
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-test-a-href-filled-has-u"
+            ],
+            "properties": {
+                "override": [
+                    "http://exaple.test/NotPartOfTest"
+                ],
+                "name": [
+                    "http://exaple.test/NotPartOfTest"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-href-filled-has-url"
+            ],
+            "properties": {
+                "url": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-href-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-href-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-type-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-type-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-nontype-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-nontype-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-has-child"
+            ],
+            "properties": {
+                "name": [
+                    {
+                        "value": "",
+                        "type": [
+                            "h-test-child"
+                        ],
+                        "properties": {
+                            "name": [
+                                ""
+                            ],
+                            "url": [
+                                "http://example.test/ChildOnly"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-has-u"
+            ],
+            "properties": {
+                "override": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-has-url"
+            ],
+            "properties": {
+                "url": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-root-a"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-root-a-with-href"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlychildoftype-root-a-with-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-href-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-href-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-type-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-type-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-nontype-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-nontype-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-has-child"
+            ],
+            "properties": {},
+            "children": [
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-has-u"
+            ],
+            "properties": {
+                "override": [
+                    "http://example.test/NameAndOverride"
+                ],
+                "name": [
+                    "http://example.test/NameAndOverride"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-has-url"
+            ],
+            "properties": {
+                "url": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-root-a"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-root-a-with-href"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlychildoftype-root-a-with-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-href-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-href-filled"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-type-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-type-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-nontype-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-nontype-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-has-child"
+            ],
+            "properties": {
+                "name": [
+                    {
+                        "value": "",
+                        "type": [
+                            "h-test-child"
+                        ],
+                        "properties": {
+                            "name": [
+                                ""
+                            ],
+                            "url": [
+                                "http://example.test/ChildOnly"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-has-u"
+            ],
+            "properties": {
+                "override": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-has-url"
+            ],
+            "properties": {
+                "url": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-root-a"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-root-a-with-href"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area-onlygrandchildoftype-root-a-with-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-href-missing"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-href-filled"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-type-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-type-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-nontype-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-nontype-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-parent-sibling-before"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-parent-sibling-after"
+            ],
+            "properties": {
+                "name": [
+                    "Name"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-has-child"
+            ],
+            "properties": {},
+            "children": [
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-has-u"
+            ],
+            "properties": {
+                "override": [
+                    "http://example.test/NameAndOverride"
+                ],
+                "name": [
+                    "http://example.test/NameAndOverride"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-has-url"
+            ],
+            "properties": {
+                "url": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-root-a"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-root-a"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-root-a-with-href"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-root-a-with-href"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test/Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-root-a-with-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-a-onlygrandchildoftype-root-a-with-href-empty"
+            ],
+            "properties": {
+                "name": [
+                    ""
+                ],
+                "url": [
+                    "http://example.test"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

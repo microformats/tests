@@ -1,0 +1,233 @@
+<!--
+    NOTE:
+    The details of textContent processing are tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+-->
+
+<!-- Control tests: implied name does not apply in these cases -->
+<div class="h-test-explicit">
+    <div class="dt-name">Valid</div> Invalid
+</div>
+
+<div class="h-test-has-p">
+    <div class="p-override">NotPartOfTest</div> Invalid
+</div>
+
+<div class="h-test-has-e">
+    <div class="e-override">NotPartOfTest</div> Invalid
+</div>
+
+<div class="h-test-nested">
+    <div class="h-test-child">
+        <div class="p-name">NotPartOfTest</div> Invalid
+    </div> Invalid
+</div>
+
+<div class="h-test-nested-prop">
+    <div class="h-test-child dt-prop">NotPartOfTest<span class="p-name">NotPartOfTest</span></div> Invalid
+</div>
+
+<!-- Simple tests -->
+<img class="h-test-img-filled" alt="Valid">
+<img class="h-test-img-filled-space" alt=" Do Trim ">
+<img class="h-test-img-empty" alt="">
+<img class="h-test-img-missing">
+
+<area class="h-test-area-filled" alt="Valid">
+<area class="h-test-area-filled-space" alt=" Do Trim ">
+<area class="h-test-area-empty" alt="">
+<area class="h-test-area-missing">
+
+<abbr class="h-test-abbr-title" title="Valid">Invalid</abbr>
+<abbr class="h-test-abbr-title-space" title=" Do Trim ">Invalid</abbr>
+<abbr class="h-test-abbr-title-empty" title="">Invalid</abbr>
+<abbr class="h-test-abbr-title-missing">Valid</abbr>
+
+<!-- These tests check that value-class parsing is not used during implied property parsing -->
+<div class="h-test-no-value">Va<span class="value">lid</span></div>
+<div class="h-test-no-value-title">Va<span class="value-title" title="Invalid">lid</span></div>
+
+<!-- These tests are tripled below to rigurously test the primacy of abbr[title] -->
+<div class="h-test-img-onlychild-alt-filled"><img alt="Valid">Invalid</div>
+<div class="h-test-img-onlychild-alt-filled-space"><img alt=" Do Trim ">Invalid</div>
+<div class="h-test-img-onlychild-alt-empty"><img alt="">Valid</div>
+<div class="h-test-img-onlychild-alt-missing"><img>Valid</div>
+<div class="h-test-img-onlychild-sibling-before"><hr><img alt="Alt"> Valid</div>
+<div class="h-test-img-onlychild-sibling-after"><img alt="Alt"><hr> Valid</div>
+
+<div class="h-test-area-onlychild-alt-filled"><area alt="Valid">Invalid</div>
+<div class="h-test-area-onlychild-alt-filled-space"><area alt=" Do Trim ">Invalid</div>
+<div class="h-test-area-onlychild-alt-empty"><area alt="">Valid</div>
+<div class="h-test-area-onlychild-alt-missing"><area>Valid</div>
+<div class="h-test-area-onlychild-sibling-before"><hr><area alt="Valid">Valid</div>
+<div class="h-test-area-onlychild-sibling-after"><area alt="Valid"><hr>Valid</div>
+
+<div class="h-test-abbr-onlychild-title-filled"><abbr title="Valid">Invalid</abbr></div>
+<div class="h-test-abbr-onlychild-title-filled-space"><abbr title=" Do Trim ">Invalid</abbr></div>
+<div class="h-test-abbr-onlychild-title-empty"><abbr title="">Valid</abbr></div>
+<div class="h-test-abbr-onlychild-title-missing"><abbr>Valid</abbr></div>
+<div class="h-test-abbr-onlychild-sibling-before"><hr><abbr title="Invalid">Valid</abbr></div>
+<div class="h-test-abbr-onlychild-sibling-after"><abbr title="Invalid">Valid</abbr><hr></div>
+
+<div class="h-test-img-onlygrandchild-alt-filled"><div><img alt="Valid">Invalid</div></div>
+<div class="h-test-img-onlygrandchild-alt-filled-space"><div><img alt=" Do Trim ">Invalid</div></div>
+<div class="h-test-img-onlygrandchild-alt-empty"><div><img alt="">Valid</div></div>
+<div class="h-test-img-onlygrandchild-alt-missing"><div><img>Valid</div></div>
+<div class="h-test-img-onlygrandchild-sibling-before"><div><hr><img alt="Alt"> Valid</div></div>
+<div class="h-test-img-onlygrandchild-sibling-after"><div><img alt="Alt"><hr> Valid</div></div>
+<div class="h-test-img-onlygrandchild-parent-sibling-before"><hr><div><img alt="Alt"> Valid</div></div>
+<div class="h-test-img-onlygrandchild-parent-sibling-after"><div><img alt="Alt"> Valid</div><hr></div>
+
+<div class="h-test-area-onlygrandchild-alt-filled"><div><area alt="Valid">Invalid</div></div>
+<div class="h-test-area-onlygrandchild-alt-filled-space"><div><area alt=" Do Trim ">Invalid</div></div>
+<div class="h-test-area-onlygrandchild-alt-empty"><div><area alt="">Valid</div></div>
+<div class="h-test-area-onlygrandchild-alt-missing"><div><area>Valid</div></div>
+<div class="h-test-area-onlygrandchild-sibling-before"><div><hr><area alt="Invalid">Valid</div></div>
+<div class="h-test-area-onlygrandchild-sibling-after"><div><area alt="Invalid"><hr>Valid</div></div>
+<div class="h-test-area-onlygrandchild-parent-sibling-before"><hr><div><area alt="Invalid">Valid</div></div>
+<div class="h-test-area-onlygrandchild-parent-sibling-after"><div><area alt="Invalid">Valid</div><hr></div>
+
+<div class="h-test-abbr-onlygrandchild-title-filled"><div><abbr title="Valid">Invalid</abbr></div></div>
+<div class="h-test-abbr-onlygrandchild-title-filled-space"><div><abbr title=" Do Trim ">Invalid</abbr></div></div>
+<div class="h-test-abbr-onlygrandchild-title-empty"><div><abbr title="">Valid</abbr></div></div>
+<div class="h-test-abbr-onlygrandchild-title-missing"><div><abbr>Valid</abbr></div></div>
+<div class="h-test-abbr-onlygrandchild-sibling-before"><div><hr><abbr title="Invalid">Valid</abbr></div></div>
+<div class="h-test-abbr-onlygrandchild-sibling-after"><div><abbr title="Invalid">Valid</abbr><hr></div></div>
+<div class="h-test-abbr-onlygrandchild-parent-sibling-before"><hr><div><abbr title="Invalid">Valid</abbr></div></div>
+<div class="h-test-abbr-onlygrandchild-parent-sibling-after"><div><abbr title="Invalid">Valid</abbr></div><hr></div>
+
+<!-- Test above with abbr: results are the same -->
+<abbr class="h-2-test-img-onlychild-alt-filled"><img alt="Valid">Invalid</abbr>
+<abbr class="h-2-test-img-onlychild-alt-filled-space"><img alt=" Do Trim ">Invalid</abbr>
+<abbr class="h-2-test-img-onlychild-alt-empty"><img alt="">Valid</abbr>
+<abbr class="h-2-test-img-onlychild-alt-missing"><img>Valid</abbr>
+<abbr class="h-2-test-img-onlychild-sibling-before"><hr><img alt="Alt"> Valid</abbr>
+<abbr class="h-2-test-img-onlychild-sibling-after"><img alt="Alt"><hr> Valid</abbr>
+
+<abbr class="h-2-test-area-onlychild-alt-filled"><area alt="Valid">Invalid</abbr>
+<abbr class="h-2-test-area-onlychild-alt-filled-space"><area alt=" Do Trim ">Invalid</abbr>
+<abbr class="h-2-test-area-onlychild-alt-empty"><area alt="">Valid</abbr>
+<abbr class="h-2-test-area-onlychild-alt-missing"><area>Valid</abbr>
+<abbr class="h-2-test-area-onlychild-sibling-before"><hr><area alt="Invalid">Valid</abbr>
+<abbr class="h-2-test-area-onlychild-sibling-after"><area alt="Invalid"><hr>Valid</abbr>
+
+<abbr class="h-2-test-abbr-onlychild-title-filled"><abbr title="Valid">Invalid</abbr></abbr>
+<abbr class="h-2-test-abbr-onlychild-title-filled-space"><abbr title=" Do Trim ">Invalid</abbr></abbr>
+<abbr class="h-2-test-abbr-onlychild-title-empty"><abbr title="">Valid</abbr></abbr>
+<abbr class="h-2-test-abbr-onlychild-title-missing"><abbr>Valid</abbr></abbr>
+<abbr class="h-2-test-abbr-onlychild-sibling-before"><hr><abbr title="Invalid">Valid</abbr></abbr>
+<abbr class="h-2-test-abbr-onlychild-sibling-after"><abbr title="Invalid">Valid</abbr><hr></abbr>
+
+<abbr class="h-2-test-img-onlygrandchild-alt-filled"><div><img alt="Valid">Invalid</div></abbr>
+<abbr class="h-2-test-img-onlygrandchild-alt-filled-space"><div><img alt=" Do Trim ">Invalid</div></abbr>
+<abbr class="h-2-test-img-onlygrandchild-alt-empty"><div><img alt="">Valid</div></abbr>
+<abbr class="h-2-test-img-onlygrandchild-alt-missing"><div><img>Valid</div></abbr>
+<abbr class="h-2-test-img-onlygrandchild-sibling-before"><div><hr><img alt="Alt"> Valid</div></abbr>
+<abbr class="h-2-test-img-onlygrandchild-sibling-after"><div><img alt="Alt"><hr> Valid</div></abbr>
+<abbr class="h-2-test-img-onlygrandchild-parent-sibling-before"><hr><div><img alt="Alt"> Valid</div></abbr>
+<abbr class="h-2-test-img-onlygrandchild-parent-sibling-after"><div><img alt="Alt"> Valid</div><hr></abbr>
+
+<abbr class="h-2-test-area-onlygrandchild-alt-filled"><div><area alt="Valid">Invalid</div></abbr>
+<abbr class="h-2-test-area-onlygrandchild-alt-filled-space"><div><area alt=" Do Trim ">Invalid</div></abbr>
+<abbr class="h-2-test-area-onlygrandchild-alt-empty"><div><area alt="">Valid</div></abbr>
+<abbr class="h-2-test-area-onlygrandchild-alt-missing"><div><area>Valid</div></abbr>
+<abbr class="h-2-test-area-onlygrandchild-sibling-before"><div><hr><area alt="Invalid">Valid</div></abbr>
+<abbr class="h-2-test-area-onlygrandchild-sibling-after"><div><area alt="Invalid"><hr>Valid</div></abbr>
+<abbr class="h-2-test-area-onlygrandchild-parent-sibling-before"><hr><div><area alt="Invalid">Valid</div></abbr>
+<abbr class="h-2-test-area-onlygrandchild-parent-sibling-after"><div><area alt="Invalid">Valid</div><hr></abbr>
+
+<abbr class="h-2-test-abbr-onlygrandchild-title-filled"><div><abbr title="Valid">Invalid</abbr></div></abbr>
+<abbr class="h-2-test-abbr-onlygrandchild-title-filled-space"><div><abbr title=" Do Trim ">Invalid</abbr></div></abbr>
+<abbr class="h-2-test-abbr-onlygrandchild-title-empty"><div><abbr title="">Valid</abbr></div></abbr>
+<abbr class="h-2-test-abbr-onlygrandchild-title-missing"><div><abbr>Valid</abbr></div></abbr>
+<abbr class="h-2-test-abbr-onlygrandchild-sibling-before"><div><hr><abbr title="Invalid">Valid</abbr></div></abbr>
+<abbr class="h-2-test-abbr-onlygrandchild-sibling-after"><div><abbr title="Invalid">Valid</abbr><hr></div></abbr>
+<abbr class="h-2-test-abbr-onlygrandchild-parent-sibling-before"><hr><div><abbr title="Invalid">Valid</abbr></div></abbr>
+<abbr class="h-2-test-abbr-onlygrandchild-parent-sibling-after"><div><abbr title="Invalid">Valid</abbr></div><hr></abbr>
+
+<!-- Test above with abbr[title]: results are not the same -->
+<abbr title="Valid" class="h-3-test-img-onlychild-alt-filled"><img alt="Invalid">Invalid</abbr>
+<abbr title="Valid" class="h-3-test-img-onlychild-alt-empty"><img alt="">Invalid</abbr>
+<abbr title="Valid" class="h-3-test-img-onlychild-alt-missing"><img>Invalid</abbr>
+<abbr title="Valid" class="h-3-test-img-onlychild-sibling-before"><hr><img alt="Invalid">Invalid</abbr>
+<abbr title="Valid" class="h-3-test-img-onlychild-sibling-after"><img alt="Invalid"><hr>Invalid</abbr>
+
+<abbr title="Valid" class="h-3-test-area-onlychild-alt-filled"><area alt="Invalid">Invalid</abbr>
+<abbr title="Valid" class="h-3-test-area-onlychild-alt-empty"><area alt="">Invalid</abbr>
+<abbr title="Valid" class="h-3-test-area-onlychild-alt-missing"><area>Invalid</abbr>
+<abbr title="Valid" class="h-3-test-area-onlychild-sibling-before"><hr><area alt="Invalid">Invalid</abbr>
+<abbr title="Valid" class="h-3-test-area-onlychild-sibling-after"><area alt="Invalid"><hr>Invalid</abbr>
+
+<abbr title="Valid" class="h-3-test-abbr-onlychild-title-filled"><abbr title="Invalid">Invalid</abbr></abbr>
+<abbr title="Valid" class="h-3-test-abbr-onlychild-title-empty"><abbr title="">Invalid</abbr></abbr>
+<abbr title="Valid" class="h-3-test-abbr-onlychild-title-missing"><abbr>Invalid</abbr></abbr>
+<abbr title="Valid" class="h-3-test-abbr-onlychild-sibling-before"><hr><abbr title="Invalid">Invalid</abbr></abbr>
+<abbr title="Valid" class="h-3-test-abbr-onlychild-sibling-after"><abbr title="Invalid">Invalid</abbr><hr></abbr>
+
+<abbr title="Valid" class="h-3-test-img-onlygrandchild-alt-filled"><div><img alt="Invalid">Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-img-onlygrandchild-alt-empty"><div><img alt="">Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-img-onlygrandchild-alt-missing"><div><img>Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-img-onlygrandchild-sibling-before"><div><hr><img alt="Invalid">Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-img-onlygrandchild-sibling-after"><div><img alt="Invalid"><hr>Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-img-onlygrandchild-parent-sibling-before"><hr><div><img alt="Invalid">Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-img-onlygrandchild-parent-sibling-after"><div><img alt="Invalid">Invalid</div><hr></abbr>
+
+<abbr title="Valid" class="h-3-test-area-onlygrandchild-alt-filled"><div><area alt="Invalid">Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-area-onlygrandchild-alt-empty"><div><area alt="">Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-area-onlygrandchild-alt-missing"><div><area>Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-area-onlygrandchild-sibling-before"><div><hr><area alt="Invalid">Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-area-onlygrandchild-sibling-after"><div><area alt="Invalid"><hr>Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-area-onlygrandchild-parent-sibling-before"><hr><div><area alt="Invalid">Invalid</div></abbr>
+<abbr title="Valid" class="h-3-test-area-onlygrandchild-parent-sibling-after"><div><area alt="Invalid">Invalid</div><hr></abbr>
+
+<abbr title="Valid" class="h-3-test-abbr-onlygrandchild-title-filled"><div><abbr title="Invalid">Invalid</abbr></div></abbr>
+<abbr title="Valid" class="h-3-test-abbr-onlygrandchild-title-empty"><div><abbr title="">Invalid</abbr></div></abbr>
+<abbr title="Valid" class="h-3-test-abbr-onlygrandchild-title-missing"><div><abbr>Invalid</abbr></div></abbr>
+<abbr title="Valid" class="h-3-test-abbr-onlygrandchild-sibling-before"><div><hr><abbr title="Invalid">Invalid</abbr></div></abbr>
+<abbr title="Valid" class="h-3-test-abbr-onlygrandchild-sibling-after"><div><abbr title="Invalid">Invalid</abbr><hr></div></abbr>
+<abbr title="Valid" class="h-3-test-abbr-onlygrandchild-parent-sibling-before"><hr><div><abbr title="Invalid">Invalid</abbr></div></abbr>
+<abbr title="Valid" class="h-3-test-abbr-onlygrandchild-parent-sibling-after"><div><abbr title="Invalid">Invalid</abbr></div><hr></abbr>
+
+<!-- Test above with abbr[title=""]: empty title still wins -->
+<abbr title="" class="h-4-test-img-onlychild-alt-filled"><img alt="Invalid">Invalid</abbr>
+<abbr title="" class="h-4-test-img-onlychild-alt-empty"><img alt="">Invalid</abbr>
+<abbr title="" class="h-4-test-img-onlychild-alt-missing"><img>Invalid</abbr>
+<abbr title="" class="h-4-test-img-onlychild-sibling-before"><hr><img alt="Invalid">Invalid</abbr>
+<abbr title="" class="h-4-test-img-onlychild-sibling-after"><img alt="Invalid"><hr>Invalid</abbr>
+
+<abbr title="" class="h-4-test-area-onlychild-alt-filled"><area alt="Invalid">Invalid</abbr>
+<abbr title="" class="h-4-test-area-onlychild-alt-empty"><area alt="">Invalid</abbr>
+<abbr title="" class="h-4-test-area-onlychild-alt-missing"><area>Invalid</abbr>
+<abbr title="" class="h-4-test-area-onlychild-sibling-before"><hr><area alt="Invalid">Invalid</abbr>
+<abbr title="" class="h-4-test-area-onlychild-sibling-after"><area alt="Invalid"><hr>Invalid</abbr>
+
+<abbr title="" class="h-4-test-abbr-onlychild-title-filled"><abbr title="Invalid">Invalid</abbr></abbr>
+<abbr title="" class="h-4-test-abbr-onlychild-title-empty"><abbr title="">Invalid</abbr></abbr>
+<abbr title="" class="h-4-test-abbr-onlychild-title-missing"><abbr>Invalid</abbr></abbr>
+<abbr title="" class="h-4-test-abbr-onlychild-sibling-before"><hr><abbr title="Invalid">Invalid</abbr></abbr>
+<abbr title="" class="h-4-test-abbr-onlychild-sibling-after"><abbr title="Invalid">Invalid</abbr><hr></abbr>
+
+<abbr title="" class="h-4-test-img-onlygrandchild-alt-filled"><div><img alt="Invalid">Invalid</div></abbr>
+<abbr title="" class="h-4-test-img-onlygrandchild-alt-empty"><div><img alt="">Invalid</div></abbr>
+<abbr title="" class="h-4-test-img-onlygrandchild-alt-missing"><div><img>Invalid</div></abbr>
+<abbr title="" class="h-4-test-img-onlygrandchild-sibling-before"><div><hr><img alt="Invalid">Invalid</div></abbr>
+<abbr title="" class="h-4-test-img-onlygrandchild-sibling-after"><div><img alt="Invalid"><hr>Invalid</div></abbr>
+<abbr title="" class="h-4-test-img-onlygrandchild-parent-sibling-before"><hr><div><img alt="Invalid">Invalid</div></abbr>
+<abbr title="" class="h-4-test-img-onlygrandchild-parent-sibling-after"><div><img alt="Invalid">Invalid</div><hr></abbr>
+
+<abbr title="" class="h-4-test-area-onlygrandchild-alt-filled"><div><area alt="Invalid">Invalid</div></abbr>
+<abbr title="" class="h-4-test-area-onlygrandchild-alt-empty"><div><area alt="">Invalid</div></abbr>
+<abbr title="" class="h-4-test-area-onlygrandchild-alt-missing"><div><area>Invalid</div></abbr>
+<abbr title="" class="h-4-test-area-onlygrandchild-sibling-before"><div><hr><area alt="Invalid">Invalid</div></abbr>
+<abbr title="" class="h-4-test-area-onlygrandchild-sibling-after"><div><area alt="Invalid"><hr>Invalid</div></abbr>
+<abbr title="" class="h-4-test-area-onlygrandchild-parent-sibling-before"><hr><div><area alt="Invalid">Invalid</div></abbr>
+<abbr title="" class="h-4-test-area-onlygrandchild-parent-sibling-after"><div><area alt="Invalid">Invalid</div><hr></abbr>
+
+<abbr title="" class="h-4-test-abbr-onlygrandchild-title-filled"><div><abbr title="Invalid">Invalid</abbr></div></abbr>
+<abbr title="" class="h-4-test-abbr-onlygrandchild-title-empty"><div><abbr title="">Invalid</abbr></div></abbr>
+<abbr title="" class="h-4-test-abbr-onlygrandchild-title-missing"><div><abbr>Invalid</abbr></div></abbr>
+<abbr title="" class="h-4-test-abbr-onlygrandchild-sibling-before"><div><hr><abbr title="Invalid">Invalid</abbr></div></abbr>
+<abbr title="" class="h-4-test-abbr-onlygrandchild-sibling-after"><div><abbr title="Invalid">Invalid</abbr><hr></div></abbr>
+<abbr title="" class="h-4-test-abbr-onlygrandchild-parent-sibling-before"><hr><div><abbr title="Invalid">Invalid</abbr></div></abbr>
+<abbr title="" class="h-4-test-abbr-onlygrandchild-parent-sibling-after"><div><abbr title="Invalid">Invalid</abbr></div><hr></abbr>

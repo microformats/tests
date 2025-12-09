@@ -1,0 +1,124 @@
+<!--
+    NOTE:
+    The details of Value Class Pattern processing are tested in a
+    dedicated test series which also tests its precedence in u-property
+    processing.
+
+    The details of textContent processing are also tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+
+    The details of URL resolution and normalization are likewise tested in a
+    dedicated test series, thus valid output is carefully designed to pass
+    even if no URL normalization is performed. URL resolution is an unavoidable
+    aspect of these tests, but resolution complexity is kept to a minimum.
+-->
+
+<div class="h-test-a">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <a class="u-href-missing">http://example.test/Valid</a>
+    <a class="u-href-empty" href="">Invalid</a>
+    <a class="u-href-filled" href="http://example.test/Valid">Invalid</a>
+</div>
+
+<div class="h-test-area">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <area class="u-href-missing">
+    <area class="u-href-empty" href="">
+    <area class="u-href-filled" href="http://example.test/Valid">
+</div>
+
+<div class="h-test-link">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <link class="u-href-missing">
+    <link class="u-href-empty" href="">
+    <link class="u-href-filled" href="http://example.test/Valid">
+</div>
+
+<div class="h-test-img">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <img class="u-src-missing-alt-missing">
+    <img class="u-src-missing-alt-empty" alt="">
+    <img class="u-src-missing-alt-filled" alt="Invalid">
+    <img class="u-src-missing-alt-filled-space" alt=" Invalid ">
+    <img class="u-src-empty-alt-missing" src="">
+    <img class="u-src-empty-alt-empty" src="" alt="">
+    <img class="u-src-empty-alt-filled" src="" alt="Valid">
+    <img class="u-src-empty-alt-filled-space" src="" alt=" No Trim ">
+    <img class="u-src-filled-alt-missing" src="http://example.test/Valid">
+    <img class="u-src-filled-alt-empty" src="http://example.test/Valid" alt="">
+    <img class="u-src-filled-alt-filled" src="http://example.test/Valid" alt="Valid">
+    <img class="u-src-filled-alt-filled-space" src="http://example.test/Valid" alt=" No Trim ">
+</div>
+
+<div class="h-test-audio">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <audio class="u-src-missing">http://example.test/Valid</audio>
+    <audio class="u-src-empty" src="">Invalid</audio>
+    <audio class="u-src-filled" src="http://example.test/Valid">Invalid</audio>
+</div>
+
+<div class="h-test-iframe">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <iframe class="u-src-missing">http://example.test/Valid</iframe>
+    <iframe class="u-src-empty" src="">Invalid</iframe>
+    <iframe class="u-src-filled" src="http://example.test/Valid">Invalid</iframe>
+</div>
+
+<div class="h-test-source">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <source class="u-src-missing">
+    <source class="u-src-empty" src="">
+    <source class="u-src-filled" src="http://example.test/Valid">
+</div>
+
+<div class="h-test-video">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <video class="u-src-and-poster-missing">http://example.test/Valid</video>
+    <video class="u-src-empty" src="">Invalid</video>
+    <video class="u-src-filled" src="http://example.test/Valid">Invalid</video>
+    <video class="u-poster-empty" poster="">Invalid</video>
+    <video class="u-poster-filled" poster="http://example.test/Valid">Invalid</video>
+    <video class="u-src-trumps-poster" poster="Invalid" src="http://example.test/Valid">Invalid</video>
+    <video class="u-src-trumps-poster" src="http://example.test/Valid" poster="Invalid">Invalid</video>
+</div>
+
+<div class="h-test-object">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <object class="u-data-missing">http://example.test/Valid</object>
+    <object class="u-data-empty" data="">Invalid</object>
+    <object class="u-data-filled" data="http://example.test/Valid">Invalid</object>
+</div>
+
+<div class="h-test-abbr">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <abbr class="u-title-missing">http://example.test/Valid</abbr>
+    <abbr class="u-title-empty" title="">Invalid</abbr>
+    <abbr class="u-title-filled" title="http://example.test/Valid">Invalid</abbr>
+</div>
+
+<div class="h-test-data">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <data class="u-value-missing">http://example.test/Valid</data>
+    <data class="u-value-empty" value="">Invalid</data>
+    <data class="u-value-filled" value="http://example.test/Valid">Invalid</data>
+</div>
+
+<div class="h-test-input">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <input class="u-value-missing">
+    <input class="u-value-empty" value="">
+    <input class="u-value-filled" value="http://example.test/Valid">
+</div>
+
+<div class="h-test-else">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <div class="u-anything-else">http://example.test/Valid</div>
+    <div class="u-meaningless-title" title="Invalid">http://example.test/Valid</div>
+    <div class="u-meaningless-value" value="Invalid">http://example.test/Valid</div>
+    <div class="u-meaningless-alt" alt="Invalid">http://example.test/Valid</div>
+    <div class="u-meaningless-href" href="Invalid">http://example.test/Valid</div>
+    <div class="u-meaningless-src" src="Invalid">http://example.test/Valid</div>
+    <div class="u-meaningless-data" data="Invalid">http://example.test/Valid</div>
+    <div class="u-meaningless-poster" poster="Invalid">http://example.test/Valid</div>
+</div>
