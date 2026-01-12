@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-p"
+            ],
+            "properties": {
+                "single": [
+                    " No Trim "
+                ],
+                "double": [
+                    " No  Trim "
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}
