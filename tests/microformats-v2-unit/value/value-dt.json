@@ -72,10 +72,19 @@
                     "Valid NotADate Valid"
                 ],
                 "1-with-tz": [
-                    "2000-01-01 00:00:00+00:00"
+                    "2000-01-01 00:00:00+0000"
                 ],
                 "2-with-tz": [
-                    "2000-01-01 00:00:00+00:00"
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "3-with-tz": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "4-with-tz": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "misordered": [
+                    "2000-01-01 00:00:00+0000"
                 ],
                 "1-first-wins": [
                     "2000-01-01"
@@ -85,6 +94,57 @@
                 ],
                 "3-first-wins": [
                     "2000-01-01 00:00:00"
+                ],
+                "4-first-wins": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "5-first-wins": [
+                    "2000-01-01"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-implied-date-missing"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "time-only": [
+                    "Valid 00:00:00+0000 Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-implied-date-before"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "implied": [
+                    "2000-01-01 23:59:59+0000"
+                ],
+                "time-only": [
+                    "2000-01-01 00:00:00+0000"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-implied-date-after"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "time-only": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "implied": [
+                    "2000-01-01 23:59:59+0000"
                 ]
             }
         },
@@ -138,7 +198,7 @@
                     "2000-01-01"
                 ],
                 "empty": [
-                    "Valid"
+                    "Valid 2099-01-01 Valid"
                 ],
                 "missing": [
                     "2000-01-01"
@@ -157,7 +217,7 @@
                     "2000-01-01"
                 ],
                 "empty": [
-                    "Valid"
+                    "Valid 2099-01-01 Valid"
                 ],
                 "missing": [
                     "2000-01-01"
@@ -176,7 +236,7 @@
                     "2000-01-01"
                 ],
                 "empty": [
-                    "Valid"
+                    "Valid 2099-01-01 Valid"
                 ],
                 "missing": [
                     "2000-01-01"
@@ -195,7 +255,7 @@
                     "2000-01-01"
                 ],
                 "empty": [
-                    "Valid"
+                    "Valid 2099-01-01 Valid"
                 ],
                 "missing": [
                     "2000-01-01"
@@ -214,7 +274,7 @@
                     "2000-01-01"
                 ],
                 "empty": [
-                    "Valid"
+                    "Valid 2099-01-01 Valid"
                 ],
                 "missing": [
                     "2000-01-01"
