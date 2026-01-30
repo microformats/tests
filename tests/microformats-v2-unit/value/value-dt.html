@@ -38,7 +38,6 @@
 <div class="h-test-acceptable">
     <div class="p-name">NotPartOfTest</div>
     <div class="dt-not-a-date">Valid <span class="value">NotADate</span> Valid</div>
-    <div class="dt-time-only">Valid <span class="value">00:00:00+0000</span> Valid</div>
     <div class="dt-1-with-tz">Invalid <span class="value">2000-01-01 00:00:00+0000</span> Invalid</div>
     <div class="dt-2-with-tz">Invalid <span class="value">2000-01-01</span><span class="value">00:00:00+0000</span> Invalid</div>
     <div class="dt-3-with-tz">Invalid <span class="value">2000-01-01 00:00:00</span><span class="value">+0000</span> Invalid</div>
@@ -79,6 +78,23 @@
         <span class="value">23:59:59+0000</span>
         Invalid
     </div>
+</div>
+
+<div class="h-test-implied-date-missing">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-time-only">Valid <span class="value">00:00:00+0000</span> Valid</div>
+</div>
+
+<div class="h-test-implied-date-before">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-implied">Invalid <span class="value">2000-01-01 23:59:59+0000</span> Invalid</div>
+    <div class="dt-time-only">Invalid <span class="value">00:00:00+0000</span> Invalid</div>
+</div>
+
+<div class="h-test-implied-date-after">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-time-only">Invalid <span class="value">00:00:00+0000</span> Invalid</div>
+    <div class="dt-implied">Invalid <span class="value">2000-01-01 23:59:59+0000</span> Invalid</div>
 </div>
 
 <div class="h-test-img">
