@@ -1,0 +1,52 @@
+<!--
+    NOTE:
+    The list of acceptable date formats is exhaustively tested in another
+    file. The only date formats required to pass this test are the following:
+
+    YYYY-MM-DD
+    YYYY-MM-DD hh:mm:ss (24-hour clock)
+    YYYY-MM-DD hh:mm:ss±oooo (24-hour clock)
+-->
+
+<div class="h-test-mixed-p">
+    <div class="p-control">Invalid <span class="value-title" title="Valid">Invalid</span> Invalid</div>
+    <div class="p-single-title-first">Invalid <span class="value-title value" title="Valid">Invalid</span> Invalid</div>
+    <div class="p-single-value-first">Invalid <span class="value value-title" title="Valid">Invalid</span> Invalid</div>
+    <div class="p-double-title-first">Invalid <span class="value-title value" title="Va">Invalid</span> Invalid <span class="value-title value" title="lid">Invalid</span> Invalid</div>
+    <div class="p-double-value-first">Invalid <span class="value value-title" title="Va">Invalid</span> Invalid <span class="value value-title" title="lid">Invalid</span> Invalid</div>
+    <div class="p-double-mixed-title-first">Invalid <span class="value-title value" title="Va">Invalid</span> Invalid <span class="value value-title" title="lid">Invalid</span> Invalid</div>
+    <div class="p-double-mixed-value-first">Invalid <span class="value value-title" title="Va">Invalid</span> Invalid <span class="value-title value" title="lid">Invalid</span> Invalid</div>
+    <div class="p-empty">Invalid <span class="value-title value" title="">Invalid</span> Invalid</div>
+    <div class="p-missing">Invalid <span class="value-title value">Invalid</span> Invalid</div>
+</div>
+
+<div class="h-test-mixed-u">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-control">Invalid <span class="value-title" title="Valid">Invalid</span> Invalid</div>
+    <div class="u-single-title-first">Invalid <span class="value-title value" title="Valid">Invalid</span> Invalid</div>
+    <div class="u-single-value-first">Invalid <span class="value value-title" title="Valid">Invalid</span> Invalid</div>
+    <div class="u-double-title-first">Invalid <span class="value-title value" title="Va">Invalid</span> Invalid <span class="value-title value" title="lid">Invalid</span> Invalid</div>
+    <div class="u-double-value-first">Invalid <span class="value value-title" title="Va">Invalid</span> Invalid <span class="value value-title" title="lid">Invalid</span> Invalid</div>
+    <div class="u-double-mixed-title-first">Invalid <span class="value-title value" title="Va">Invalid</span> Invalid <span class="value value-title" title="lid">Invalid</span> Invalid</div>
+    <div class="u-double-mixed-value-first">Invalid <span class="value value-title" title="Va">Invalid</span> Invalid <span class="value-title value" title="lid">Invalid</span> Invalid</div>
+    <div class="u-empty">Invalid <span class="value-title value" title="">Invalid</span> Invalid</div>
+    <div class="u-missing">Invalid <span class="value-title value">Invalid</span> Invalid</div>
+</div>
+
+<div class="h-test-mixed-e">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="e-no-vcp">Va<span class="value-title value">l</span>id</div>
+</div>
+
+<div class="h-test-mixed-dt">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-control">Invalid <span class="value-title" title="2000-01-01">Invalid</span> Invalid</div>
+    <div class="dt-single-title-first">Invalid <span class="value-title value" title="2000-01-01">Invalid</span> Invalid</div>
+    <div class="dt-single-value-first">Invalid <span class="value value-title" title="2000-01-01">Invalid</span> Invalid</div>
+    <div class="dt-double-title-first">Invalid <span class="value-title value" title="2000-01-01">Invalid</span> Invalid <span class="value-title value" title="00:00:00">Invalid</span> Invalid</div>
+    <div class="dt-double-value-first">Invalid <span class="value value-title" title="2000-01-01">Invalid</span> Invalid <span class="value value-title" title="00:00:00">Invalid</span> Invalid</div>
+    <div class="dt-double-mixed-title-first">Invalid <span class="value-title value" title="2000-01-01">Invalid</span> Invalid <span class="value value-title" title="00:00:00">Invalid</span> Invalid</div>
+    <div class="dt-double-mixed-value-first">Invalid <span class="value value-title" title="2000-01-01">Invalid</span> Invalid <span class="value-title value" title="00:00:00">Invalid</span> Invalid</div>
+    <div class="dt-empty">Valid <span class="value-title value" title="">2099-01-01</span> Valid</div>
+    <div class="dt-missing">Valid <span class="value-title value">2099-01-01</span> Valid</div>
+</div>

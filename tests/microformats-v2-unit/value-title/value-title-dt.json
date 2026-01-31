@@ -1,0 +1,312 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-value"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "single": [
+                    "2000-01-01"
+                ],
+                "double": [
+                    "2000-01-01 00:00:00"
+                ],
+                "other-classes": [
+                    "2000-01-01"
+                ],
+                "deep": [
+                    "2000-01-01 00:00:00"
+                ],
+                "is-property": [
+                    "2000-01-01"
+                ],
+                "not-part-of-test": [
+                    "2099-01-01",
+                    "22:45:45"
+                ],
+                "is-microformat": [
+                    "2000-01-01"
+                ],
+                "inside-property": [
+                    "2000-01-01"
+                ],
+                "inside-microformat": [
+                    "2000-01-01"
+                ]
+            },
+            "children": [
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "2099-01-01"
+                        ]
+                    }
+                },
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "23:59:59"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-test-acceptable"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "not-a-date": [
+                    "Valid 2099-01-01 Valid"
+                ],
+                "1-with-tz": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "2-with-tz": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "3-with-tz": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "4-with-tz": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "misordered": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "1-first-wins": [
+                    "2000-01-01"
+                ],
+                "2-first-wins": [
+                    "2000-01-01 00:00:00"
+                ],
+                "3-first-wins": [
+                    "2000-01-01 00:00:00"
+                ],
+                "4-first-wins": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "5-first-wins": [
+                    "2000-01-01"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-implied-date-missing"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "time-only": [
+                    "Valid 23:59:59+1130 Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-implied-date-before"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "implied": [
+                    "2000-01-01 23:59:59+0000"
+                ],
+                "time-only": [
+                    "2000-01-01 00:00:00+0000"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-implied-date-after"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "time-only": [
+                    "2000-01-01 00:00:00+0000"
+                ],
+                "implied": [
+                    "2000-01-01 23:59:59+0000"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-area"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid"
+                ],
+                "missing": [
+                    "Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-data"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid 2099-01-01 Valid"
+                ],
+                "missing": [
+                    "Valid 2099-01-01 Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-abbr"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid 2099-01-01 Valid"
+                ],
+                "missing": [
+                    "Valid 2099-01-01 Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-time"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid 2099-01-01 Valid"
+                ],
+                "missing": [
+                    "Valid 2099-01-01 Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-ins"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid 2099-01-01 Valid"
+                ],
+                "missing": [
+                    "Valid 2099-01-01 Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-del"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "filled": [
+                    "2000-01-01"
+                ],
+                "empty": [
+                    "Valid 2099-01-01 Valid"
+                ],
+                "missing": [
+                    "Valid 2099-01-01 Valid"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-override"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "time": [
+                    "2000-01-01"
+                ],
+                "ins": [
+                    "2000-01-01"
+                ],
+                "del": [
+                    "2000-01-01"
+                ],
+                "abbr": [
+                    "2000-01-01"
+                ],
+                "data": [
+                    "2000-01-01"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

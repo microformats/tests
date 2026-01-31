@@ -1,0 +1,98 @@
+<!--
+    NOTE:
+    The details of textContent processing are tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+
+    The details of URL resolution and normalization are likewise tested in a
+    dedicated test series, thus valid output is carefully designed to pass
+    even if no URL normalization is performed. URL resolution is an unavoidable
+    aspect of these tests, but resolution complexity is kept to a minimum.
+-->
+
+<div class="h-test-value">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-single">Invalid <span class="value-title" title="http://example.test/Valid">Invalid</span> Invalid</div>
+    <div class="u-double">Invalid <span class="value-title" title="http://example.test/Va">Invalid</span> Invalid <span class="value-title" title="lid">Invalid</span></div>
+    <div class="u-quintuple">Invalid <span class="value-title" title="http://example.test/V">Invalid</span> <span class="value-title" title="a">Invalid</span> <span class="value-title" title="l">Invalid</span> <span class="value-title" title="i">Invalid</span> <span class="value-title" title="d">Invalid</span> Invalid</div>
+    <div class="u-nested">Invalid <span class="value-title" title="http://example.test/Valid">Inva<span class="value-title" title="Invalid">li</span>d</span> Invalid</div>
+    <div class="u-other-classes">Invalid <span class="a b value-title c d" title="http://example.test/Valid">Invalid</span> Invalid</div>
+    <div class="u-self value-title" title="Invalid">Invalid <span class="value-title" title="http://example.test/Valid">Invalid</span> Invalid</div>
+    <div class="u-deep">Invalid <span class="value-title" title="http://example.test/Va">Invalid</span> <span>Invalid <span>Invalid <span class="value-title" title="lid">Invalid</span> Invalid</span> Invalid</span> Invalid</div>
+    <div class="u-is-property">Invalid <div class="value-title u-not-part-of-test" title="http://example.test/Valid">Property</div> Invalid</div>
+    <div class="u-is-microformat">Invalid <div class="value-title h-test-child" title="http://example.test/Valid"><span class="p-name">NotPartOfTest</span></div> Invalid</div>
+    <div class="u-inside-property">
+        Invalid
+        <span class="value-title" title="http://example.test/Valid">Invalid</span>
+        <div class="p-not-part-of-test"><span class="value-title" title="NotPartOfTest">Invalid</span></div>
+        Invalid
+    </div>
+    <!-- This is assumed to be the intent of the specification text; see https://github.com/microformats/microformats2-parsing/issues/63 -->
+    <div class="u-inside-microformat">
+        Invalid
+        <span class="value-title" title="http://example.test/Valid">Invalid</span>
+        <div class="h-test-child"><span class="value-title" title="Invalid">NotPartOfTest</span></div>
+        Invalid
+    </div>
+</div>
+
+<div class="h-test-img">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <img class="value-title" title="http://example.test/Valid" alt="Invalid"> Invalid</div>
+    <div class="u-empty">Invalid <img class="value-title" title="" alt="Invalid"> Invalid</div>
+    <div class="u-missing">Invalid <img class="value-title" alt="Invalid"> Invalid</div>
+</div>
+
+<div class="h-test-area">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <area class="value-title" title="http://example.test/Valid" alt="Invalid"> Invalid</div>
+    <div class="u-empty">Invalid <area class="value-title" title="" alt="Invalid"> Invalid</div>
+    <div class="u-missing">Invalid <area class="value-title" alt="Invalid"> Invalid</div>
+</div>
+
+<div class="h-test-data">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <data class="value-title" title="http://example.test/Valid" value="Invalid">Invalid</data> Invalid</div>
+    <div class="u-empty">Invalid <data class="value-title" title="" value="Invalid">Invalid</data> Invalid</div>
+    <div class="u-missing">Invalid <data class="value-title" value="Invalid">Invalid</data> Invalid</div>
+</div>
+
+<div class="h-test-abbr">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <abbr class="value-title" title="http://example.test/Valid">Invalid</abbr> Invalid</div>
+    <div class="u-empty">Invalid <abbr class="value-title" title="">Invalid</abbr> Invalid</div>
+    <div class="u-missing">Invalid <abbr class="value-title">Invalid</abbr> Invalid</div>
+</div>
+
+<div class="h-test-time">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <time class="value-title" title="http://example.test/Valid" datetime="Invalid">Invalid</time> Invalid</div>
+    <div class="u-empty">Invalid <time class="value-title" title="" datetime="Invalid">Invalid</time> Invalid</div>
+    <div class="u-missing">Invalid <time class="value-title">Invalid</time> Invalid</div>
+</div>
+
+<div class="h-test-ins">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <ins class="value-title" title="http://example.test/Valid" datetime="Invalid">Invalid</ins> Invalid</div>
+    <div class="u-empty">Invalid <ins class="value-title" title="" datetime="Invalid">Invalid</ins> Invalid</div>
+    <div class="u-missing">Invalid <ins class="value-title">Invalid</ins> Invalid</div>
+</div>
+
+<div class="h-test-del">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-filled">Invalid <del class="value-title" title="http://example.test/Valid" datetime="Invalid">Invalid</del> Invalid</div>
+    <div class="u-empty">Invalid <del class="value-title" title="" datetime="Invalid">Invalid</del> Invalid</div>
+    <div class="u-missing">Invalid <del class="value-title">Invalid</del> Invalid</div>
+</div>
+
+<!-- This test checks Value Class Pattern execution order within u-property processing -->
+<div class="h-test-override">
+    <div class="p-name">NotPartOfTest</div>
+    <audio class="u-audio" src="http://example.test/Valid"><span class="value-title">Invalid</span></audio>
+    <iframe class="u-iframe" src="http://example.test/Valid"><span class="value-title">Invalid</span></iframe>
+    <video class="u-video-src" src="http://example.test/Valid"><span class="value-title">Invalid</span></video>
+    <video class="u-video-poster" poster="http://example.test/Valid"><span class="value-title">Invalid</span></video>
+    <object class="u-object" data="http://example.test/Valid"><span class="value-title">Invalid</span></object>
+    <abbr class="u-abbr" title="Invalid">Invalid <span class="value-title" title="http://example.test/Valid">Invalid</span> Invalid</abbr>
+    <data class="u-data" value="Invalid">Invalid <span class="value-title" title="http://example.test/Valid">Invalid</span> Invalid</data>
+</div>

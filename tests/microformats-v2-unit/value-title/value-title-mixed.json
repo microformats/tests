@@ -1,0 +1,130 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-mixed-p"
+            ],
+            "properties": {
+                "control": [
+                    "Valid"
+                ],
+                "single-title-first": [
+                    "Valid"
+                ],
+                "single-value-first": [
+                    "Valid"
+                ],
+                "double-title-first": [
+                    "Valid"
+                ],
+                "double-value-first": [
+                    "Valid"
+                ],
+                "double-mixed-title-first": [
+                    "Valid"
+                ],
+                "double-mixed-value-first": [
+                    "Valid"
+                ],
+                "empty": [
+                    ""
+                ],
+                "missing": [
+                    ""
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-mixed-u"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "control": [
+                    "http://example.test/Valid"
+                ],
+                "single-title-first": [
+                    "http://example.test/Valid"
+                ],
+                "single-value-first": [
+                    "http://example.test/Valid"
+                ],
+                "double-title-first": [
+                    "http://example.test/Valid"
+                ],
+                "double-value-first": [
+                    "http://example.test/Valid"
+                ],
+                "double-mixed-title-first": [
+                    "http://example.test/Valid"
+                ],
+                "double-mixed-value-first": [
+                    "http://example.test/Valid"
+                ],
+                "empty": [
+                    "http://example.test"
+                ],
+                "missing": [
+                    "http://example.test"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-mixed-e"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "no-vcp": [
+                    {
+                        "html": "Va<span class=\"value-title value\">l</span>id",
+                        "value": "Valid"
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-mixed-dt"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "control": [
+                    "2000-01-01"
+                ],
+                "single-title-first": [
+                    "2000-01-01"
+                ],
+                "single-value-first": [
+                    "2000-01-01"
+                ],
+                "double-title-first": [
+                    "2000-01-01 00:00:00"
+                ],
+                "double-value-first": [
+                    "2000-01-01 00:00:00"
+                ],
+                "double-mixed-title-first": [
+                    "2000-01-01 00:00:00"
+                ],
+                "double-mixed-value-first": [
+                    "2000-01-01 00:00:00"
+                ],
+                "empty": [
+                    "Valid 2099-01-01 Valid"
+                ],
+                "missing": [
+                    "Valid 2099-01-01 Valid"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

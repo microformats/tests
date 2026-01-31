@@ -19,11 +19,14 @@ Tests adhere to the following design principles. New additions to this test seri
 
 ## Setting up the tests
 
-Test set-up is the same as for the other test sets, with the exception that the base URL is `http://example.test`. Partial parser implementations may wish to execute tests in a particular orderto test basic features before more complex ones:
+Test set-up is the same as for the other test sets, with the exception that the base URL is `http://example.test`. Partial parser implementations may wish to execute tests in a particular order to test basic features before more complex ones:
 
 1. Microformat tests in `names`
 2. Property tests in `names`
 3. Tests in `properties`
 4. Tests in `implied`
 5. Tests in `value`
-6. Tests in `nested`
+6. Tests in `value-title`
+7. Tests in `id`
+8. Tests in `text`
+9. Tests in `nested`
