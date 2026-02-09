@@ -100,7 +100,7 @@
 <div class="h-test-img">
     <div class="p-name">NotPartOfTest</div>
     <div class="dt-filled">Invalid <img class="value-title" title="2000-01-01" alt="2099-01-01"> Invalid</div>
-    <div class="dt-empty">Valid<img class="value-title" title="" alt="2099-01-01"></div>
+    <div class="dt-empty">Valid<img class="value-title" title=""></div> <!-- We don't add an alt attribute to this one because the alternate text trimming algorithm retains alt-text for <img> elements -->
     <div class="dt-missing">Valid<img class="value-title"></div>
 </div>
 
