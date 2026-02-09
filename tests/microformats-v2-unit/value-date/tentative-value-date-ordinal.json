@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "properties": {
+        "name": [
+          "Ordinal dates"
+        ],
+        "ordinal": [
+          "1583-01-01",
+          "9999-12-31",
+          "2000-02-29",
+          "2000-12-31"
+        ]
+      },
+      "type": [
+        "h-test-date-ord"
+      ]
+    }
+  ],
+  "rel-urls": {},
+  "rels": {}
+}

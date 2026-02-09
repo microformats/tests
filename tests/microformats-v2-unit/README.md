@@ -27,6 +27,7 @@ Test set-up is the same as for the other test sets, with the exception that the 
 4. Tests in `implied`
 5. Tests in `value`
 6. Tests in `value-title`
-7. Tests in `id`
-8. Tests in `text`
-9. Tests in `nested`
+7. Tests in `value-date`
+8. Tests in `id`
+9. Tests in `text`
+10. Tests in `nested`

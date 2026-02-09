@@ -1,0 +1,54 @@
+<!--
+    NOTE:
+    The specification is unclear whether times and time zones without leading
+    zeroes should have such zeroes added in to the normalized output. These
+    tests assume the answer is yes.
+
+    The specification is additionally unclear whether "Z" or "+0000" or "-0000"
+    may be preferred by implementations to represent the UTC time zone when
+    normalizing. These tests assume "+0000" is preferred over "-0000" as the
+    latter does not conform to ISO 8601, but that "Z" should appear in the
+    output when it appears in the input, and should not be used otherwise.
+
+    See https://github.com/microformats/microformats2-parsing/issues/84
+-->
+
+<div class="h-test-time-twentyfour">
+    <div class="p-name">24-hour time formats</div>
+    <div class="dt-short-sec">Invalid <span class="value">2000-01-01</span> <span class="value">0:00:00</span> Invalid</div>
+    <div class="dt-short-sec">Invalid <span class="value">2000-01-01</span> <span class="value">9:59:59</span> Invalid</div>
+    <div class="dt-short-min">Invalid <span class="value">2000-01-01</span> <span class="value">0:00</span> Invalid</div>
+    <div class="dt-short-min">Invalid <span class="value">2000-01-01</span> <span class="value">9:59</span> Invalid</div>
+</div>
+
+<div class="h-test-time-twelve">
+    <div class="p-name">12-hour time formats</div>
+    <div class="dt-short-sec">Invalid <span class="value">2000-01-01</span> <span class="value">1:00:00am</span> Invalid</div>
+    <div class="dt-short-sec">Invalid <span class="value">2000-01-01</span> <span class="value">9:59:59am</span> Invalid</div>
+    <div class="dt-short-sec">Invalid <span class="value">2000-01-01</span> <span class="value">1:00:00pm</span> Invalid</div>
+    <div class="dt-short-sec">Invalid <span class="value">2000-01-01</span> <span class="value">9:59:59pm</span> Invalid</div>
+    <div class="dt-short-min">Invalid <span class="value">2000-01-01</span> <span class="value">1:00am</span> Invalid</div>
+    <div class="dt-short-min">Invalid <span class="value">2000-01-01</span> <span class="value">9:59am</span> Invalid</div>
+    <div class="dt-short-min">Invalid <span class="value">2000-01-01</span> <span class="value">1:00pm</span> Invalid</div>
+    <div class="dt-short-min">Invalid <span class="value">2000-01-01</span> <span class="value">9:59pm</span> Invalid</div>
+    <div class="dt-short-hour">Invalid <span class="value">2000-01-01</span> <span class="value">1am</span> Invalid</div>
+    <div class="dt-short-hour">Invalid <span class="value">2000-01-01</span> <span class="value">9am</span> Invalid</div>
+    <div class="dt-short-hour">Invalid <span class="value">2000-01-01</span> <span class="value">1pm</span> Invalid</div>
+    <div class="dt-short-hour">Invalid <span class="value">2000-01-01</span> <span class="value">9pm</span> Invalid</div>
+</div>
+
+<div class="h-test-zone">
+    <div class="p-name">Time zone offsets</div>
+    <div class="dt-short-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+000</span> Invalid</div>
+    <div class="dt-short-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-000</span> Invalid</div>
+    <div class="dt-short-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-930</span> Invalid</div>
+    <div class="dt-short-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+930</span> Invalid</div>
+    <div class="dt-short-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+0:00</span> Invalid</div>
+    <div class="dt-short-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-0:00</span> Invalid</div>
+    <div class="dt-short-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-9:30</span> Invalid</div>
+    <div class="dt-short-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+9:30</span> Invalid</div>
+    <div class="dt-short-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+0</span> Invalid</div>
+    <div class="dt-short-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-0</span> Invalid</div>
+    <div class="dt-short-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-9</span> Invalid</div>
+    <div class="dt-short-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+9</span> Invalid</div>
+</div>
