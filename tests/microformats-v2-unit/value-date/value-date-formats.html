@@ -1,0 +1,161 @@
+<!--
+    NOTE:
+    These tests verify that formats are correctly interpreted and limits
+    observed, but do not assume implementations are actually calendar-aware.
+    Thus for example they do not test whether February 29 of a common year nor
+    the fictitious November 31 of any year are rejected, as the specification
+    does not require this.
+
+    Because the specification is ambiguous on some points, certain cases are
+    tested in other files. The specification is also ambiguous as to how the
+    set of control tests should be interpreted, but we make an assumption here
+    as the rest would be difficult to test otherwise.
+
+    See https://github.com/microformats/microformats2-parsing/issues/83
+ -->
+
+<div class="h-test-control">
+    <div class="p-name">Control tests to ensure invalid values are rejected</div>
+    <div class="dt-not-a-date">Valid <span class="value">NotADate</span> Valid</div>
+    <div class="dt-not-a-date">Valid <span class="value">2000-00-00</span> Valid</div>
+    <div class="dt-not-a-date">Valid <span class="value">2000-13-01</span> Valid</div>
+    <div class="dt-not-a-date">Valid <span class="value">2000-12-32</span> Valid</div>
+    <div class="dt-not-a-date">Valid <span class="value">2000-01-01 25:00:00</span> Valid</div>
+    <div class="dt-not-a-date">Valid <span class="value">2000-01-01 23:60:00</span> Valid</div>
+    <div class="dt-not-a-date">Valid <span class="value">2000-01-01 23:59:70</span> Valid</div> <!-- We don't use 60 seconds here because this is how actual leap seconds are represented -->
+    <div class="dt-not-a-date">Valid <span class="value">2000-01-01 00:00:00Y</span> Valid</div>
+    <div class="dt-not-a-date">Valid <span class="value">2000-01-01 00:00:00 NotADate</span> Valid</div>
+    <div class="dt-not-a-date">Valid <span class="value">NotADate 2000-01-01 00:00:00 Valid</div>
+</div>
+
+<div class="h-test-date-cal">
+    <div class="p-name">Calendar dates</div>
+    <div class="dt-calendar">Invalid <span class="value">1583-01-01</span> Invalid</div>
+    <div class="dt-calendar">Invalid <span class="value">9999-12-31</span> Invalid</div>
+    <div class="dt-calendar">Invalid <span class="value">2000-02-29</span> Invalid</div>
+    <div class="dt-calendar">Invalid <span class="value">2000-12-31</span> Invalid</div>
+</div>
+
+<div class="h-test-time-twentyfour">
+    <div class="p-name">24-hour time formats</div>
+    <div class="dt-full-sec">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> Invalid</div>
+    <div class="dt-full-sec">Invalid <span class="value">2000-01-01</span> <span class="value">09:00:00</span> Invalid</div>
+    <div class="dt-full-sec">Invalid <span class="value">2000-01-01</span> <span class="value">23:59:59</span> Invalid</div>
+    <div class="dt-full-min">Invalid <span class="value">2000-01-01</span> <span class="value">00:00</span> Invalid</div>
+    <div class="dt-full-min">Invalid <span class="value">2000-01-01</span> <span class="value">09:00</span> Invalid</div>
+    <div class="dt-full-min">Invalid <span class="value">2000-01-01</span> <span class="value">23:59</span> Invalid</div>
+</div>
+
+<div class="h-test-time-twelve">
+    <div class="p-name">12-hour time formats</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00am</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00Am</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00aM</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00AM</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00pm</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00Pm</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00pM</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00PM</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00a.m.</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00A.m.</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00a.M.</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00A.M.</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00p.m.</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00P.m.</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00p.M.</span> Invalid</div>
+    <div class="dt-case-sec">Invalid <span class="value">2000-01-01</span> <span class="value">12:00:00P.M.</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00am</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00Am</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00aM</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00AM</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00pm</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00Pm</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00pM</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00PM</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00a.m.</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00A.m.</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00a.M.</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00A.M.</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00p.m.</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00P.m.</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00p.M.</span> Invalid</div>
+    <div class="dt-case-min">Invalid <span class="value">2000-01-01</span> <span class="value">12:00P.M.</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12am</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12Am</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12aM</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12AM</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12pm</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12Pm</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12pM</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12PM</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12a.m.</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12A.m.</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12a.M.</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12A.M.</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12p.m.</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12P.m.</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12p.M.</span> Invalid</div>
+    <div class="dt-case-hour">Invalid <span class="value">2000-01-01</span> <span class="value">12P.M.</span> Invalid</div>
+    <div class="dt-full-sec">Invalid <span class="value">2000-01-01</span> <span class="value">01:00:00am</span> Invalid</div>
+    <div class="dt-full-sec">Invalid <span class="value">2000-01-01</span> <span class="value">09:00:00am</span> Invalid</div>
+    <div class="dt-full-sec">Invalid <span class="value">2000-01-01</span> <span class="value">11:59:59am</span> Invalid</div>
+    <div class="dt-full-sec">Invalid <span class="value">2000-01-01</span> <span class="value">01:00:00pm</span> Invalid</div>
+    <div class="dt-full-sec">Invalid <span class="value">2000-01-01</span> <span class="value">09:00:00pm</span> Invalid</div>
+    <div class="dt-full-sec">Invalid <span class="value">2000-01-01</span> <span class="value">11:59:59pm</span> Invalid</div>
+    <div class="dt-full-min">Invalid <span class="value">2000-01-01</span> <span class="value">01:00am</span> Invalid</div>
+    <div class="dt-full-min">Invalid <span class="value">2000-01-01</span> <span class="value">09:00am</span> Invalid</div>
+    <div class="dt-full-min">Invalid <span class="value">2000-01-01</span> <span class="value">11:59am</span> Invalid</div>
+    <div class="dt-full-min">Invalid <span class="value">2000-01-01</span> <span class="value">01:00pm</span> Invalid</div>
+    <div class="dt-full-min">Invalid <span class="value">2000-01-01</span> <span class="value">09:00pm</span> Invalid</div>
+    <div class="dt-full-min">Invalid <span class="value">2000-01-01</span> <span class="value">11:59pm</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">01am</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">09am</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">11am</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">01pm</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">09pm</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">11pm</span> Invalid</div>
+</div>
+
+<!-- 
+    NOTE:
+    Time zone offsets can in theory be any number of minutes (not just
+    15-minute increments), and any number of hours (not just fourteen as is
+    presently the case on Earth), but we'll restrict ourselves to values
+    within existing usage since that's all any implementation actually needs.
+
+    Additionally, the specification for VCP states the offset hour is between
+    zero and twelve, but this is clearly insufficient for actual time zones
+    across the world, so we assume parsers should not follow this limit.
+
+    See https://github.com/microformats/microformats2-parsing/issues/81
+-->
+<div class="h-test-zone">
+    <div class="p-name">Time zone offsets</div>
+    <div class="dt-full-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-1200</span> Invalid</div>
+    <div class="dt-full-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-0330</span> Invalid</div>
+    <div class="dt-full-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+0430</span> Invalid</div>
+    <div class="dt-full-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+0545</span> Invalid</div>
+    <div class="dt-full-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+1245</span> Invalid</div>
+    <div class="dt-full-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+1400</span> Invalid</div>
+    <div class="dt-full-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-12:00</span> Invalid</div>
+    <div class="dt-full-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-03:30</span> Invalid</div>
+    <div class="dt-full-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+04:30</span> Invalid</div>
+    <div class="dt-full-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+05:45</span> Invalid</div>
+    <div class="dt-full-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+12:45</span> Invalid</div>
+    <div class="dt-full-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+14:00</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-12</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-03</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+04</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+05</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+12</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+14</span> Invalid</div>
+</div>
+
+<div class="h-combined">
+    <div class="p-name">Combined representations</div>
+    <div class="dt-date-time-space">Invalid <span class="value">2000-01-01 00:00:00</span> Invalid</div>
+    <div class="dt-date-time-t">Invalid <span class="value">2000-01-01T00:00:00</span> Invalid</div>
+    <div class="dt-time-zone">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00+0100</span> Invalid</div>
+    <div class="dt-full-space">Invalid <span class="value">2000-01-01 00:00:00+0100</span> Invalid</div>
+    <div class="dt-full-t">Invalid <span class="value">2000-01-01T00:00:00+0100</span> Invalid</div>
+</div>

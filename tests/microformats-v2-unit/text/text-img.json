@@ -1,0 +1,226 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-img-p"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "src-missing-alt-missing": [
+                    "A  A"
+                ],
+                "src-missing-alt-empty": [
+                    "A  A"
+                ],
+                "src-missing-alt-filled": [
+                    "A Valid A"
+                ],
+                "src-missing-alt-filled-space": [
+                    "A  No Trim  A"
+                ],
+                "src-empty-alt-missing": [
+                    "A  http://example.test  A"
+                ],
+                "src-empty-alt-empty": [
+                    "A  A"
+                ],
+                "src-empty-alt-filled": [
+                    "A Valid A"
+                ],
+                "src-empty-alt-filled-space": [
+                    "A  No Trim  A"
+                ],
+                "src-filled-alt-missing": [
+                    "A  http://example.test/Valid  A"
+                ],
+                "src-filled-alt-empty": [
+                    "A  A"
+                ],
+                "src-filled-alt-filled": [
+                    "A Valid A"
+                ],
+                "src-filled-alt-filled-space": [
+                    "A  No Trim  A"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-u"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "src-missing-alt-missing": [
+                    "http://example.test/AA"
+                ],
+                "src-missing-alt-empty": [
+                    "http://example.test/AA"
+                ],
+                "src-missing-alt-filled": [
+                    "http://example.test/AA"
+                ],
+                "src-missing-alt-filled-space": [
+                    "http://example.test/AA"
+                ],
+                "src-empty-alt-missing": [
+                    "http://example.test/AA"
+                ],
+                "src-empty-alt-empty": [
+                    "http://example.test/AA"
+                ],
+                "src-empty-alt-filled": [
+                    "http://example.test/AA"
+                ],
+                "src-empty-alt-filled-space": [
+                    "http://example.test/AA"
+                ],
+                "src-filled-alt-missing": [
+                    "http://example.test/AA"
+                ],
+                "src-filled-alt-empty": [
+                    "http://example.test/AA"
+                ],
+                "src-filled-alt-filled": [
+                    "http://example.test/AA"
+                ],
+                "src-filled-alt-filled-space": [
+                    "http://example.test/AA"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-dt"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "src-missing-alt-missing": [
+                    "AA"
+                ],
+                "src-missing-alt-empty": [
+                    "AA"
+                ],
+                "src-missing-alt-filled": [
+                    "AA"
+                ],
+                "src-missing-alt-filled-space": [
+                    "AA"
+                ],
+                "src-empty-alt-missing": [
+                    "AA"
+                ],
+                "src-empty-alt-empty": [
+                    "AA"
+                ],
+                "src-empty-alt-filled": [
+                    "AA"
+                ],
+                "src-empty-alt-filled-space": [
+                    "AA"
+                ],
+                "src-filled-alt-missing": [
+                    "AA"
+                ],
+                "src-filled-alt-empty": [
+                    "AA"
+                ],
+                "src-filled-alt-filled": [
+                    "AA"
+                ],
+                "src-filled-alt-filled-space": [
+                    "AA"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-img-e"
+            ],
+            "properties": {
+                "name": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "photo": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "url": [
+                    "http://example.test/NotPartOfTest"
+                ],
+                "src-missing-alt-missing": [
+                    {
+                        "html": "<div>\n            A <img> A\n        </div>",
+                        "value": "A  A"
+                    }
+                ],
+                "src-missing-alt-empty": [
+                    {
+                        "html": "<div>\n            A <img alt=\"\"> A\n        </div>",
+                        "value": "A  A"
+                    }
+                ],
+                "src-missing-alt-filled": [
+                    {
+                        "html": "<div>\n            A <img alt=\"Valid\"> A\n        </div>",
+                        "value": "A Valid A"
+                    }
+                ],
+                "src-missing-alt-filled-space": [
+                    {
+                        "html": "<div>\n            A <img alt=\" No Trim \"> A\n        </div>",
+                        "value": "A  No Trim  A"
+                    }
+                ],
+                "src-filled-alt-missing": [
+                    {
+                        "html": "<div>\n            A <img src=\"http://example.test/Valid\"> A\n        </div>",
+                        "value": "A  http://example.test/Valid  A"
+                    }
+                ],
+                "src-filled-alt-empty": [
+                    {
+                        "html": "<div>\n            A <img src=\"http://example.test/Foo\" alt=\"\"> A\n        </div>",
+                        "value": "A  A"
+                    }
+                ],
+                "src-filled-alt-filled": [
+                    {
+                        "html": "<div>\n            A <img src=\"http://example.test/Bar\" alt=\"Valid\"> A\n        </div>",
+                        "value": "A Valid A"
+                    }
+                ],
+                "src-filled-alt-filled-space": [
+                    {
+                        "html": "<div>\n            A <img src=\"http://example.test/Baz\" alt=\" No Trim \"> A\n        </div>",
+                        "value": "A  No Trim  A"
+                    }
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

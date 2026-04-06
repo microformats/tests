@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-with-id"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ]
+            },
+            "id": "Valid"
+        },
+        {
+            "type": [
+                "h-test-without-id"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-not-properties"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "not-id-p": [
+                    "P"
+                ],
+                "not-id-u": [
+                    "http://example.test/U"
+                ],
+                "not-id-dt": [
+                    "Dt"
+                ],
+                "not-id-e": [
+                    {
+                        "html": "E",
+                        "value": "E"
+                    }
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

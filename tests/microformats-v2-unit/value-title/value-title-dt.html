@@ -1,0 +1,157 @@
+<!--
+    NOTE:
+    The details of textContent processing are tested in a dedicated test
+    series, thus here valid output is carefully designed to pass even if no
+    trimming is performed.
+
+    The list of acceptable date formats is also exhaustively tested in another
+    file. The only date formats required to pass this test are the following:
+
+    YYYY-MM-DD
+    YYYY-MM-DD hh:mm:ss (24-hour clock)
+    YYYY-MM-DD hh:mm:ss±oooo (24-hour clock)
+-->
+
+<div class="h-test-value">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-single">Invalid <span class="value-title" title="2000-01-01">2099-01-01</span> Invalid</div>
+    <div class="dt-double">Invalid <span class="value-title" title="2000-01-01">2099-01-01</span> Invalid <span class="value-title" title="00:00:00">23:59:59</span></div>
+    <div class="dt-other-classes">Invalid <span class="a b value-title c d" title="2000-01-01">2099-01-01</span> Invalid</div>
+    <div class="dt-deep">Invalid <span class="value-title" title="2000-01-01">2099-01-01</span> <span>Invalid <span>Invalid <span class="value-title" title="00:00:00">23:59:59</span> Invalid</span> Invalid</span> Invalid</div>
+    <div class="dt-is-property">Invalid <div class="value-title p-not-part-of-test" title="2000-01-01">2099-01-01</div> Invalid</div>
+    <div class="dt-is-microformat">Invalid <div class="value-title h-test-child" title="2000-01-01"><span class="p-name">2099-01-01</span></div> Invalid</div>
+    <div class="dt-inside-property">
+        Invalid
+        <span class="value-title" title="2000-01-01">2099-01-01</span>
+        <div class="p-not-part-of-test"><span class="value-title" title="22:45:45">23:59:59</span></div>
+        Invalid
+    </div>
+    <!-- This is assumed to be the intent of the specification text; see https://github.com/microformats/microformats2-parsing/issues/63 -->
+    <div class="dt-inside-microformat">
+        Invalid
+        <span class="value-title" title="2000-01-01">2099-01-01</span>
+        <div class="h-test-child"><span class="value-title" title="22:45:45">23:59:59</span></div>
+        Invalid
+    </div>
+</div>
+
+<div class="h-test-acceptable">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-not-a-date">Valid <span class="value-title" title="NotADate">2099-01-01</span> Valid</div>
+    <div class="dt-1-with-tz">Invalid <span class="value-title" title="2000-01-01 00:00:00+0000">2099-01-01 00:00:00+0000</span> Invalid</div>
+    <div class="dt-2-with-tz">Invalid <span class="value-title" title="2000-01-01">2099-01-01</span><span class="value-title" title="00:00:00+0000">23:59:59+1130</span> Invalid</div>
+    <div class="dt-3-with-tz">Invalid <span class="value-title" title="2000-01-01 00:00:00">2099-01-01 00:00:00</span><span class="value-title" title="+0000">+1130</span> Invalid</div>
+    <div class="dt-4-with-tz">Invalid <span class="value-title" title="2000-01-01">2099-01-01</span><span class="value-title" title="00:00:00">23:59:59</span><span class="value-title" title="+0000">+1130</span> Invalid</div>
+    <div class="dt-misordered">Invalid <span class="value-title" title="+0000">+1130</span><span class="value-title" title="00:00:00">23:59:59</span><span class="value-title" title="2000-01-01">2099-01-01</span> Invalid</div>
+    <div class="dt-1-first-wins">
+        Invalid
+        <span class="value-title" title="2000-01-01">2099-01-01</span>
+        <span class="value-title" title="2999-01-01">1999-12-31</span>
+        Invalid
+    </div>
+    <div class="dt-2-first-wins">
+        Invalid
+        <span class="value-title" title="00:00:00">02:00:00</span>
+        <span class="value-title" title="2099-12-31 23:59:59">2199-12-31 23:59:59</span>
+        <span class="value-title" title="2000-01-01">2099-01-01</span>
+        Invalid
+    </div>
+    <div class="dt-3-first-wins">
+        Invalid
+        <span class="value-title" title="2000-01-01">2099-01-01</span>
+        <span class="value-title" title="00:00:00">02:00:00</span>
+        <span class="value-title" title="00:00:00+0000">02:00:00+1130</span>
+        Invalid
+    </div>
+    <div class="dt-4-first-wins">
+        Invalid
+        <span class="value-title" title="2000-01-01">2099-01-01</span>
+        <span class="value-title" title="+0000">+1130</span>
+        <span class="value-title" title="22:45:45+0400">23:59:59+0000</span>
+        <span class="value-title" title="00:00:00">23:58:57</span>
+        Invalid
+    </div>
+    <div class="dt-5-first-wins">
+        Invalid
+        <span class="value-title" title="2000-01-01">2099-01-01</span>
+        <span class="value-title" title="+0000">+1130</span>
+        <span class="value-title" title="22:45:45+0500">23:59:59+0000</span>
+        Invalid
+    </div>
+</div>
+
+<div class="h-test-implied-date-missing">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-time-only">Valid <span class="value-title" title="00:00:00+0000">23:59:59+1130</span> Valid</div>
+</div>
+
+<div class="h-test-implied-date-before">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-implied">Invalid <span class="value-title" title="2000-01-01 23:59:59+0000">2099-01-01 23:59:59+0000</span> Invalid</div>
+    <div class="dt-time-only">Invalid <span class="value-title" title="00:00:00+0000">23:59:59+1130</span> Invalid</div>
+</div>
+
+<div class="h-test-implied-date-after">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-time-only">Invalid <span class="value-title" title="00:00:00+0000">23:59:59+1130</span> Invalid</div>
+    <div class="dt-implied">Invalid <span class="value-title" title="2000-01-01 23:59:59+0000">2099-01-01 23:59:59+0000</span> Invalid</div>
+</div>
+
+<div class="h-test-img">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <img class="value-title" title="2000-01-01" alt="2099-01-01"> Invalid</div>
+    <div class="dt-empty">Valid<img class="value-title" title=""></div> <!-- We don't add an alt attribute to this one because the alternate text trimming algorithm retains alt-text for <img> elements -->
+    <div class="dt-missing">Valid<img class="value-title"></div>
+</div>
+
+<div class="h-test-area">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <area class="value-title" title="2000-01-01" alt="2099-01-01"> Invalid</div>
+    <div class="dt-empty">Va<area class="value-title" title="" alt="2099-01-01">lid</div>
+    <div class="dt-missing">Va<area class="value-title">lid</div>
+</div>
+
+<div class="h-test-data">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <data class="value-title" title="2000-01-01" value="2199-01-01">2099-01-01</data> Invalid</div>
+    <div class="dt-empty">Valid <data class="value-title" title="" value="2199-01-01">2099-01-01</data> Valid</div>
+    <div class="dt-missing">Valid <data class="value-title">2099-01-01</data> Valid</div>
+</div>
+
+<div class="h-test-abbr">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <abbr class="value-title" title="2000-01-01">Invalid</abbr> Invalid</div>
+    <div class="dt-empty">Valid <abbr class="value-title" title="">2099-01-01</abbr> Valid</div>
+    <div class="dt-missing">Valid <abbr class="value-title">2099-01-01</abbr> Valid</div>
+</div>
+
+<div class="h-test-time">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <time class="value-title" title="2000-01-01" datetime="2199-01-01">2099-01-01</time> Invalid</div>
+    <div class="dt-empty">Valid <time class="value-title" title="" datetime="2199-01-01">2099-01-01</time> Valid</div>
+    <div class="dt-missing">Valid <time class="value-title">2099-01-01</time> Valid</div>
+</div>
+
+<div class="h-test-ins">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <ins class="value-title" title="2000-01-01" datetime="2199-01-01">2099-01-01</ins> Invalid</div>
+    <div class="dt-empty">Valid <ins class="value-title" title="" datetime="2199-01-01">2099-01-01</ins> Valid</div>
+    <div class="dt-missing">Valid <ins class="value-title">2099-01-01</ins> Valid</div>
+</div>
+
+<div class="h-test-del">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="dt-filled">Invalid <del class="value-title" title="2000-01-01" datetime="2199-01-01">2099-01-01</del> Invalid</div>
+    <div class="dt-empty">Valid <del class="value-title" title="" datetime="2199-01-01">2099-01-01</del> Valid</div>
+    <div class="dt-missing">Valid <del class="value-title" datetime="2199-01-01">2099-01-01</del> Valid</div>
+</div>
+
+<!-- This test checks Value Class Pattern execution order within dt-property processing -->
+<div class="h-test-override">
+    <div class="p-name">NotPartOfTest</div>
+    <time class="dt-time" datetime="2099-01-01">Invalid <span class="value-title" title="2000-01-01">2199-01-01</span> Invalid</time>
+    <ins class="dt-ins" datetime="2099-01-01">Invalid <span class="value-title" title="2000-01-01">2199-01-01</span> Invalid</ins>
+    <del class="dt-del" datetime="2099-01-01">Invalid <span class="value-title" title="2000-01-01">2199-01-01</span> Invalid</del>
+    <abbr class="dt-abbr" title="2099-01-01">Invalid <span class="value-title" title="2000-01-01">2199-01-01</span> Invalid</abbr>
+    <data class="dt-data" value="2099-01-01">Invalid <span class="value-title" title="2000-01-01">2199-01-01</span> Invalid</data>
+</div>

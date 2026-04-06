@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-tree-order"
+            ],
+            "properties": {
+                "one": [
+                    "One Two Three Four"
+                ],
+                "two": [
+                    "Two Three Four"
+                ],
+                "three": [
+                    "Three"
+                ],
+                "four": [
+                    "Four"
+                ],
+                "five": [
+                    "Five"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

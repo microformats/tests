@@ -1,0 +1,22 @@
+<!--
+    NOTE:
+    The specification is unclear whether "Z" or "+0000" or "-0000"
+    may be preferred by implementations to represent the UTC time zone when
+    normalizing. These tests assume "+0000" is preferred over "-0000" as the
+    latter does not conform to ISO 8601 (and many date-parsing libraries seem
+    not to support negative-zero), but that "Z" should appear in the output
+    when it appears in the input, and should not be used otherwise.
+
+    See https://github.com/microformats/microformats2-parsing/issues/84
+-->
+
+<div class="h-test-zone">
+    <div class="p-name">Time zone offsets</div>
+    <div class="dt-zulu">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">Z</span> Invalid</div>
+    <div class="dt-full-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+0000</span> Invalid</div>
+    <div class="dt-full-bare">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-0000</span> Invalid</div>
+    <div class="dt-full-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+00:00</span> Invalid</div>
+    <div class="dt-full-colon">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-00:00</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">+00</span> Invalid</div>
+    <div class="dt-full-hour">Invalid <span class="value">2000-01-01</span> <span class="value">00:00:00</span> <span class="value">-00</span> Invalid</div>
+</div>

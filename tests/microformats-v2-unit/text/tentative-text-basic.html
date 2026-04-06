@@ -1,0 +1,31 @@
+
+<!-- There is some uncertainty as to how and how much URLs should be normalized, so this test is segregated -->
+<div class="h-test-whitespace-u">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-ascii"> &#x9;&#xC;&#xD; http://example.test/DoTrim &#xD;&#xC;&#x9; </div>
+    <div class="u-1-unicode">&#xB;NoTrim&#xB;</div>
+    <div class="u-2-unicode">&#x85;NoTrim&#x85;</div>
+    <div class="u-3-unicode">&#xA0;NoTrim&#xA0;</div>
+    <div class="u-4-unicode">&#x1680;NoTrim&#x1680;</div>
+    <div class="u-5-unicode">&#x2000;NoTrim&#x2000;</div>
+    <div class="u-6-unicode">&#x2001;NoTrim&#x2001;</div>
+    <div class="u-7-unicode">&#x2002;NoTrim&#x2002;</div>
+    <div class="u-8-unicode">&#x2003;NoTrim&#x2003;</div>
+    <div class="u-9-unicode">&#x2004;NoTrim&#x2004;</div>
+    <div class="u-10-unicode">&#x2005;NoTrim&#x2005;</div>
+    <div class="u-11-unicode">&#x2006;NoTrim&#x2006;</div>
+    <div class="u-12-unicode">&#x2007;NoTrim&#x2007;</div>
+    <div class="u-13-unicode">&#x2008;NoTrim&#x2008;</div>
+    <div class="u-14-unicode">&#x2009;NoTrim&#x2009;</div>
+    <div class="u-15-unicode">&#x200A;NoTrim&#x200A;</div>
+    <div class="u-16-unicode">&#x2028;NoTrim&#x2028;</div>
+    <div class="u-17-unicode">&#x2029;NoTrim&#x2029;</div>
+    <div class="u-18-unicode">&#x202F;NoTrim&#x202F;</div>
+    <div class="u-19-unicode">&#x205F;NoTrim&#x205F;</div>
+    <div class="u-20-unicode">&#x3000;NoTrim&#x3000;</div>
+</div>
+
+<div class="h-test-inner-whitespace">
+    <div class="p-name">NotPartOfTest</div>
+    <div class="u-u">A  &#x9;&#x9;&#xA;&#xA;&#xC;&#xC;&#xD;&#xD;A</div>
+</div>

@@ -1,0 +1,28 @@
+<!--
+    These tests are segregated because implementations may or may not resolve
+    relative URLs in the "html" member of e- properties.
+-->
+
+<div class="h-test-img-e">
+    <div class="p-name u-photo u-url">http://example.test/NotPartOfTest</div>
+    <div class="e-src-empty-alt-missing">
+        <div>
+            A <img src=""> A
+        </div>
+    </div>
+    <div class="e-src-empty-alt-empty">
+        <div>
+            A <img src="" alt=""> A
+        </div>
+    </div>
+    <div class="e-src-empty-alt-filled">
+        <div>
+            A <img src="" alt="Valid"> A
+        </div>
+    </div>
+    <div class="e-src-empty-alt-filled-space">
+        <div>
+            A <img src="" alt=" No Trim "> A
+        </div>
+    </div>
+</div>

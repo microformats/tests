@@ -1,0 +1,92 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-whitespace-u"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "ascii": [
+                    "http://example.test/DoTrim"
+                ],
+                "1-unicode": [
+                    "http://example.test/NoTrim"
+                ],
+                "2-unicode": [
+                    "http://example.test/%E2%80%A6NoTrim%E2%80%A6"
+                ],
+                "3-unicode": [
+                    "http://example.test/%C2%A0NoTrim%C2%A0"
+                ],
+                "4-unicode": [
+                    "http://example.test/%E1%9A%80NoTrim%E1%9A%80"
+                ],
+                "5-unicode": [
+                    "http://example.test/%E2%80%80NoTrim%E2%80%80"
+                ],
+                "6-unicode": [
+                    "http://example.test/%E2%80%81NoTrim%E2%80%81"
+                ],
+                "7-unicode": [
+                    "http://example.test/%E2%80%82NoTrim%E2%80%82"
+                ],
+                "8-unicode": [
+                    "http://example.test/%E2%80%83NoTrim%E2%80%83"
+                ],
+                "9-unicode": [
+                    "http://example.test/%E2%80%84NoTrim%E2%80%84"
+                ],
+                "10-unicode": [
+                    "http://example.test/%E2%80%85NoTrim%E2%80%85"
+                ],
+                "11-unicode": [
+                    "http://example.test/%E2%80%86NoTrim%E2%80%86"
+                ],
+                "12-unicode": [
+                    "http://example.test/%E2%80%87NoTrim%E2%80%87"
+                ],
+                "13-unicode": [
+                    "http://example.test/%E2%80%88NoTrim%E2%80%88"
+                ],
+                "14-unicode": [
+                    "http://example.test/%E2%80%89NoTrim%E2%80%89"
+                ],
+                "15-unicode": [
+                    "http://example.test/%E2%80%8ANoTrim%E2%80%8A"
+                ],
+                "16-unicode": [
+                    "http://example.test/%E2%80%A8NoTrim%E2%80%A8"
+                ],
+                "17-unicode": [
+                    "http://example.test/%E2%80%A9NoTrim%E2%80%A9"
+                ],
+                "18-unicode": [
+                    "http://example.test/%E2%80%AFNoTrim%E2%80%AF"
+                ],
+                "19-unicode": [
+                    "http://example.test/%E2%81%9FNoTrim%E2%81%9F"
+                ],
+                "20-unicode": [
+                    "http://example.test/%E3%80%80NoTrim%E3%80%80"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-inner-whitespace"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "u": [
+                    "http://example.test/A%20%20%0C%0CA"
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

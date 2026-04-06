@@ -1,0 +1,335 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-whitespace-p"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "ascii": [
+                    "Do Trim"
+                ],
+                "1-unicode": [
+                    "\u000b No Trim \u000b"
+                ],
+                "2-unicode": [
+                    "\u2026 No Trim \u2026"
+                ],
+                "3-unicode": [
+                    "\u00a0 No Trim \u00a0"
+                ],
+                "4-unicode": [
+                    "\u1680 No Trim \u1680"
+                ],
+                "5-unicode": [
+                    "\u2000 No Trim \u2000"
+                ],
+                "6-unicode": [
+                    "\u2001 No Trim \u2001"
+                ],
+                "7-unicode": [
+                    "\u2002 No Trim \u2002"
+                ],
+                "8-unicode": [
+                    "\u2003 No Trim \u2003"
+                ],
+                "9-unicode": [
+                    "\u2004 No Trim \u2004"
+                ],
+                "10-unicode": [
+                    "\u2005 No Trim \u2005"
+                ],
+                "11-unicode": [
+                    "\u2006 No Trim \u2006"
+                ],
+                "12-unicode": [
+                    "\u2007 No Trim \u2007"
+                ],
+                "13-unicode": [
+                    "\u2008 No Trim \u2008"
+                ],
+                "14-unicode": [
+                    "\u2009 No Trim \u2009"
+                ],
+                "15-unicode": [
+                    "\u200a No Trim \u200a"
+                ],
+                "16-unicode": [
+                    "\u2028 No Trim \u2028"
+                ],
+                "17-unicode": [
+                    "\u2029 No Trim \u2029"
+                ],
+                "18-unicode": [
+                    "\u202f No Trim \u202f"
+                ],
+                "19-unicode": [
+                    "\u205f No Trim \u205f"
+                ],
+                "20-unicode": [
+                    "\u3000 No Trim \u3000"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-whitespace-dt"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "ascii": [
+                    "Do Trim"
+                ],
+                "1-unicode": [
+                    "\u000b No Trim \u000b"
+                ],
+                "2-unicode": [
+                    "\u2026 No Trim \u2026"
+                ],
+                "3-unicode": [
+                    "\u00a0 No Trim \u00a0"
+                ],
+                "4-unicode": [
+                    "\u1680 No Trim \u1680"
+                ],
+                "5-unicode": [
+                    "\u2000 No Trim \u2000"
+                ],
+                "6-unicode": [
+                    "\u2001 No Trim \u2001"
+                ],
+                "7-unicode": [
+                    "\u2002 No Trim \u2002"
+                ],
+                "8-unicode": [
+                    "\u2003 No Trim \u2003"
+                ],
+                "9-unicode": [
+                    "\u2004 No Trim \u2004"
+                ],
+                "10-unicode": [
+                    "\u2005 No Trim \u2005"
+                ],
+                "11-unicode": [
+                    "\u2006 No Trim \u2006"
+                ],
+                "12-unicode": [
+                    "\u2007 No Trim \u2007"
+                ],
+                "13-unicode": [
+                    "\u2008 No Trim \u2008"
+                ],
+                "14-unicode": [
+                    "\u2009 No Trim \u2009"
+                ],
+                "15-unicode": [
+                    "\u200a No Trim \u200a"
+                ],
+                "16-unicode": [
+                    "\u2028 No Trim \u2028"
+                ],
+                "17-unicode": [
+                    "\u2029 No Trim \u2029"
+                ],
+                "18-unicode": [
+                    "\u202f No Trim \u202f"
+                ],
+                "19-unicode": [
+                    "\u205f No Trim \u205f"
+                ],
+                "20-unicode": [
+                    "\u3000 No Trim \u3000"
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-whitespace-e"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "ascii": [
+                    {
+                        "html": "Do Trim",
+                        "value": "Do Trim"
+                    }
+                ],
+                "1-unicode": [
+                    {
+                        "html": "\u000b No Trim \u000b",
+                        "value": "\u000b No Trim \u000b"
+                    }
+                ],
+                "2-unicode": [
+                    {
+                        "html": "\u2026 No Trim \u2026",
+                        "value": "\u2026 No Trim \u2026"
+                    }
+                ],
+                "3-unicode": [
+                    {
+                        "html": "&nbsp; No Trim &nbsp;",
+                        "value": "\u00a0 No Trim \u00a0"
+                    }
+                ],
+                "4-unicode": [
+                    {
+                        "html": "\u1680 No Trim \u1680",
+                        "value": "\u1680 No Trim \u1680"
+                    }
+                ],
+                "5-unicode": [
+                    {
+                        "html": "\u2000 No Trim \u2000",
+                        "value": "\u2000 No Trim \u2000"
+                    }
+                ],
+                "6-unicode": [
+                    {
+                        "html": "\u2001 No Trim \u2001",
+                        "value": "\u2001 No Trim \u2001"
+                    }
+                ],
+                "7-unicode": [
+                    {
+                        "html": "\u2002 No Trim \u2002",
+                        "value": "\u2002 No Trim \u2002"
+                    }
+                ],
+                "8-unicode": [
+                    {
+                        "html": "\u2003 No Trim \u2003",
+                        "value": "\u2003 No Trim \u2003"
+                    }
+                ],
+                "9-unicode": [
+                    {
+                        "html": "\u2004 No Trim \u2004",
+                        "value": "\u2004 No Trim \u2004"
+                    }
+                ],
+                "10-unicode": [
+                    {
+                        "html": "\u2005 No Trim \u2005",
+                        "value": "\u2005 No Trim \u2005"
+                    }
+                ],
+                "11-unicode": [
+                    {
+                        "html": "\u2006 No Trim \u2006",
+                        "value": "\u2006 No Trim \u2006"
+                    }
+                ],
+                "12-unicode": [
+                    {
+                        "html": "\u2007 No Trim \u2007",
+                        "value": "\u2007 No Trim \u2007"
+                    }
+                ],
+                "13-unicode": [
+                    {
+                        "html": "\u2008 No Trim \u2008",
+                        "value": "\u2008 No Trim \u2008"
+                    }
+                ],
+                "14-unicode": [
+                    {
+                        "html": "\u2009 No Trim \u2009",
+                        "value": "\u2009 No Trim \u2009"
+                    }
+                ],
+                "15-unicode": [
+                    {
+                        "html": "\u200a No Trim \u200a",
+                        "value": "\u200a No Trim \u200a"
+                    }
+                ],
+                "16-unicode": [
+                    {
+                        "html": "\u2028 No Trim \u2028",
+                        "value": "\u2028 No Trim \u2028"
+                    }
+                ],
+                "17-unicode": [
+                    {
+                        "html": "\u2029 No Trim \u2029",
+                        "value": "\u2029 No Trim \u2029"
+                    }
+                ],
+                "18-unicode": [
+                    {
+                        "html": "\u202f No Trim \u202f",
+                        "value": "\u202f No Trim \u202f"
+                    }
+                ],
+                "19-unicode": [
+                    {
+                        "html": "\u205f No Trim \u205f",
+                        "value": "\u205f No Trim \u205f"
+                    }
+                ],
+                "20-unicode": [
+                    {
+                        "html": "\u3000 No Trim \u3000",
+                        "value": "\u3000 No Trim \u3000"
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-inner-whitespace"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "p": [
+                    "A  \t\t\n\n\f\f\r\rA"
+                ],
+                "dt": [
+                    "A  \t\t\n\n\f\f\r\rA"
+                ],
+                "e": [
+                    {
+                        "html": "A  \t\t\n\n\f\f\r\rA",
+                        "value": "A  \t\t\n\n\f\f\r\rA"
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-stripped"
+            ],
+            "properties": {
+                "name": [
+                    "NotPartOfTest"
+                ],
+                "p": [
+                    "Valid"
+                ],
+                "u": [
+                    "http://example.test/Valid"
+                ],
+                "dt": [
+                    "Valid"
+                ],
+                "e": [
+                    {
+                        "html": "<div>\n            <style>div {display:block;}</style>\n            <script>alert();</script>\n        </div>\n        Valid",
+                        "value": "Valid"
+                    }
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

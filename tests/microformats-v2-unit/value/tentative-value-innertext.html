@@ -1,0 +1,17 @@
+<!--
+    The Value Class Pattern parsing rules make mention of "inner-text", but
+    this term is never defined. These tests assume that inner-text is the
+    textContent property of elements, with no trimming applied.
+
+    As neither u- nor e- property processing involves trimming and both p- and
+    dt- property processing states to return the result of the VCP algorithm,
+    trimming should never apply. This does not seem to be what many
+    implementations do, however.
+
+    See https://github.com/microformats/microformats2-parsing/issues/20
+-->
+
+<div class="h-test-p">
+    <div class="p-single">Invalid <span class="value"> No Trim </span> Invalid</div>
+    <div class="p-double">Invalid <span class="value"> No </span> <span class="value"> Trim </span> Invalid</div>
+</div>
