@@ -405,42 +405,6 @@
         },
         {
             "type": [
-                "h-test-a-onlychildoftype-root-a"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-a-onlychildoftype-root-a-with-href"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ],
-                "url": [
-                    "http://example.test/Valid"
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-a-onlychildoftype-root-a-with-href-empty"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ],
-                "url": [
-                    "http://example.test"
-                ]
-            }
-        },
-        {
-            "type": [
                 "h-test-area-onlygrandchildoftype-href-missing"
             ],
             "properties": {
@@ -766,78 +730,6 @@
             "properties": {
                 "url": [
                     "Valid"
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-a-onlygrandchildoftype-root-a"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-a-onlygrandchildoftype-root-a"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-a-onlygrandchildoftype-root-a-with-href"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ],
-                "url": [
-                    "http://example.test/Valid"
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-a-onlygrandchildoftype-root-a-with-href"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ],
-                "url": [
-                    "http://example.test/Valid"
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-a-onlygrandchildoftype-root-a-with-href-empty"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ],
-                "url": [
-                    "http://example.test"
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-a-onlygrandchildoftype-root-a-with-href-empty"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ],
-                "url": [
-                    "http://example.test"
                 ]
             }
         }
