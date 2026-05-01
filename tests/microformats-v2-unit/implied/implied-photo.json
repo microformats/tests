@@ -32,16 +32,6 @@
         },
         {
             "type": [
-                "h-test-img-src-missing-alt-filled-space"
-            ],
-            "properties": {
-                "name": [
-                    "NameOnly"
-                ]
-            }
-        },
-        {
-            "type": [
                 "h-test-img-src-empty-alt-missing"
             ],
             "properties": {
@@ -262,16 +252,6 @@
         {
             "type": [
                 "h-test-img-onlychildoftype-src-missing-alt-filled"
-            ],
-            "properties": {
-                "name": [
-                    "NameOnly"
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-img-onlychildoftype-src-missing-alt-filled-space"
             ],
             "properties": {
                 "name": [
@@ -717,16 +697,6 @@
         {
             "type": [
                 "h-test-img-onlygrandchildoftype-src-missing-alt-filled"
-            ],
-            "properties": {
-                "name": [
-                    "NameOnly"
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-img-onlygrandchildoftype-src-missing-alt-filled-space"
             ],
             "properties": {
                 "name": [
