@@ -170,24 +170,6 @@
         },
         {
             "type": [
-                "h-test-object-data-filled-has-child"
-            ],
-            "properties": {},
-            "children": [
-                {
-                    "type": [
-                        "h-test-child"
-                    ],
-                    "properties": {
-                        "name": [
-                            "NotPartOfTest"
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "type": [
                 "h-test-object-data-filled-has-u"
             ],
             "properties": {
@@ -389,29 +371,6 @@
         },
         {
             "type": [
-                "h-test-img-onlychildoftype-has-child"
-            ],
-            "properties": {
-                "name": [
-                    {
-                        "value": "",
-                        "type": [
-                            "h-test-child"
-                        ],
-                        "properties": {
-                            "name": [
-                                ""
-                            ],
-                            "photo": [
-                                "http://example.test/ChildOnly"
-                            ]
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "type": [
                 "h-test-img-onlychildoftype-has-u"
             ],
             "properties": {
@@ -553,24 +512,6 @@
                     "http://example.test/Valid"
                 ]
             }
-        },
-        {
-            "type": [
-                "h-test-object-onlychildoftype-has-child"
-            ],
-            "properties": {},
-            "children": [
-                {
-                    "type": [
-                        "h-test-child"
-                    ],
-                    "properties": {
-                        "name": [
-                            "NotPartOfTest"
-                        ]
-                    }
-                }
-            ]
         },
         {
             "type": [
@@ -834,29 +775,6 @@
         },
         {
             "type": [
-                "h-test-img-onlygrandchildoftype-has-child"
-            ],
-            "properties": {
-                "name": [
-                    {
-                        "value": "",
-                        "type": [
-                            "h-test-child"
-                        ],
-                        "properties": {
-                            "name": [
-                                ""
-                            ],
-                            "photo": [
-                                "http://example.test/ChildOnly"
-                            ]
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "type": [
                 "h-test-img-onlygrandchildoftype-has-u"
             ],
             "properties": {
@@ -1018,24 +936,6 @@
                     "Name"
                 ]
             }
-        },
-        {
-            "type": [
-                "h-test-object-onlygrandchildoftype-has-child"
-            ],
-            "properties": {},
-            "children": [
-                {
-                    "type": [
-                        "h-test-child"
-                    ],
-                    "properties": {
-                        "name": [
-                            "NotPartOfTest"
-                        ]
-                    }
-                }
-            ]
         },
         {
             "type": [

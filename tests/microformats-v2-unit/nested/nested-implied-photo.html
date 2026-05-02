@@ -1,0 +1,6 @@
+<!-- Implied photo does not apply in these cases; a separate file is used to better isolate parsing features -->
+<object class="h-test-object-data-filled-has-child" data="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></object>
+<div class="h-test-img-onlychildoftype-has-child"><img class="h-test-child p-name" src="http://example.test/ChildOnly" alt="NotPartOfTest"></div>
+<div class="h-test-object-onlychildoftype-has-child"><object data="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></object></div>
+<div class="h-test-img-onlygrandchildoftype-has-child"><div><img class="h-test-child p-name" src="http://example.test/ChildOnly" alt="NotPartOfTest"></div></div>
+<div class="h-test-object-onlygrandchildoftype-has-child"><div><object data="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></object></div></div>

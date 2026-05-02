@@ -1,0 +1,112 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-object-data-filled-has-child"
+            ],
+            "properties": {},
+            "children": [
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-test-img-onlychildoftype-has-child"
+            ],
+            "properties": {
+                "name": [
+                    {
+                        "value": "NotPartOfTest",
+                        "type": [
+                            "h-test-child"
+                        ],
+                        "properties": {
+                            "name": [
+                                "NotPartOfTest"
+                            ],
+                            "photo": [
+                                {
+                                    "value": "http://example.test/ChildOnly",
+                                    "alt": "NotPartOfTest"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-object-onlychildoftype-has-child"
+            ],
+            "properties": {},
+            "children": [
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-test-img-onlygrandchildoftype-has-child"
+            ],
+            "properties": {
+                "name": [
+                    {
+                        "value": "NotPartOfTest",
+                        "type": [
+                            "h-test-child"
+                        ],
+                        "properties": {
+                            "name": [
+                                "NotPartOfTest"
+                            ],
+                            "photo": [
+                                {
+                                    "value": "http://example.test/ChildOnly",
+                                    "alt": "NotPartOfTest"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": [
+                "h-test-object-onlygrandchildoftype-has-child"
+            ],
+            "properties": {},
+            "children": [
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

@@ -23,7 +23,6 @@
 <object class="h-test-object-data-missing">Name</object>
 <object class="h-test-object-data-empty" data="">Name</object>
 <object class="h-test-object-data-filled" data="http://example.test/Valid">Name</object>
-<object class="h-test-object-data-filled-has-child" data="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></object>
 <object class="h-test-object-data-filled-has-u" data="http://example.test/Invalid"><div class="u-override">http://exaple.test/NotPartOfTest</div></object>
 <object class="h-test-object-data-filled-has-photo" data="http://example.test/Invalid"><div class="p-photo">Valid</div></object>
 
@@ -40,7 +39,6 @@
 <div class="h-test-img-onlychildoftype-type-sibling-after"><img src="http://example.test/Invalid" class="p-name"><img></div>
 <div class="h-test-img-onlychildoftype-nontype-sibling-before"><hr><img class="p-name" src="http://example.test/Valid"></div>
 <div class="h-test-img-onlychildoftype-nontype-sibling-after"><img class="p-name" src="http://example.test/Valid"><hr></div>
-<div class="h-test-img-onlychildoftype-has-child"><img class="h-test-child p-name" src="http://example.test/ChildOnly"></div>
 <div class="h-test-img-onlychildoftype-has-u"><img class="u-override p-name" src="http://example.test/NotPartOfTest"></div>
 <div class="h-test-img-onlychildoftype-has-photo"><img class="p-photo" src="http://example.test/Invalid"></div>
 <object class="h-test-img-onlychildoftype-root-object"><img class="p-name" src="http://example.test/Valid"></object>
@@ -54,7 +52,6 @@
 <div class="h-test-object-onlychildoftype-type-sibling-after"><object data="http://example.test/Invalid"></object><object>Name</object></div>
 <div class="h-test-object-onlychildoftype-nontype-sibling-before"><hr><object data="http://example.test/Valid">Name</object></div>
 <div class="h-test-object-onlychildoftype-nontype-sibling-after"><object data="http://example.test/Valid">Name</object><hr></div>
-<div class="h-test-object-onlychildoftype-has-child"><object data="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></object></div>
 <div class="h-test-object-onlychildoftype-has-u"><object data="http://example.test/NotPartOfTest"><div class="u-override">http://example.test/NameAndOverride</div></object></div>
 <div class="h-test-object-onlychildoftype-has-photo"><object data="http://example.test/Invalid"><div class="p-photo">Valid</div></object></div>
 <object class="h-test-object-onlychildoftype-root-object"><object data="http://example.test/Valid">Name</object></object>
@@ -76,7 +73,6 @@
 <div class="h-test-img-onlygrandchildoftype-nontype-sibling-after"><div><img class="p-name" src="http://example.test/Valid"><hr></div></div>
 <div class="h-test-img-onlygrandchildoftype-parent-sibling-before"><hr><div><img src="http://example.test/Invalid" class="p-name"></div></div>
 <div class="h-test-img-onlygrandchildoftype-parent-sibling-after"><div><img src="http://example.test/Invalid" class="p-name"></div><hr></div>
-<div class="h-test-img-onlygrandchildoftype-has-child"><div><img class="h-test-child p-name" src="http://example.test/ChildOnly"></div></div>
 <div class="h-test-img-onlygrandchildoftype-has-u"><div><img class="u-override p-name" src="http://example.test/NotPartOfTest"></div></div>
 <div class="h-test-img-onlygrandchildoftype-has-photo"><div><img class="p-photo" src="http://example.test/Invalid"></div></div>
 <object class="h-test-img-onlygrandchildoftype-root-object"><div><img class="p-name" src="http://example.test/Valid"></div></object>
@@ -92,7 +88,6 @@
 <div class="h-test-object-onlygrandchildoftype-nontype-sibling-after"><div><object data="http://example.test/Valid">Name</object><hr></div></div>
 <div class="h-test-object-onlygrandchildoftype-parent-sibling-before"><hr><div><object data="http://example.test/Invalid">Name</object></div></div>
 <div class="h-test-object-onlygrandchildoftype-parent-sibling-after"><div><object data="http://example.test/Invalid">Name</object></div><hr></div>
-<div class="h-test-object-onlygrandchildoftype-has-child"><div><object data="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></object></div></div>
 <div class="h-test-object-onlygrandchildoftype-has-u"><div><object data="http://example.test/NotPartOfTest"><div class="u-override">http://example.test/NameAndOverride</div></object></div></div>
 <div class="h-test-object-onlygrandchildoftype-has-photo"><div><object data="http://example.test/Invalid"><div class="p-photo">Valid</div></object></div></div>
 <object class="h-test-object-onlygrandchildoftype-root-object"><div><object data="http://example.test/Valid">Name</object></div></object>
