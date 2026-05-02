@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "type": [
+                "h-test-nested"
+            ],
+            "properties": {},
+            "children": [
+                {
+                    "type": [
+                        "h-test-child"
+                    ],
+                    "properties": {
+                        "name": [
+                            "NotPartOfTest"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": [
+                "h-test-nested-prop"
+            ],
+            "properties": {
+                "prop": [
+                    {
+                        "value": "NotPartOfTestNotPartOfTest",
+                        "type": [
+                            "h-test-child"
+                        ],
+                        "properties": {
+                            "name": [
+                                "NotPartOfTest"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "rels": {},
+    "rel-urls": {}
+}

@@ -1,0 +1,6 @@
+<!-- Implied URL does not apply in these cases; a separate file is used to better isolate parsing features -->
+<a class="h-test-a-href-filled-has-child" href="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></a>
+<div class="h-test-area-onlychildoftype-has-child"><area class="h-test-child p-name" alt="NotPartOfTest" href="http://example.test/ChildOnly"></div>
+<div class="h-test-a-onlychildoftype-has-child"><a href="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></a></div>
+<div class="h-test-area-onlygrandchildoftype-has-child"><div><area class="h-test-child p-name" href="http://example.test/ChildOnly" alt="NotPartOfTest"></div></div>
+<div class="h-test-a-onlygrandchildoftype-has-child"><div><a href="http://example.test/Invalid"><div class="h-test-child">NotPartOfTest</div></a></div></div>

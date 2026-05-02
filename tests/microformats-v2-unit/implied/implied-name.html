@@ -5,7 +5,11 @@
     trimming is performed.
 -->
 
-<!-- Control tests: implied name does not apply in these cases -->
+<!--
+    Control tests: implied name does not apply in these cases.
+    Also not applicable are cases where there is a nested microformat, but this
+    is tested in a separate file due to the extra complexity involved.
+-->
 <div class="h-test-explicit">
     <div class="dt-name">Valid</div> Invalid
 </div>
@@ -18,17 +22,7 @@
     <div class="e-override">NotPartOfTest</div> Invalid
 </div>
 
-<div class="h-test-nested">
-    <div class="h-test-child">
-        <div class="p-name">NotPartOfTest</div> Invalid
-    </div> Invalid
-</div>
-
-<div class="h-test-nested-prop">
-    <div class="h-test-child dt-prop">NotPartOfTest<span class="p-name">NotPartOfTest</span></div> Invalid
-</div>
-
-<!-- Simple tests -->
+<!-- Simple tests; note that these do not imply photos or URLs because there are no "src" or "href" attributes -->
 <img class="h-test-img-filled" alt="Valid">
 <img class="h-test-img-filled-space" alt=" Do Trim ">
 <img class="h-test-img-empty" alt="">
