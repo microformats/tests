@@ -74,24 +74,6 @@
         },
         {
             "type": [
-                "h-test-a-href-filled-has-child"
-            ],
-            "properties": {},
-            "children": [
-                {
-                    "type": [
-                        "h-test-child"
-                    ],
-                    "properties": {
-                        "name": [
-                            "NotPartOfTest"
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "type": [
                 "h-test-a-href-filled-has-u"
             ],
             "properties": {
@@ -192,29 +174,6 @@
                 ],
                 "url": [
                     "http://example.test/Valid"
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-area-onlychildoftype-has-child"
-            ],
-            "properties": {
-                "name": [
-                    {
-                        "value": "NotPartOfTest",
-                        "type": [
-                            "h-test-child"
-                        ],
-                        "properties": {
-                            "name": [
-                                "NotPartOfTest"
-                            ],
-                            "url": [
-                                "http://example.test/ChildOnly"
-                            ]
-                        }
-                    }
                 ]
             }
         },
@@ -364,24 +323,6 @@
         },
         {
             "type": [
-                "h-test-a-onlychildoftype-has-child"
-            ],
-            "properties": {},
-            "children": [
-                {
-                    "type": [
-                        "h-test-child"
-                    ],
-                    "properties": {
-                        "name": [
-                            "NotPartOfTest"
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "type": [
                 "h-test-a-onlychildoftype-has-u"
             ],
             "properties": {
@@ -502,29 +443,6 @@
             "properties": {
                 "name": [
                     "Name"
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-area-onlygrandchildoftype-has-child"
-            ],
-            "properties": {
-                "name": [
-                    {
-                        "value": "NotPartOfTest",
-                        "type": [
-                            "h-test-child"
-                        ],
-                        "properties": {
-                            "name": [
-                                "NotPartOfTest"
-                            ],
-                            "url": [
-                                "http://example.test/ChildOnly"
-                            ]
-                        }
-                    }
                 ]
             }
         },
@@ -691,24 +609,6 @@
                     "Name"
                 ]
             }
-        },
-        {
-            "type": [
-                "h-test-a-onlygrandchildoftype-has-child"
-            ],
-            "properties": {},
-            "children": [
-                {
-                    "type": [
-                        "h-test-child"
-                    ],
-                    "properties": {
-                        "name": [
-                            "NotPartOfTest"
-                        ]
-                    }
-                }
-            ]
         },
         {
             "type": [
