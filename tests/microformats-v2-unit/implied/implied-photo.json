@@ -2,31 +2,11 @@
     "items": [
         {
             "type": [
-                "h-test-img-src-missing-alt-missing"
+                "h-test-img-src-missing"
             ],
             "properties": {
                 "name": [
-                    ""
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-img-src-missing-alt-empty"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-img-src-missing-alt-filled"
-            ],
-            "properties": {
-                "name": [
-                    "NameOnly"
+                    "Name"
                 ]
             }
         },
@@ -231,31 +211,11 @@
         },
         {
             "type": [
-                "h-test-img-onlychildoftype-src-missing-alt-missing"
+                "h-test-img-onlychildoftype-src-missing"
             ],
             "properties": {
                 "name": [
-                    ""
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-img-onlychildoftype-src-missing-alt-empty"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-img-onlychildoftype-src-missing-alt-filled"
-            ],
-            "properties": {
-                "name": [
-                    "NameOnly"
+                    "Name"
                 ]
             }
         },
@@ -676,31 +636,11 @@
         },
         {
             "type": [
-                "h-test-img-onlygrandchildoftype-src-missing-alt-missing"
+                "h-test-img-onlygrandchildoftype-src-missing"
             ],
             "properties": {
                 "name": [
-                    ""
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-img-onlygrandchildoftype-src-missing-alt-empty"
-            ],
-            "properties": {
-                "name": [
-                    ""
-                ]
-            }
-        },
-        {
-            "type": [
-                "h-test-img-onlygrandchildoftype-src-missing-alt-filled"
-            ],
-            "properties": {
-                "name": [
-                    "NameOnly"
+                    "Name"
                 ]
             }
         },
