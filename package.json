@@ -9,16 +9,18 @@
     "url": "git://github.com/microformats/tests.git"
   },
   "engines": {
-    "node": ">= 0.12.x"
+    "node": ">= 14.15.0"
   },
   "main": "interface.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "blipp": "2.1.x",
-    "good": "6.1.x",
-    "good-console": "5.0.x",
-    "hapi": "11.1.x"
+    "@hapi/good": "9.0.x",
+    "@hapi/good-console": "9.0.x",
+    "@hapi/good-squeeze": "6.0.x",
+    "@hapi/hapi": "21.4.x",
+    "@hapi/inert": "7.1.x",
+    "blipp": "4.0.x"
   }
 }

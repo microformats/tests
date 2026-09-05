@@ -5,7 +5,9 @@
 // Glenn Jones
 
 
-var Hapi            = require('hapi'),
+var Hapi            = require('@hapi/hapi'),
+    Inert           = require('@hapi/inert'),
+    Good            = require('@hapi/good'),
     Blipp           = require('blipp'),
     Pack            = require('./package');
     
@@ -15,7 +17,7 @@ var routes = [{
 	path: '/{path*}',
 	handler: {
 		directory: {
-			path: '/tests',
+			path: './tests',
 			listing: true,
 			index: false
 		}
@@ -45,40 +47,43 @@ var routes = [{
 
 
 // Create a server with a host and port
-var server = new Hapi.Server();
-
-server.connection({ 
+var server = Hapi.server({ 
     host: (process.env.PORT)? '0.0.0.0' : 'localhost', 
     port: parseInt(process.env.PORT, 10) || 3008
 });
 
 
-// hapi server settings
-server.route(routes);
-
-
 var goodOptions = {
-    opsInterval: 1000,
-    reporters: [{
-        reporter: require('good-console'),
-        events: { log: '*', response: '*' }
-    }]
+    ops: { interval: 1000 },
+    reporters: {
+        console: [
+            { module: '@hapi/good-squeeze', name: 'Squeeze', args: [{ log: '*', response: '*' }] },
+            { module: '@hapi/good-console' },
+            'stdout'
+        ]
+    }
 };
 
 
 
-// Register plug-in and start
-server.register([{
-    register: require('good'), 
-    options: goodOptions
-  },{
-    register: require('blipp'), 
-  }], function (err) {
-      if (err) {
-          console.error(err);
-      }else {
-          server.start(function () {
-              console.info('Server started at ' + server.info.uri);
-          });
-      }
-  });
+// Register plug-ins and start
+var init = async function () {
+    await server.register([
+        Inert,
+        Blipp,
+        { plugin: Good, options: goodOptions }
+    ]);
+
+    // hapi server settings
+    server.route(routes);
+
+    await server.start();
+    console.info('Server started at ' + server.info.uri);
+};
+
+process.on('unhandledRejection', function (err) {
+    console.error(err);
+    process.exit(1);
+});
+
+init();
