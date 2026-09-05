@@ -7,7 +7,7 @@
 
 if(require.main === module) { 
 	// if they want the app
-    var app = require('app.js');
+    var app = require('./app.js');
 }else{ 
 	// if they want a module interface
 	var pack = require('./package.json');
